@@ -23,11 +23,12 @@ import re
 
 
 nbviewer = 'http://nbviewer.ipython.org/urls'
-repo = 'bitbucket.org/salishsea/tools/raw/tip'
-repo_dir = 'NetCDF_Plot/Nancy'
+repo = 'bitbucket.org/salishsea/analysis/raw/tip'
+repo_dir = 'Nancy'
 url = os.path.join(nbviewer, repo, repo_dir)
 title_pattern = re.compile('#{1,6} ?')
-readme = """The IPython Notebooks in this directory are made by Nancy for quick sharing of results.
+readme = """The IPython Notebooks in this directory are made by Nancy for
+quick sharing of results.
 
 The links below are to static renderings of the notebooks via
 [nbviewer.ipython.org](http://nbviewer.ipython.org/).
