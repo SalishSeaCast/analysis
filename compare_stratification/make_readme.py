@@ -24,11 +24,11 @@ import re
 
 nbviewer = 'http://nbviewer.ipython.org/urls'
 repo = 'bitbucket.org/salishsea/analysis/raw/tip'
-repo_dir = 'storm_surges'
+repo_dir = 'compare_stratification'
 url = os.path.join(nbviewer, repo, repo_dir)
 title_pattern = re.compile('#{1,6} ?')
-readme = """The IPython Notebooks in this directory are related to preparing
-for storm surge simulations.
+readme = """The IPython Notebooks in this directory are evaluation of the
+tide and storm surge results calculated by the Salish Sea NEMO model.
 
 The links below are to static renderings of the notebooks via
 [nbviewer.ipython.org](http://nbviewer.ipython.org/).
