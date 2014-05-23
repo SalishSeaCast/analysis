@@ -18,8 +18,12 @@ Descriptions below the links are from the first cell of the notebooks
     3. tide_bottom - bottom friction reduced to 3e-3 (from 5e-3). Note: I suspect we can reduce further, perhaps to 2e-3?  
     4. tide_nu15 - viscosity lowered to 15  
     5. tide_bottom1e-3 - bottom friction reduced to 1e-3  
+    5. tide_K1phase2 - K1 phase decreased by 5 degrees.  
+    7. tide_K1amp - K1 amp decreased 15 %, phase decreased 5 degrees, bottom friction 1e-3  
       
     Measured amplitude/phase from Foreman's Discovery Islands and 2004 paper are included.  
+      
+    Complex differences are from the Foreman inversion method in 2004 paper.   
       
     Uses the same curve fitting technique that Susan wrote.   
 
@@ -82,6 +86,10 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[plot_foreman_thalweg.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/plot_foreman_thalweg.ipynb)  
     
     Plot the Foreman et al (1995) model results against our model results, along a thalweg (the thalweg is defined and plotted by Nancy in computer_thalweg.ipynb)  
+
+* ##[Check forcing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Check forcing.ipynb)  
+    
+    A notebook to check that the phase and amplitude in the forcing files is what I expect.  
 
 * ##[plot_current_ellipses.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/plot_current_ellipses.ipynb)  
     
