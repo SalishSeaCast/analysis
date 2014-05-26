@@ -21,40 +21,23 @@ Descriptions below the links are from the first cell of the notebooks
       
     These simulations were run with nu=50 and  initial T+S from Oct 25 restart  
 
-* ##[dec2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/dec2006.ipynb)  
-    
-    This notebook examines the storm surge for Dec 15, 2006.  
-
-* ##[Effect of Stratification.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Effect of Stratification.ipynb)  
-    
-    This notebook examines the effect of stratificaiton on storm surge elevations using the Dec.15, 2006 storm as a case study.  
-
-* ##[feb2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/feb2006.ipynb)  
-    
-    This notebook analyses a Feb 2006 storm surge. Cases:  
-      
-    1. all_forcing - all tidal forcing and ssh forcing and meteorolgical forcing  
-    2. tidesonly - no meteorological forcing and no ssh forcing. Only tidal forcing.  
-
-* ##[FindWindEvents.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/FindWindEvents.ipynb)  
-    
-    This notebook looks for large wind events in Sandheads historical wind data. We are looking for a wind storm that did not result in a surge. We would like to ensure that the model does not make a surge if one did not actually occur.   
-      
-    This codes uses a combination of Doug's class for reading Sandheads data and Kate's methodology for finding ssh anamolies.  
-
-* ##[New Tides and December Storm.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/New Tides and December Storm.ipynb)  
-    
-    This notebook will examine the effect of the corrected Northern tides on the December 2006 storm surge.  
-
-* ##[northForcing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/northForcing.ipynb)  
-    
-    This notebook examines the storm surge simulations when tidal forcing at Johnstone Strait is included.  
-
 * ##[nov2009.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/nov2009.ipynb)  
     
 * ##[Preparing for Delta.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Preparing for Delta.ipynb)  
     
     This notebook looks for a grid point close to Delta so that we can start including that community in our output.   
+
+* ##[northForcing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/northForcing.ipynb)  
+    
+    This notebook examines the storm surge simulations when tidal forcing at Johnstone Strait is included.  
+
+* ##[Currents Feb 2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Currents Feb 2006.ipynb)  
+    
+    This notebook will examine currents over one day during the Feb 2006 surge. I'm looking for suggestions for drop locations to Andy. I don't have any summer time runs at a high enough time resolution yet, but maybe this can give me an idea.  
+
+* ##[New Tides and December Storm.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/New Tides and December Storm.ipynb)  
+    
+    This notebook will examine the effect of the corrected Northern tides on the December 2006 storm surge.  
 
 * ##[SandHeadsWinds.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/SandHeadsWinds.ipynb)  
     
@@ -66,25 +49,64 @@ Descriptions below the links are from the first cell of the notebooks
       
     The code is based on code in the `bloomcast.wind` module in the [SoG-bloomcast project](https://bitbucket.org/douglatornell/sog-bloomcast).  
 
+* ##[bottom_friction.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/bottom_friction.ipynb)  
+    
+    This notebook will examine the storm surges under different bottom friction parametrizations.   
+      
+    Cases:  
+      
+    1. control - bfrib2 = 5e-3, bfeb2 = 2.5e-3, rhn_shlat=0.5  
+    2. noeb - bfrib2 = 5e-3, bfeb2 = 0  
+    3. bfrib3e3 - bfrib2 = 3e-3, bfeb2=0  
+    4. partial - bfrib2 = 5e-3, bfeb2 = 2.5e-3, rn_shlat = 0.1  
+
+* ##[Effect of Stratification.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Effect of Stratification.ipynb)  
+    
+    This notebook examines the effect of stratificaiton on storm surge elevations using the Dec.15, 2006 storm as a case study.  
+
+* ##[dec2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/dec2006.ipynb)  
+    
+    This notebook examines the storm surge for Dec 15, 2006.  
+
+* ##[Testing Port Hardy.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Testing Port Hardy.ipynb)  
+    
+    This notebook examines the sea surface height forcing from Port Hardy to ensure it is performing as expected. We would also like to determine the importance of including Port Hardy forcing at the northern boundary.  
+
+* ##[feb2006_tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/feb2006_tides.ipynb)  
+    
+    This notebook analyses a Feb 2006 storm surge with the corrected tides. K1 is phase/amp corrected, M2 is phase shifted, lowered bottom firction to 1e-3. Cases:  
+      
+    1. all_forcing - all tidal forcing and ssh forcing and meteorolgical forcing  
+    2. tidesonly - no meteorological forcing and no ssh forcing. Only tidal forcing.  
+
 * ##[spinups.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/spinups.ipynb)  
     
     A notebook for determining how long it takes for velocities to spinup after initializing with a restart files. This is useful for determing storm surge simulation start dates.   
       
     Note this probably depends on viscosity. This simulations use nu =50.  
 
-* ##[Testing Port Hardy.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Testing Port Hardy.ipynb)  
+* ##[FindWindEvents.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/FindWindEvents.ipynb)  
     
-    This notebook examines the sea surface height forcing from Port Hardy to ensure it is performing as expected. We would also like to determine the importance of including Port Hardy forcing at the northern boundary.  
+    This notebook looks for large wind events in Sandheads historical wind data. We are looking for a wind storm that did not result in a surge. We would like to ensure that the model does not make a surge if one did not actually occur.   
+      
+    This codes uses a combination of Doug's class for reading Sandheads data and Kate's methodology for finding ssh anamolies.  
 
-* ##[Tofino and Port Hardy Comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Tofino and Port Hardy Comparison.ipynb)  
+* ##[feb2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/feb2006.ipynb)  
     
-    This notebook compares the hourly sea surface height anomaly at Tofino and Port Hardy. We do not have a surge prediction tool at Port Hardy so this comparison will guide our decisions regarding the northern boundary condition on sea surface height.   
+    This notebook analyses a Feb 2006 storm surge. Cases:  
+      
+    1. all_forcing - all tidal forcing and ssh forcing and meteorolgical forcing  
+    2. tidesonly - no meteorological forcing and no ssh forcing. Only tidal forcing.  
 
 * ##[weather_Nov-15-2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/weather_Nov-15-2006.ipynb)  
     
     This notebook plots the weather at Point Atkinson on Nov. 15, 2006 from the Environment Canada website.   
       
     Additionally, we will look at the weather at YVR and Sandheads since it will be easy to compare with CGRF.   
+
+* ##[Tofino and Port Hardy Comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Tofino and Port Hardy Comparison.ipynb)  
+    
+    This notebook compares the hourly sea surface height anomaly at Tofino and Port Hardy. We do not have a surge prediction tool at Port Hardy so this comparison will guide our decisions regarding the northern boundary condition on sea surface height.   
 
 
 ##License
