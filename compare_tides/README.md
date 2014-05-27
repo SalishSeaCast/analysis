@@ -6,47 +6,12 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
-* ##[comp_wlev_harm.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm.ipynb)  
+* ##[Many Tidal Constituents.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Many Tidal Constituents.ipynb)  
     
-* ##[Tidal Variations.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Tidal Variations.ipynb)  
-    
-    This notebook looks at the effect of changing different parameters on the tides.  
-      
-    Runs:   
-    1. tide_flux_M2K1 - M2/K1 only over 5 days. No modifications to western tides. Northern tides flux decreased.  
-    2. tide_flux_west - M2/K1 only with flux increased by 25% at west.   
-    3. tide_bottom - bottom friction reduced to 3e-3 (from 5e-3). Note: I suspect we can reduce further, perhaps to 2e-3?  
-    4. tide_nu15 - viscosity lowered to 15  
-    5. tide_bottom1e-3 - bottom friction reduced to 1e-3  
-    5. tide_K1phase2 - K1 phase decreased by 5 degrees.  
-    7. tide_K1amp - K1 amp decreased 15 %, phase decreased 5 degrees, bottom friction 1e-3  
-      
-    Measured amplitude/phase from Foreman's Discovery Islands and 2004 paper are included.  
-      
-    Complex differences are from the Foreman inversion method in 2004 paper.   
-      
-    Uses the same curve fitting technique that Susan wrote.   
+    Notebook that plots tides for different numbers of constituents at Cherry Point to show the importance of constituents beyond the top 8  
 
-* ##[comp_wlev_harm_compositerun.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm_compositerun.ipynb)  
-    
 * ##[comp_wlev_harm-wNorth.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm-wNorth.ipynb)  
     
-* ##[Multi-tides w Fit.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Multi-tides w Fit.ipynb)  
-    
-    Study Tides: Multi-constituents : Fit to Tide Frequencies  
-
-* ##[plot_foreman_thalweg-withNorth.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/plot_foreman_thalweg-withNorth.ipynb)  
-    
-    For results including the Northern Boundary,  
-    plot the Foreman et al (1995) model results against our model results, along a thalweg (the thalweg is defined and plotted by Nancy in computer_thalweg.ipynb)  
-
-* ##[comp_wlev_ts.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_ts.ipynb)  
-    
-* ##[comp_current_harm.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_current_harm.ipynb)  
-    
-    Compare harmonics from currents between measured and modelled. Measured harmonics are taken from Table 3 of Foreman et al (1995)  
-
-
 * ##[Partial Slip.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Partial Slip.ipynb)  
     
     A look at the effect of reducing the amount of slip on the tides.   
@@ -63,6 +28,13 @@ Descriptions below the links are from the first cell of the notebooks
       
 
 
+* ##[comp_wlev_harm_compositerun.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm_compositerun.ipynb)  
+    
+* ##[comp_current_harm.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_current_harm.ipynb)  
+    
+    Compare harmonics from currents between measured and modelled. Measured harmonics are taken from Table 3 of Foreman et al (1995)  
+
+
 * ##[find_wlev_stations.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/find_wlev_stations.ipynb)  
     
     Where shall we evaluate the storm surge performance of the model? The station needs to have water level data for the period of 2002-2010 (this is when we have wind data).  
@@ -77,19 +49,48 @@ Descriptions below the links are from the first cell of the notebooks
       
     All other sites are not in our domain or do not have water level data for these points  
 
+* ##[comp_wlev_ts.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_ts.ipynb)  
+    
 * ##[find_storms.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/find_storms.ipynb)  
     
-* ##[Single Tide 2 days.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Single Tide 2 days.ipynb)  
-    
-    Study Tides, over short periods, one Constituent at a Time  
-
 * ##[plot_foreman_thalweg.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/plot_foreman_thalweg.ipynb)  
     
     Plot the Foreman et al (1995) model results against our model results, along a thalweg (the thalweg is defined and plotted by Nancy in computer_thalweg.ipynb)  
 
-* ##[Check forcing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Check forcing.ipynb)  
+* ##[Single Tide 2 days.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Single Tide 2 days.ipynb)  
     
-    A notebook to check that the phase and amplitude in the forcing files is what I expect.  
+    Study Tides, over short periods, one Constituent at a Time  
+
+* ##[Tidal Variations.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Tidal Variations.ipynb)  
+    
+    This notebook looks at the effect of changing different parameters on the tides.  
+      
+    Runs:   
+    1. tide_flux_M2K1 - M2/K1 only over 5 days. No modifications to western tides. Northern tides flux decreased.  
+    2. tide_flux_west - M2/K1 only with flux increased by 25% at west.   
+    3. tide_bottom - bottom friction reduced to 3e-3 (from 5e-3). Note: I suspect we can reduce further, perhaps to 2e-3?  
+    4. tide_nu15 - viscosity lowered to 15  
+    5. tide_bottom1e-3 - bottom friction reduced to 1e-3  
+    5. tide_K1phase2 - K1 phase decreased by 5 degrees.  
+    7. tide_K1amp - K1 amp decreased 15 %, phase decreased 5 degrees, bottom friction 1e-3  
+    8. tide_M2phase - tide_K1amp properties plus M2 phase decreased y 9 degrees for match at PA.  
+      
+    Measured amplitude/phase from Foreman's Discovery Islands and 2004 paper are included.  
+      
+    Complex differences are from the Foreman inversion method in 2004 paper.   
+      
+    Uses the same curve fitting technique that Susan wrote.   
+
+* ##[comp_wlev_harm.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm.ipynb)  
+    
+* ##[Multi-tides w Fit.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Multi-tides w Fit.ipynb)  
+    
+    Study Tides: Multi-constituents : Fit to Tide Frequencies  
+
+* ##[plot_foreman_thalweg-withNorth.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/plot_foreman_thalweg-withNorth.ipynb)  
+    
+    For results including the Northern Boundary,  
+    plot the Foreman et al (1995) model results against our model results, along a thalweg (the thalweg is defined and plotted by Nancy in computer_thalweg.ipynb)  
 
 * ##[plot_current_ellipses.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/plot_current_ellipses.ipynb)  
     
