@@ -6,19 +6,19 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
-* ##[ReadACDP.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysi/raw/tip/Stability_analysis/ReadACDP.ipynb)  
+* ##[ReadACDP.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Stability_analysis/ReadACDP.ipynb)  
     
     Ipython notebook to open ADCP .mat files from VENUS and plot them  
 
-* ##[VelocityVENUS.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysi/raw/tip/Stability_analysis/VelocityVENUS.ipynb)  
+* ##[VelocityVENUS.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Stability_analysis/VelocityVENUS.ipynb)  
     
     Velocity at Venus Stations: Oct 18, 2002  
 
-* ##[VenusLocations.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysi/raw/tip/Stability_analysis/VenusLocations.ipynb)  
+* ##[VenusLocations.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Stability_analysis/VenusLocations.ipynb)  
     
     Notebook to plot positions of the two VENUS ADCP Stations  
 
-* ##[VerticalVelocity.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysi/raw/tip/Stability_analysis/VerticalVelocity.ipynb)  
+* ##[VerticalVelocity.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Stability_analysis/VerticalVelocity.ipynb)  
     
     Notebook to plot vertical velocity and calculate maximum vertical velocity  
 
