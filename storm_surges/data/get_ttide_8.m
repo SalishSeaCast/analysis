@@ -1,4 +1,4 @@
-function [pred_all,pred_8,wlev,tim] = get_ttide_8(csvfilename,location)
+function [pred_all,pred_8,tim] = get_ttide_8(csvfilename,location, starts, ends)
 %returns the tidal predictions if only 8 constituents were used.
 %the 8 constituents are: M2,K1,O1,P1,Q1,N2,S2,K2
 %csvfilename contains DFO produced water level observations.
@@ -8,58 +8,11 @@ function [pred_all,pred_8,wlev,tim] = get_ttide_8(csvfilename,location)
 
 % NKS May 2014
 
-%Read in the measured water level data the location
-fid = fopen(csvfilename);
-meas = textscan(fid,'%f/%f/%f %f:%f,%f,','HeaderLines',8);
-lat = csvread(csvfilename,2,1,[2,1,2,1]);
-fclose(fid);
+[tidestruc,lat,msl]=calculate_harmonics(csvfilename,location);
 
-%Calculate dates from columns of data
-time = datenum(meas{1},meas{2},meas{3},meas{4},meas{5},0);
-wlev = meas{6};
-
-%Start date of measured water level record
-start_date = time(1);
-end_date = time(end);
-
-%measured data may not have entry for every date in the range
+start_date=datenum(starts);
+end_date=datenum(ends);
 tim = start_date:1/24:end_date;
-newmeas = zeros(length(tim),2);
-
-%counter in measured time
-counter = 1;
-%tt is counter in created time
-for tt = 1:length(tim)
-    if time(counter) == tim(tt)
-        newmeas(tt,1:2) = [time(counter), wlev(counter)];
-        counter = counter + 1;
-    else
-        newmeas(tt,1:2) = [tim(tt), NaN];
-    end
-end
-
-wlev = newmeas(:,2);
-
-clear time newmeas meas
-
-%Use t_tide to determine harmonic constituents. Needs to be at least one
-%year time series (366 days)
-[tidestruc,~] = t_tide(wlev,'start time',start_date(1,1),'latitude',lat);
-
-%Save the harmonics
-harmonics_file = [location  '_harmonics_' datestr(start_date) '_' datestr(end_date) '.csv'];
-fid = fopen(harmonics_file, 'w');
-%add some headers
-fprintf(fid, 'Constituent \t freq \t amp (m) \t amp error \t phase (deg PST) \t phase error \n');
-for row=1:length(tidestruc.freq)
-    fprintf(fid, '%s \t', tidestruc.name(row,:));
-    fprintf(fid,' %f\t', tidestruc.freq(row));
-    fprintf(fid,' %f\t', tidestruc.tidecon(row,1));
-    fprintf(fid,' %f\t', tidestruc.tidecon(row,2));
-    fprintf(fid,' %f\t', tidestruc.tidecon(row,3));
-    fprintf(fid,' %f\n', tidestruc.tidecon(row,4));
-end
-fclose(fid);
     
 %Get predicted tide for same period
 pred_all = t_predic(tim,tidestruc,'latitude',lat);
@@ -92,11 +45,12 @@ pred_8 = t_predic(tim,tidestruc_8,'latitude',lat);
 
 %Plot it
 figure
-plot(tim,pred_8,'b',tim,pred_all,'m')
-legend('predictions 8 const.', 'predictions all','Location','EastOutside')
+plot(tim,pred_8,'b',tim,pred_all,'m',tim,pred_all-pred_8,'r')
+legend('predictions 8 const.', 'predictions all','difference','Location','EastOutside')
 xlabel('time')
 ylabel('water level elevation (m CD)')
 datetick('x','mm/yyyy')
+
 
 %second save predictions
 M = datestr(tim);
