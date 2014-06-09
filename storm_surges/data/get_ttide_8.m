@@ -45,9 +45,24 @@ clear time newmeas meas
 %Use t_tide to determine harmonic constituents. Needs to be at least one
 %year time series (366 days)
 [tidestruc,~] = t_tide(wlev,'start time',start_date(1,1),'latitude',lat);
+
+%Save the harmonics
+harmonics_file = [location  '_harmonics_' datestr(start_date) '_' datestr(end_date) '.csv'];
+fid = fopen(harmonics_file, 'w');
+%add some headers
+fprintf(fid, 'Constituent \t freq \t amp (m) \t amp error \t phase (deg PST) \t phase error \n');
+for row=1:length(tidestruc.freq)
+    fprintf(fid, '%s \t', tidestruc.name(row,:));
+    fprintf(fid,' %f\t', tidestruc.freq(row));
+    fprintf(fid,' %f\t', tidestruc.tidecon(row,1));
+    fprintf(fid,' %f\t', tidestruc.tidecon(row,2));
+    fprintf(fid,' %f\t', tidestruc.tidecon(row,3));
+    fprintf(fid,' %f\n', tidestruc.tidecon(row,4));
+end
+fclose(fid);
     
 %Get predicted tide for same period
-pred = t_predic(tim,tidestruc,'latitude',lat);
+pred_all = t_predic(tim,tidestruc,'latitude',lat);
 
 
 %Create a new struct object with onle 8 consts.
@@ -77,7 +92,7 @@ pred_8 = t_predic(tim,tidestruc_8,'latitude',lat);
 
 %Plot it
 figure
-plot(tim,pred_8,'b',tim,pred,'m')
+plot(tim,pred_8,'b',tim,pred_all,'m')
 legend('predictions 8 const.', 'predictions all','Location','EastOutside')
 xlabel('time')
 ylabel('water level elevation (m CD)')
@@ -93,6 +108,6 @@ fprintf(fid, 'Time_Local \t pred_8 \t pred_all \n');
 for row=1:n
     fprintf(fid, '%s \t', M(row,:));
     fprintf(fid,' %f\t', pred_8(row));
-    fprintf(fid,' %f\n', pred(row));
+    fprintf(fid,' %f\n', pred_all(row));
 end
 fclose(fid);
