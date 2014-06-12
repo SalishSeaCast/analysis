@@ -8,6 +8,10 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[comp_wlev_harm.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm.ipynb)  
     
+    **Model vs. Observed Harmonics**  
+      
+    Compare M2 and K1 tidal harmonics from NEMO model to observed harmonics. Model has Western boundary forcing and closed Northern boundary. These are early results; see the [Model vs. Observed Harmonics with Open Northern Boundary](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm-wNorth.ipynb) notebook for analysis of more recent model results.  
+
 * ##[Tidal Variations.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Tidal Variations.ipynb)  
     
     This notebook looks at the effect of changing different parameters on the tides.  
@@ -20,7 +24,7 @@ Descriptions below the links are from the first cell of the notebooks
     5. tide_bottom1e-3 - bottom friction reduced to 1e-3  
     5. tide_K1phase2 - K1 phase decreased by 5 degrees.  
     7. tide_K1amp - K1 amp decreased 15 %, phase decreased 5 degrees, bottom friction 1e-3  
-    8. tide_M2phase - tide_K1amp properties plus M2 phase decreased y 9 degrees for match at PA.  
+    8. tide_M2phase - tide_K1amp properties plus M2 phase decreased by 9 degrees for match at PA. Also bf=1e-3  
       
     Measured amplitude/phase from Foreman's Discovery Islands and 2004 paper are included.  
       
@@ -36,6 +40,10 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[comp_wlev_harm-wNorth.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm-wNorth.ipynb)  
     
+    **Model vs. Observed Harmonics with Open Northern Boundary**  
+      
+    Compare M2 and K1 tidal harmonics from NEMO model to observed harmonics with Northern boundary forcing included in the model.  
+
 * ##[Multi-tides w Fit.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Multi-tides w Fit.ipynb)  
     
     Study Tides: Multi-constituents : Fit to Tide Frequencies  
