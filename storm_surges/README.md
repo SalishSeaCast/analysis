@@ -23,6 +23,12 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[nov2009.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/nov2009.ipynb)  
     
+* ##[Compare Neah Bay and Tofino.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Compare Neah Bay and Tofino.ipynb)  
+    
+    This notebook compares the Feb 2006 surge at Neah Bay and Tofino to determine if the timing of the surge event at these two location is in sync.  
+      
+    Also does a quick check of the contribution to SSH due to the inverse barometer effect.  
+
 * ##[Preparing for Delta.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Preparing for Delta.ipynb)  
     
     This notebook looks for a grid point close to Delta so that we can start including that community in our output.   
@@ -71,13 +77,6 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[Testing Port Hardy.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Testing Port Hardy.ipynb)  
     
     This notebook examines the sea surface height forcing from Port Hardy to ensure it is performing as expected. We would also like to determine the importance of including Port Hardy forcing at the northern boundary.  
-
-* ##[feb2006_tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/feb2006_tides.ipynb)  
-    
-    This notebook analyses a Feb 2006 storm surge with the corrected tides. K1 is phase/amp corrected, M2 is phase shifted, lowered bottom firction to 1e-3. Cases:  
-      
-    1. all_forcing - all tidal forcing and ssh forcing and meteorolgical forcing  
-    2. tidesonly - no meteorological forcing and no ssh forcing. Only tidal forcing.  
 
 * ##[spinups.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/spinups.ipynb)  
     
