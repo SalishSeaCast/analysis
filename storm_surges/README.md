@@ -37,10 +37,6 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook examines the storm surge simulations when tidal forcing at Johnstone Strait is included.  
 
-* ##[Currents Feb 2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Currents Feb 2006.ipynb)  
-    
-    This notebook will examine currents over one day during the Feb 2006 surge. I'm looking for suggestions for drop locations to Andy. I don't have any summer time runs at a high enough time resolution yet, but maybe this can give me an idea.  
-
 * ##[New Tides and December Storm.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/New Tides and December Storm.ipynb)  
     
     This notebook will examine the effect of the corrected Northern tides on the December 2006 storm surge.  
@@ -77,6 +73,17 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[Testing Port Hardy.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Testing Port Hardy.ipynb)  
     
     This notebook examines the sea surface height forcing from Port Hardy to ensure it is performing as expected. We would also like to determine the importance of including Port Hardy forcing at the northern boundary.  
+
+* ##[feb2006_tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/feb2006_tides.ipynb)  
+    
+    This notebook analyses a Feb 2006 storm surge with the corrected tides. K1 is phase/amp corrected, M2 is phase shifted, lowered bottom firction to 1e-3. M2 is set to match observations at Point Atkinson. Cases:  
+      
+    1. all_forcing - all tidal forcing and ssh forcing and meteorolgical forcing  
+    2. tidesonly - no meteorological forcing and no ssh forcing. Only tidal forcing.  
+    3. ssh_only - no meerological  
+    4. weather_only - no ssh forcing  
+    5. no_pressure - no ssh and no inverse barometer pressure  
+    6. runoff_test - tidesonly paramters with ln_rnf=false  
 
 * ##[spinups.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/spinups.ipynb)  
     
