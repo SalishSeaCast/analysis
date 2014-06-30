@@ -5,6 +5,8 @@ function [pred_all,pred_8,tim] = get_ttide_8(csvfilename,location, starts, ends)
 %pred_all is the t_tide prediction with all constituents
 %pred_8 is the t_tide prediction with only 8 constituents
 %saves a spreadsheet with tim, pred_all, pred_8
+%starts is that start date for predictions (eg. 01-Jan-2006)
+%ends is the end date for the predictions (eg. 31-Dec-2006)
 
 % NKS May 2014
 
@@ -58,6 +60,12 @@ n = length(tim);
 filename = [location  '_t_tide_compare8_' datestr(start_date) '_' datestr(end_date) '.csv'];
 fid = fopen(filename, 'w');
 %add some headers
+fprintf(fid, 'Harmonics from: \t');
+fprintf(fid, '%s\n',csvfilename);
+fprintf(fid, 'Mean \t');
+fprintf(fid, '%f\n',msl);
+fprintf(fid, 'Latitude \t');
+fprintf(fid, '%f\n',lat);
 fprintf(fid, 'Time_Local \t pred_8 \t pred_all \n');
 for row=1:n
     fprintf(fid, '%s \t', M(row,:));
