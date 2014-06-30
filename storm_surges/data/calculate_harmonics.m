@@ -4,12 +4,13 @@ function  [tidestruc, lat, mean_wl] = calculate_harmonics(csvfilename,location)
 %   Uses t_tide to write a file with tidal harmonics from a time series in
 %   csvfilename.
 %   location is a string of the location. 
-%   start is the start date of the time series
 %   note that for accurate harmonics the time series needs to be one year
 %   long. Also avoid using surge-heavy years as that could over estimate
 %   the harmonics.
 %   returns the tidestruc from the ttide analysis, and the lat and mean sea
 %   level from the data file.
+%   Saves the harmoics in a file. 
+%   This function is used by get_ttide_8.m
 
 %NKS June 2014
 
