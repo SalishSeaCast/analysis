@@ -6,7 +6,7 @@ function [pred,wlev,anomaly,tim, tideharm] = get_tides(csvfilename, location)
 % location is the location for t_xtide predictions. This should correspond
 % to the location of the measured water level.
 % The dates are set by the date in the csvfilename
-
+% NOTE: This is mostly outdated and get_ttide_8 should be used instead.
 
 % KLS November 2013
 % Feb 2014: This has been adapted to use the t_xtide package. NKS
