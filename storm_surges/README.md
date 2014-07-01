@@ -25,7 +25,7 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[Compare Neah Bay and Tofino.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Compare Neah Bay and Tofino.ipynb)  
     
-    This notebook compares the Feb 2006 surge at Neah Bay and Tofino to determine if the timing of the surge event at these two location is in sync.  
+    This notebook compares the surges at Neah Bay and Tofino to determine if the timing of the surge event at these two location is in sync.  
       
     Also does a quick check of the contribution to SSH due to the inverse barometer effect.  
 
@@ -84,6 +84,8 @@ Descriptions below the links are from the first cell of the notebooks
     4. weather_only - no ssh forcing  
     5. no_pressure - no ssh and no inverse barometer pressure  
     6. runoff_test - tidesonly paramters with ln_rnf=false  
+    7. ln_apr_obc=false  
+    8. surgeonly - no tides, just surge and winds.  
 
 * ##[spinups.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/spinups.ipynb)  
     
@@ -96,6 +98,10 @@ Descriptions below the links are from the first cell of the notebooks
     This notebook looks for large wind events in Sandheads historical wind data. We are looking for a wind storm that did not result in a surge. We would like to ensure that the model does not make a surge if one did not actually occur.   
       
     This codes uses a combination of Doug's class for reading Sandheads data and Kate's methodology for finding ssh anamolies.  
+
+* ##[Correcting model output.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Correcting model output.ipynb)  
+    
+    This notebook experiments with how to read the data for correcting the model output. It is mostly meant as a notebook to set up procedures and define some functions for later. Hopefully some procedures can go into the storm_tools package.  
 
 * ##[feb2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/feb2006.ipynb)  
     
