@@ -5,6 +5,10 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[mynotebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/mynotebook.ipynb)  
+    
+    This notebook will load data, perform a tidal analyis, compare with observations, plot the results, and save the analysis in a spreadsheet.  
+
 
 ##License
 
