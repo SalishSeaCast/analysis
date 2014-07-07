@@ -25,7 +25,7 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[Compare Neah Bay and Tofino.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Compare Neah Bay and Tofino.ipynb)  
     
-    This notebook compares the surges at Neah Bay and Tofino to determine if the timing of the surge event at these two location is in sync.  
+    This notebook compares the surges at Neah Bay and Tofino to determine if the timing of the surge event at these two location is in sync. Also look at Toke Point.  
       
     Also does a quick check of the contribution to SSH due to the inverse barometer effect.  
 
@@ -109,6 +109,11 @@ Descriptions below the links are from the first cell of the notebooks
       
     1. all_forcing - all tidal forcing and ssh forcing and meteorolgical forcing  
     2. tidesonly - no meteorological forcing and no ssh forcing. Only tidal forcing.  
+
+* ##[Surge Spatial Extent.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Surge Spatial Extent.ipynb)  
+    
+    This notebook will plot the spatial extent of the surge over time. Feb. 4 2006 surge is examined  
+
 
 * ##[weather_Nov-15-2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/weather_Nov-15-2006.ipynb)  
     
