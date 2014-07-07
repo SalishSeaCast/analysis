@@ -6,11 +6,72 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
-* ##[comp_wlev_harm.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm.ipynb)  
+* ##[Many Tidal Constituents.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Many Tidal Constituents.ipynb)  
     
-    **Model vs. Observed Harmonics**  
+    Notebook that plots tides for different numbers of constituents at Cherry Point to show the importance of constituents beyond the top 8  
+
+* ##[comp_wlev_harm-wNorth.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm-wNorth.ipynb)  
+    
+    **Model vs. Observed Harmonics with Open Northern Boundary**  
       
-    Compare M2 and K1 tidal harmonics from NEMO model to observed harmonics. Model has Western boundary forcing and closed Northern boundary. These are early results; see the [Model vs. Observed Harmonics with Open Northern Boundary](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm-wNorth.ipynb) notebook for analysis of more recent model results.  
+    Compare M2 and K1 tidal harmonics from NEMO model to observed harmonics with Northern boundary forcing included in the model.  
+
+* ##[K1&M2 -- M2 variation due to EVD.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/K1&M2 -- M2 variation due to EVD.ipynb)  
+    
+    Study M2 Tidal Variation using 5 Day Station SSH  
+
+* ##[Partial Slip.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Partial Slip.ipynb)  
+    
+    A look at the effect of reducing the amount of slip on the tides.   
+      
+    - 5 day runs with all tidal constituents and flux corrected tides. (double corrected for M2).    
+      
+      
+    1. control - rn_shlat = 0.5  
+    2. partial1 - rn_shlat = 0.1  
+      
+    Note: free slip when rn_shlat = 0 and no slip when rn_shlat = 2.   
+      
+    Purpose: determine if modifying the amount of slip can affect the tidal amplitudes and phases.  
+      
+
+
+* ##[comp_wlev_harm_compositerun.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm_compositerun.ipynb)  
+    
+* ##[comp_current_harm.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_current_harm.ipynb)  
+    
+    Compare harmonics from currents between measured and modelled. Measured harmonics are taken from Table 3 of Foreman et al (1995)  
+
+
+* ##[find_wlev_stations.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/find_wlev_stations.ipynb)  
+    
+    Where shall we evaluate the storm surge performance of the model? The station needs to have water level data for the period of 2002-2010 (this is when we have wind data).  
+      
+    * Point Atkinson (49.34,-123.25)  
+      
+    * Victoria Harbour (48.42,-123.37)  
+      
+    * Patricia Bay (48.65,-123.45)  
+      
+    * Campbell River (50.04,-125.25)  
+      
+    All other sites are not in our domain or do not have water level data for these points  
+
+* ##[comp_wlev_ts.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_ts.ipynb)  
+    
+* ##[find_storms.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/find_storms.ipynb)  
+    
+* ##[Check forcing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Check forcing.ipynb)  
+    
+    A notebook to check that the phase and amplitude in the forcing files is what I expect.  
+
+* ##[plot_foreman_thalweg.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/plot_foreman_thalweg.ipynb)  
+    
+    Plot the Foreman et al (1995) model results against our model results, along a thalweg (the thalweg is defined and plotted by Nancy in computer_thalweg.ipynb)  
+
+* ##[Single Tide 2 days.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Single Tide 2 days.ipynb)  
+    
+    Study Tides, over short periods, one Constituent at a Time  
 
 * ##[Tidal Variations.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Tidal Variations.ipynb)  
     
@@ -35,89 +96,32 @@ Descriptions below the links are from the first cell of the notebooks
       
     Uses the same curve fitting technique that Susan wrote.   
 
-* ##[K1&M2 -- M2 variation due to EVD.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/K1&M2 -- M2 variation due to EVD.ipynb)  
+* ##[comp_wlev_harm.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm.ipynb)  
     
-    Study M2 Tidal Variation using 5 Day Station SSH  
-
-* ##[comp_wlev_harm_compositerun.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm_compositerun.ipynb)  
-    
-* ##[Many Tidal Constituents.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Many Tidal Constituents.ipynb)  
-    
-    Notebook that plots tides for different numbers of constituents at Cherry Point to show the importance of constituents beyond the top 8  
-
-* ##[comp_wlev_harm-wNorth.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm-wNorth.ipynb)  
-    
-    **Model vs. Observed Harmonics with Open Northern Boundary**  
+    **Model vs. Observed Harmonics**  
       
-    Compare M2 and K1 tidal harmonics from NEMO model to observed harmonics with Northern boundary forcing included in the model.  
+    Compare M2 and K1 tidal harmonics from NEMO model to observed harmonics. Model has Western boundary forcing and closed Northern boundary. These are early results; see the [Model vs. Observed Harmonics with Open Northern Boundary](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm-wNorth.ipynb) notebook for analysis of more recent model results.  
 
 * ##[Multi-tides w Fit.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Multi-tides w Fit.ipynb)  
     
     Study Tides: Multi-constituents : Fit to Tide Frequencies  
+
+* ##[Compare Tidal Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Compare Tidal Components.ipynb)  
+    
+    Lets look at Mike's Data  
 
 * ##[plot_foreman_thalweg-withNorth.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/plot_foreman_thalweg-withNorth.ipynb)  
     
     For results including the Northern Boundary,  
     plot the Foreman et al (1995) model results against our model results, along a thalweg (the thalweg is defined and plotted by Nancy in computer_thalweg.ipynb)  
 
-* ##[comp_wlev_ts.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_ts.ipynb)  
-    
-* ##[comp_current_harm.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_current_harm.ipynb)  
-    
-    Compare harmonics from currents between measured and modelled. Measured harmonics are taken from Table 3 of Foreman et al (1995)  
-
-
-* ##[Partial Slip.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Partial Slip.ipynb)  
-    
-    A look at the effect of reducing the amount of slip on the tides.   
-      
-    - 5 day runs with all tidal constituents and flux corrected tides. (double corrected for M2).    
-      
-      
-    1. control - rn_shlat = 0.5  
-    2. partial1 - rn_shlat = 0.1  
-      
-    Note: free slip when rn_shlat = 0 and no slip when rn_shlat = 2.   
-      
-    Purpose: determine if modifying the amount of slip can affect the tidal amplitudes and phases.  
-      
-
-
-* ##[find_wlev_stations.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/find_wlev_stations.ipynb)  
-    
-    Where shall we evaluate the storm surge performance of the model? The station needs to have water level data for the period of 2002-2010 (this is when we have wind data).  
-      
-    * Point Atkinson (49.34,-123.25)  
-      
-    * Victoria Harbour (48.42,-123.37)  
-      
-    * Patricia Bay (48.65,-123.45)  
-      
-    * Campbell River (50.04,-125.25)  
-      
-    All other sites are not in our domain or do not have water level data for these points  
-
-* ##[find_storms.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/find_storms.ipynb)  
-    
-* ##[Single Tide 2 days.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Single Tide 2 days.ipynb)  
-    
-    Study Tides, over short periods, one Constituent at a Time  
-
-* ##[tides-scatter.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/tides-scatter.ipynb)  
-    
-    This notebook generates tidal comparisons for CMOS.   
-
-* ##[plot_foreman_thalweg.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/plot_foreman_thalweg.ipynb)  
-    
-    Plot the Foreman et al (1995) model results against our model results, along a thalweg (the thalweg is defined and plotted by Nancy in computer_thalweg.ipynb)  
-
 * ##[Ellipses.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Ellipses.ipynb)  
     
     Find Tidal Ellipses in CODAR region  
 
-* ##[Check forcing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Check forcing.ipynb)  
+* ##[tides-scatter.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/tides-scatter.ipynb)  
     
-    A notebook to check that the phase and amplitude in the forcing files is what I expect.  
+    This notebook generates tidal comparisons for CMOS.   
 
 * ##[plot_current_ellipses.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/plot_current_ellipses.ipynb)  
     
