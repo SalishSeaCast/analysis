@@ -7,8 +7,10 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[mynotebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/mynotebook.ipynb)  
     
-    This notebook will load data, perform a tidal analyis, compare with observations, plot the results, and save the analysis in a spreadsheet.  
 
+
+* ##[Storm-Surge Notebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Storm-Surge Notebook.ipynb)  
+    
 
 ##License
 
