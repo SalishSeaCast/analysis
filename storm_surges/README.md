@@ -86,6 +86,7 @@ Descriptions below the links are from the first cell of the notebooks
     6. runoff_test - tidesonly paramters with ln_rnf=false  
     7. ln_apr_obc=false  
     8. surgeonly - no tides, just surge and winds.  
+    9. noPwSurge - no pressure forcing, but still has winds, surge and tides  
 
 * ##[spinups.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/spinups.ipynb)  
     
@@ -112,7 +113,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[Surge Spatial Extent.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Surge Spatial Extent.ipynb)  
     
-    This notebook will plot the spatial extent of the surge over time. Feb. 4 2006 surge is examined  
+    This notebook will plot the spatial extent of the surge on Feb. 4 2006  
 
 
 * ##[weather_Nov-15-2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/weather_Nov-15-2006.ipynb)  
