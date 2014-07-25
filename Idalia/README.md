@@ -25,6 +25,10 @@ Descriptions below the links are from the first cell of the notebooks
     
 
 
+* ##[Analysis8Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis8Components.ipynb)  
+    
+
+
 * ##[Storm-Surge Notebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Storm-Surge Notebook.ipynb)  
     
 * ##[Analysis4Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis4Components.ipynb)  
