@@ -15,19 +15,23 @@ Descriptions below the links are from the first cell of the notebooks
     A code to look at the data from the crashed run. What is going wrong!  
     Looks at currents, bathymetry, and sea surface height around the crashed time step.   
 
-* ##[mergeCompare.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/mergeCompare.ipynb)  
-    
-    Comparing merge-tests on Salish and Japser. A week long run to see how the differences evolve.   
-
-* ##[northAnalysis.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/northAnalysis.ipynb)  
-    
-    An analysis of the open boundary conditions at the north.   
-
 * ##[nu200_nu50.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nu200_nu50.ipynb)  
     
     This notebook runs a comparison between the $\nu=200$ and $\nu=50$ simulations by Doug.   
       
     The focus is on currents and tracers.   
+
+* ##[interpolation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/interpolation.ipynb)  
+    
+    Just a quick notebook to play around with interpolating CGRF data into our grid.  
+
+* ##[northAnalysis.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/northAnalysis.ipynb)  
+    
+    An analysis of the open boundary conditions at the north.   
+
+* ##[mergeCompare.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/mergeCompare.ipynb)  
+    
+    Comparing merge-tests on Salish and Japser. A week long run to see how the differences evolve.   
 
 
 ##License
