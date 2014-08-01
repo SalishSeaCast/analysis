@@ -21,6 +21,10 @@ Descriptions below the links are from the first cell of the notebooks
       
     These simulations were run with nu=50 and  initial T+S from Oct 25 restart  
 
+* ##[Pressure to sea level.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Pressure to sea level.ipynb)  
+    
+    This notebook experiments with bring the surface pressure from CGRF down to sea level.   
+
 * ##[nov2009.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/nov2009.ipynb)  
     
 * ##[Compare Neah Bay and Tofino.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Compare Neah Bay and Tofino.ipynb)  
@@ -65,6 +69,14 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[Effect of Stratification.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Effect of Stratification.ipynb)  
     
     This notebook examines the effect of stratificaiton on storm surge elevations using the Dec.15, 2006 storm as a case study.  
+
+* ##[RC6 and old tides - Feb 2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/RC6 and old tides - Feb 2006.ipynb)  
+    
+    A look at how the new tides change the storm surges.   
+      
+    Old tides: bottom friction 1e-3, corrections at boundary so the K1/M2 phase and amplitude match observations in SoG.   
+      
+    New tides (RC6): bottom friction 5e-3, fine tuning of all constituents to have a good match in SoG  
 
 * ##[dec2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/dec2006.ipynb)  
     
