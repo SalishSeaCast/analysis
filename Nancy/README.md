@@ -33,6 +33,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     Comparing merge-tests on Salish and Japser. A week long run to see how the differences evolve.   
 
+* ##[Ariane.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Ariane.ipynb)  
+    
+    First attempt at an Ariane run.   
+
 
 ##License
 
