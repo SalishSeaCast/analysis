@@ -6,7 +6,7 @@ Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
 * ##[Analysis3Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis3Components.ipynb)  
-    
+ 
 
 
 * ##[dat_csv.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/dat_csv.ipynb)  
@@ -30,6 +30,8 @@ Descriptions below the links are from the first cell of the notebooks
 
 
 * ##[SSH_Animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SSH_Animation.ipynb)  
+
+* ##[ParticleTracking.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/ParticleTracking.ipynb)
     
 
 ##License
