@@ -6,6 +6,10 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[BBL parametrization.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/BBL parametrization.ipynb)  
+    
+    This notebook will analyze the salinity field along the thalweg when using the bottom bounday layer scheme for gravity driven flows down a slope with the z-coordinate.   
+
 * ##[compareViscosity.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/compareViscosity.ipynb)  
     
     A script to compare runs with different viscosities.  
