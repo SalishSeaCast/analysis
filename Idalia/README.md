@@ -31,7 +31,13 @@ Animation for salinity. Data from Dec14-Dec15, 2006.
 * ##[ParticleTracking.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/ParticleTracking.ipynb)
 
 * ##[SalVelDec_Animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalVelDec_Animation.ipynb)
+
     
+
+##Animations
+* ##[StormSurge_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/StormSurge_Animation.mp4) 
+* ##[SalinityDec_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalinityDec_Animation.mp4)
+
 
 ##License
 
