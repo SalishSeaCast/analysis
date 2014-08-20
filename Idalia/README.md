@@ -5,31 +5,28 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[mynotebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/mynotebook.ipynb)
+Bathymetry map with stations, Comparison between modelled and observed M2/K1 Amplitudes and M2/K1 Phase, Comparison between M2 and K1 complex differences, Map showing red/yellow/green stations depending on model accuracy 
+
 * ##[Analysis3Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis3Components.ipynb)  
- 
 
-
-* ##[dat_csv.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/dat_csv.ipynb)  
-    
+* ##[Analysis4Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis4Components.ipynb)
+     
 * ##[Analysis6Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis6Components.ipynb)  
-    
-
-
+   
 * ##[Analysis8Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis8Components.ipynb)  
     
-
+* ##[dat_csv.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/dat_csv.ipynb) 
+Conversion of .dat file to .csv file
 
 * ##[Storm-Surge Notebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Storm-Surge Notebook.ipynb)  
-    
-* ##[Analysis4Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis4Components.ipynb)  
-    
+Individual and multiple plots of sea surface height. Data from Dec14-Dec15, 2006.
+        
+* ##[SSH_Animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SSH_Animation.ipynb) 
+Animation for sea surface height with consideration for background state. Data from Dec14-Dec15, 2006.
 
-
-* ##[mynotebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/mynotebook.ipynb)  
-    
-
-
-* ##[SSH_Animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SSH_Animation.ipynb)  
+* ##[SalinityDec_Animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalinityDec_Animation.ipynb)
+Animation for salinity. Data from Dec14-Dec15, 2006.
 
 * ##[ParticleTracking.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/ParticleTracking.ipynb)
 
