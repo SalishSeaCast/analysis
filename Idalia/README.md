@@ -5,6 +5,9 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+
+##Tides
+
 * ##[mynotebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/mynotebook.ipynb)
 Bathymetry map with stations, Comparison between modelled and observed M2/K1 Amplitudes and M2/K1 Phase, Comparison between M2 and K1 complex differences, Map showing red/yellow/green stations depending on model accuracy 
 
@@ -19,18 +22,28 @@ Bathymetry map with stations, Comparison between modelled and observed M2/K1 Amp
 * ##[dat_csv.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/dat_csv.ipynb) 
 Conversion of .dat file to .csv file
 
+##Storm Surge
+
 * ##[Storm-Surge Notebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Storm-Surge Notebook.ipynb)  
 Individual and multiple plots of sea surface height. Data from Dec14-Dec15, 2006.
         
 * ##[SSH_Animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SSH_Animation.ipynb) 
 Animation for sea surface height with consideration for background state. Data from Dec14-Dec15, 2006.
 
+##Plume/Salinity
+
 * ##[SalinityDec_Animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalinityDec_Animation.ipynb)
 Animation for salinity. Data from Dec14-Dec15, 2006.
 
-* ##[ParticleTracking.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/ParticleTracking.ipynb)
+* ##[SalinityJun_Animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalinityJun_Animation.ipynb)
+Animation for salinity. Data from May31-Jun2, 2003.
 
 * ##[SalVelDec_Animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalVelDec_Animation.ipynb)
+Animation for salinity and velocity streamlines. Data from Dec14-Dec15, 2006.
+
+##Plume/Particle Tracking
+
+* ##[ParticleTracking.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/ParticleTracking.ipynb)
 
     
 
@@ -40,8 +53,8 @@ Animation for salinity. Data from Dec14-Dec15, 2006.
 * ##[SalinityJun_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalinityJun_Animation.mp4)
 * ##[SalVelDec_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalVelDec_Animation.mp4)
 
-##License
 
+##License
 These notebooks and files are copyright 2013-2014
 by the Salish Sea MEOPAR Project Contributors
 and The University of British Columbia.
