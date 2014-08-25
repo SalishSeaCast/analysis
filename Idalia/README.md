@@ -55,8 +55,9 @@ Animation for salinity and velocity streamlines. Data from May31-Jun2, 2003.
 * ##[SalinityDec_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalinityDec_Animation.mp4)
 * ##[SalinityJun_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalinityJun_Animation.mp4)
 * ##[SalVelDec_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalVelDec_Animation.mp4)
+* ##[SalVelDecQ_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalVelDecQ_Animation.mp4)
 * ##[SalVelJun_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalVelJun_Animation.mp4)
-
+* ##[SalVelJunQ_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalVelJunQ_Animation.mp4)
 
 ##License
 These notebooks and files are copyright 2013-2014
