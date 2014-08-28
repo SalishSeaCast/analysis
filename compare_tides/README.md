@@ -10,6 +10,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     Notebook that plots tides for different numbers of constituents at Cherry Point to show the importance of constituents beyond the top 8  
 
+* ##[Analysis8Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Analysis8Components.ipynb)  
+    
+    This notebook will load data, perform a tidal analyis, compare with observations, plot the results, and save the analysis in a spreadsheet.  Eight Tidal Constituents: M2, K1, O1, S2, P1, N2, Q1 and K2 are considered.  
+
 * ##[comp_wlev_harm-wNorth.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm-wNorth.ipynb)  
     
     **Model vs. Observed Harmonics with Open Northern Boundary**  
@@ -117,7 +121,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[Ellipses.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Ellipses.ipynb)  
     
-    Find Tidal Ellipses in CODAR region  
+    Find Tidal Ellipses in CODAR region and VENUS ADCP vertical profiles  
 
 * ##[tides-scatter.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/tides-scatter.ipynb)  
     
