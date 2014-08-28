@@ -48,12 +48,15 @@ Animation for salinity and velocity streamlines. Data from May31-Jun2, 2003.
 
 * ##[ParticleTracking.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/ParticleTracking.ipynb)
 
+##Understanding Ariane
     
+* ##[Ariane_Times.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Ariane_Times.ipynb)
+
 
 ##Animations
 * ##[StormSurge_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/StormSurge_Animation.mp4) 
 * ##[SalinityDec_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalinityDec_Animation.mp4)
- ##[SalinityDec2_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalinityDec2_Animation.mp4)
+* ##[SalinityDec2_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalinityDec2_Animation.mp4)
 * ##[SalinityJun_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalinityJun_Animation.mp4)
 * ##[SalinityJun2_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalinityJun2_Animation.mp4)
 * ##[SalinityJunC_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalinityJunC_Animation.mp4)
