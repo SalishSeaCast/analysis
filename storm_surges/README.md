@@ -21,6 +21,16 @@ Descriptions below the links are from the first cell of the notebooks
       
     These simulations were run with nu=50 and  initial T+S from Oct 25 restart  
 
+* ##[new_confg.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/new_confg.ipynb)  
+    
+    This notebook will compare sea surface height between new and old configurations.  
+      
+    new config: sea level pressure adjusted to sea level + corr13 tides. So bottom friction is 5 e-3  
+      
+    old config: no pressure correction and old tides. Bottom friction is 1 e-3, M2/K1 adjusted for good match in SoG.   
+      
+
+
 * ##[Pressure to sea level.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Pressure to sea level.ipynb)  
     
     This notebook experiments with bring the surface pressure from CGRF down to sea level.   
