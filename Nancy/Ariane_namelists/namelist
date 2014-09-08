@@ -26,7 +26,7 @@
 &QUALITATIVE
     delta_t =3600.,
     frequency =1,
-    nb_output =47,
+    nb_output =48,
     key_region =.FALSE.,
 /
 
