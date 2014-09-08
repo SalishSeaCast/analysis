@@ -55,7 +55,7 @@
 /
 
 &MESH
-    dir_mesh ='/data/nsoontie/MEOPAR/SalishSea/results/storm-surges/tide_fix/dec2006/all_forcing/1hour/',
+    dir_mesh ='/ocean/nsoontie/MEOPAR/Ariane/',
     fn_mesh ='mesh_mask.nc',
     nc_var_xx_tt ='glamt',
     nc_var_xx_uu ='glamu',
