@@ -43,7 +43,7 @@ tidestruc_8.name=names_8;
 tidestruc_8.tidecon=tidecon_8;
 tidestruc_8.freq=freqs_8;
 
-pred_8 = t_predic(tim,tidestruc_8,'latitude',lat);
+pred_8 = t_predic(tim,tidestruc_8,'latitude',lat, 'synthesis', 10);
 
 %Plot it
 figure
