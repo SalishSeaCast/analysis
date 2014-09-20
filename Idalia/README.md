@@ -44,9 +44,11 @@ Animation for salinity and velocity streamlines. Data from Dec14-Dec15, 2006.
 * ##[SalVelJun_Animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalVelJun_Animation.ipynb)
 Animation for salinity and velocity streamlines. Data from May31-Jun2, 2003.
 
-##Plume/Particle Tracking
+##Particle Tracking/Plume/Islands
 
 * ##[ParticleTracking.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/ParticleTracking.ipynb)
+
+* ##[Particles_ThalwegIslands.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Particles_ThalwegIslands.ipynb)
 
 ##Understanding Ariane
     
@@ -64,6 +66,8 @@ Animation for salinity and velocity streamlines. Data from May31-Jun2, 2003.
 * ##[SalVelDecQ_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalVelDecQ_Animation.mp4)
 * ##[SalVelJun_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalVelJun_Animation.mp4)
 * ##[SalVelJunQ_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalVelJunQ_Animation.mp4)
+* ##[RiverParticleDepths_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/RiverParticleDepths_Animation.mp4)
+* ##[SaltWedge.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SaltWedge.mp4)
 
 ##License
 These notebooks and files are copyright 2013-2014
