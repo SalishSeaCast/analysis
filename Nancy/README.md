@@ -14,6 +14,12 @@ Descriptions below the links are from the first cell of the notebooks
     
     A script to compare runs with different viscosities.  
 
+* ##[GEM Time Series.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/GEM Time Series.ipynb)  
+    
+    This notebook will examine the GEM model wind direction and speed by compareing a time series with observations. I will examine   
+    1. Sandheads - http://climate.weather.gc.ca/climateData/hourlydata_e.html?timeframe=1&Prov=BC%20%20&StationID=6831&hlyRange=1994-02-01|2014-09-23&Year=2014&Month=9&Day=21  
+    2. NOAA Buoy - http://www.ndbc.noaa.gov/station_page.php?station=46041  
+
 * ##[crashAnalysis.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/crashAnalysis.ipynb)  
     
     A code to look at the data from the crashed run. What is going wrong!  
@@ -21,7 +27,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[bathyImage.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/bathyImage.ipynb)  
     
-    This notebook creates an image of the bathymetry to be used in the storm surges paper. Things included:  
+    This notebook creates an image of the bathymetry and coastlines. Includes:  
       
     1. Bathymetry  
     2. Location of Rivers  
