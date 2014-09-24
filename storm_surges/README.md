@@ -6,21 +6,6 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
-* ##[analysisSS.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/analysisSS.ipynb)  
-    
-    This notebook analyzes results from storm surge runs. Three cases are presented:  
-      
-    1. Base case with hourly SSH forcing and CGRF weather. (all_forcing)  
-      
-    2. Hourly SSH forcing without CGRF weather. (ssh_only)  
-      
-    3. Weather only. No SSH forcing. Winds + pressure (weather_only)  
-      
-    4. Weather only but no pressure. No SSH forcing. Just winds. (nopressure) (crashed)  
-      
-      
-    These simulations were run with nu=50 and  initial T+S from Oct 25 restart  
-
 * ##[new_confg.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/new_confg.ipynb)  
     
     This notebook will compare sea surface height between new and old configurations.  
@@ -43,17 +28,16 @@ Descriptions below the links are from the first cell of the notebooks
       
     Also does a quick check of the contribution to SSH due to the inverse barometer effect.  
 
-* ##[Preparing for Delta.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Preparing for Delta.ipynb)  
+* ##[2005 harmonics at Tofino.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/2005 harmonics at Tofino.ipynb)  
     
-    This notebook looks for a grid point close to Delta so that we can start including that community in our output.   
-
-* ##[northForcing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/northForcing.ipynb)  
-    
-    This notebook examines the storm surge simulations when tidal forcing at Johnstone Strait is included.  
-
-* ##[New Tides and December Storm.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/New Tides and December Storm.ipynb)  
-    
-    This notebook will examine the effect of the corrected Northern tides on the December 2006 storm surge.  
+    This notebook compares anomalies at Tofino. Two choices are presented  
+      
+    1. Tidal predictions calculated with 2005 harmonics  
+    2. Tidal predictions calulated with 2006 harmonics  
+      
+    In our analysis of storm surges, we are calculating observed anomlaies calculated with 2005 harmonics. So shouldn't we do the same when setting up forcing conditions in our model? Will it make a difference?  
+      
+    We'll compare with anomalies at Neah Bay as well since that is close by to Tofino.  
 
 * ##[SandHeadsWinds.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/SandHeadsWinds.ipynb)  
     
@@ -65,20 +49,15 @@ Descriptions below the links are from the first cell of the notebooks
       
     The code is based on code in the `bloomcast.wind` module in the [SoG-bloomcast project](https://bitbucket.org/douglatornell/sog-bloomcast).  
 
-* ##[bottom_friction.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/bottom_friction.ipynb)  
+* ##[final.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/final.ipynb)  
     
-    This notebook will examine the storm surges under different bottom friction parametrizations.   
+    This notebook will compare sea surface height between new and old configurations.  
       
-    Cases:  
+    new config: sea level pressure adjusted to sea level + corr15 tides. So bottom friction is 5 e-3  
       
-    1. control - bfrib2 = 5e-3, bfeb2 = 2.5e-3, rhn_shlat=0.5  
-    2. noeb - bfrib2 = 5e-3, bfeb2 = 0  
-    3. bfrib3e3 - bfrib2 = 3e-3, bfeb2=0  
-    4. partial - bfrib2 = 5e-3, bfeb2 = 2.5e-3, rn_shlat = 0.1  
+    old config: no pressure correction and old tides. Bottom friction is 1 e-3, M2/K1 adjusted for good match in SoG.   
+      
 
-* ##[Effect of Stratification.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Effect of Stratification.ipynb)  
-    
-    This notebook examines the effect of stratificaiton on storm surge elevations using the Dec.15, 2006 storm as a case study.  
 
 * ##[RC6 and old tides - Feb 2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/RC6 and old tides - Feb 2006.ipynb)  
     
@@ -87,28 +66,6 @@ Descriptions below the links are from the first cell of the notebooks
     Old tides: bottom friction 1e-3, corrections at boundary so the K1/M2 phase and amplitude match observations in SoG.   
       
     New tides (RC6): bottom friction 5e-3, fine tuning of all constituents to have a good match in SoG  
-
-* ##[dec2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/dec2006.ipynb)  
-    
-    This notebook examines the storm surge for Dec 15, 2006.  
-
-* ##[Testing Port Hardy.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Testing Port Hardy.ipynb)  
-    
-    This notebook examines the sea surface height forcing from Port Hardy to ensure it is performing as expected. We would also like to determine the importance of including Port Hardy forcing at the northern boundary.  
-
-* ##[feb2006_tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/feb2006_tides.ipynb)  
-    
-    This notebook analyses a Feb 2006 storm surge with the corrected tides. K1 is phase/amp corrected, M2 is phase shifted, lowered bottom firction to 1e-3. M2 is set to match observations at Point Atkinson. Cases:  
-      
-    1. all_forcing - all tidal forcing and ssh forcing and meteorolgical forcing  
-    2. tidesonly - no meteorological forcing and no ssh forcing. Only tidal forcing.  
-    3. ssh_only - no meerological  
-    4. weather_only - no ssh forcing  
-    5. no_pressure - no ssh and no inverse barometer pressure  
-    6. runoff_test - tidesonly paramters with ln_rnf=false  
-    7. ln_apr_obc=false  
-    8. surgeonly - no tides, just surge and winds.  
-    9. noPwSurge - no pressure forcing, but still has winds, surge and tides  
 
 * ##[spinups.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/spinups.ipynb)  
     
@@ -122,16 +79,19 @@ Descriptions below the links are from the first cell of the notebooks
       
     This codes uses a combination of Doug's class for reading Sandheads data and Kate's methodology for finding ssh anamolies.  
 
+* ##[final-dec2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/final-dec2006.ipynb)  
+    
+    This notebook will compare sea surface height between new and old configurations for dec 2006.  
+      
+    new config: sea level pressure adjusted to sea level + corr15 tides. So bottom friction is 5 e-3  
+      
+    old config: no pressure correction and old tides. Bottom friction is 1 e-3, M2/K1 adjusted for good match in SoG.   
+      
+
+
 * ##[Correcting model output.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Correcting model output.ipynb)  
     
     This notebook experiments with how to read the data for correcting the model output. It is mostly meant as a notebook to set up procedures and define some functions for later. Hopefully some procedures can go into the storm_tools package.  
-
-* ##[feb2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/feb2006.ipynb)  
-    
-    This notebook analyses a Feb 2006 storm surge. Cases:  
-      
-    1. all_forcing - all tidal forcing and ssh forcing and meteorolgical forcing  
-    2. tidesonly - no meteorological forcing and no ssh forcing. Only tidal forcing.  
 
 * ##[Surge Spatial Extent.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Surge Spatial Extent.ipynb)  
     
