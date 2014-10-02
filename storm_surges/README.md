@@ -59,14 +59,6 @@ Descriptions below the links are from the first cell of the notebooks
       
 
 
-* ##[RC6 and old tides - Feb 2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/RC6 and old tides - Feb 2006.ipynb)  
-    
-    A look at how the new tides change the storm surges.   
-      
-    Old tides: bottom friction 1e-3, corrections at boundary so the K1/M2 phase and amplitude match observations in SoG.   
-      
-    New tides (RC6): bottom friction 5e-3, fine tuning of all constituents to have a good match in SoG  
-
 * ##[spinups.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/spinups.ipynb)  
     
     A notebook for determining how long it takes for velocities to spinup after initializing with a restart files. This is useful for determing storm surge simulation start dates.   
@@ -89,10 +81,6 @@ Descriptions below the links are from the first cell of the notebooks
       
 
 
-* ##[Correcting model output.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Correcting model output.ipynb)  
-    
-    This notebook experiments with how to read the data for correcting the model output. It is mostly meant as a notebook to set up procedures and define some functions for later. Hopefully some procedures can go into the storm_tools package.  
-
 * ##[Surge Spatial Extent.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Surge Spatial Extent.ipynb)  
     
     This notebook will plot the spatial extent of the surge on Feb. 4 2006  
@@ -103,6 +91,12 @@ Descriptions below the links are from the first cell of the notebooks
     This notebook plots the weather at Point Atkinson on Nov. 15, 2006 from the Environment Canada website.   
       
     Additionally, we will look at the weather at YVR and Sandheads since it will be easy to compare with CGRF.   
+
+* ##[Reading Neah Bay Surge website.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Reading Neah Bay Surge website.ipynb)  
+    
+    This notebook will experiment with reading data from the Neah Bay storm surge website. Eventually, we will run a script that will extract surge predictions from the site daily and generate forcing files for our storm surge forecasts.  
+      
+    http://www.nws.noaa.gov/mdl/etsurge/index.php?page=stn&region=wc&datum=mllw&list=&map=0-48&type=both&stn=waneah  
 
 * ##[Tofino and Port Hardy Comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Tofino and Port Hardy Comparison.ipynb)  
     
