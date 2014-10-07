@@ -6,22 +6,10 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
-* ##[new_confg.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/new_confg.ipynb)  
-    
-    This notebook will compare sea surface height between new and old configurations.  
-      
-    new config: sea level pressure adjusted to sea level + corr13 tides. So bottom friction is 5 e-3  
-      
-    old config: no pressure correction and old tides. Bottom friction is 1 e-3, M2/K1 adjusted for good match in SoG.   
-      
-
-
 * ##[Pressure to sea level.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Pressure to sea level.ipynb)  
     
     This notebook experiments with bring the surface pressure from CGRF down to sea level.   
 
-* ##[nov2009.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/nov2009.ipynb)  
-    
 * ##[Compare Neah Bay and Tofino.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Compare Neah Bay and Tofino.ipynb)  
     
     This notebook compares the surges at Neah Bay and Tofino to determine if the timing of the surge event at these two location is in sync. Also look at Toke Point.  
