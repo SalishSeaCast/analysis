@@ -28,6 +28,16 @@ Descriptions below the links are from the first cell of the notebooks
       
     Also does a quick check of the contribution to SSH due to the inverse barometer effect.  
 
+* ##[final-nov2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/final-nov2006.ipynb)  
+    
+    This notebook will compare sea surface height between new and old configurations for dec 2006.  
+      
+    new config: sea level pressure adjusted to sea level + corr15 tides. So bottom friction is 5 e-3  
+      
+    old config: no pressure correction and old tides. Bottom friction is 1 e-3, M2/K1 adjusted for good match in SoG.   
+      
+
+
 * ##[2005 harmonics at Tofino.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/2005 harmonics at Tofino.ipynb)  
     
     This notebook compares anomalies at Tofino. Two choices are presented  
