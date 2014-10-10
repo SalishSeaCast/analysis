@@ -44,11 +44,13 @@ Animation for salinity and velocity streamlines. Data from Dec14-Dec15, 2006.
 * ##[SalVelJun_Animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalVelJun_Animation.ipynb)
 Animation for salinity and velocity streamlines. Data from May31-Jun2, 2003.
 
-##Particle Tracking/Plume/Islands
+##Particle Tracking
 
 * ##[ParticleTracking.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/ParticleTracking.ipynb)
 
 * ##[Particles_ThalwegIslands.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Particles_ThalwegIslands.ipynb)
+
+* ##[Drifters_Ariane_Comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Drifters_Ariane_Comparison.ipynb)
 
 ##Understanding Ariane
     
