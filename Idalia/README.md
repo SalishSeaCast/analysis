@@ -30,7 +30,7 @@ Individual and multiple plots of sea surface height. Data from Dec14-Dec15, 2006
 * ##[SSH_Animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SSH_Animation.ipynb) 
 Animation for sea surface height with consideration for background state. Data from Dec14-Dec15, 2006.
 
-##Plume/Salinity
+##Tracers
 
 * ##[SalinityDec_Animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalinityDec_Animation.ipynb)
 Animation for salinity. Data from Dec14-Dec15, 2006.
@@ -47,6 +47,8 @@ Animation for salinity and velocity streamlines. Data from May31-Jun2, 2003.
 ##Particle Tracking
 
 * ##[ParticleTracking.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/ParticleTracking.ipynb)
+
+* ##[FraserRiver_Particles.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/FraserRiver_Particles.ipynb)
 
 * ##[Particles_ThalwegIslands.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Particles_ThalwegIslands.ipynb)
 
