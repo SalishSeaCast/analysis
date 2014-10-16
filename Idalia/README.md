@@ -44,6 +44,9 @@ Animation for salinity and velocity streamlines. Data from Dec14-Dec15, 2006.
 * ##[SalVelJun_Animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalVelJun_Animation.ipynb)
 Animation for salinity and velocity streamlines. Data from May31-Jun2, 2003.
 
+* ##[Thalweg-Movie.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Thalweg-Movie.ipynb)
+Animation showing the salinity profile along the thalweg from Jan1-Dec31, 2003.
+
 ##Particle Tracking
 
 * ##[ParticleTracking.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/ParticleTracking.ipynb)
@@ -74,6 +77,7 @@ Animation for salinity and velocity streamlines. Data from May31-Jun2, 2003.
 * ##[SalVelJunQ_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SalVelJunQ_Animation.mp4)
 * ##[RiverParticleDepths_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/RiverParticleDepths_Animation.mp4)
 * ##[SaltWedge.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/SaltWedge.mp4)
+* ##[ThalwegSal_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/ThalwegSal_Animation.mp4)
 
 ##License
 These notebooks and files are copyright 2013-2014
