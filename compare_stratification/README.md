@@ -6,6 +6,10 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[Stratification and Diffusion.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_stratification/Stratification and Diffusion.ipynb)  
+    
+    Comparison of first year of NEMO spin up with StratoGEM. Focus is on salinity.   
+
 * ##[STRATOGEM_profiles.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_stratification/STRATOGEM_profiles.ipynb)  
     
     Notebook to compare our spin-up to STRATOGEM profiles  
