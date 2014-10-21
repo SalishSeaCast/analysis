@@ -29,6 +29,15 @@ Descriptions below the links are from the first cell of the notebooks
     
     Looking at the drifter data from Mark. Trying to determine dates and locations of releases.  
 
+* ##[Rivers2m.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Rivers2m.ipynb)  
+    
+    Quick comparison between a week long run in Dec 11-17 with rivers at different depths  
+      
+    1. 3m  
+    2. 2m  
+      
+    Both simulations began with a T/S profile from the spin ups.   
+
 * ##[crashAnalysis.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/crashAnalysis.ipynb)  
     
     A code to look at the data from the crashed run. What is going wrong!  
