@@ -57,14 +57,15 @@ Animation showing the salinity profile along the thalweg from Jan1-Dec31, 2003.
 
 * ##[Drifters_Ariane_Comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Drifters_Ariane_Comparison.ipynb)
 
-* ##[Animations_with_Python.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Animations_with_Python.ipynb)
-
 ##Understanding Ariane
     
 * ##[Ariane_Times.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Ariane_Times.ipynb)
 
 * ##[Ariane_TimeRes.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Ariane_TimeRes.ipynb)
 
+##Software Carpentry
+    
+* ##[Animations_with_Python.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Animations_with_Python.ipynb)
 
 ##Animations
 * ##[StormSurge_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/StormSurge_Animation.mp4) 
