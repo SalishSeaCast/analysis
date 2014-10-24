@@ -25,6 +25,10 @@ Descriptions below the links are from the first cell of the notebooks
     6. Esquimalt - http://climate.weather.gc.ca/climateData/hourlydata_e.html?timeframe=1&Prov=&StationID=52&hlyRange=1994-02-01|2014-10-01&Year=2014&Month=10&Day=1  
     5. NOAA Buoy - http://www.ndbc.noaa.gov/station_page.php?station=46041  
 
+* ##[weather_comparisons.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/weather_comparisons.ipynb)  
+    
+    An example of how I would like to use MFDataset for reading in atmopsheric model.   
+
 * ##[Drifters.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Drifters.ipynb)  
     
     Looking at the drifter data from Mark. Trying to determine dates and locations of releases.  
