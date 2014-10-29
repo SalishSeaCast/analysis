@@ -18,9 +18,9 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[final-nov2006.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/final-nov2006.ipynb)  
     
-    This notebook will compare sea surface height between new and old configurations for dec 2006.  
+    This notebook will compare sea surface height between new and old configurations for nov 2006.  
       
-    new config: sea level pressure adjusted to sea level + corr15 tides. So bottom friction is 5 e-3  
+    new config: sea level pressure adjusted to sea level + corr15 tides. So bottom friction is 5 e-3. SSH anomaly calculated using 2005 harmonics at Tofino/Port Hardy  
       
     old config: no pressure correction and old tides. Bottom friction is 1 e-3, M2/K1 adjusted for good match in SoG.   
       
@@ -89,12 +89,6 @@ Descriptions below the links are from the first cell of the notebooks
     This notebook plots the weather at Point Atkinson on Nov. 15, 2006 from the Environment Canada website.   
       
     Additionally, we will look at the weather at YVR and Sandheads since it will be easy to compare with CGRF.   
-
-* ##[Reading Neah Bay Surge website.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Reading Neah Bay Surge website.ipynb)  
-    
-    This notebook will experiment with reading data from the Neah Bay storm surge website. Eventually, we will run a script that will extract surge predictions from the site daily and generate forcing files for our storm surge forecasts.  
-      
-    http://www.nws.noaa.gov/mdl/etsurge/index.php?page=stn&region=wc&datum=mllw&list=&map=0-48&type=both&stn=waneah  
 
 * ##[Tofino and Port Hardy Comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Tofino and Port Hardy Comparison.ipynb)  
     
