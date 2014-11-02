@@ -90,10 +90,6 @@ Descriptions below the links are from the first cell of the notebooks
     
     First attempt at an Ariane run.   
 
-* ##[Check Neah Bay forcing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Check Neah Bay forcing.ipynb)  
-    
-    Quick peak at new Neah Bay Sea surface height forcing files.  
-
 
 ##License
 
