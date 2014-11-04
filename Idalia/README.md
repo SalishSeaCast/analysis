@@ -65,6 +65,8 @@ Animation showing the salinity profile along the thalweg from Jan1-Dec31, 2003.
 
 * ##[Ariane_TimeRes.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Ariane_TimeRes.ipynb)
 
+* ##[Ariane_Tracers.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Ariane_Tracers.ipynb)
+
 ##Software Carpentry
     
 * ##[Animations_with_Python.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Animations_with_Python.ipynb)
