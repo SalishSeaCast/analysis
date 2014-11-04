@@ -47,6 +47,8 @@ Animation for salinity and velocity streamlines. Data from May31-Jun2, 2003.
 * ##[Thalweg-Movie.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Thalweg-Movie.ipynb)
 Animation showing the salinity profile along the thalweg from Jan1-Dec31, 2003.
 
+* ##[Temperature_Rivers.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Temperature_Rivers.ipynb).
+
 ##Particle Tracking
 
 * ##[ParticleTracking.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/ParticleTracking.ipynb)
