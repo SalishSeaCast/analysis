@@ -57,6 +57,8 @@ Animation showing the salinity profile along the thalweg from Jan1-Dec31, 2003.
 
 * ##[Particles_ThalwegIslands.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Particles_ThalwegIslands.ipynb)
 
+* ##[Particles_ThalwegNowcasts.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Particles_ThalwegNowcasts.ipynb)
+
 * ##[Particles_JohnstoneStrait.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Particles_JohnstoneStrait.ipynb)
 
 * ##[Drifters_Ariane_Comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Drifters_Ariane_Comparison.ipynb)
