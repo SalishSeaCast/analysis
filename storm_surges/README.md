@@ -90,6 +90,10 @@ Descriptions below the links are from the first cell of the notebooks
       
     Additionally, we will look at the weather at YVR and Sandheads since it will be easy to compare with CGRF.   
 
+* ##[Amplification Factor and Timing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Amplification Factor and Timing.ipynb)  
+    
+    Compare timing and amplitude of surge at Point Atkinson and Tofino.  
+
 * ##[Tofino and Port Hardy Comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/storm_surges/Tofino and Port Hardy Comparison.ipynb)  
     
     This notebook compares the hourly sea surface height anomaly at Tofino and Port Hardy. We do not have a surge prediction tool at Port Hardy so this comparison will guide our decisions regarding the northern boundary condition on sea surface height.   
