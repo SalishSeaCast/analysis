@@ -9,6 +9,9 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[Single Salinity figure.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Single Salinity figure.ipynb)
 Salinity figure
 
+* ##[Particle notebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Particle notebook.ipynb)
+Particle figure
+
 
 ##License
 These notebooks and files are copyright 2013-2014
