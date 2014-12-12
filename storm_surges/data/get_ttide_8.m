@@ -60,16 +60,16 @@ n = length(tim);
 filename = [location  '_t_tide_compare8_' datestr(start_date) '_' datestr(end_date) '.csv'];
 fid = fopen(filename, 'w');
 %add some headers
-fprintf(fid, 'Harmonics from: \t');
-fprintf(fid, '%s\n',csvfilename);
-fprintf(fid, 'Mean \t');
-fprintf(fid, '%f\n',msl);
-fprintf(fid, 'Latitude \t');
-fprintf(fid, '%f\n',lat);
-fprintf(fid, 'Time_Local \t pred_8 \t pred_all \n');
+fprintf(fid, 'Harmonics from: ,');
+fprintf(fid, '%s,\n',csvfilename);
+fprintf(fid, 'Mean ,');
+fprintf(fid, '%f,\n',msl);
+fprintf(fid, 'Latitude ,');
+fprintf(fid, '%f,\n',lat);
+fprintf(fid, 'Time_Local , pred_8 , pred_all ,\n');
 for row=1:n
-    fprintf(fid, '%s \t', M(row,:));
-    fprintf(fid,' %f\t', pred_8(row));
-    fprintf(fid,' %f\n', pred_all(row));
+    fprintf(fid, '%s ,', M(row,:));
+    fprintf(fid,' %f,', pred_8(row));
+    fprintf(fid,' %f,\n', pred_all(row));
 end
 fclose(fid);
