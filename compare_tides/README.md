@@ -42,6 +42,10 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[comp_wlev_harm_compositerun.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_wlev_harm_compositerun.ipynb)  
     
+* ##[Comparison, Using new topography.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/Comparison, Using new topography.ipynb)  
+    
+    Notebook to compare previous tides to tides over new topography  
+
 * ##[comp_current_harm.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_tides/comp_current_harm.ipynb)  
     
     Compare harmonics from currents between measured and modelled. Measured harmonics are taken from Table 3 of Foreman et al (1995)  
@@ -132,7 +136,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 ##License
 
-These notebooks and files are copyright 2013-2014
+These notebooks and files are copyright 2013-2015
 by the Salish Sea MEOPAR Project Contributors
 and The University of British Columbia.
 
