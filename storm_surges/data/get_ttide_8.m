@@ -17,7 +17,7 @@ end_date=datenum(ends);
 tim = start_date:1/24:end_date;
     
 %Get predicted tide for same period
-pred_all = t_predic(tim,tidestruc,'latitude',lat);
+pred_all = t_predic(tim,tidestruc,'latitude',lat,'synthesis',2);
 
 
 %Create a new struct object with onle 8 consts.
