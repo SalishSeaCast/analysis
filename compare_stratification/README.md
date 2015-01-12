@@ -10,14 +10,30 @@ Descriptions below the links are from the first cell of the notebooks
     
     Comparison of first year of NEMO spin up with StratoGEM. Focus is on salinity.   
 
+* ##[SJdF_Profiles_interpolate.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_stratification/SJdF_Profiles_interpolate.ipynb)  
+    
+    Notebook to compare Strait of Juan de Fuca model salinity with IOS data collected in 2013.  
+      
+    IOS data stored in:  
+    /ocean/sallen/allen/research/MEOPAR/IOS_2003_CTD/2003-07/CTD  
+
+
 * ##[STRATOGEM_profiles.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_stratification/STRATOGEM_profiles.ipynb)  
     
     Notebook to compare our spin-up to STRATOGEM profiles  
 
+* ##[SJdF_Profiles.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_stratification/SJdF_Profiles.ipynb)  
+    
+    Notebook to compare Strait of Juan de Fuca model salinity with IOS data collected in 2013.  
+      
+    IOS data stored in:  
+    /ocean/sallen/allen/research/MEOPAR/IOS_2003_CTD/2003-07/CTD  
+
+
 
 ##License
 
-These notebooks and files are copyright 2013-2014
+These notebooks and files are copyright 2013-2015
 by the Salish Sea MEOPAR Project Contributors
 and The University of British Columbia.
 
