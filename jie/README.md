@@ -6,21 +6,24 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[Further look at different days salinity comparison(automatic)).ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Further look at different days salinity comparison(automatic)).ipynb)  
+    
+* ##[Ferry_route_Salinity_comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Ferry_route_Salinity_comparison.ipynb)  
+    
+    Ferry route & Salinity comparsion  
+
 * ##[Single Salinity figure.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Single Salinity figure.ipynb)  
     
     Salinity figure  
 
-* ##[Ferry_route_salinity_plot.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Ferry_route_salinity_plot.ipynb)  
+* ##[Particle notebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Particle notebook.ipynb)  
     
-    Ferry route & deal with .mat  
-
-* ##[Particle notebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Particle notebook.ipynb)
-Particle figure
-
+* ##[Ferry_route_Salinity_comparison-Copy0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Ferry_route_Salinity_comparison-Copy0.ipynb)  
+    
 
 ##License
 
-These notebooks and files are copyright 2013-2014
+These notebooks and files are copyright 2013-2015
 by the Salish Sea MEOPAR Project Contributors
 and The University of British Columbia.
 
