@@ -6,8 +6,6 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
-* ##[Further look at different days salinity comparison(automatic)).ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Further look at different days salinity comparison(automatic)).ipynb)  
-    
 * ##[Ferry_route_Salinity_comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Ferry_route_Salinity_comparison.ipynb)  
     
     Ferry route & Salinity comparsion  
@@ -17,6 +15,8 @@ Descriptions below the links are from the first cell of the notebooks
     Salinity figure  
 
 * ##[Particle notebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Particle notebook.ipynb)  
+    
+* ##[Further look at different days salinity comparison-automatic.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Further look at different days salinity comparison-automatic.ipynb)  
     
 * ##[Ferry_route_Salinity_comparison-Copy0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Ferry_route_Salinity_comparison-Copy0.ipynb)  
     
