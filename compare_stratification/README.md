@@ -10,6 +10,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     Comparison of first year of NEMO spin up with StratoGEM. Focus is on salinity.   
 
+* ##[Smoothing Topography.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_stratification/Smoothing Topography.ipynb)  
+    
+    Notebook to look at effect of smoothing topography on stratification  
+
 * ##[SJdF_Profiles_interpolate.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_stratification/SJdF_Profiles_interpolate.ipynb)  
     
     Notebook to compare Strait of Juan de Fuca model salinity with IOS data collected in 2013.  
