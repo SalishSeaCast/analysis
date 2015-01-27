@@ -18,6 +18,8 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[Further look at different days salinity comparison-automatic.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Further look at different days salinity comparison-automatic.ipynb)  
     
+* ##[SaliCom_22jan15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_22jan15.ipynb)  
+    
 * ##[Ferry_route_Salinity_comparison-Copy0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Ferry_route_Salinity_comparison-Copy0.ipynb)  
     
 
