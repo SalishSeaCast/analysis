@@ -73,9 +73,14 @@ Animation showing the salinity profile along the thalweg from Jan1-Dec31, 2003.
 
 * ##[Ariane_Sequential.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Ariane_Sequential.ipynb)
 
-##Software Carpentry
+##Presentations
     
 * ##[Animations_with_Python.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Animations_with_Python.ipynb)
+Software Carpentry
+* ##[MEOPeer_Training_Figures.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/MEOPeer_Training_Figures.ipynb)
+West Coast MEOPeer Training, January 2014
+* ##[KMB_Poster_Figures.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/KMB_Poster_Figures.ipynb)
+Knowledge Mobilization Symposium, January 2014
 
 ##Storm Surge Website
     
