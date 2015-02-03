@@ -78,6 +78,7 @@ Knowledge Mobilization Symposium, January 2014
     
 * ##[StormSurge_Website.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/StormSurge_Website.ipynb)
 * ##[StormSurge_Website2.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/StormSurge_Website2.ipynb)
+* ##[Test_Functions.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Test_Functions.ipynb)
 
 ##Animations
 * ##[StormSurge_Animation.mp4](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/StormSurge_Animation.mp4) 
