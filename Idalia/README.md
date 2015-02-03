@@ -48,35 +48,46 @@ Animation for salinity and velocity streamlines. Data from May31-Jun2, 2003.
 Animation showing the salinity profile along the thalweg from Jan1-Dec31, 2003.
 
 * ##[Temperature_Rivers.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Temperature_Rivers.ipynb).
+Temperature profiles with close up on rivers. Data for Dec, 2006 and Sept, 2014.
 
 ##Particle Tracking
 
 * ##[ParticleTracking.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/ParticleTracking.ipynb)
+Introduction to particle tracking in 2D and 3D.
 
 * ##[FraserRiver_Particles.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/FraserRiver_Particles.ipynb)
+A closer look at the Fraser River Particle with salt wedge, trajectories at different points in tidal cycle, and using different model river depths.
 
 * ##[Particles_ThalwegIslands.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Particles_ThalwegIslands.ipynb)
+Particle trajectories (2D and 3D) with initial point starting along thalweg and moving through Strait of Georgia and Haro Strait.
 
 * ##[Particles_ThalwegNowcasts.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Particles_ThalwegNowcasts.ipynb)
+Particle trajectories using data from the first nowcasts produced.
 
 * ##[Particles_JohnstoneStrait.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Particles_JohnstoneStrait.ipynb)
+A close look at particles north and south of Seymour Narrows.
 
 * ##[Drifters_Ariane_Comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Drifters_Ariane_Comparison.ipynb)
+A comparison of drifter tracks with the particle trajectories calculated by Ariane using model data. Sept 19, 20, 20-21, 21 and Oct 8.
 
 ##Understanding Ariane
     
 * ##[Ariane_Times.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Ariane_Times.ipynb)
+Trajectories starting at varying times.
 
 * ##[Ariane_TimeRes.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Ariane_TimeRes.ipynb)
+How finely resolved should the model data output be? 30 min, 1 hour, 4 hours?
 
 * ##[Ariane_Tracers.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Ariane_Tracers.ipynb)
+Closer look at the tracers function in Ariane: Temparature, Salinity, Density.
 
 * ##[Ariane_Sequential.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Ariane_Sequential.ipynb)
+Understanding the sequential funciton in Ariane.
 
 ##Presentations
     
 * ##[Animations_with_Python.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Animations_with_Python.ipynb)
-Software Carpentry
+Software Carpentry, October 2014
 * ##[MEOPeer_Training_Figures.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/MEOPeer_Training_Figures.ipynb)
 West Coast MEOPeer Training, January 2014
 * ##[KMB_Poster_Figures.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/KMB_Poster_Figures.ipynb)
