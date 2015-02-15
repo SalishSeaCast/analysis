@@ -60,16 +60,6 @@ Descriptions below the links are from the first cell of the notebooks
     A code to look at the data from the crashed run. What is going wrong!  
     Looks at currents, bathymetry, and sea surface height around the crashed time step.   
 
-* ##[bathyImage.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/bathyImage.ipynb)  
-    
-    This notebook creates an image of the bathymetry and coastlines. Includes:  
-      
-    1. Bathymetry  
-    2. Location of Rivers  
-    3. Storm Surge points  
-      
-    Other important points?  
-
 * ##[Sea Level Pressure.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Sea Level Pressure.ipynb)  
     
     Given the altitude of a CGRF grid cell, calculate the pressure at sea level.  
