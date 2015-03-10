@@ -6,8 +6,6 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
-* ##[Nowcast Temp and Salinity.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_stratification/Nowcast Temp and Salinity.ipynb)  
-    
 * ##[Stratification and Diffusion.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_stratification/Stratification and Diffusion.ipynb)  
     
     Comparison of first year of NEMO spin up with StratoGEM. Focus is on salinity.   
@@ -23,6 +21,10 @@ Descriptions below the links are from the first cell of the notebooks
     IOS data stored in:  
     /ocean/sallen/allen/research/MEOPAR/IOS_2003_CTD/2003-07/CTD  
 
+
+* ##[VENUS Temp and Salinity.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_stratification/VENUS Temp and Salinity.ipynb)  
+    
+    Compares model nowcasts to VENUS temperature and salinity data. Data is from the East and Central nodes.  
 
 * ##[DWR_smoothing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_stratification/DWR_smoothing.ipynb)  
     
