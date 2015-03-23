@@ -13,7 +13,7 @@ Bathymetry map with stations, Comparison between modelled and observed M2/K1 Amp
 * ##[Analysis3Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis3Components.ipynb)
 * ##[Analysis4Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis4Components.ipynb)     
 * ##[Analysis6Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis6Components.ipynb)  
-* ##[Analysis8Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis8Components.ipynb)    
+* ##[Analysis8Components_test.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis8Components_test.ipynb)    
 * ##[dat_csv.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/dat_csv.ipynb) 
 Conversion of .dat file to .csv file
 
