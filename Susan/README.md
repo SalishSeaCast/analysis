@@ -6,6 +6,8 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[makeCarbonMap.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/makeCarbonMap.ipynb)  
+    
 * ##[Untitled0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/Untitled0.ipynb)  
     
     Standard Analysis Notebook  
@@ -23,10 +25,22 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[ScratchPad.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/ScratchPad.ipynb)  
     
+* ##[TidalEvaluation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/TidalEvaluation.ipynb)  
+    
+    This notebook will load data, perform a tidal analyis, compare with observations, plot the results, and save the analysis in a spreadsheet.  Eight Tidal Constituents: M2, K1, O1, S2, P1, N2, Q1 and K2 are considered.  
+
 * ##[Rain_Check.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/Rain_Check.ipynb)  
     
+* ##[ORCAOfflineDynamicsFiles.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/ORCAOfflineDynamicsFiles.ipynb)  
+    
+    Look at offline file requirements  
+
 * ##[SusansViewerWQuiver.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/SusansViewerWQuiver.ipynb)  
     
+* ##[ForJie.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/ForJie.ipynb)  
+    
+    Notebook to Play with Jie's data structures  
+
 * ##[tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/tides.ipynb)  
     
 * ##[Untitled1.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/Untitled1.ipynb)  
@@ -34,7 +48,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 ##License
 
-These notebooks and files are copyright 2013-2014
+These notebooks and files are copyright 2013-2015
 by the Salish Sea MEOPAR Project Contributors
 and The University of British Columbia.
 
