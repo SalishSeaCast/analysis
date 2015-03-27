@@ -70,9 +70,13 @@ Understanding the sequential funciton in Ariane.
 * ##[Animations_with_Python.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Animations_with_Python.ipynb)
 Software Carpentry, October 2014
 * ##[MEOPeer_Training_Figures.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/MEOPeer_Training_Figures.ipynb)
-West Coast MEOPeer Training, January 2014
+West Coast MEOPeer Training, January 2015
 * ##[KMB_Poster_Figures.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/KMB_Poster_Figures.ipynb)
-Knowledge Mobilization Symposium, January 2014
+Knowledge Mobilization Symposium, January 2015
+* ##[Seminar_Visualizations.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Seminar_Visualizations.ipynb)
+Departmental Seminar, March 2015
+
+
 
 ##Storm Surge Website
     
