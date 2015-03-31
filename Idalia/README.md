@@ -16,6 +16,7 @@ Bathymetry map with stations, Comparison between modelled and observed M2/K1 Amp
 * ##[Analysis8Components_test.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis8Components_test.ipynb)    
 * ##[dat_csv.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/dat_csv.ipynb) 
 Conversion of .dat file to .csv file
+* ##[Tidal_Components_Comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Tidal_Components_Comparison.ipynb)
 
 ##Storm Surge
 
