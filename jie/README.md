@@ -10,6 +10,8 @@ Descriptions below the links are from the first cell of the notebooks
     
     Ferry route & Salinity comparsion  
 
+* ##[RBR-Model comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/RBR-Model comparison.ipynb)  
+    
 * ##[Single Salinity figure.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Single Salinity figure.ipynb)  
     
     Salinity figure  
