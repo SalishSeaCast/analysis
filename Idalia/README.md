@@ -54,6 +54,8 @@ Particle trajectories using data from the first nowcasts produced.
 A close look at particles north and south of Seymour Narrows.
 * ##[Drifters_Ariane_Comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Drifters_Ariane_Comparison.ipynb)
 A comparison of drifter tracks with the particle trajectories calculated by Ariane using model data. Sept 19, 20, 20-21, 21 and Oct 8.
+* ##[English_Bay_Spill.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/English_Bay_Spill.ipynb)
+Particle tracking representation of April 9 Oil Spill in English Bay, Vancouver.
 
 ##Understanding Ariane
     
