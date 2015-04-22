@@ -22,6 +22,8 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[Further look at different days salinity comparison-automatic.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Further look at different days salinity comparison-automatic.ipynb)  
     
+* ##[SaliCom_13apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_13apr15.ipynb)  
+    
 * ##[SaliCom_17mar15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_17mar15.ipynb)  
     
 
