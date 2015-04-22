@@ -57,7 +57,7 @@ datetick('x','mm/yyyy')
 %second save predictions
 M = datestr(tim);
 n = length(tim);
-filename = [location  '_t_tide_compare8_' datestr(start_date) '_' datestr(end_date) '.csv'];
+filename = [location  '_t_tide_compare8_' datestr(start_date) '_' datestr(end_date) '_snr.csv'];
 fid = fopen(filename, 'w');
 %add some headers
 fprintf(fid, 'Harmonics from: ,');

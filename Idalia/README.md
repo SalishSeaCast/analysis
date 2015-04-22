@@ -13,9 +13,10 @@ Bathymetry map with stations, Comparison between modelled and observed M2/K1 Amp
 * ##[Analysis3Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis3Components.ipynb)
 * ##[Analysis4Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis4Components.ipynb)     
 * ##[Analysis6Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis6Components.ipynb)  
-* ##[Analysis8Components.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis8Components.ipynb)    
+* ##[Analysis8Components_test.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Analysis8Components_test.ipynb)    
 * ##[dat_csv.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/dat_csv.ipynb) 
 Conversion of .dat file to .csv file
+* ##[Tidal_Components_Comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Tidal_Components_Comparison.ipynb)
 
 ##Storm Surge
 
@@ -53,6 +54,8 @@ Particle trajectories using data from the first nowcasts produced.
 A close look at particles north and south of Seymour Narrows.
 * ##[Drifters_Ariane_Comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Drifters_Ariane_Comparison.ipynb)
 A comparison of drifter tracks with the particle trajectories calculated by Ariane using model data. Sept 19, 20, 20-21, 21 and Oct 8.
+* ##[English_Bay_Spill.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/English_Bay_Spill.ipynb)
+Particle tracking representation of April 9 Oil Spill in English Bay, Vancouver.
 
 ##Understanding Ariane
     
@@ -70,9 +73,14 @@ Understanding the sequential funciton in Ariane.
 * ##[Animations_with_Python.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Animations_with_Python.ipynb)
 Software Carpentry, October 2014
 * ##[MEOPeer_Training_Figures.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/MEOPeer_Training_Figures.ipynb)
-West Coast MEOPeer Training, January 2014
+West Coast MEOPeer Training, January 2015
 * ##[KMB_Poster_Figures.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/KMB_Poster_Figures.ipynb)
-Knowledge Mobilization Symposium, January 2014
+Knowledge Mobilization Symposium, January 2015
+* ##[Seminar_Visualizations.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Seminar_Visualizations.ipynb)
+Departmental Seminar, March 2015
+* ##[Seminar_Visualizations2.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Seminar_Visualizations2.ipynb)
+Departmental Seminar, March 2015
+
 
 ##Storm Surge Website
     

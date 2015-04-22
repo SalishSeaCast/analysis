@@ -50,12 +50,14 @@ clear time newmeas meas
 
 %Use t_tide to determine harmonic constituents. Needs to be at least one
 %year time series (366 days)
-[tidestruc,~] = t_tide(wlev,'start time',start_date(1,1),'latitude',lat);
+analysis_file = [location  '_analysis_' datestr(start_date) '_' datestr(end_date) ];
+[tidestruc,~] = t_tide(wlev,'start time',start_date(1,1),'latitude',lat,'output',analysis_file);
+%should I output the tidal prediction too and pass it along in get_ttide_8?
 
 %mean water level
 mean_wl = nanmean(wlev);
 %Save the harmonics
-harmonics_file = [location  '_harmonics_' datestr(start_date) '_' datestr(end_date) '.csv'];
+harmonics_file = [location  '_harmonics_' datestr(start_date) '_' datestr(end_date) '_snr.csv'];
 fid = fopen(harmonics_file, 'w');
 %add some headers
 fprintf(fid, 'Mean \t');
@@ -70,7 +72,7 @@ for row=1:length(tidestruc.freq)
     fprintf(fid,' %f\t', tidestruc.tidecon(row,1));
     fprintf(fid,' %f\t', tidestruc.tidecon(row,2));
     fprintf(fid,' %f\t', tidestruc.tidecon(row,3));
-    fprintf(fid,' %f\n', tidestruc.tidecon(row,4));
+    fprintf(fid,' %f\t', tidestruc.tidecon(row,4));
 end
 fclose(fid);
 

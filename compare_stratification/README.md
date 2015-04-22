@@ -22,17 +22,20 @@ Descriptions below the links are from the first cell of the notebooks
     /ocean/sallen/allen/research/MEOPAR/IOS_2003_CTD/2003-07/CTD  
 
 
+* ##[VENUS Temp and Salinity.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_stratification/VENUS Temp and Salinity.ipynb)  
+    
+    Compares model nowcasts to VENUS temperature and salinity data. Data is from the East and Central nodes.  
+
+* ##[DWR_smoothing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_stratification/DWR_smoothing.ipynb)  
+    
+    This notebook looks at the vertical eddy viscosity/diffusivity during a deep water renewal event in late August 2003.  
+      
+    Compares topography smoothed to 0.33 regular topo.  
+
+
 * ##[STRATOGEM_profiles.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_stratification/STRATOGEM_profiles.ipynb)  
     
     Notebook to compare our spin-up to STRATOGEM profiles  
-
-* ##[SJdF_Profiles.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_stratification/SJdF_Profiles.ipynb)  
-    
-    Notebook to compare Strait of Juan de Fuca model salinity with IOS data collected in 2013.  
-      
-    IOS data stored in:  
-    /ocean/sallen/allen/research/MEOPAR/IOS_2003_CTD/2003-07/CTD  
-
 
 
 ##License

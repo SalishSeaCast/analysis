@@ -10,17 +10,25 @@ Descriptions below the links are from the first cell of the notebooks
     
     Ferry route & Salinity comparsion  
 
+* ##[RBR-Model comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/RBR-Model comparison.ipynb)  
+    
 * ##[Single Salinity figure.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Single Salinity figure.ipynb)  
     
     Salinity figure  
 
 * ##[Particle notebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Particle notebook.ipynb)  
     
+* ##[Amount of fresh water comparison calculation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Amount of fresh water comparison calculation.ipynb)  
+    
 * ##[Further look at different days salinity comparison-automatic.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Further look at different days salinity comparison-automatic.ipynb)  
     
-* ##[SaliCom_22jan15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_22jan15.ipynb)  
+* ##[SaliCom_20apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_20apr15.ipynb)  
     
-* ##[Ferry_route_Salinity_comparison-Copy0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Ferry_route_Salinity_comparison-Copy0.ipynb)  
+* ##[SaliCom_18apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_18apr15.ipynb)  
+    
+* ##[SaliCom_13apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_13apr15.ipynb)  
+    
+* ##[SaliCom_17mar15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_17mar15.ipynb)  
     
 
 ##License
