@@ -28,6 +28,8 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[SaliCom_13apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_13apr15.ipynb)  
     
+* ##[Understand Bathymetry inside NEMO.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Understand Bathymetry inside NEMO.ipynb)  
+    
 * ##[SaliCom_17mar15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_17mar15.ipynb)  
     
 
