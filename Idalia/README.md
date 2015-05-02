@@ -80,6 +80,9 @@ Knowledge Mobilization Symposium, January 2015
 Departmental Seminar, March 2015
 * ##[Seminar_Visualizations2.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Seminar_Visualizations2.ipynb)
 Departmental Seminar, March 2015
+* ##[Brochure_Stakeholders_Workshop.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Idalia/Brochure_Stakeholders_Workshop.ipynb)
+Stakeholders Workshop, May 2015
+
 
 
 ##Storm Surge Website
