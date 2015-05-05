@@ -16,11 +16,17 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[SS2Dplots-Copy0-Copy0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots-Copy0-Copy0.ipynb)  
     
+* ##[plotSOG-Copy1.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plotSOG-Copy1.ipynb)  
+    
 * ##[Untitled0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/Untitled0.ipynb)  
+    
+* ##[ATtoConst.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/ATtoConst.ipynb)  
     
 * ##[SS2Dplots.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots.ipynb)  
     
 * ##[temp.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/temp.ipynb)  
+    
+* ##[CFtoZero.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/CFtoZero.ipynb)  
     
 * ##[alterBathy2DLonLat.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/alterBathy2DLonLat.ipynb)  
     
@@ -28,7 +34,15 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[SS2Dplots-loop-fxn.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots-loop-fxn.ipynb)  
     
+* ##[plotSOG.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plotSOG.ipynb)  
+    
+* ##[Untitled1.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/Untitled1.ipynb)  
+    
+* ##[SOG_loadutils.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SOG_loadutils.ipynb)  
+    
 * ##[SS2Dplots-Copy0-Copy0-Copy0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots-Copy0-Copy0-Copy0.ipynb)  
+    
+* ##[Untitled.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/Untitled.ipynb)  
     
 
 ##License
