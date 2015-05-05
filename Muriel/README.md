@@ -1,5 +1,5 @@
 The IPython Notebooks in this directory are made by Muriel for
-quick sharing of results.
+quick sharing of results. There are focused on comparing model results with observations.
 
 The links below are to static renderings of the notebooks via
 [nbviewer.ipython.org](http://nbviewer.ipython.org/).
