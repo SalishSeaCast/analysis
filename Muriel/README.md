@@ -1,11 +1,13 @@
 The IPython Notebooks in this directory are made by Muriel for
-quick sharing of results. There are focused on comparing model results with observations.
+quick sharing of results.
 
 The links below are to static renderings of the notebooks via
 [nbviewer.ipython.org](http://nbviewer.ipython.org/).
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[Exploring Model Data.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/Exploring Model Data.ipynb)  
+    
 * ##[Exploring Model Output at the ONC VENUS nodes.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/Exploring Model Output at the ONC VENUS nodes.ipynb)  
     
 
