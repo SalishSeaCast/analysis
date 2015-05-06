@@ -16,10 +16,6 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[SS2Dplots-Copy0-Copy0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots-Copy0-Copy0.ipynb)  
     
-* ##[plotSOG-Copy1.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plotSOG-Copy1.ipynb)  
-    
-    Plot output of SOG runs with no physics:  
-
 * ##[Untitled0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/Untitled0.ipynb)  
     
 * ##[ATtoConst.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/ATtoConst.ipynb)  
@@ -34,6 +30,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     <span style="background-color:black; color:cyan; vertical-align: middle; font-size:20px">Script to read in cloud forcing SOG input file, replace all temperature readings with constant value (12.0611=surface value in SG-S3-2004-10-19.sog CTD file), and write to a new file.</span>  
 
+* ##[plotSOGR07.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plotSOGR07.ipynb)  
+    
+    I changed core_variables.f90 to initialize NH4 to 1 everywhere rather than 0 in upper 3 m, and the step in bio and chem near 3 m went away.   
+
 * ##[alterBathy2DLonLat.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/alterBathy2DLonLat.ipynb)  
     
 * ##[SS2Dplots-loop.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots-loop.ipynb)  
@@ -44,8 +44,16 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[Untitled1.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/Untitled1.ipynb)  
     
+* ##[plotSOGR05.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plotSOGR05.ipynb)  
+    
+    Plot output of SOG runs with no physics:  
+
 * ##[SOG_loadutils.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SOG_loadutils.ipynb)  
     
+* ##[plotSOGR06.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plotSOGR06.ipynb)  
+    
+    Plot output of SOG runs with no physics for R06; difference is turned off upwelling directly in code. There is no difference from R05, so this was not the issue. Why differences in surface/low salinity layer? Why no NH4 in upper 4 layers?  
+
 * ##[SS2Dplots-Copy0-Copy0-Copy0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots-Copy0-Copy0-Copy0.ipynb)  
     
 
