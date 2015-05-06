@@ -44,8 +44,6 @@ Descriptions below the links are from the first cell of the notebooks
     
     Looking at the drifter data from Mark. Trying to determine dates and locations of releases.  
 
-* ##[Untitled0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Untitled0.ipynb)  
-    
 * ##[Rivers2m.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Rivers2m.ipynb)  
     
     Quick comparison between a week long run in Dec 11-17 with rivers at different depths  
