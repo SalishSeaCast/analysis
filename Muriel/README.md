@@ -17,6 +17,12 @@ Descriptions below the links are from the first cell of the notebooks
     Information about the ONC VENUS nodes can be found here:  
     * http://venus.uvic.ca/  
 
+* ##[Exploring VENUS nodes.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/Exploring VENUS nodes.ipynb)  
+    
+    **VENUS nodes**  
+      
+    The venus nodes are located in the Georgia Strait. In the grid system set up the East node is at i=283 and j=416 where as the Central node is at i=266 and j=424.  
+
 
 ##License
 
