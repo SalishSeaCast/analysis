@@ -10,6 +10,14 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook is used for some basic exploration on modelled data.  
 
+* ##[Exploring Tidal Ellipses at VENUS nodes.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/Exploring Tidal Ellipses at VENUS nodes.ipynb)  
+    
+    This notebook willbe used to explore the tidal ellipses conversions and manipulation at the VENUS nodes.  
+
+* ##[Testing research_VENUS.py module.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/Testing research_VENUS.py module.ipynb)  
+    
+    This notebook is used to test the research_VENUS.py module.  
+
 * ##[Exploring Model Output at the ONC VENUS nodes.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/Exploring Model Output at the ONC VENUS nodes.ipynb)  
     
     This notebook will explore model data at the Ocean Networks Canada(ONC) VENUS nodes.   
