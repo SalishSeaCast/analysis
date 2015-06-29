@@ -72,6 +72,10 @@ Descriptions below the links are from the first cell of the notebooks
       
     The focus is on currents and tracers.   
 
+* ##[thalweg animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/thalweg animation.ipynb)  
+    
+    Create renewal movie with tides at Point Atkinson  
+
 * ##[New GEM Time Series May 2015.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/New GEM Time Series May 2015.ipynb)  
     
     This notebook will examine the GEM model wind direction and speed by compareing a time series with observations. I will examine   
@@ -87,6 +91,8 @@ Descriptions below the links are from the first cell of the notebooks
     
     Figuring out how to fill the land colour with Rich's coastline data.  
 
+* ##[Seymour Narrows.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Seymour Narrows.ipynb)  
+    
 * ##[interpolation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/interpolation.ipynb)  
     
     Just a quick notebook to play around with interpolating CGRF data into our grid.  
