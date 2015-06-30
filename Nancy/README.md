@@ -126,8 +126,6 @@ Descriptions below the links are from the first cell of the notebooks
     
     Quick peak at new Neah Bay Sea surface height forcing files.  
 
-* ##[Haro Strait Ellipse.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Haro Strait Ellipse.ipynb)  
-    
 * ##[Nowcasts.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Nowcasts.ipynb)  
     
     Nancy's first tries for looking at nowcasts  
