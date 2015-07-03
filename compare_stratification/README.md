@@ -33,6 +33,10 @@ Descriptions below the links are from the first cell of the notebooks
     Compares topography smoothed to 0.33 regular topo.  
 
 
+* ##[Juan de Fuca boundary.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_stratification/Juan de Fuca boundary.ipynb)  
+    
+    Comparison of 2003 spin-up at the Juan de Fuca bounday with IOS cruise data.   
+
 * ##[STRATOGEM_profiles.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/compare_stratification/STRATOGEM_profiles.ipynb)  
     
     Notebook to compare our spin-up to STRATOGEM profiles  
