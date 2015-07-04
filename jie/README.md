@@ -42,6 +42,10 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[SaliCom_20apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_20apr15.ipynb)  
     
+* ##[compare surface currents with different river treatments.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/compare surface currents with different river treatments.ipynb)  
+    
+    This notebook was made to compare surface currents in Fraser River plume during ebb tides with different river treatments  
+
 * ##[SaliCom_18apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_18apr15.ipynb)  
     
 * ##[SaliCom_13apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_13apr15.ipynb)  
