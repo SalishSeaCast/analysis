@@ -6,17 +6,17 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[AdjustEllipseLocation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/AdjustEllipseLocation.ipynb)  
+    
 * ##[Exploring Model Data.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/Exploring Model Data.ipynb)  
     
     This notebook is used for some basic exploration on modelled data.  
 
 * ##[ThalwegEllipses.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/ThalwegEllipses.ipynb)  
     
-    This notebooks purpose is to visualise the tidal ellipses along the thalweg.  
+    This notebook's purpose is to visualise the tidal ellipses along the thalweg.  
 
 * ##[Test fittit.py.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/Test fittit.py.ipynb)  
-    
-* ##[Untitled1.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/Untitled1.ipynb)  
     
 * ##[EllipsesSensitivityToTimeSeries.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/EllipsesSensitivityToTimeSeries.ipynb)  
     
@@ -25,6 +25,10 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[Exploring Tidal Ellipses at VENUS nodes.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/Exploring Tidal Ellipses at VENUS nodes.ipynb)  
     
     This notebook willbe used to explore the tidal ellipses conversions and manipulation at the VENUS nodes.  
+
+* ##[HaroStraitEllipses.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/HaroStraitEllipses.ipynb)  
+    
+    This notebook will be used to look at and understand the model output currents through Haro Strait with the use of ellipses  
 
 * ##[TempSalComparisons.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/TempSalComparisons.ipynb)  
     
