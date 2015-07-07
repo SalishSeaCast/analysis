@@ -14,6 +14,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     **Different depth of salinity comparisons at South arm and North arm between RBR observation and model nowcast results **  
 
+* ##[Surface current comparison within different stns.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Surface current comparison within different stns.ipynb)  
+    
+        This notebook was made to compare surface current within different stations in the Fraser River  
+
 * ##[Single Salinity figure.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Single Salinity figure.ipynb)  
     
     Salinity figure  
