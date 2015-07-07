@@ -24,6 +24,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     Plot u, v velocity on the horizontal plane  
 
+* ##[New-compare surface currents with different river treatments.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/New-compare surface currents with different river treatments.ipynb)  
+    
+    This notebook was made to compare surface currents in Fraser River plume during ebb tides with different river treatments  
+
 * ##[New river discharge file.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/New river discharge file.ipynb)  
     
     change the river discharge source point of Fraser and create new Fraser River flow file   
@@ -38,7 +42,7 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[Test New salinity file.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Test New salinity file.ipynb)  
     
-    **Difference between bathymetry with 3.095 & without it**  
+    Test daily surface salinity plot with different river treatments  
 
 * ##[SaliCom_20apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_20apr15.ipynb)  
     
