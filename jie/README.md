@@ -18,6 +18,10 @@ Descriptions below the links are from the first cell of the notebooks
     
         This notebook was made to compare surface current within different stations in the Fraser River  
 
+* ##[function compare surface currents with different river treatments.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/function compare surface currents with different river treatments.ipynb)  
+    
+    This notebook was made to compare surface currents in Fraser River plume during ebb tides with different river treatments  
+
 * ##[Single Salinity figure.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Single Salinity figure.ipynb)  
     
     Salinity figure  
