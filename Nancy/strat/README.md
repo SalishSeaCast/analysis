@@ -28,7 +28,7 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook looks at the vertical eddy viscosity/diffusivity during a deep water renewal event in late August 2003.  
       
-    Compares diff=1e-5 to 1e-6  
+    Compares isoneutral mixing to default case  
 
 
 * ##[DWR_kappa10.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_kappa10.ipynb)  
