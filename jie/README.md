@@ -52,13 +52,17 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[Test New salinity file.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Test New salinity file.ipynb)  
     
-    Test daily surface salinity plot with different river treatments  
+    **Salinity comparison**  
 
 * ##[SaliCom_20apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_20apr15.ipynb)  
     
 * ##[compare surface currents with different river treatments.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/compare surface currents with different river treatments.ipynb)  
     
     This notebook was made to compare surface currents in Fraser River plume during ebb tides with different river treatments  
+
+* ##[Test New salinity file with north channel.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Test New salinity file with north channel.ipynb)  
+    
+    **Salinity comparison**  
 
 * ##[SaliCom_18apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_18apr15.ipynb)  
     
