@@ -68,6 +68,8 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[SaliCom_13apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_13apr15.ipynb)  
     
+* ##[north-not until Howe extended current comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/north-not until Howe extended current comparison.ipynb)  
+    
 * ##[Understand Bathymetry inside NEMO.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Understand Bathymetry inside NEMO.ipynb)  
     
     **Try to understand bathymetry grid cells of Fraser River inside NEMO**  
