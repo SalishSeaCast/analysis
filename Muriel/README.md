@@ -22,9 +22,17 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook will be used to test the sensitivity of tidal ellipses from the model output based on data series variations such as length, frequency and seasonality.  
 
+* ##[JuandeFucaEllipses.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/JuandeFucaEllipses.ipynb)  
+    
+    This notebook will be used to look at and understand the model output currents through Juan de Fuca with the use of ellipses  
+
 * ##[Exploring Tidal Ellipses at VENUS nodes.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/Exploring Tidal Ellipses at VENUS nodes.ipynb)  
     
     This notebook willbe used to explore the tidal ellipses conversions and manipulation at the VENUS nodes.  
+
+* ##[CODAREllipse.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/CODAREllipse.ipynb)  
+    
+    This notebook will look at the ellipses and the phase at the CODAR region.  
 
 * ##[HaroStraitEllipses.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/HaroStraitEllipses.ipynb)  
     
