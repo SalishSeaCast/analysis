@@ -12,24 +12,68 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[RBR-Model comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/RBR-Model comparison.ipynb)  
     
+    **Different depth of salinity comparisons at South arm and North arm between RBR observation and model nowcast results **  
+
+* ##[Surface current comparison within different stns.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Surface current comparison within different stns.ipynb)  
+    
+        This notebook was made to compare surface current within different stations in the Fraser River  
+
+* ##[north extended current comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/north extended current comparison.ipynb)  
+    
+* ##[function compare surface currents with different river treatments.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/function compare surface currents with different river treatments.ipynb)  
+    
+    This notebook was made to compare surface currents in Fraser River plume during ebb tides with different river treatments  
+
 * ##[Single Salinity figure.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Single Salinity figure.ipynb)  
     
     Salinity figure  
 
 * ##[Particle notebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Particle notebook.ipynb)  
     
+* ##[U&V plot near Fraser mouth.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/U&V plot near Fraser mouth.ipynb)  
+    
+    Plot u, v velocity on the horizontal plane  
+
+* ##[New-compare surface currents with different river treatments.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/New-compare surface currents with different river treatments.ipynb)  
+    
+    This notebook was made to compare surface currents in Fraser River plume during ebb tides with different river treatments  
+
+* ##[New river discharge file.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/New river discharge file.ipynb)  
+    
+    change the river discharge source point of Fraser and create new Fraser River flow file   
+
 * ##[Amount of fresh water comparison calculation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Amount of fresh water comparison calculation.ipynb)  
     
+* ##[Smooth bathymetry & Create New TS file .ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Smooth bathymetry & Create New TS file .ipynb)  
+    
+    **Smooth bathymetry  -grab from Susan's notebook**  
+
 * ##[Further look at different days salinity comparison-automatic.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Further look at different days salinity comparison-automatic.ipynb)  
     
+* ##[Test New salinity file.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Test New salinity file.ipynb)  
+    
+    **Salinity comparison**  
+
 * ##[SaliCom_20apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_20apr15.ipynb)  
     
+* ##[compare surface currents with different river treatments.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/compare surface currents with different river treatments.ipynb)  
+    
+    This notebook was made to compare surface currents in Fraser River plume during ebb tides with different river treatments  
+
+* ##[Test New salinity file with north channel.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Test New salinity file with north channel.ipynb)  
+    
+    **Salinity comparison**  
+
 * ##[SaliCom_18apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_18apr15.ipynb)  
     
 * ##[SaliCom_13apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_13apr15.ipynb)  
     
+* ##[north-not until Howe extended current comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/north-not until Howe extended current comparison.ipynb)  
+    
 * ##[Understand Bathymetry inside NEMO.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Understand Bathymetry inside NEMO.ipynb)  
     
+    **Try to understand bathymetry grid cells of Fraser River inside NEMO**  
+
 * ##[SaliCom_17mar15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_17mar15.ipynb)  
     
 
