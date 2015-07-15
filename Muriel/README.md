@@ -73,6 +73,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook has the purpose of comparing tidal ellipses calculated by the model to other data sources.  
 
+* ##[VENUSDataProcessing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/VENUSDataProcessing.ipynb)  
+    
+    This notebook will be used to run and modify Rich Pawlowicz's code that loads the ONC VENUS nodes ADCP data. The goal is the automate the processing in order to have a constant reliable comparisons source  
+
 * ##[SaveTidalParameters.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/SaveTidalParameters.ipynb)  
     
     This notebook is used to save the tidal parameters calculated from the model output to a csv file in order to avoid having to load all the files run.  
@@ -80,6 +84,10 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[Velocity Plots Using 15min Data at VENUS nodes.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/Velocity Plots Using 15min Data at VENUS nodes.ipynb)  
     
     This notebook will be used to create functions that will show the daily veocity plots with data that ahs been calculated every 15 minutes at the VENUS nodes.  
+
+* ##[TidalEllipseTools.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/TidalEllipseTools.ipynb)  
+    
+    This notebook will use the tidal ellipse calculating functions on simple cases.  
 
 
 ##License
