@@ -16,7 +16,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[Surface current comparison within different stns.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Surface current comparison within different stns.ipynb)  
     
-        This notebook was made to compare surface current within different stations in the Fraser River  
+    This notebook was made to compare surface current within different stations in the Fraser River  
 
 * ##[north extended current comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/north extended current comparison.ipynb)  
     
@@ -68,6 +68,14 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[SaliCom_13apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_13apr15.ipynb)  
     
+* ##[IOS vs model comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/IOS vs model comparison.ipynb)  
+    
+    Data stored at   
+      
+    * /ocean/rich/home/SoG/ios/che/  
+    * /ocean/rich/home/SoG/ios/che2  
+
+
 * ##[north-not until Howe extended current comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/north-not until Howe extended current comparison.ipynb)  
     
 * ##[Understand Bathymetry inside NEMO.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Understand Bathymetry inside NEMO.ipynb)  
