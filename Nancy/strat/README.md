@@ -29,6 +29,11 @@ Descriptions below the links are from the first cell of the notebooks
       
     2D model had no wind.  
 
+* ##[Rich's IOS data.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/Rich's IOS data.ipynb)  
+    
+    Notebook to determine the temporal and spatial coverage of IOS data that Rich has stored.  
+
+
 * ##[DWR_diff1e-6.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_diff1e-6.ipynb)  
     
     This notebook looks at the vertical eddy viscosity/diffusivity during a deep water renewal event in late August 2003.  
