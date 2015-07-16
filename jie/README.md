@@ -20,6 +20,10 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[north extended current comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/north extended current comparison.ipynb)  
     
+* ##[IOS Data-model results.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/IOS Data-model results.ipynb)  
+    
+    Reading IOS data in Rich's directory using Rob's reader.  
+
 * ##[function compare surface currents with different river treatments.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/function compare surface currents with different river treatments.ipynb)  
     
     This notebook was made to compare surface currents in Fraser River plume during ebb tides with different river treatments  
