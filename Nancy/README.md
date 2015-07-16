@@ -112,23 +112,9 @@ Descriptions below the links are from the first cell of the notebooks
     This is a 10 day simulation with daily averaged output.  
 
 
-* ##[VENUS.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/VENUS.ipynb)  
-    
-    Playing with pulling VENUS data.  
-      
-    http://venus.uvic.ca/research/state-of-the-ocean/  
-
 * ##[Ariane.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Ariane.ipynb)  
     
     First attempt at an Ariane run.   
-
-* ##[Check Neah Bay forcing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Check Neah Bay forcing.ipynb)  
-    
-    Quick peak at new Neah Bay Sea surface height forcing files.  
-
-* ##[Nowcasts.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Nowcasts.ipynb)  
-    
-    Nancy's first tries for looking at nowcasts  
 
 * ##[Curents animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Curents animation.ipynb)  
     
