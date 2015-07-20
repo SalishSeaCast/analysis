@@ -6,19 +6,19 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
-* ##[Tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Tides.ipynb)  
+* ##[Tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/tides/Tides.ipynb)  
     
-* ##[Compare DFO tides with my tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Compare DFO tides with my tides.ipynb)  
+* ##[Compare DFO tides with my tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/tides/Compare DFO tides with my tides.ipynb)  
     
     Notebook to compare DFO tides with my tides  
 
-* ##[isoneutral_tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/isoneutral_tides.ipynb)  
+* ##[isoneutral_tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/tides/isoneutral_tides.ipynb)  
     
     This notebook will load data, perform a tidal analyis, compare with observations, plot the results, and save the analysis in a spreadsheet.  Eight Tidal Constituents: M2, K1, O1, S2, P1, N2, Q1 and K2 are considered.  
       
     Comparing isoneutral diffusion with tuned tides (corr15)  
 
-* ##[Compare Anne's constituents with mine.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Compare Anne's constituents with mine.ipynb)  
+* ##[Compare Anne's constituents with mine.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/tides/Compare Anne's constituents with mine.ipynb)  
     
     Notebook to compare DFO tides with my tides.   
       
