@@ -61,6 +61,10 @@ Descriptions below the links are from the first cell of the notebooks
     Information about the ONC VENUS nodes can be found here:  
     * http://venus.uvic.ca/  
 
+* ##[TSPlots.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/TSPlots.ipynb)  
+    
+    This notebook will load the temperature and salinity values of all the Bamfield paper stations and make TS plots  
+
 * ##[Exploring Tidal Ellipses at VENUS Nodes with Hourly Data.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/Exploring Tidal Ellipses at VENUS Nodes with Hourly Data.ipynb)  
     
     This notebook will be used to compare the tidal ellipses of the hourly data and the 15 minute data at the VENUS nodes. This notebook will be very similar to Exploring Tidal Ellipses at VENUS nodes.  
