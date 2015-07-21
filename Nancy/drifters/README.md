@@ -6,13 +6,15 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[Drifters_Ariane_Comparison_Nancy.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/drifters/Drifters_Ariane_Comparison_Nancy.ipynb)  
+    
+    **This notebook compares the trajectories of drifters versus the particle trajectories produced by Ariane using our model data.**  
+      
+    Nancy redid Idalia's computations because for Fortran/Python indexing. Originally, we used python to look up the grid index of the drifter release points. But since Ariane is written in Fortran, we should have added one to these indices. Nancy redid the calculation with +1. This notebook compares those trajectories.   
+
 * ##[Drifters.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/drifters/Drifters.ipynb)  
     
     Looking at the drifter data from Mark. Trying to determine dates and locations of releases.  
-
-* ##[Drifters_Ariane_Comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/drifters/Drifters_Ariane_Comparison.ipynb)  
-    
-    **This notebook compares the trajectories of drifters versus the particle trajectories produced by Ariane using our model data.**  
 
 
 ##License
