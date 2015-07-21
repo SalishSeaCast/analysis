@@ -64,6 +64,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook was made to compare surface currents in Fraser River plume during ebb tides with different river treatments  
 
+* ##[north-not until Howe extended current comparison June 19-22.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/north-not until Howe extended current comparison June 19-22.ipynb)  
+    
+     Simulation result from June 19-22  
+
 * ##[Test New salinity file with north channel.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Test New salinity file with north channel.ipynb)  
     
     **Salinity comparison**  
