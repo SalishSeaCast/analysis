@@ -7,12 +7,17 @@ import netCDF4 as nc
 # Load IOS and NOAA data
 ACTDR.load_ios()
 ACTDR.load_noaa()
+ACTDR.load_ios(DIR='/ocean/nsoontie/MEOPAR/IOS/2011', ignore_che=False)
+ACTDR.load_ios(DIR='/ocean/nsoontie/MEOPAR/IOS/2013', ignore_che=False)
 
 # Filter year
 ACTDR.filter_year(2003)
 
 # Filter data without Temperature and Salinity keys
 ACTDR.filter_keys()
+
+# Remove duplicates
+ACTDR.remove_duplicates()
 
 # Filter lon/lats.
 # Load SalishSea model
@@ -26,6 +31,8 @@ min_lon = lon[380:470, 0].min()
 max_lon = lon[380:470, 0].max()
 min_lat = lat[380:470, 0].min()
 max_lat = lat[380:470, 0].max()
+print 'Removing data oustide of ({},{}) to ({},{})'.format(min_lon, min_lat,
+                                                           max_lon, max_lat)
 # remove indices outside of range
 rm_ind = []
 # rm_ind contains the indices to remove
