@@ -6,6 +6,10 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[north-not until Howe extended current comparison June 27-29.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/north-not until Howe extended current comparison June 27-29.ipynb)  
+    
+     Simulation result from June 26-29  
+
 * ##[Ferry_route_Salinity_comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Ferry_route_Salinity_comparison.ipynb)  
     
     Ferry route & Salinity comparsion  
@@ -72,6 +76,8 @@ Descriptions below the links are from the first cell of the notebooks
     
      Simulation result from June 19-22  
 
+* ##[north-not until Howe extended current comparison June 15-18.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/north-not until Howe extended current comparison June 15-18.ipynb)  
+    
 * ##[Test New salinity file with north channel.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Test New salinity file with north channel.ipynb)  
     
     **Salinity comparison**  
