@@ -38,6 +38,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     Plot u, v velocity on the horizontal plane  
 
+* ##[north-not until Howe extended current comparison June 23-25.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/north-not until Howe extended current comparison June 23-25.ipynb)  
+    
+     Simulation result from June 22-25  
+
 * ##[New-compare surface currents with different river treatments.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/New-compare surface currents with different river treatments.ipynb)  
     
     This notebook was made to compare surface currents in Fraser River plume during ebb tides with different river treatments  
