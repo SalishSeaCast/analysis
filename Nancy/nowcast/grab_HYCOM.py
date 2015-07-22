@@ -20,7 +20,7 @@ def main():
         read_url(date, i, j)
 
 
-def read_url(date,i,j):
+def read_url(date, i, j):
     """Reads text from a url and save the output to a file
     Returns the filename of the output file
 
@@ -49,7 +49,6 @@ def read_url(date,i,j):
         os.makedirs(directory)
     f = 'hycom_{}_{}.txt'.format(i, j)
     filename = os.path.join(directory, f)
-    print filename
     text_file = open(filename, "w")
     text_file.write(html)
     text_file.close()
