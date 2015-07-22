@@ -1,3 +1,14 @@
 syntax: glob
 
 Muriel/TidalEllipseData/
+Nancy/drifters/*.csv
+Nancy/*.mp4
+Nancy/*.csv
+Nancy/nowcast/*/*.txt
+Nancy/strat/*.csv
+Nancy/strat/comparisons/*.dat
+Nancy/tides/*.csv
+storm_surges/*.csv
+storm_surges/pathdef.m
+storm_surges/data/pathdef.m
+storm_surges/data/*.csv
