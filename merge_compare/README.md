@@ -7,7 +7,15 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[mergeCompare.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/merge_compare/mergeCompare.ipynb)  
     
-    Comparing merge-tests on Salish and Japser. A week long run to see how the differences evolve.   
+    Comparing merge-tests between 3.4 and 3.6. Day long simulation.  
+      
+    * Rivers turned on, key_ldfslp turned off, constant vertical mixing  
+
+* ##[final_NEMO34_NEMO36_compare.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/merge_compare/final_NEMO34_NEMO36_compare.ipynb)  
+    
+    Comparing merge-tests between 3.4 and 3.6. Day long simulation. Final comparison.  
+      
+    * Rivers turned on, key_ldfslp turned off, constant vertical mixing  
 
 * ##[mergeCompare-check ldfslp.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/merge_compare/mergeCompare-check ldfslp.ipynb)  
     
