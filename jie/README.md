@@ -36,6 +36,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     Salinity figure  
 
+* ##[Heights of high low water in different stns.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Heights of high low water in different stns.ipynb)  
+    
+    This notebook was made to predict the heights of high and low waters in New West, Mission by relating them to the corresponding higher high and lower low water at Point Atkinson and discharge at Hope.  
+
 * ##[Particle notebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Particle notebook.ipynb)  
     
 * ##[U&V plot near Fraser mouth.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/U&V plot near Fraser mouth.ipynb)  
