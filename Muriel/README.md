@@ -85,6 +85,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook is used to save the tidal parameters calculated from the model output to a csv file in order to avoid having to load all the files run.  
 
+* ##[TidalEllipseModule.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/TidalEllipseModule.ipynb)  
+    
+    This notebook will be used to redesign the tidal ellipse functions to make them more user friendly  
+
 * ##[Velocity Plots Using 15min Data at VENUS nodes.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/Velocity Plots Using 15min Data at VENUS nodes.ipynb)  
     
     This notebook will be used to create functions that will show the daily veocity plots with data that ahs been calculated every 15 minutes at the VENUS nodes.  
