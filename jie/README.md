@@ -14,9 +14,13 @@ Descriptions below the links are from the first cell of the notebooks
     
     Ferry route & Salinity comparsion  
 
+* ##[particle tracking.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/particle tracking.ipynb)  
+    
+    This notebook was made to see the particle movement which reflect surface currents between new river treatment simulation and the original one  
+
 * ##[IOS Data-model results-more.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/IOS Data-model results-more.ipynb)  
     
-    2011-2014 data for analysis  
+    2011-2013 data for analysis  
 
 * ##[RBR-Model comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/RBR-Model comparison.ipynb)  
     
