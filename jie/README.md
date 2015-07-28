@@ -94,6 +94,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     **Salinity comparison**  
 
+* ##[Modify daily salinity.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Modify daily salinity.ipynb)  
+    
+       Continuous obs salinity with model result in 1.5-2.5m  
+
 * ##[SaliCom_18apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_18apr15.ipynb)  
     
 * ##[SaliCom_13apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_13apr15.ipynb)  
