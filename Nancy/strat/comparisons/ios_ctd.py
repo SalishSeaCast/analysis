@@ -9,7 +9,7 @@ Reads the various formats of the IOS CTD data
 import csv
 import numpy as np
 
-IOS_QUANTITIES = ['Pressure','Temperature:Primary','Temperature:Secondary','Temperature','Salinity:T0:C0']
+IOS_QUANTITIES = ['Pressure','Temperature:Primary','Temperature:Secondary','Temperature','Salinity:T0:C0', 'Salinity:T1:C1']
 IOS_READ_STATE = 'N/A'
 IOS_SKIP_LINES = 0
 IOS_FI = None

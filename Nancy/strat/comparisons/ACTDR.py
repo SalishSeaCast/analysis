@@ -15,7 +15,7 @@ import pickle
 import glob
 
 STANDARD_KEYS = ['Longitude','Latitude','ID','Day','Month','Year','Temperature','Salinity','Depth']#,'sigmaT','Oxygen']
-IOS_DAT_CONV_KEYS = {'Temperature:Primary' : 'Temperature', 'Temperature:Secondary' : 'Temp2', 'Salinity:T0:C0' : 'Salinity', 'Temperature' : 'Temperature', 'Salinity' : 'Salinity','Oxygen':'Oxygen:Voltage'}
+IOS_DAT_CONV_KEYS = {'Temperature:Primary' : 'Temperature', 'Temperature:Secondary' : 'Temperature', 'Salinity:T0:C0' : 'Salinity', 'Salinity:T1:C1' : 'Salinity', 'Temperature' : 'Temperature', 'Salinity' : 'Salinity','Oxygen':'Oxygen:Voltage'}
 
 CTD_DAT = []
 
