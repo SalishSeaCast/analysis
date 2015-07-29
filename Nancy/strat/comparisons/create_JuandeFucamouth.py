@@ -19,6 +19,9 @@ ACTDR.filter_keys()
 # Remove duplicates
 ACTDR.remove_duplicates()
 
+#Filter anomalies
+ACTDR.filter_anom()
+
 # Filter lon/lats.
 # Load SalishSea model
 b = '/data/nsoontie/MEOPAR/NEMO-forcing/grid/bathy_meter_SalishSea2.nc'
