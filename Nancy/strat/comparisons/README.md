@@ -10,6 +10,32 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[JuandeFucaBCs.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/JuandeFucaBCs.ipynb)  
     
     Attempting to isolate data from Rob's analysis that might be useful for the Salish Sea model.  
+      
+    Data is from NOAA and IOS 2003-2014.(Can do a bigger date range)  
+
+* ##[Nowcast, Spinup, Observations Comparison - JDF.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Nowcast, Spinup, Observations Comparison - JDF.ipynb)  
+    
+    Comparisons between nowcast, spinup, and observed salinity in the Strait of Juan de Fuca  
+
+* ##[WOD Data.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/WOD Data.ipynb)  
+    
+    Notebook to play with WOD data using the wodpy package  
+      
+    WOD data  
+    * http://www.nodc.noaa.gov/OC5/WOD/datageo.html  
+      
+    wodpy package  
+    * https://github.com/BillMills/wodpy  
+      
+
+
+* ##[Nowcast, Spinup, Observations Comparison - SOG.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Nowcast, Spinup, Observations Comparison - SOG.ipynb)  
+    
+    Comparisons between nowcast, spinup, and observed salinity in the Strait of Georgia  
+
+* ##[Nowcast, Spinup, Observations Comparison - Haro.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Nowcast, Spinup, Observations Comparison - Haro.ipynb)  
+    
+    Comparisons between nowcast, spinup, and observed salinity in the Haro Strait  
 
 
 ##License
