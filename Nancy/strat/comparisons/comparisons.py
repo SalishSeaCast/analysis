@@ -131,7 +131,7 @@ def compare_model_obs(month, model_year, field, data_obs, model_path,
     # Set plot axis and labels
     ax.set_ylim([zmax, zmin])
     ax.set_xlim([vmin, vmax])
-    ax.set_title('Month {}'.format(month))
+    ax.set_title(title)
     ax.set_ylabel('Depth [m]')
     ax.set_xlabel(field)
 
@@ -139,7 +139,7 @@ def compare_model_obs(month, model_year, field, data_obs, model_path,
     viz_tools.plot_coastline(axm, f, coords='map')
     axm.set_ylim([ymin, ymax])
     axm.set_xlim([xmin, xmax])
-    axm.set_title(title)
+    axm.set_title('Month {}'.format(month))
 
     # fake the legend
     simObs, = ax.plot(-1, 0, 'r*')
