@@ -7,6 +7,18 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[WOD Data-Haro.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/WOD Data-Haro.ipynb)  
+    
+    Notebook to play with WOD data using the wodpy package  
+      
+    WOD data  
+    * http://www.nodc.noaa.gov/OC5/WOD/datageo.html  
+      
+    wodpy package  
+    * https://github.com/BillMills/wodpy  
+      
+
+
 * ##[JuandeFucaBCs.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/JuandeFucaBCs.ipynb)  
     
     Attempting to isolate data from Rob's analysis that might be useful for the Salish Sea model.  
