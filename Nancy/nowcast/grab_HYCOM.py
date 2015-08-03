@@ -144,5 +144,6 @@ def parse_hycom_text(filename):
 
     return data, lon, lat
 
+
 if __name__ == '__main__':
     main()
