@@ -147,3 +147,100 @@ def compare_model_obs(month, model_year, field, data_obs, model_path,
     ax.legend([simObs, simMod], ['obs', 'model'], loc=0)
 
     return fig
+
+
+def compare_cast_model(month, model_year, field, data_obs, model_path,
+                       xmin=-124, xmax=-122, ymin=48, ymax=50, zmin=0,
+                       zmax=300, vmin=10, vmax=32, x=7):
+    """Comparison between model and observations at every cast in a given month
+    Model is compared x days before and after cast date
+    """
+    # Load model grid
+    grid = '/data/nsoontie/MEOPAR/NEMO-forcing/grid/bathy_meter_SalishSea2.nc'
+    f = nc.Dataset(grid)
+    bathy = f.variables['Bathymetry'][:]
+    X = f.variables['nav_lon'][:]
+    Y = f.variables['nav_lat'][:]
+
+    # date ranges based on month and model_year
+    date = datetime.datetime(model_year, month, 1)
+    sdt = date - datetime.timedelta(days=31)
+    edt = date + datetime.timedelta(days=60)
+
+    # Model variables and nowcast/spinup?
+    if field == 'Salinity':
+        model_field = 'vosaline'
+    elif field == 'Temperatute':
+        model_field = 'votemper'
+    # Is this a nowcast?
+    if model_year == 2014 or model_year == 2015:
+        nowcast_flag = True
+    else:
+        nowcast_flag = False
+
+    # load model variables
+    depth_mod, var_mod, dates_mod = load_model(model_path, sdt, edt,
+                                               model_field,
+                                               nowcast_flag=nowcast_flag)
+    # plot obs and model
+    data_m = data_obs[data_obs['Month'] == month]
+    num_casts = len(data_m.index)
+    fig, axs = plt.subplots(num_casts, 2, figsize=(8, 3.5*num_casts))
+    cast = 0
+    for dep_obs, var_obs, lon, lat, day, year in zip(data_m['Depth'],
+                                                     data_m[field],
+                                                     data_m['Longitude'],
+                                                     data_m['Latitude'],
+                                                     data_m['Day'],
+                                                     data_m['Year']):
+        # model grid points
+        try:
+            ax = axs[cast, 0]
+            axm = axs[cast, 1]
+        except IndexError:
+            ax = axs[0]
+            axm = axs[1]
+        [j, i] = tidetools.find_closest_model_point(lon, lat, X, Y, bathy)
+        # model time index
+        t_ind = []
+        for count, date in enumerate(dates_mod):
+            if date.day == day:
+                if date.month == month:
+                    t_ind.append(count)
+                    t_ind.append(count - x)  # x days earlier
+                    t_ind.append(count + x)  # x days later
+        labels = ['same day', '{} days earlier'.format(x),
+                  '{} days later'.format(x)]
+        colors = ['b', 'g', 'k']
+        for ii, t in enumerate(t_ind):
+            try:
+                var_plot = var_mod[t, :, j, i]
+                var_plot = np.ma.masked_values(var_plot, 0)
+                if j:
+                    ax.plot(var_plot, depth_mod, '-b',
+                            color=colors[ii], label=labels[ii],
+                            alpha=0.5)
+            except IndexError:
+                    print ('No model data for {}/{}, '
+                           '{}'.format(day, month, labels[ii])
+                           )
+        # plot observations and location on map
+        ax.plot(var_obs, dep_obs, '-*r', label='obs')
+        axm.plot(lon, lat, '*r')
+        # Set plot axis and labels
+        ax.set_ylim([zmax, zmin])
+        ax.set_xlim([vmin, vmax])
+        ax.set_ylabel('Depth [m]')
+        ax.set_xlabel(field)
+
+        # plot mode coastline
+        viz_tools.plot_coastline(axm, f, coords='map')
+        axm.set_ylim([ymin, ymax])
+        axm.set_xlim([xmin, xmax])
+        axm.set_title('{}-{}-{}'.format(year, month, day))
+
+        # legend
+        ax.legend(loc=0)
+        cast = cast+1
+
+    return fig
