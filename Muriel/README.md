@@ -42,6 +42,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook will be used to compare model outputs of temperature and salinity to the VENUS nodes data.  
 
+* ##[DailyComparisonPlots.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/DailyComparisonPlots.ipynb)  
+    
+    This notebook will be used to create the plots that will do daily comparisons of the model to ONC VENUS nodes.  
+
 * ##[TestTidalEllipseOutput.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/TestTidalEllipseOutput.ipynb)  
     
     This notebook is used to test that the functions are working properly (entering an input with a already known output) and to compare the hourly to quarter-hourly, the winter to spring and a long to short time series results.  
