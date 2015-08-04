@@ -26,6 +26,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook will be used to look at and understand the model output currents through Juan de Fuca with the use of ellipses  
 
+* ##[FittitTestingWMultipleConstituents.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/FittitTestingWMultipleConstituents.ipynb)  
+    
+    This notebook will be used to test that the output of the fittit functions with multiple harmonic constituents is working correctly by using known values as inputs and getting them as a results.  
+
 * ##[Exploring Tidal Ellipses at VENUS nodes.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/Exploring Tidal Ellipses at VENUS nodes.ipynb)  
     
     This notebook willbe used to explore the tidal ellipses conversions and manipulation at the VENUS nodes.  
