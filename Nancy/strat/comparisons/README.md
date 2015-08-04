@@ -7,6 +7,12 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[Juan de Fuca - regional cast by cast.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Juan de Fuca - regional cast by cast.ipynb)  
+    
+    Compare a single cast from IOS observations to model.  
+      
+    IOS observations span many years. So, compare day of, 7 days before and 7 days after.  
+
 * ##[WOD Data-Haro.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/WOD Data-Haro.ipynb)  
     
     Notebook to play with WOD data using the wodpy package  
