@@ -11,7 +11,7 @@ Descriptions below the links are from the first cell of the notebooks
     
     Compare a single cast from IOS observations to model.  
       
-    IOS observations span many years. So, compare day of, 7 days before and 7 days after.  
+    IOS observations span many years. So, cbservations with model on day of, 7 days before and 7 days after. This can account for spring/neap variability but not interannual variabilty in discharge, winds, etc  
 
 * ##[WOD Data-Haro.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/WOD Data-Haro.ipynb)  
     
@@ -54,6 +54,12 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[Nowcast, Spinup, Observations Comparison - Haro.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Nowcast, Spinup, Observations Comparison - Haro.ipynb)  
     
     Comparisons between nowcast, spinup, and observed salinity in the Haro Strait  
+
+* ##[Haro- regional cast by cast.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Haro- regional cast by cast.ipynb)  
+    
+    Compare a single cast from IOS observations to model.  
+      
+    IOS observations span many years. So, compare observations with model on day of, 7 days before and 7 days after. This can account for spring/neap variability but not interannual variabilty in discharge, winds, etc  
 
 
 ##License
