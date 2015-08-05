@@ -20,7 +20,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[IOS Data-model results-more.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/IOS Data-model results-more.ipynb)  
     
-    2011-2013 data for analysis  
+    2011-2014 IOS data for analysis  
 
 * ##[RBR-Model comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/RBR-Model comparison.ipynb)  
     
@@ -46,7 +46,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[Heights of high low water in different stns.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Heights of high low water in different stns.ipynb)  
     
-    This notebook was made to predict the heights of high and low waters in New West, Mission by relating them to the corresponding higher high and lower low water at Point Atkinson and discharge at Hope.  
+    This notebook was made to predict the heights and time for high and low waters in New West, Mission, Sandheads, Steveston, Deas Island by relating them to the corresponding higher high and lower low water at Point Atkinson and discharge at Hope.  
 
 * ##[Particle notebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Particle notebook.ipynb)  
     
@@ -109,6 +109,10 @@ Descriptions below the links are from the first cell of the notebooks
     * /ocean/rich/home/SoG/ios/che/  
     * /ocean/rich/home/SoG/ios/che2  
 
+
+* ##[Smooth bathymetry & Create New TS file-nor-not-to-Howe.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Smooth bathymetry & Create New TS file-nor-not-to-Howe.ipynb)  
+    
+    **Smooth bathymetry  -grab from Susan's notebook**  
 
 * ##[north-not until Howe extended current comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/north-not until Howe extended current comparison.ipynb)  
     
