@@ -14,6 +14,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     Notebook to compare HYCOM and NOAA  
 
+* ##[Detirmining Indices for subsetting HYCOM data.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/Detirmining Indices for subsetting HYCOM data.ipynb)  
+    
+    This notebook will look up indices for subsetting the HYCOM netcdf files  
+
 * ##[VENUS.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/VENUS.ipynb)  
     
     Playing with pulling VENUS data.  
