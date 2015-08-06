@@ -48,6 +48,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook was made to predict the heights and time for high and low waters in New West, Mission, Sandheads, Steveston, Deas Island by relating them to the corresponding higher high and lower low water at Point Atkinson and discharge at Hope.  
 
+* ##[Bathymetry6 with deepening at the beginning.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Bathymetry6 with deepening at the beginning.ipynb)  
+    
+    This notebook was to deepen Fraser River channel at beginning and widen it to New Westminster, other depth does not change(same with bathymetry5)   
+
 * ##[Particle notebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Particle notebook.ipynb)  
     
 * ##[U&V plot near Fraser mouth.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/U&V plot near Fraser mouth.ipynb)  
