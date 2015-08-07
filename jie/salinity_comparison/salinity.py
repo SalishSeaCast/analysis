@@ -369,12 +369,14 @@ def salinity_ferry_route_more(grid_T, grid_B, PNW_coastline, ave, sal_hr_1, sal_
     cmap.set_bad('burlywood')
     if ave ==0:
         mesh=axs[1].pcolormesh(longitude[:],latitude[:],sal_hr_1[:],cmap=cmap)
+        axs[1].set_title('Ferry Route: 3am[UTC] 1.5m model result ', **title_font)
     elif ave ==1:
         mesh=axs[1].pcolormesh(longitude[:],latitude[:],sal_hr_ave[:],cmap=cmap)
+        axs[1].set_title('Ferry Route: 3am[UTC] 3m average model result ', **title_font)
     cbar=fig.colorbar(mesh)
     plt.setp(plt.getp(cbar.ax.axes, 'yticklabels'), color='w')
     cbar.set_label('Pratical Salinity', color='white') 
-    axs[1].set_title('Ferry Route: 3am[UTC] 1.5m model result ', **title_font)
+    
     bbox_args = dict(boxstyle='square', facecolor='white', alpha=0.7)
     stations=['Tsawwassen','Duke','Vancouver']
     for stn in stations:
@@ -396,7 +398,7 @@ def salinity_ferry_route_more(grid_T, grid_B, PNW_coastline, ave, sal_hr_1, sal_
     value_mean_3rd_hour, value_mean_4rd_hour, \
     value_mean_ave3rd, value_mean_ave4rd,\
     salinity11, salinity1_2_4,date_str = salinity_fxn(saline, run_date, filepath_name, results_home)
-    axs[0].plot(lon11,lat11,'black', linewidth = 4)
+    axs[1].plot(lon11,lat11,'black', linewidth = 4)
     if ave ==0:
         model_salinity_3rd_hour=axs[0].plot(lon11,value_mean_3rd_hour,'DodgerBlue',\
                                     linewidth=2, label='3 am [UTC]')
