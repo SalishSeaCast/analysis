@@ -226,6 +226,7 @@ def salinity_fxn(saline, run_date, filepath_name,results_home):
     saline_nemo_ave4rd = np.mean(saline_nemo[4, 0:3, 0:898, 0:398], axis = 0)
     
     matrix=np.zeros([36,9])
+    matrix_ave=np.zeros([36,9])
     values=np.zeros([36,1])
     valuess=np.zeros([36,1])
     values_ave=np.zeros([36,1])
