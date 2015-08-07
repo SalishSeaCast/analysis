@@ -26,6 +26,9 @@ axis_font = {'fontname': 'Bitstream Vera Sans', 'size': '13'}
 ferry_stations = {'Tsawwassen': {'lat': 49.0084,'lon': -123.1281},
                   'Duke': {'lat': 49.1632,'lon': -123.8909},
                   'Vancouver': {'lat': 49.2827,'lon': -123.1207}}
+paths = {'nowcast': '/data/dlatorne/MEOPAR/SalishSea/nowcast/',
+        'longerresult': '/ocean/jieliu/research/meopar/river-treatment/14days_norefraserxml/',
+        'widenresult': '/data/jieliu/MEOPAR/river-treatment/24nor_NW/' }
 
 def results_dataset(period, grid, results_dir):
     """Return the results dataset for period (e.g. 1h or 1d)
@@ -216,7 +219,7 @@ def salinity_fxn(saline, run_date, filepath_name,results_home):
     value_mean_3rd_hour, value_mean_4rd_hour, \
     salinity11, salinity1_2_4,date_str
 
-def salinity_ferry_route(grid_T, grid_B, PNW_coastline,  sal_hr,ferry_sal):
+def salinity_ferry_route(grid_T, grid_B, PNW_coastline,  sal_hr,ferry_sal, run_date,results_home):
     """ plot daily salinity comparisons between ferry observations 
     and model results as well as ferry route with model salinity 
     distribution.
@@ -264,10 +267,13 @@ def salinity_ferry_route(grid_T, grid_B, PNW_coastline,  sal_hr,ferry_sal):
     ferry_stations['Vancouver']['lat']+ 0.09 ),fontsize=15, color='black', bbox=bbox_args )
     figures.axis_colors(axs[1], 'white')
     
-    
+    saline=sio.loadmat('/ocean/jieliu/research/meopar\
+    /autodataupdate/ferrydata/SBE1920150615.mat')
+    filepath_name = date(run_date.year,run_date.month, run_date.day,\
+     run_date.day,run_date.day, results_home,'1h','grid_T')     
     lon11, lat11, lon1_2_4, lat1_2_4,\
     value_mean_3rd_hour, value_mean_4rd_hour, \
-    salinity11, salinity1_2_4,date_str = salinity_fxn(saline)
+    salinity11, salinity1_2_4,date_str = salinity_fxn(saline, run_date, filepath_name, results_home)
     axs[1].plot(lon11,lat11,'black', linewidth = 4)
     model_salinity_3rd_hour=axs[0].plot(lon11,value_mean_3rd_hour,'DodgerBlue',\
                                     linewidth=2, label='3 am [UTC]')
