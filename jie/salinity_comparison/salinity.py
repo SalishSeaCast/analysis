@@ -31,6 +31,24 @@ def results_dataset(period, grid, results_dir):
     filepaths = glob(os.path.join(results_dir, filename_pattern.format(period=period, grid=grid)))
     return  nc.Dataset(filepaths[0])
 
+def date(year, month, day, day_start, day_end, results_home,  period, grid):
+    
+    day_range = np.arange(day_start, day_end+1)
+    day_len = len(day_range)
+    files_all = [None] * day_len
+    inds = np.arange(day_len)
+    
+    for i, day in zip(inds, day_range):
+        run_date = datetime.datetime(year,month, day)
+        #results_home = '/data/jieliu/MEOPAR/river-treatment/24nor_NW/'
+        results_dir = os.path.join(results_home, run_date.strftime('%d%b%y').lower())
+        filename = 'SalishSea_' + period + '_' + run_date.strftime('%Y%m%d').lower() + \
+        '_' + run_date.strftime('%Y%m%d').lower() + '_' + grid + '.nc'
+        file_single = os.path.join(results_dir, filename)
+        files_all[i] = file_single
+
+    return files_all
+
 def find_dist (q, lon11, lat11, X, Y, bathy, longitude, latitude, saline_nemo_3rd, saline_nemo_4rd):
     k=0
     values =0
@@ -77,8 +95,8 @@ def get_SS2_bathy_data():
     return bathy, X, Y
 
 def get_SS6_bathy_data():
-    """Get the Salish Sea 5 bathymetry and grid data
-    e.g. bathy, X, Y = get_SS5_bathy_data()
+    """Get the Salish Sea 6 bathymetry and grid data
+    e.g. bathy, X, Y = get_SS6_bathy_data()
 
     .. note::
 
