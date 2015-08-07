@@ -134,6 +134,9 @@ def get_SS6_bathy_data():
     return bathy, X, Y
 
 def salinity_fxn(saline, run_date, filepath_name,results_home):
+    paths = {'nowcast': '/data/dlatorne/MEOPAR/SalishSea/nowcast/',
+        'longerresult': '/ocean/jieliu/research/meopar/river-treatment/14days_norefraserxml/',
+        'widenresult': '/data/jieliu/MEOPAR/river-treatment/24nor_NW/' }
     a=saline['ferryData']
     b=a['data']
     dataa = b[0,0]
