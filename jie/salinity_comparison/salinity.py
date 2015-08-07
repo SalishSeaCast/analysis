@@ -387,7 +387,7 @@ def salinity_ferry_route_more(grid_T, grid_B, PNW_coastline, ave, sal_hr_1, sal_
     ferry_stations['Duke']['lat'] ),fontsize=15, color='black', bbox=bbox_args )
     axs[1].annotate ('Vancouver',(ferry_stations['Vancouver']['lon'] - 0.1,\
     ferry_stations['Vancouver']['lat']+ 0.09 ),fontsize=15, color='black', bbox=bbox_args )
-    figures.axis_colors(axs[0,1], 'white')
+    figures.axis_colors(axs[0], 'white')
 
  
     filepath_name = date(run_date.year,run_date.month, run_date.day,\
@@ -412,7 +412,7 @@ def salinity_ferry_route_more(grid_T, grid_B, PNW_coastline, ave, sal_hr_1, sal_
         observation_salinity=axs[0].plot(lon1_2_4,salinity1_2_4,'DarkGreen', \
                                      linewidth=2, label="Observed")
     axs[0].text(0.25, -0.1,'Observations from Ocean Networks Canada', \
-                transform=axs[0,0].transAxes, color='white')
+                transform=axs[0].transAxes, color='white')
 
     axs[0].set_xlim(-124, -123)
     axs[0].set_ylim(0, 30)
