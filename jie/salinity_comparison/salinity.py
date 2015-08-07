@@ -57,6 +57,25 @@ def find_dist (q, lon11, lat11, X, Y, bathy, longitude, latitude, saline_nemo_3r
             
     return values, valuess, weights
 
+def get_SS2_bathy_data():
+    """Get the original Salish Sea 2 bathymetry and grid data
+    e.g. bathy, X, Y = get_SS2_bathy_data()
+
+    .. note::
+
+        This function is deprecated due to hard-coding of
+        :file:`/ocean/klesouef/` path.
+        Use :py:func:`tidetools.get_bathy_data` instead.
+
+    :returns: bathy, X, Y
+    """
+    grid = nc.Dataset(
+        '/ocean/jieliu/research/meopar/nemo-forcing/grid/bathy_meter_SalishSea2.nc', 'r')
+    bathy = grid.variables['Bathymetry'][:, :]
+    X = grid.variables['nav_lon'][:, :]
+    Y = grid.variables['nav_lat'][:, :]
+    return bathy, X, Y
+
 def get_SS6_bathy_data():
     """Get the Salish Sea 5 bathymetry and grid data
     e.g. bathy, X, Y = get_SS5_bathy_data()
