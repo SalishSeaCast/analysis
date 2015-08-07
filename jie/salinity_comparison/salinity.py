@@ -219,7 +219,7 @@ def salinity_fxn(saline, run_date, filepath_name,results_home):
     value_mean_3rd_hour, value_mean_4rd_hour, \
     salinity11, salinity1_2_4,date_str
 
-def salinity_ferry_route(grid_T, grid_B, PNW_coastline,  sal_hr,ferry_sal, run_date,results_home):
+def salinity_ferry_route(grid_T, grid_B, PNW_coastline,  sal_hr,ferry_sal, saline, run_date,results_home):
     """ plot daily salinity comparisons between ferry observations 
     and model results as well as ferry route with model salinity 
     distribution.
@@ -267,8 +267,6 @@ def salinity_ferry_route(grid_T, grid_B, PNW_coastline,  sal_hr,ferry_sal, run_d
     ferry_stations['Vancouver']['lat']+ 0.09 ),fontsize=15, color='black', bbox=bbox_args )
     figures.axis_colors(axs[1], 'white')
     
-    saline=sio.loadmat('/ocean/jieliu/research/meopar\
-    /autodataupdate/ferrydata/SBE1920150615.mat')
     filepath_name = date(run_date.year,run_date.month, run_date.day,\
      run_date.day,run_date.day, results_home,'1h','grid_T')     
     lon11, lat11, lon1_2_4, lat1_2_4,\
