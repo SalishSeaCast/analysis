@@ -228,8 +228,11 @@ def salinity_fxn(saline, run_date, filepath_name,results_home):
     matrix=np.zeros([36,9])
     values=np.zeros([36,1])
     valuess=np.zeros([36,1])
+    values_ave=np.zeros([36,1])
+    valuess_ave=np.zeros([36,1])
     value_mean_3rd_hour=np.zeros([36,1])
-    value_mean_4rd_hour=np.zeros([36,1]) 
+    value_mean_ave3rd=np.zeros([36,1])
+    value_mean_ave4rd=np.zeros([36,1]) 
     for q in np.arange(0,36):
         if results_home == paths['longerresult']:
             values[q], valuess[q], matrix[q,:]=find_dist(q, lon11, lat11, X, Y,\
