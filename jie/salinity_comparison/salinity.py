@@ -359,7 +359,7 @@ def salinity_ferry_route_more(grid_T, grid_B, PNW_coastline, ave, sal_hr_1, sal_
 
     latitude=grid_T.variables['nav_lat'] 
     longitude=grid_T.variables['nav_lon']
-    fig, axs = plt.subplots(1, 2, figsize=(28, 16))
+    fig, axs = plt.subplots(1, 2, figsize=(15, 8))
 
     figures.plot_map(axs[1], grid_B, PNW_coastline)
     axs[1].set_xlim(-124.5, -122.5)
@@ -389,7 +389,7 @@ def salinity_ferry_route_more(grid_T, grid_B, PNW_coastline, ave, sal_hr_1, sal_
     ferry_stations['Duke']['lat'] ),fontsize=15, color='black', bbox=bbox_args )
     axs[1].annotate ('Vancouver',(ferry_stations['Vancouver']['lon'] - 0.1,\
     ferry_stations['Vancouver']['lat']+ 0.09 ),fontsize=15, color='black', bbox=bbox_args )
-    figures.axis_colors(axs[0], 'white')
+    figures.axis_colors(axs[1], 'white')
 
  
     filepath_name = date(run_date.year,run_date.month, run_date.day,\
