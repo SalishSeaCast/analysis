@@ -228,7 +228,8 @@ def salinity_ferry_route(grid_T, grid_B, PNW_coastline,  sal_hr,ferry_sal):
     
     :returns: fig
     """
-
+    latitude=grid_T.variables['nav_lat'] 
+    longitude=grid_T.variables['nav_lon']
     fig, axs = plt.subplots(1, 2, figsize=(15, 8))
 
     figures.plot_map(axs[1], grid_B, PNW_coastline)
