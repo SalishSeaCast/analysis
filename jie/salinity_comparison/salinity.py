@@ -209,15 +209,25 @@ def salinity_fxn(saline, run_date, filepath_name,results_home):
                                      bathynew, longitude, latitude, saline_nemo_3rd, saline_nemo_4rd)
             value_mean_3rd_hour[q]=values[q]/sum(matrix[q])
             value_mean_4rd_hour[q]=valuess[q]/sum(matrix[q])
+            
+            values_ave[q], valuess_ave[q], matrix_ave[q,:]=find_dist(q, lon11, lat11, X, Y,\
+                                     bathynew, longitude, latitude, saline_nemo_ave3rd, saline_nemo_ave4rd)
+            value_mean_ave3rd[q]=values_ave[q]/sum(matrix_ave[q])
+            value_mean_ave4rd[q]=valuess_ave[q]/sum(matrix_ave[q])
         elif results_home == paths['nowcast']:
             values[q], valuess[q], matrix[q,:]=find_dist(q, lon11, lat11, X, Y,\
                                      bathyold, longitude, latitude, saline_nemo_3rd, saline_nemo_4rd)
             value_mean_3rd_hour[q]=values[q]/sum(matrix[q])
             value_mean_4rd_hour[q]=valuess[q]/sum(matrix[q])
 
+            values_ave[q], valuess_ave[q], matrix_ave[q,:]=find_dist(q, lon11, lat11, X, Y,\
+                                     bathynew, longitude, latitude, saline_nemo_ave3rd, saline_nemo_ave4rd)
+            value_mean_ave3rd[q]=values_ave[q]/sum(matrix_ave[q])
+            value_mean_ave4rd[q]=valuess_ave[q]/sum(matrix_ave[q])
+
     return lon11, lat11, lon1_2_4, lat1_2_4,\
     value_mean_3rd_hour, value_mean_4rd_hour, \
-    saline_nemo_ave3rd, saline_nemo_ave4rd,\
+    value_mean_ave3rd, value_mean_ave4rd,\
     salinity11, salinity1_2_4, date_str
 
 def salinity_ferry_route(grid_T, grid_B, PNW_coastline, sal_hr, saline, run_date,results_home):
@@ -272,7 +282,7 @@ def salinity_ferry_route(grid_T, grid_B, PNW_coastline, sal_hr, saline, run_date
      run_date.day,run_date.day, results_home,'1h','grid_T')     
     lon11, lat11, lon1_2_4, lat1_2_4,\
     value_mean_3rd_hour, value_mean_4rd_hour, \
-    saline_nemo_ave3rd, saline_nemo_ave4rd,\
+    value_mean_ave3rd, value_mean_ave4rd,\
     salinity11, salinity1_2_4,date_str = salinity_fxn(saline, run_date, filepath_name, results_home)
     axs[1].plot(lon11,lat11,'black', linewidth = 4)
     model_salinity_3rd_hour=axs[0].plot(lon11,value_mean_3rd_hour,'DodgerBlue',\
@@ -375,7 +385,7 @@ def salinity_ferry_route_more(grid_T, grid_B, PNW_coastline, sal_hr_1, sal_hr_av
      run_date.day,run_date.day, results_home,'1h','grid_T')     
     lon11, lat11, lon1_2_4, lat1_2_4,\
     value_mean_3rd_hour, value_mean_4rd_hour, \
-    saline_nemo_ave3rd, saline_nemo_ave4rd,\
+    value_mean_ave3rd, value_mean_ave4rd,\
     salinity11, salinity1_2_4,date_str = salinity_fxn(saline, run_date, filepath_name, results_home)
     axs[0,0].plot(lon11,lat11,'black', linewidth = 4)
     model_salinity_3rd_hour=axs[0,0].plot(lon11,value_mean_3rd_hour,'DodgerBlue',\
