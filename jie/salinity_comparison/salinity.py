@@ -94,6 +94,26 @@ def get_SS2_bathy_data():
     Y = grid.variables['nav_lat'][:, :]
     return bathy, X, Y
 
+def get_SS5_bathy_data():
+    """Get the Salish Sea 5 bathymetry and grid data
+    e.g. bathy, X, Y = get_SS5_bathy_data()
+
+    .. note::
+
+        This function is deprecated due to hard-coding of
+        :file:`/ocean/klesouef/` path.
+        Use :py:func:`tidetools.get_bathy_data` instead.
+
+    :returns: bathy, X, Y
+    """
+    grid = nc.Dataset(
+        '/ocean/jieliu/research/meopar/river-treatment/bathy_meter_SalishSea5.nc', 'r')
+    bathy = grid.variables['Bathymetry'][:, :]
+    X = grid.variables['nav_lon'][:, :]
+    Y = grid.variables['nav_lat'][:, :]
+    return bathy, X, Y
+
+
 def get_SS6_bathy_data():
     """Get the Salish Sea 6 bathymetry and grid data
     e.g. bathy, X, Y = get_SS6_bathy_data()
@@ -113,7 +133,7 @@ def get_SS6_bathy_data():
     Y = grid.variables['nav_lat'][:, :]
     return bathy, X, Y
 
-def salinity_fxn(saline):
+def salinity_fxn(saline, run_date, filepath_name):
     a=saline['ferryData']
     b=a['data']
     dataa = b[0,0]
@@ -146,9 +166,9 @@ def salinity_fxn(saline):
     lon11=lon1_2_4[0:-1:20]
     lat11=lat1_2_4[0:-1:20]
     salinity11=salinity1_2_4[0:-1:20]
-    if results_home == '/data/jieliu/MEOPAR/river-treatment/24nor_NW/': 
+    if results_home == paths['longerresult']: 
         bathynew, X, Y = get_SS6_bathy_data()
-    elif results_home == '/data/dlatorne/MEOPAR/SalishSea/nowcast/': 
+    elif results_home == paths['nowcast']: 
         bathyold, X, Y = get_SS2_bathy_data()
     
     #bathy, X, Y = tidetools.get_SS2_bathy_data()
@@ -174,12 +194,12 @@ def salinity_fxn(saline):
     value_mean_3rd_hour=np.zeros([36,1])
     value_mean_4rd_hour=np.zeros([36,1]) 
     for q in np.arange(0,36):
-        if results_home == '/data/jieliu/MEOPAR/river-treatment/24nor_NW/':
+        if results_home == paths['longerresult']:
             values[q], valuess[q], matrix[q,:]=find_dist(q, lon11, lat11, X, Y,\
                                      bathynew, longitude, latitude, saline_nemo_3rd, saline_nemo_4rd)
             value_mean_3rd_hour[q]=values[q]/sum(matrix[q])
             value_mean_4rd_hour[q]=valuess[q]/sum(matrix[q])
-        elif results_home == '/data/dlatorne/MEOPAR/SalishSea/nowcast/':
+        elif results_home == paths['nowcast']:
             values[q], valuess[q], matrix[q,:]=find_dist(q, lon11, lat11, X, Y,\
                                      bathyold, longitude, latitude, saline_nemo_3rd, saline_nemo_4rd)
             value_mean_3rd_hour[q]=values[q]/sum(matrix[q])
