@@ -385,7 +385,7 @@ def salinity_ferry_route_more(grid_T, grid_B, PNW_coastline, sal_hr_1, sal_hr_av
     observation_salinity=axs[0,0].plot(lon1_2_4,salinity1_2_4,'DarkGreen', \
                                      linewidth=2, label="Observed")
     axs[0,0].text(0.25, -0.1,'Observations from Ocean Networks Canada', \
-                transform=axs[0].transAxes, color='white')
+                transform=axs[0,0].transAxes, color='white')
 
     axs[0,0].set_xlim(-124, -123)
     axs[0,0].set_ylim(0, 30)
@@ -405,7 +405,7 @@ def salinity_ferry_route_more(grid_T, grid_B, PNW_coastline, sal_hr_1, sal_hr_av
     observation_salinity=axs[1,0].plot(lon1_2_4,salinity1_2_4,'DarkGreen', \
                                      linewidth=2, label="Observed")
     axs[1,0].text(0.25, -0.1,'Observations from Ocean Networks Canada', \
-                transform=axs[0].transAxes, color='white')
+                transform=axs[1, 0].transAxes, color='white')
 
     axs[1,0].set_xlim(-124, -123)
     axs[1,0].set_ylim(0, 30)
@@ -415,7 +415,7 @@ def salinity_ferry_route_more(grid_T, grid_B, PNW_coastline, sal_hr_1, sal_hr_av
     axs[1,0].legend()
     axs[1,0].grid()
     fig.patch.set_facecolor('#2B3E50')
-    figures.axis_colors(axs[1,1], 'gray')
+    figures.axis_colors(axs[1,0], 'gray')
 
 
     return fig
