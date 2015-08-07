@@ -133,7 +133,7 @@ def get_SS6_bathy_data():
     Y = grid.variables['nav_lat'][:, :]
     return bathy, X, Y
 
-def salinity_fxn(saline, run_date, filepath_name):
+def salinity_fxn(saline, run_date, filepath_name,results_home):
     a=saline['ferryData']
     b=a['data']
     dataa = b[0,0]
@@ -167,7 +167,7 @@ def salinity_fxn(saline, run_date, filepath_name):
     lat11=lat1_2_4[0:-1:20]
     salinity11=salinity1_2_4[0:-1:20]
     if results_home == paths['longerresult']: 
-        bathynew, X, Y = get_SS6_bathy_data()
+        bathynew, X, Y = get_SS5_bathy_data()
     elif results_home == paths['nowcast']: 
         bathyold, X, Y = get_SS2_bathy_data()
     
