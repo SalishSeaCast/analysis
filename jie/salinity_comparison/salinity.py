@@ -348,7 +348,7 @@ def salinity_ferry_route_more(grid_T, grid_B, PNW_coastline, sal_hr_1, sal_hr_av
     figures.plot_map(axs[1,1], grid_B, PNW_coastline)
     axs[1,1].set_xlim(-124.5, -122.5)
     axs[1,1].set_ylim(48.2, 49.5)
-    viz_tools.set_aspect(axs[1],coords='map',lats=latitude)
+    viz_tools.set_aspect(axs[1,1],coords='map',lats=latitude)
     cmap=plt.get_cmap('spectral')
     cmap.set_bad('burlywood')
     mesh=axs[1,1].pcolormesh(longitude[:],latitude[:],sal_hr_ave[:],cmap=cmap)
