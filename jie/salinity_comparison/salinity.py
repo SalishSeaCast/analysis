@@ -23,6 +23,10 @@ title_font = {
 }
 axis_font = {'fontname': 'Bitstream Vera Sans', 'size': '13'}
 
+ferry_stations = {'Tsawwassen': {'lat': 49.0084,'lon': -123.1281},
+                  'Duke': {'lat': 49.1632,'lon': -123.8909},
+                  'Vancouver': {'lat': 49.2827,'lon': -123.1207}}
+
 def results_dataset(period, grid, results_dir):
     """Return the results dataset for period (e.g. 1h or 1d)
     and grid (e.g. grid_T, grid_U) from results_dir.
@@ -228,6 +232,7 @@ def salinity_ferry_route(grid_T, grid_B, PNW_coastline,  sal_hr,ferry_sal):
     
     :returns: fig
     """
+
     latitude=grid_T.variables['nav_lat'] 
     longitude=grid_T.variables['nav_lon']
     fig, axs = plt.subplots(1, 2, figsize=(15, 8))
