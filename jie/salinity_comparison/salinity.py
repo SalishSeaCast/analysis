@@ -167,7 +167,10 @@ def get_SS6_bathy_data():
     Y = grid.variables['nav_lat'][:, :]
     return bathy, X, Y
 
-def salinity_fxn(saline, run_date, filepath_name,results_home):
+def salinity_fxn(saline, run_date, results_home):
+    """The significance of this function was to return longitude,
+       latitude, salinity values for observations, 1.5m of 3rd & 4rd, 
+       3m average of 3rd & 4rd model result """
 
     a=saline['ferryData']
     b=a['data']
@@ -214,6 +217,8 @@ def salinity_fxn(saline, run_date, filepath_name,results_home):
     #run_date = datetime.datetime(2015,3,19)
     
     date_str = run_date.strftime('%d-%b-%Y') ##create a string based on this date
+    filepath_name = date(run_date.year,run_date.month, run_date.day,\
+    run_date.day,run_date.day, results_home,'1h','grid_T') 
     tracers=nc.Dataset(filepath_name[0])
     #j=int(aa[0][65:67])
     #jj=int(aa[0][67:69])
@@ -310,12 +315,12 @@ def salinity_ferry_route(grid_T, grid_B, PNW_coastline, sal_hr, saline, run_date
     ferry_stations['Vancouver']['lat']+ 0.09 ),fontsize=15, color='black', bbox=bbox_args )
     figures.axis_colors(axs[1], 'white')
     
-    filepath_name = date(run_date.year,run_date.month, run_date.day,\
-     run_date.day,run_date.day, results_home,'1h','grid_T')     
+    #filepath_name = date(run_date.year,run_date.month, run_date.day,\
+     #run_date.day,run_date.day, results_home,'1h','grid_T')     
     lon11, lat11, lon1_2_4, lat1_2_4,\
     value_mean_3rd_hour, value_mean_4rd_hour, \
     value_mean_ave3rd, value_mean_ave4rd,\
-    salinity11, salinity1_2_4,date_str = salinity_fxn(saline, run_date, filepath_name, results_home)
+    salinity11, salinity1_2_4,date_str = salinity_fxn(saline, run_date, results_home )
     axs[1].plot(lon11,lat11,'black', linewidth = 4)
     model_salinity_3rd_hour=axs[0].plot(lon11,value_mean_3rd_hour,'DodgerBlue',\
                                     linewidth=2, label='3 am [UTC]')
@@ -392,12 +397,12 @@ def salinity_ferry_route_more(grid_T, grid_B, PNW_coastline, ave, sal_hr_1, sal_
     figures.axis_colors(axs[1], 'white')
 
  
-    filepath_name = date(run_date.year,run_date.month, run_date.day,\
-     run_date.day,run_date.day, results_home,'1h','grid_T')     
+    #filepath_name = date(run_date.year,run_date.month, run_date.day,\
+     #run_date.day,run_date.day, results_home,'1h','grid_T')     
     lon11, lat11, lon1_2_4, lat1_2_4,\
     value_mean_3rd_hour, value_mean_4rd_hour, \
     value_mean_ave3rd, value_mean_ave4rd,\
-    salinity11, salinity1_2_4,date_str = salinity_fxn(saline, run_date, filepath_name, results_home)
+    salinity11, salinity1_2_4,date_str = salinity_fxn(saline, run_date, results_home)
     axs[1].plot(lon11,lat11,'black', linewidth = 4)
     if ave ==0:
         model_salinity_3rd_hour=axs[0].plot(lon11,value_mean_3rd_hour,'DodgerBlue',\
@@ -428,6 +433,23 @@ def salinity_ferry_route_more(grid_T, grid_B, PNW_coastline, ave, sal_hr_1, sal_
       
 
     return fig
+
+
+def find_min_salinity_value(run_date, results_home, saline)
+    """This function was made to find out the minimum salinity value
+       for observation, 1.5m model result and average 3m depth model 
+       result."""
+     
+     #filepath_name = date(run_date.year,run_date.month, run_date.day,\
+     #run_date.day,run_date.day, results_home,'1h','grid_T')  
+    lon11, lat11, lon1_2_4, lat1_2_4,\
+    value_mean_3rd_hour, value_mean_4rd_hour, \
+    value_mean_ave3rd, value_mean_ave4rd,\
+    salinity11, salinity1_2_4,date_str = salinity_fxn(saline, run_date, results_home)
+
+
+
+
 
 
 
