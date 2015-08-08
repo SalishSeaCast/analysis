@@ -434,7 +434,35 @@ def salinity_ferry_route_more(grid_T, grid_B, PNW_coastline, ave, sal_hr_1, sal_
 
     return fig
 
-
+def find_min_value_location(run_date, results_home, saline):
+    """This function was made to find out the minimum salinity value
+       and longitude for observation and nowcasts(1.5m and 3m ave) or 
+       for observation and new results(1.5m and 3m ave)."""
+     
+    #filepath_name = date(run_date.year,run_date.month, run_date.day,\
+     #run_date.day,run_date.day, results_home,'1h','grid_T')  
+    lon11, lat11, lon1_2_4, lat1_2_4,\
+    value_mean_3rd_hour, value_mean_4rd_hour, \
+    value_mean_ave3rd, value_mean_ave4rd,\
+    salinity11, salinity1_2_4,date_str = salinity_fxn(saline, run_date, results_home)
+    
+    ##For observation
+    salinity_min_obs = min(salinity1_2_4)
+    ind_obs = salinity1_2_4.argmin()
+    lon_min_obs = lon1_2_4[ind_obs]
+    
+    ## For nowcast or new model result with 1.5m depth for 3rd model time 
+    salinity_min_15 = min(value_mean_3rd_hour)
+    ind_15 = value_mean_3rd_hour.argmin()
+    lon_min_15 = lon11[ind_15]
+    
+    ## For nowcast or new model result with average 3m depth for 3rd model time
+    salinity_min_ave = min(value_mean_ave3rd)
+    ind_ave = value_mean_ave3rd.argmin()
+    lon_min_ave = lon11[ind_ave]
+    
+    return salinity_min_obs, lon_min_obs, salinity_min_15,\
+            lon_min_15, salinity_min_ave, lon_min_ave
 
 
 
