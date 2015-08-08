@@ -447,18 +447,18 @@ def find_min_value_location(run_date, results_home, saline):
     salinity11, salinity1_2_4,date_str = salinity_fxn(saline, run_date, results_home)
     
     ##For observation
-    salinity_min_obs = min(salinity1_2_4)
-    ind_obs = salinity1_2_4.argmin()
+    salinity_min_obs = nanmin(salinity1_2_4)
+    ind_obs = nanargmin(salinity1_2_4)
     lon_min_obs = lon1_2_4[ind_obs]
     
     ## For nowcast or new model result with 1.5m depth for 3rd model time 
-    salinity_min_15 = min(value_mean_3rd_hour)
-    ind_15 = value_mean_3rd_hour.argmin()
+    salinity_min_15 = nanmin(value_mean_3rd_hour)
+    ind_15 = nanargmin(value_mean_3rd_hour)
     lon_min_15 = lon11[ind_15]
     
     ## For nowcast or new model result with average 3m depth for 3rd model time
-    salinity_min_ave = min(value_mean_ave3rd)
-    ind_ave = value_mean_ave3rd.argmin()
+    salinity_min_ave = nanmin(value_mean_ave3rd)
+    ind_ave = nanargmin(value_mean_ave3rd)
     lon_min_ave = lon11[ind_ave]
     
     return salinity_min_obs, lon_min_obs, salinity_min_15,\
