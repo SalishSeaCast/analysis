@@ -258,7 +258,7 @@ def salinity_fxn(saline, run_date, results_home):
             value_mean_4rd_hour[q]=valuess[q]/sum(matrix[q])
 
             values_ave[q], valuess_ave[q], matrix_ave[q,:]=find_dist_ave(q, lon11, lat11, X, Y,\
-                                     bathynew, longitude, latitude, saline_nemo_ave3rd, saline_nemo_ave4rd)
+                                     bathyold, longitude, latitude, saline_nemo_ave3rd, saline_nemo_ave4rd)
             value_mean_ave3rd[q]=values_ave[q]/sum(matrix_ave[q])
             value_mean_ave4rd[q]=valuess_ave[q]/sum(matrix_ave[q])
 
