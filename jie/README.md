@@ -32,6 +32,10 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[north extended current comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/north extended current comparison.ipynb)  
     
+* ##[MinLocationFreshwatersalinitytimeseries.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/MinLocationFreshwatersalinitytimeseries.ipynb)  
+    
+    * Compare minimum salinity value, location, fresh water amount between ferry observation, nowcast and new model results.  
+
 * ##[IOS Data-model results.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/IOS Data-model results.ipynb)  
     
     Reading IOS data in Rich's directory using Rob's reader.  
