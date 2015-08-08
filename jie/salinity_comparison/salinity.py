@@ -435,17 +435,7 @@ def salinity_ferry_route_more(grid_T, grid_B, PNW_coastline, ave, sal_hr_1, sal_
     return fig
 
 
-def find_min_salinity_value(run_date, results_home, saline)
-    """This function was made to find out the minimum salinity value
-       for observation, 1.5m model result and average 3m depth model 
-       result."""
-     
-     #filepath_name = date(run_date.year,run_date.month, run_date.day,\
-     #run_date.day,run_date.day, results_home,'1h','grid_T')  
-    lon11, lat11, lon1_2_4, lat1_2_4,\
-    value_mean_3rd_hour, value_mean_4rd_hour, \
-    value_mean_ave3rd, value_mean_ave4rd,\
-    salinity11, salinity1_2_4,date_str = salinity_fxn(saline, run_date, results_home)
+
 
 
 
