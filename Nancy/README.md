@@ -40,9 +40,16 @@ Descriptions below the links are from the first cell of the notebooks
     6. Esquimalt - http://climate.weather.gc.ca/climateData/hourlydata_e.html?timeframe=1&Prov=&StationID=52&hlyRange=1994-02-01|2014-10-01&Year=2014&Month=10&Day=1  
     5. NOAA Buoy - http://www.ndbc.noaa.gov/station_page.php?station=46041  
 
-* ##[Drifters.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Drifters.ipynb)  
+* ##[New GEM Time Series - Modified lat lon grid starting Aug 6.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/New GEM Time Series - Modified lat lon grid starting Aug 6.ipynb)  
     
-    Looking at the drifter data from Mark. Trying to determine dates and locations of releases.  
+    This notebook will examine the GEM model wind direction and speed by compareing a time series with observations. I will examine   
+    1. Sandheads - http://climate.weather.gc.ca/climateData/hourlydata_e.html?timeframe=1&Prov=BC%20%20&StationID=6831&hlyRange=1994-02-01|2014-09-23&Year=2014&Month=9&Day=21  
+    2. Entance Island - http://climate.weather.gc.ca/climateData/hourlydata_e.html?timeframe=1&Prov=BC%20%20&StationID=29411&hlyRange=1994-02-01|2014-10-01&Year=2014&Month=10&Day=1  
+    3. Pam Rocks - http://climate.weather.gc.ca/climateData/hourlydata_e.html?timeframe=1&Prov=BC%20%20&StationID=6817&hlyRange=1994-02-01|2014-10-01&Year=2014&Month=10&Day=1  
+    4. YVR - http://climate.weather.gc.ca/climateData/hourlydata_e.html?timeframe=1&Prov=BC&StationID=51442&hlyRange=2013-06-11|2014-10-05&Year=2014&Month=10&Day=5  
+    5. Sisters Islands - http://climate.weather.gc.ca/climateData/hourlydata_e.html?timeframe=1&Prov=&StationID=6813&hlyRange=1994-02-01|2014-10-01&Year=2014&Month=10&Day=1  
+    6. Esquimalt - http://climate.weather.gc.ca/climateData/hourlydata_e.html?timeframe=1&Prov=&StationID=52&hlyRange=1994-02-01|2014-10-01&Year=2014&Month=10&Day=1  
+    5. NOAA Buoy - http://www.ndbc.noaa.gov/station_page.php?station=46041  
 
 * ##[Developing and testing depth average.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Developing and testing depth average.ipynb)  
     
