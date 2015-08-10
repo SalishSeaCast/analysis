@@ -225,8 +225,8 @@ def salinity_fxn(saline, run_date, results_home):
     latitude=tracers.variables['nav_lat'][:] 
     longitude=tracers.variables['nav_lon'][:] 
     saline_nemo = tracers.variables['vosaline']
-    saline_nemo_3rd = saline_nemo[3,1, 0:898, 0:398] 
-    saline_nemo_4rd = saline_nemo[4,1, 0:898, 0:398]
+    saline_nemo_3rd = saline_nemo[3,0, 0:898, 0:398] 
+    saline_nemo_4rd = saline_nemo[4,0, 0:898, 0:398]
     saline_nemo_ave3rd = np.mean(saline_nemo[3, 0:3, 0:898, 0:398], axis = 0)
     saline_nemo_ave4rd = np.mean(saline_nemo[4, 0:3, 0:898, 0:398], axis = 0)
     
