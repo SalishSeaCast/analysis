@@ -532,6 +532,44 @@ def freshwater_amount(saline, run_date, results_home):
         return max_amount_obs, max_mod_new15, max_mod_newave
 
 
+def plot_freshwater_amount(obs_amount, mod15_now_amount, mod15_new_amount,modave_now_amount, modave_new_amount):
+    """This function was made to plot time series of amount of fresh water from June 16 to 29
+        for observations and model"""
+    fig, axs = plt.subplots(1, 2, figsize=(100, 40))
+    ## for time defination 
+    time =[]
+    for t in np.arange(11):
+        time.append(t)
+
+    ## observation & 1.5m nowcast & new model result minimim values
+    ax = axs[0]
+    ax.plot(time, obs_amount,'b-', marker = 'o', markersize = 15,linewidth=5.0, label = 'observed value')
+    ax.plot(time, mod15_now_amount,'g-',marker = '*', markersize = 15, linewidth=5.0, label = '1.5m nowcast value')
+    ax.plot(time, mod15_new_amount,'y-', marker = '*', markersize = 15,linewidth=5.0, label = '1.5m new result value')
+    plt.setp(ax.get_xticklabels(), fontsize=35)
+    plt.setp(ax.get_yticklabels(), fontsize=35)
+    ax.set_title('Total freshwater amount of the surface 1.5m ', fontsize = 50)
+    #ax.set_xlim(0, 10)
+    #ax.set_ylim(0, 20)
+    ax.set_xlabel('Day since June 16', fontsize = 45)
+    ax.set_ylabel('Total freshwater amount [m]', fontsize = 45)
+    ax.grid('on')
+    ax.legend(fontsize = 45)
+
+    ## observation & average 3m nowcast & new model result minimim values
+    ax = axs[1]
+    ax.plot(time, obs_amount,'bo-', marker = 'o', markersize = 15,linewidth=5.0,label = 'observed value')
+    ax.plot(time, modave_now_amount,'g-', marker = '*', markersize = 15,linewidth=5.0,label = 'average 3m nowcast value')
+    ax.plot(time, modave_new_amount,'y-', marker = '*', markersize = 15,linewidth=5.0,label = 'average 3m new result value')
+    plt.setp(ax.get_xticklabels(), fontsize=35)
+    plt.setp(ax.get_yticklabels(), fontsize=35)
+    ax.set_title('Total freshwater amount of the average 3m depth ', fontsize = 50)
+    ax.set_xlabel('Day since June 16', fontsize = 45)
+    ax.set_ylabel('Total freshwater amount [m]', fontsize = 45)
+    ax.grid('on')
+    ax.legend(fontsize = 45)
+    return fig
+
 
 
 
