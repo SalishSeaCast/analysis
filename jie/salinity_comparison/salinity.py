@@ -465,6 +465,71 @@ def find_min_value_location(run_date, results_home, saline):
             lon_min_15, salinity_min_ave, lon_min_ave
 
 
+def freshwater_amount(saline, run_date, results_home):
+    """This function was to calculate freshwater amount for observation, 1.5m &
+        average 3m model nowcasts & new results, we assume salinity below 30 is 
+        freshwater"""
+    lon11, lat11, lon1_2_4, lat1_2_4,\
+    value_mean_3rd_hour, value_mean_4rd_hour, \
+    value_mean_ave3rd, value_mean_ave4rd,\
+    salinity11, salinity1_2_4,date_str = salinity_fxn(saline, run_date, results_home)
+    
+    salinity1_2_4[np.isnan(salinity1_2_4)] = 30 ##set nan to 30 psu for observation
+    
+    obs_Sdx = np.zeros(len(lon1_2_4)-1) ## index from 0 to 718
+    mod_now_15Sdx = np.zeros(len(lon11)-1)
+    mod_new_15Sdx = np.zeros(len(lon11)-1)
+    mod_now_aveSdx = np.zeros(len(lon11)-1)
+    mod_new_aveSdx = np.zeros(len(lon11)-1)
+
+    length_obs = np.arange(len(lon1_2_4)-1)
+    length_mod = np.arange(len(lon11) - 1)
+    ## For observation:
+    for i in length_obs:
+        obs_Sdx[i] = (30 - salinity1_2_4[:,0][i]) * -np.diff(lon1_2_4[:,0])[i] * \
+        111000 * cos(pi*lat1_2_4[i]/180) #discrete outcome by multiplying 
+    obs_total_integral = np.cumsum(obs_Sdx)
+    max_amount_obs = max(obs_total_integral)
+    if max_amount_obs <= 0:
+        max_amount_obs == -min(obs_total_integral)
+    ## For nowcasts results:    
+    if results_home == paths['nowcast']:    #fresh water salinity(diff between 28 and salinity) and dx
+        for j in length_mod:
+            mod_now_15Sdx[j] = (30 - value_mean_3rd_hour[:,0][j]) * -np.diff(lon11[:,0])[j] * \
+            111000 * cos(pi*lat11[j]/180)  ## whether np.diff is positive or not depends
+                                      # on the ferry route
+            mod_now_aveSdx[j] = (30 - value_mean_ave3rd[:,0][j]) * -np.diff(lon11[:,0])[j] * \
+            111000 * cos(pi*lat11[j]/180) 
+        mod_total_now_15integral = np.cumsum(mod_now_15Sdx)
+        mod_total_now_aveintegral = np.cumsum(mod_now_aveSdx)  
+        ## Find max for 1.5m & average 3m depth nowcast result
+        max_mod_now15 = max(mod_total_now_15integral)
+        max_mod_nowave = max(mod_total_now_aveintegral)
+    
+        if max_mod_now15 <= 0:
+            max_mod_now15 == -min(mod_total_now_15integral)
+        if max_mod_nowave <=0:
+            max_mod_nowave == -min(mod_total_now_aveintegral)
+        
+        return max_amount_obs, max_mod_now15, max_mod_nowave
+   
+    if results_home == paths['longerresult']:
+        for j in length_mod:
+            mod_new_15Sdx[j] = (30 - value_mean_3rd_hour[:,0][j]) * -np.diff(lon11[:,0])[j] * \
+            111000 * cos(pi*lat11[j]/180)
+            mod_new_aveSdx[j] = (30 - value_mean_ave3rd[:,0][j]) * -np.diff(lon11[:,0])[j] * \
+            111000 * cos(pi*lat11[j]/180)
+        mod_total_new_15integral = np.cumsum(mod_new_15Sdx)
+        mod_total_new_aveintegral = np.cumsum(mod_new_aveSdx)
+        ## Find max for 1.5m & average 3m depth new result
+        max_mod_new15 = max(mod_total_new_15integral)
+        max_mod_newave = max(mod_total_new_aveintegral)
+        
+        if max_mod_new15 <=0:
+            max_mod_new15 == -min(mod_total_new_15integral)
+        if max_mod_newave <=0:
+            max_mod_newave == -min(mod_total_new_aveintegral)
+        return max_amount_obs, max_mod_new15, max_mod_newave
 
 
 
