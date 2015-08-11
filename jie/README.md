@@ -62,6 +62,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     Plot u, v velocity on the horizontal plane  
 
+* ##[Explore1h_plumeFileStructure.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Explore1h_plumeFileStructure.ipynb)  
+    
+    * Try to combine files from different processors  
+
 * ##[north-not until Howe extended current comparison June 23-25.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/north-not until Howe extended current comparison June 23-25.ipynb)  
     
      Simulation result from June 22-25  
