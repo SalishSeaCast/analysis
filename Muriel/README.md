@@ -42,6 +42,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook will be used to look at and understand the model output currents through Haro Strait with the use of ellipses  
 
+* ##[UsingEllipse.py.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/UsingEllipse.py.ipynb)  
+    
+    This notebook will be used to show some functions in ellipse.py and maximize the accessibility of this module.  
+
 * ##[TempSalComparisons.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Muriel/TempSalComparisons.ipynb)  
     
     This notebook will be used to compare model outputs of temperature and salinity to the VENUS nodes data.  
