@@ -33,7 +33,7 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/tides.ipynb)  
     
-* ##[Explore_NC_Output_Files.ipynb](http://nbviewer.ijupyter.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/Explore_NC_Output_Files.ipynb)
+* ##[Explore_NC_Output_Files.ipynb](http://nbviewer.jupyter.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/Explore_NC_Output_Files.ipynb)
 
   Notebook to look at New NEMO 3.6 Tidal Runs
 
