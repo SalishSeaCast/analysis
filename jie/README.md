@@ -116,6 +116,10 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[SaliCom_18apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_18apr15.ipynb)  
     
+* ##[Explore1h_plumeUgrid.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Explore1h_plumeUgrid.ipynb)  
+    
+    **Create grid_U file**  
+
 * ##[SaliCom_13apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_13apr15.ipynb)  
     
 * ##[IOS vs model comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/IOS vs model comparison.ipynb)  
