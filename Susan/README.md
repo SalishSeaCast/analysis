@@ -10,14 +10,6 @@ Descriptions below the links are from the first cell of the notebooks
     
     Notebook to investigate the negative salinity error that occurred in the 3 April 2015 Nowcast  
 
-* ##[makeCarbonMap.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/makeCarbonMap.ipynb)  
-    
-* ##[Untitled0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/Untitled0.ipynb)  
-    
-    Standard Analysis Notebook  
-
-* ##[Untitled2.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/Untitled2.ipynb)  
-    
 * ##[CompareTwo.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/CompareTwo.ipynb)  
     
     Susan's workhorse notebook for looking at a variety of fields at two different times.  
@@ -26,16 +18,6 @@ Descriptions below the links are from the first cell of the notebooks
     
     Notebook to look at one day of Data from Kao-Shen...     
     * check wind  
-
-* ##[ScratchPad.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/ScratchPad.ipynb)  
-    
-* ##[TidalEvaluation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/TidalEvaluation.ipynb)  
-    
-    This notebook will load data, perform a tidal analyis, compare with observations, plot the results, and save the analysis in a spreadsheet.  Eight Tidal Constituents: M2, K1, O1, S2, P1, N2, Q1 and K2 are considered.  
-
-* ##[Look_at_Gyre.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/Look_at_Gyre.ipynb)  
-    
-    Notebook to check that Gyre is running properly  
 
 * ##[Rain_Check.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/Rain_Check.ipynb)  
     
@@ -49,14 +31,11 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[SusansViewerWQuiver.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/SusansViewerWQuiver.ipynb)  
     
-* ##[ForJie.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/ForJie.ipynb)  
-    
-    Notebook to Play with Jie's data structures  
-
 * ##[tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/tides.ipynb)  
     
-* ##[Untitled1.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/Untitled1.ipynb)  
-    
+* ##[Explore_NC_Output_Files.ipynb](http://nbviewer.ijupyter.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Susan/Explore_NC_Output_Files.ipynb)
+
+  Notebook to look at New NEMO 3.6 Tidal Runs
 
 ##License
 
