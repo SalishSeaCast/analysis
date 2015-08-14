@@ -74,6 +74,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook was made to compare surface currents in Fraser River plume during ebb tides with different river treatments  
 
+* ##[Tidal heights in deepening river channel.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Tidal heights in deepening river channel.ipynb)  
+    
+    * This notebook was made to look at tidal heights at Steveston, Deas Island channel, New Westminster and Mission in the deepening river channel case.  
+
 * ##[New river discharge file.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/New river discharge file.ipynb)  
     
     change the river discharge source point of Fraser and create new Fraser River flow file   
