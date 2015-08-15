@@ -540,18 +540,22 @@ def plot_freshwater_amount(obs_amount, mod15_now_amount, mod15_new_amount,modave
     time =[]
     for t in np.arange(11):
         time.append(t)
+    
+    ## xtick and xticklabels for plot    
+    group_labels = ['06/16','06/24','06/29']
 
     ## observation & 1.5m nowcast & new model result minimim values
     ax = axs[0]
     ax.plot(time, obs_amount,'b-', marker = 'o', markersize = 15,linewidth=5.0, label = 'observed value')
     ax.plot(time, mod15_now_amount,'g-',marker = '*', markersize = 15, linewidth=5.0, label = '1.5m nowcast value')
     ax.plot(time, mod15_new_amount,'y-', marker = '*', markersize = 15,linewidth=5.0, label = '1.5m new result value')
+    plt.setp(ax, xticks=[0, 4, 10 ], xticklabels=group_labels)
     plt.setp(ax.get_xticklabels(), fontsize=65)
     plt.setp(ax.get_yticklabels(), fontsize=65)
     ax.set_title('Total freshwater amount of the surface 1.5m ', fontsize = 80)
     #ax.set_xlim(0, 10)
     #ax.set_ylim(0, 20)
-    ax.set_xlabel('Day since June 16', fontsize = 65)
+    ax.set_xlabel('Date', fontsize = 65)
     ax.set_ylabel('Total freshwater amount [m]', fontsize = 65)
     ax.grid('on')
     ax.legend(fontsize = 55)
@@ -561,10 +565,11 @@ def plot_freshwater_amount(obs_amount, mod15_now_amount, mod15_new_amount,modave
     ax.plot(time, obs_amount,'bo-', marker = 'o', markersize = 15,linewidth=5.0,label = 'observed value')
     ax.plot(time, modave_now_amount,'g-', marker = '*', markersize = 15,linewidth=5.0,label = 'average 3m nowcast value')
     ax.plot(time, modave_new_amount,'y-', marker = '*', markersize = 15,linewidth=5.0,label = 'average 3m new result value')
+    plt.setp(ax, xticks=[0, 4, 10 ], xticklabels=group_labels)
     plt.setp(ax.get_xticklabels(), fontsize=65)
     plt.setp(ax.get_yticklabels(), fontsize=65)
     ax.set_title('Total freshwater amount of the average 3m depth ', fontsize = 80)
-    ax.set_xlabel('Day since June 16', fontsize = 65)
+    ax.set_xlabel('Date', fontsize = 65)
     ax.set_ylabel('Total freshwater amount [m]', fontsize = 65)
     ax.grid('on')
     ax.legend(fontsize = 55)
