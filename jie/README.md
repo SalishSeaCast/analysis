@@ -66,6 +66,8 @@ Descriptions below the links are from the first cell of the notebooks
     
     * Try to combine files from different processors  
 
+* ##[CreateMeshFile.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/CreateMeshFile.ipynb)  
+    
 * ##[north-not until Howe extended current comparison June 23-25.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/north-not until Howe extended current comparison June 23-25.ipynb)  
     
      Simulation result from June 22-25  
@@ -116,6 +118,10 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[SaliCom_18apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_18apr15.ipynb)  
     
+* ##[Explore1h_plumeVfile.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Explore1h_plumeVfile.ipynb)  
+    
+    **Create grid_V file**  
+
 * ##[Explore1h_plumeUgrid.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Explore1h_plumeUgrid.ipynb)  
     
     **Create grid_U file**  
