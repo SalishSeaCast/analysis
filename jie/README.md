@@ -90,6 +90,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     **Smooth bathymetry  -grab from Susan's notebook**  
 
+* ##[ParticleTrackingDeepeningCase.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/ParticleTrackingDeepeningCase.ipynb)  
+    
+    This notebook was made to see the particle movement which reflect surface currents between deepened river treatment simulation and the nowcast one  
+
 * ##[Further look at different days salinity comparison-automatic.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Further look at different days salinity comparison-automatic.ipynb)  
     
 * ##[Test New salinity file.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Test New salinity file.ipynb)  
