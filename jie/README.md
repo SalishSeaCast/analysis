@@ -90,6 +90,10 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[Amount of fresh water comparison calculation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Amount of fresh water comparison calculation.ipynb)  
     
+* ##[HBDB_FerryRouteSalinity.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/HBDB_FerryRouteSalinity.ipynb)  
+    
+    * This notebook was made to explore salinity variation along Horseshoe Bay to Nanaimo ferry route  
+
 * ##[Smooth bathymetry & Create New TS file .ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Smooth bathymetry & Create New TS file .ipynb)  
     
     **Smooth bathymetry  -grab from Susan's notebook**  
