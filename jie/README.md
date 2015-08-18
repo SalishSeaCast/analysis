@@ -14,6 +14,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     Ferry route & Salinity comparsion  
 
+* ##[MaxCurrentTimeSeries.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/MaxCurrentTimeSeries.ipynb)  
+    
+    * Look at time difference between Fraser stations max U velocity with Central Node max V velocity to see how surface currents go around.  
+
 * ##[particle tracking.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/particle tracking.ipynb)  
     
     This notebook was made to see the particle movement which reflect surface currents between new river treatment simulation and the original one  
@@ -92,7 +96,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[ParticleTrackingDeepeningCase.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/ParticleTrackingDeepeningCase.ipynb)  
     
-    This notebook was made to see the particle movement which reflect surface currents between deepened river treatment simulation and the nowcast one  
+    * This notebook was made to see the particle movement which reflect surface currents between deepened river treatment simulation and the nowcast one  
 
 * ##[Further look at different days salinity comparison-automatic.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Further look at different days salinity comparison-automatic.ipynb)  
     
