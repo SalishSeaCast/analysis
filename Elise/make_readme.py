@@ -24,10 +24,10 @@ import re
 
 nbviewer = 'http://nbviewer.ipython.org/urls'
 repo = 'bitbucket.org/salishsea/analysis/raw/tip'
-repo_dir = 'Elise'
+repo_dir = 'Nancy'
 url = os.path.join(nbviewer, repo, repo_dir)
 title_pattern = re.compile('#{1,6} ?')
-readme = """The IPython Notebooks in this directory are made by Elise for
+readme = """The IPython Notebooks in this directory are made by Nancy for
 quick sharing of results.
 
 The links below are to static renderings of the notebooks via
@@ -45,7 +45,8 @@ for fn in notebooks:
         first_cell = contents['worksheets'][0]['cells'][0]
     except KeyError:
         first_cell = contents['cells'][0]
-    if first_cell['cell_type'] in 'markdown raw'.split():
+    first_cell_type = first_cell['cell_type']
+    if first_cell_type in 'markdown raw'.split():
         desc_lines = first_cell['source']
         for line in desc_lines:
             suffix = ''
