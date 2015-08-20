@@ -48,6 +48,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook was made to compare surface currents in Fraser River plume during ebb tides with different river treatments  
 
+* ##[SalinityUnderWeakWind.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SalinityUnderWeakWind.ipynb)  
+    
+    * This notebook was made to look at hourly salinity contours with weak/no wind condition, which could reflect how plume goes with only push by tides.  
+
 * ##[Single Salinity figure.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Single Salinity figure.ipynb)  
     
     Salinity figure  
