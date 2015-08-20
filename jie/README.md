@@ -152,6 +152,10 @@ Descriptions below the links are from the first cell of the notebooks
     * /ocean/rich/home/SoG/ios/che2  
 
 
+* ##[TWSB_FerryRouteSalinityTemplate.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/TWSB_FerryRouteSalinityTemplate.ipynb)  
+    
+    * This notebook was made to explore salinity variation along Tsawwassen to Swartz ferry route  
+
 * ##[Smooth bathymetry & Create New TS file-nor-not-to-Howe.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Smooth bathymetry & Create New TS file-nor-not-to-Howe.ipynb)  
     
     **Smooth bathymetry  -grab from Susan's notebook**  
