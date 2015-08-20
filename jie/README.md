@@ -110,6 +110,10 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[SaliCom_20apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_20apr15.ipynb)  
     
+* ##[HBDB_FerryRouteSalinityTemplate.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/HBDB_FerryRouteSalinityTemplate.ipynb)  
+    
+    * This notebook was made to explore salinity variation along Horseshoe Bay to Nanaimo ferry route  
+
 * ##[compare surface currents with different river treatments.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/compare surface currents with different river treatments.ipynb)  
     
     This notebook was made to compare surface currents in Fraser River plume during ebb tides with different river treatments  
