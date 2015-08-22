@@ -1,4 +1,4 @@
-function [pred_all,pred_8,tim] = get_ttide_8_filter(csvfilename,location, starts, ends, type, remove_long)
+function [pred_all,pred_8,tim] = get_ttide_8_filter(csvfilename,location, starts, ends, type, exclude_long)
 %returns the tidal predictions if only 8 constituents were used.
 %the 8 constituents are: M2,K1,O1,P1,Q1,N2,S2,K2
 %csvfilename contains DFO produced water level observations.
@@ -9,7 +9,7 @@ function [pred_all,pred_8,tim] = get_ttide_8_filter(csvfilename,location, starts
 %starts is that start date for predictions (eg. 01-Jan-2006)
 %ends is the end date for the predictions (eg. 31-Dec-2006)
 %type representes the type of water level measurements (NOAA or DFO)
-% remove_long is 1 if long period constituents should be removed, 0
+% exclude_long is 1 if long period constituents should be removed, 0
 % otherwise
 
 % NKS May 2014
@@ -23,7 +23,7 @@ elseif strcmp(type,'NOAA')
 else print('Unrecognised type')
 end
 %Remove long period constituents. Do not use these in the predictions
-if(remove_long)
+if(exclude_long)
 names_long = ['SA  '; 'SSA '; 'MSM '; 'MM  ';'MSF ';'MF  '];
 for i=1:length(names_long)
 n=names_long(i,:);
