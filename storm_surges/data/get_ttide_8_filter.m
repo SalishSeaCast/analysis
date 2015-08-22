@@ -1,4 +1,4 @@
-function [pred_all,pred_8,tim] = get_ttide_8_filter(csvfilename,location, starts, ends, type)
+function [pred_all,pred_8,tim] = get_ttide_8_filter(csvfilename,location, starts, ends, type, remove_long)
 %returns the tidal predictions if only 8 constituents were used.
 %the 8 constituents are: M2,K1,O1,P1,Q1,N2,S2,K2
 %csvfilename contains DFO produced water level observations.
@@ -9,6 +9,8 @@ function [pred_all,pred_8,tim] = get_ttide_8_filter(csvfilename,location, starts
 %starts is that start date for predictions (eg. 01-Jan-2006)
 %ends is the end date for the predictions (eg. 31-Dec-2006)
 %type representes the type of water level measurements (NOAA or DFO)
+% remove_long is 1 if long period constituents should be removed, 0
+% otherwise
 
 % NKS May 2014
 
@@ -21,6 +23,7 @@ elseif strcmp(type,'NOAA')
 else print('Unrecognised type')
 end
 %Remove long period constituents. Do not use these in the predictions
+if(remove_long)
 names_long = ['SA  '; 'SSA '; 'MSM '; 'MM  ';'MSF ';'MF  '];
 for i=1:length(names_long)
 n=names_long(i,:);
@@ -29,15 +32,8 @@ tidestruc.name(ind,:) = [];
 tidestruc.freq(ind) = [];
 tidestruc.tidecon(ind,:) = [];
 end
+end
 
-
-%Time
-start_date=datenum(starts);
-end_date=datenum(ends);
-tim = start_date:1/24:end_date;
-    
-%Get predicted tide for same period
-pred_all = t_predic(tim,tidestruc,'latitude',lat,'synthesis',2);
 
 
 %% predictions with 8 constituents
@@ -64,28 +60,49 @@ tidestruc_8.name=names_8;
 tidestruc_8.tidecon=tidecon_8;
 tidestruc_8.freq=freqs_8;
 
-pred_8 = t_predic(tim,tidestruc_8,'latitude',lat, 'synthesis', 2);
-
 %% Predictions without shallow water constituents
-%Remove long period constituents. Do not use these in the predictions
+%Remove shallow water constituents. Do not use these in the predictions
 CONST = t_getconsts;
 names_noshallow = CONST.name(isfinite(CONST.ishallow),:);
+tidestruc_noshallow = tidestruc;
 for i=1:length(names_noshallow)
 n=names_noshallow(i,:);
-ind = strmatch(n,tidestruc.name,'exact');
-tidestruc.name(ind,:) = [];
-tidestruc.freq(ind) = [];
-tidestruc.tidecon(ind,:) = [];
+ind = strmatch(n,tidestruc_noshallow.name,'exact');
+tidestruc_noshallow.name(ind,:) = [];
+tidestruc_noshallow.freq(ind) = [];
+tidestruc_noshallow.tidecon(ind,:) = [];
 end
 
+%% Do predictions
+%t_tide should be run for 1 year of data at a time
 
 %Time
 start_date=datenum(starts);
 end_date=datenum(ends);
 tim = start_date:1/24:end_date;
+
+[startyear,~,~,~,~,~] = datevec(tim(1));
+[endyear,~,~,~,~,~] = datevec(tim(end-1));
+pred_all = zeros(length(tim),1);
+pred_8 = zeros(length(tim),1);
+pred_no_shallow = zeros(length(tim),1);
+predcounter = 1;
+
+
+for yr = startyear:endyear
+    disp(yr)
+    I = tim >= datenum(yr,1,1) & tim < datenum(yr+1,1,1);
+    start_date = tim(I);
+    disp(datestr(start_date(1,1)))
     
-%Get predicted tide for same period
-pred_no_shallow = t_predic(tim,tidestruc,'latitude',lat,'synthesis',2);
+    %Get predicted tide for same period
+    pred_all(predcounter:predcounter+length(start_date)-1) = t_predic(tim(I),tidestruc,'latitude',lat,'synthesis',2);
+    pred_8(predcounter:predcounter+length(start_date)-1) = t_predic(tim(I),tidestruc_8,'latitude',lat,'synthesis',2); 
+    pred_no_shallow(predcounter:predcounter+length(start_date)-1) = t_predic(tim(I),tidestruc_noshallow,'latitude',lat,'synthesis',2); 
+    predcounter = predcounter+length(start_date);
+    %no synthesis because I don't have error information
+    disp(predcounter)
+end
 
 %% Plot 
 figure
@@ -113,7 +130,7 @@ datetick('x','mm/yyyy')
 %% Save predictions
 M = datestr(tim);
 n = length(tim);
-filename = [location  '_t_tide_compare8_' datestr(start_date) '_' datestr(end_date) '_snr2_filter.csv'];
+filename = [location  '_t_tide_compare8_' starts '_' ends '_snr2_filter.csv'];
 fid = fopen(filename, 'w');
 %add some headers
 fprintf(fid, 'Harmonics from: ,');
