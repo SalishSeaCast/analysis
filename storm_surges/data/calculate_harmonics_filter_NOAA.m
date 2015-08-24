@@ -1,4 +1,4 @@
-function  [tidestruc, lat, mean_wl] = calculate_harmonics_filter_NOAA(csvfilename,location)
+function  [tidestruc, lat, mean_wl] = calculate_harmonics_filter_NOAA(csvfilename,location, cut_off)
 %caclulate_harmonics(csvfilename,location, start) Calculates tidal
 %harmonics at specifie location
 %   Uses t_tide to write a file with tidal harmonics from a time series in
@@ -7,10 +7,12 @@ function  [tidestruc, lat, mean_wl] = calculate_harmonics_filter_NOAA(csvfilenam
 %   note that for accurate harmonics the time series needs to be one year
 %   long. Also avoid using surge-heavy years as that could over estimate
 %   the harmonics.
+%   periods when the filtered time series is > cut_off are removed. 
 %   returns the tidestruc from the ttide analysis, and the lat and mean sea
 %   level from the data file.
-%   Saves the harmoics in a file. 
-%   This function is used by get_ttide_8.m
+%   Saves the harmonics in a file. 
+%   This function is used by generate_tidal_predictions
+%  
 
 %NKS June 2014
 
@@ -30,7 +32,7 @@ start_date = time(1); start_date(1,1)
 end_date = time(end);
 
 %Truncated time series based on a tidal filter
-wlev_modified = filter_tides_NOAA(csvfilename,0.3);
+wlev_modified = filter_tides_NOAA(csvfilename,cut_off);
 
 clear time newmeas meas
 
