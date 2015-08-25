@@ -34,7 +34,7 @@ function [pred_all,pred_8,pred_no_shallow, tim] = generate_tidal_predictions(fil
 %Note: For cases where the harmonics are calcualted by t_tide, the tidal
 %prediction only uses constituetns with signal to noise ratio > 2. 
 
-See https://salishsea-meopar-docs.readthedocs.org/en/latest/storm_surges/tools.html#tidal-predictions for more documentations
+%See https://salishsea-meopar-docs.readthedocs.org/en/latest/storm_surges/tools.html#tidal-predictions for more documentations
 
 % NKS May 2014
 
