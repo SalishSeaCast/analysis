@@ -25,6 +25,16 @@ Descriptions below the links are from the first cell of the notebooks
       
 
 
+* ##[Lighthouses.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Lighthouses.ipynb)  
+    
+    Notebook to compare Race Rocks lighthouse daily salinity readings with nowcasts.  
+    * http://www.pac.dfo-mpo.gc.ca/science/oceans/data-donnees/lighthouses-phares/index-eng.html  
+      
+      
+    Lighthouse salinty readings are collected at the daytime high tide. I will compare with both nowcast and spinup daily averages.  
+      
+    Temperature is also available, but it is complicated by the time shift in the high tide and the diurnal vairability in temperature. I will not look at temperature for now, but could come up with a fair comparison later.  
+
 * ##[WOD Data-pandas.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/WOD Data-pandas.ipynb)  
     
     Notebook to play with WOD data using the wodpy package  
