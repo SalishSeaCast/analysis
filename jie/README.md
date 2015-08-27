@@ -50,7 +50,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[SalinityUnderWeakWind.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SalinityUnderWeakWind.ipynb)  
     
-    * This notebook was made to look at hourly salinity contours with weak/no wind condition, which could reflect how plume goes with only push by tides.  
+    * This notebook was made to look at hourly nowcasts salinity contours with weak/no wind condition, which could reflect how plume goes with only push by tides.  
 
 * ##[Single Salinity figure.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Single Salinity figure.ipynb)  
     
@@ -73,6 +73,10 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[Explore1h_plumeFileStructure.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Explore1h_plumeFileStructure.ipynb)  
     
     * Try to combine files from different processors  
+
+* ##[TestUVFromColdStart.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/TestUVFromColdStart.ipynb)  
+    
+    * This notebook was made to look at when currents from cold start could catch up with nowcasts, so that I can determine how many days before that I could run a simulation use TS initial file rather than restart file, to do the hindcast of Oct8-10, 2014. Is 1 day before that enough to catch the UV velocity with nowcasts? The answer will be explored in this notebook.  
 
 * ##[CreateMeshFile.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/CreateMeshFile.ipynb)  
     
