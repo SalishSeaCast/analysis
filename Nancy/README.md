@@ -69,6 +69,10 @@ Descriptions below the links are from the first cell of the notebooks
     A code to look at the data from the crashed run. What is going wrong!  
     Looks at currents, bathymetry, and sea surface height around the crashed time step.   
 
+* ##[Surface salininty animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Surface salininty animation.ipynb)  
+    
+    A notebook to make an animation of the surface salinity.  
+
 * ##[Sea Level Pressure.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Sea Level Pressure.ipynb)  
     
     Given the altitude of a CGRF grid cell, calculate the pressure at sea level.  
