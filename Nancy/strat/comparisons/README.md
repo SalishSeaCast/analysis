@@ -13,6 +13,10 @@ Descriptions below the links are from the first cell of the notebooks
       
     IOS observations span many years. So, cbservations with model on day of, 7 days before and 7 days after. This can account for spring/neap variability but not interannual variabilty in discharge, winds, etc  
 
+* ##[JEMS notebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/JEMS notebook.ipynb)  
+    
+    Looking at JEMS data  
+
 * ##[WOD Data-Haro.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/WOD Data-Haro.ipynb)  
     
     Notebook to play with WOD data using the wodpy package  
