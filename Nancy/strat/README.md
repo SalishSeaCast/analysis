@@ -6,6 +6,23 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[DWR_new_bcs.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_new_bcs.ipynb)  
+    
+    This notebook looks at the vertical eddy viscosity/diffusivity during a deep water renewal event in late August 2003.  
+      
+    Compares dwr_new_bcs with dwr_base_bcs  
+      
+    Both have diff/visc 1e-6/1e-5, isoneutral, winds  
+      
+    dwr_new_bcs has salnity below 100m incrased by 0.33  
+
+* ##[DWR_notsmooth_kappa10_winds.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_notsmooth_kappa10_winds.ipynb)  
+    
+    This notebook looks at the vertical eddy viscosity/diffusivity during a deep water renewal event in late August 2003.  
+      
+    Compares diff=1e-6 and visc=1e-5 with winds to base case with winds.   
+
+
 * ##[DWR_diff1e-6_visc1e-5_winds.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_diff1e-6_visc1e-5_winds.ipynb)  
     
     This notebook looks at the vertical eddy viscosity/diffusivity during a deep water renewal event in late August 2003.  
