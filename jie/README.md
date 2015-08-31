@@ -96,6 +96,8 @@ Descriptions below the links are from the first cell of the notebooks
     
     change the river discharge source point of Fraser and create new Fraser River flow file   
 
+* ##[DrifterParticleComparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/DrifterParticleComparison.ipynb)  
+    
 * ##[Amount of fresh water comparison calculation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Amount of fresh water comparison calculation.ipynb)  
     
 * ##[HBDB_FerryRouteSalinity.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/HBDB_FerryRouteSalinity.ipynb)  
