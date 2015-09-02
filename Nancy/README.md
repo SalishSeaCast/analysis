@@ -104,6 +104,10 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[Seymour Narrows.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Seymour Narrows.ipynb)  
     
+* ##[Internal tide animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Internal tide animation.ipynb)  
+    
+    A notebook to make an animation of the internal tide...  
+
 * ##[interpolation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/interpolation.ipynb)  
     
     Just a quick notebook to play around with interpolating CGRF data into our grid.  
