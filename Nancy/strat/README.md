@@ -14,7 +14,7 @@ Descriptions below the links are from the first cell of the notebooks
       
     Both have diff/visc 1e-6/1e-5, isoneutral, winds  
       
-    dwr_new_bcs has salnity below 100m incrased by 0.33  
+    dwr_new_bcs has salnity below 150m incrased by 0.3311  
 
 * ##[DWR_notsmooth_kappa10_winds.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_notsmooth_kappa10_winds.ipynb)  
     
@@ -29,6 +29,32 @@ Descriptions below the links are from the first cell of the notebooks
       
     Compares diff=1e-6 and visc=1e-5 with winds to diff=1e-6, visc=1e-5 with no winds.   
 
+
+* ##[DWR_new_bcs_surface.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_new_bcs_surface.ipynb)  
+    
+    This notebook looks at the vertical eddy viscosity/diffusivity during a deep water renewal event in late August 2003.  
+      
+    Compares dwr_new_bcs_surface with dwr_new_bcs  
+      
+    Both have diff/visc 1e-6/1e-5, isoneutral, winds  
+      
+    dwr_new_bcs has salnity below 150m incrased by 0.3311  
+      
+    dwr_new_bcs_surface has salnity below 150m incrased by 0.3311 and salinity above 150m increased by 0.3311  
+
+* ##[DWR_bbl.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_bbl.ipynb)  
+    
+    This notebook looks at the vertical eddy viscosity/diffusivity during a deep water renewal event in late August 2003.  
+      
+    Compares dwr_adv1 with dwr_base_bcs  
+      
+    Both have diff/visc 1e-6/1e-5, isoneutral, winds  
+      
+    dwr_bbl_adv1 has advecitve bbl, first option.  
+      
+    Similar results for dwr_bbl_diff  
+      
+    Almost no differences between the base case and dwr_bbl_adv2.  
 
 * ##[Stratification and tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/Stratification and tides.ipynb)  
     
