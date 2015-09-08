@@ -6,6 +6,11 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[plot_SOGComp_SS2DSOG_p4zprod-MesZoo.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plot_SOGComp_SS2DSOG_p4zprod-MesZoo.ipynb)  
+    
+    SOGComp is SOG run for comparison with SS2DSOG5x5  
+    - compare starting values to check initialization of IC's  
+
 * ##[Untitled1.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Untitled1.ipynb)  
     
 * ##[plot_SOGComp_SS2DSOG_p4zprod_FixedShortTest.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plot_SOGComp_SS2DSOG_p4zprod_FixedShortTest.ipynb)  
@@ -37,8 +42,18 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[SS2Dplots-loop-fxn-SS2DSOGruns00_c.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/SS2Dplots-loop-fxn-SS2DSOGruns00_c.ipynb)  
     
+* ##[plot_SOGComp_SS2DSOG_p4zprod-Sink.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plot_SOGComp_SS2DSOG_p4zprod-Sink.ipynb)  
+    
+    SOGComp is SOG run for comparison with SS2DSOG5x5  
+    - compare starting values to check initialization of IC's  
+
 * ##[SS2Dplots-loop-fxn-SS2DSOGruns5x5_01.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/SS2Dplots-loop-fxn-SS2DSOGruns5x5_01.ipynb)  
     
+* ##[plot_SOGComp_SS2DSOG_p4zprod-MyriCodeNoZooRun.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plot_SOGComp_SS2DSOG_p4zprod-MyriCodeNoZooRun.ipynb)  
+    
+    SOGComp is SOG run for comparison with SS2DSOG5x5  
+    - compare starting values to check initialization of IC's  
+
 * ##[plot_SOGComp_SS2DSOG_p4zprod-r215Updated_NoMortality.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plot_SOGComp_SS2DSOG_p4zprod-r215Updated_NoMortality.ipynb)  
     
     SOGComp is SOG run for comparison with SS2DSOG5x5  
@@ -64,11 +79,21 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[Untitled0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Untitled0.ipynb)  
     
+* ##[plot_SOGComp_SS2DSOG_p4zprod-MyriCodeNoZooRun_1hres.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plot_SOGComp_SS2DSOG_p4zprod-MyriCodeNoZooRun_1hres.ipynb)  
+    
+    SOGComp is SOG run for comparison with SS2DSOG5x5  
+    - compare starting values to check initialization of IC's  
+
 * ##[plotSOGR07.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plotSOGR07.ipynb)  
     
     I changed core_variables.f90 to initialize NH4 to 1 everywhere rather than 0 in upper 3 m, and the step in bio and chem near 3 m went away.   
       
     - How are plankton concentrations initialized?  
+
+* ##[plot_SOGComp_SS2DSOG_p4zprod-r215With214ProdFixedMort-exp1m.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plot_SOGComp_SS2DSOG_p4zprod-r215With214ProdFixedMort-exp1m.ipynb)  
+    
+    SOGComp is SOG run for comparison with SS2DSOG5x5  
+    - compare starting values to check initialization of IC's  
 
 * ##[plotSOG.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plotSOG.ipynb)  
     
@@ -83,6 +108,11 @@ Descriptions below the links are from the first cell of the notebooks
     SOGComp is SOG run for comparison with SS2DSOG5x5  
     - compare starting values to check initialization of IC's  
 
+* ##[plot_SOGComp_SS2DSOG_p4zprod-MyriMicZRemin.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plot_SOGComp_SS2DSOG_p4zprod-MyriMicZRemin.ipynb)  
+    
+    SOGComp is SOG run for comparison with SS2DSOG5x5  
+    - compare starting values to check initialization of IC's  
+
 * ##[plot_SOGComp_SS2DSOG_p4zprod-r216.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plot_SOGComp_SS2DSOG_p4zprod-r216.ipynb)  
     
     SOGComp is SOG run for comparison with SS2DSOG5x5  
@@ -90,6 +120,11 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[SS2Dplots-loop-fxn-SS2DSOGruns00.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/SS2Dplots-loop-fxn-SS2DSOGruns00.ipynb)  
     
+* ##[plot_SOGComp_SS2DSOG_p4zprod-MyriMicZ.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plot_SOGComp_SS2DSOG_p4zprod-MyriMicZ.ipynb)  
+    
+    SOGComp is SOG run for comparison with SS2DSOG5x5  
+    - compare starting values to check initialization of IC's  
+
 * ##[plot_SOGComp_SS2DSOG_p4zopt.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plot_SOGComp_SS2DSOG_p4zopt.ipynb)  
     
     SOGComp is SOG run for comparison with SS2DSOG5x5  
@@ -104,11 +139,15 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[SS2Dplots-loop-fxn-SS2DSOGruns5x5_04.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/SS2Dplots-loop-fxn-SS2DSOGruns5x5_04.ipynb)  
     
+* ##[createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubraAndMicrozoo.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubraAndMicrozoo.ipynb)  
+    
 * ##[createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubra.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubra.ipynb)  
     
 * ##[createIC_NutsPhy_SS2DSOG_S3-2004-10-19.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/createIC_NutsPhy_SS2DSOG_S3-2004-10-19.ipynb)  
     
 * ##[Untitled3.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Untitled3.ipynb)  
+    
+* ##[createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubraMicrozooRemin.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubraMicrozooRemin.ipynb)  
     
 * ##[SS2Dplots-loop-fxn-SS2DSOGruns00_e.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/SS2Dplots-loop-fxn-SS2DSOGruns00_e.ipynb)  
     
@@ -122,6 +161,16 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[findBathyLoc.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/findBathyLoc.ipynb)  
     
+* ##[plot_SOGComp_SS2DSOG_p4zprod-r215With214ProdFixedMort-exp.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plot_SOGComp_SS2DSOG_p4zprod-r215With214ProdFixedMort-exp.ipynb)  
+    
+    SOGComp is SOG run for comparison with SS2DSOG5x5  
+    - compare starting values to check initialization of IC's  
+
+* ##[plot_SOGComp_SS2DSOG_p4zprod-Sink0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plot_SOGComp_SS2DSOG_p4zprod-Sink0.ipynb)  
+    
+    SOGComp is SOG run for comparison with SS2DSOG5x5  
+    - compare starting values to check initialization of IC's  
+
 * ##[alterBathy2DLonLat.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/alterBathy2DLonLat.ipynb)  
     
 * ##[SS2Dplots-Copy0-Copy0-Copy0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/SS2Dplots-Copy0-Copy0-Copy0.ipynb)  
