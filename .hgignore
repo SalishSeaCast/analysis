@@ -2,7 +2,7 @@ syntax: glob
 
 Muriel/TidalEllipseData/
 Nancy/drifters/*.csv
-Nancy/*.mp4
+Nancy/animations/*.mp4
 Nancy/*.csv
 Nancy/nowcast/*/*.txt
 Nancy/strat/*.csv
