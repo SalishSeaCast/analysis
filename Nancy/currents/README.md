@@ -6,6 +6,14 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[Tidal currents .ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Tidal currents .ipynb)  
+    
+    An example of analyzing tidal currents.  
+      
+    Question: Is a 15 day time series enough to resolve M2 and K1?  
+      
+    Plan: Compare 15 day with 30 day.  
+
 
 ##License
 
