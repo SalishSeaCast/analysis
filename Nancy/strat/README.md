@@ -38,9 +38,9 @@ Descriptions below the links are from the first cell of the notebooks
       
     Both have diff/visc 1e-6/1e-5, isoneutral, winds  
       
-    dwr_new_bcs has salnity below 150m incrased by 0.3311  
+    dwr_new_bcs has salinity below 150m incrased by 0.3311  
       
-    dwr_new_bcs_surface has salnity below 150m incrased by 0.3311 and salinity above 150m increased by 0.3311  
+    dwr_new_bcs_surface has salinity below 150m incrased by 0.3311 and salinity above 50m increased by 0.3311  
 
 * ##[DWR_bbl.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_bbl.ipynb)  
     
