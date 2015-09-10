@@ -130,6 +130,11 @@ Descriptions below the links are from the first cell of the notebooks
     SOGComp is SOG run for comparison with SS2DSOG5x5  
     - compare starting values to check initialization of IC's  
 
+* ##[plot_SOGComp_SS2DSOG_p4zprod-Sink-Copy1.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plot_SOGComp_SS2DSOG_p4zprod-Sink-Copy1.ipynb)  
+    
+    SOGComp is SOG run for comparison with SS2DSOG5x5  
+    - compare starting values to check initialization of IC's  
+
 * ##[alterTS_matchSOG_SG-S3-2004-10-19.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/alterTS_matchSOG_SG-S3-2004-10-19.ipynb)  
     
 * ##[plot_SOGComp_SS2DSOG_p4zprod.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plot_SOGComp_SS2DSOG_p4zprod.ipynb)  
@@ -175,6 +180,11 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[SS2Dplots-Copy0-Copy0-Copy0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/SS2Dplots-Copy0-Copy0-Copy0.ipynb)  
     
+* ##[convertToHourly.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/convertToHourly.ipynb)  
+    
+    SOGComp is SOG run for comparison with SS2DSOG5x5  
+    - compare starting values to check initialization of IC's  
+
 * ##[plot_SOGComp_SS2DSOG_p4zprod-r214.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/plot_SOGComp_SS2DSOG_p4zprod-r214.ipynb)  
     
     SOGComp is SOG run for comparison with SS2DSOG5x5  
