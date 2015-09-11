@@ -546,9 +546,9 @@ def plot_freshwater_amount(obs_amount, mod15_now_amount, mod15_new_amount,modave
 
     ## observation & 1.5m nowcast & new model result minimim values
     ax = axs[0]
-    ax.plot(time, obs_amount,'b-', marker = 'o', markersize = 25,linewidth=5.0, label = 'observed value')
-    ax.plot(time, mod15_now_amount,'g-',marker = '^', markersize = 25, linewidth=5.0, label = '1.5m nowcast value')
-    ax.plot(time, mod15_new_amount,'y-', marker = '*', markersize = 25,linewidth=5.0, label = '1.5m new result value')
+    ax.plot(time, obs_amount,'b-', marker = 'o', markersize = 35,linewidth=5.0, label = 'observed value')
+    ax.plot(time, mod15_now_amount,'g-',marker = '^', markersize = 35, linewidth=5.0, label = '1.5m nowcast value')
+    ax.plot(time, mod15_new_amount,'y-', marker = 's', markersize = 35,linewidth=5.0, label = '1.5m new result value')
     plt.setp(ax, xticks=[0, 4, 10 ], xticklabels=group_labels)
     plt.setp(ax.get_xticklabels(), fontsize=65)
     plt.setp(ax.get_yticklabels(), fontsize=65)
@@ -558,13 +558,13 @@ def plot_freshwater_amount(obs_amount, mod15_now_amount, mod15_new_amount,modave
     ax.set_xlabel('Date', fontsize = 65)
     ax.set_ylabel('Total freshwater amount [m]', fontsize = 65)
     ax.grid('on')
-    ax.legend(fontsize = 55)
+    ax.legend(loc = 2, fontsize = 55)
 
     ## observation & average 3m nowcast & new model result minimim values
     ax = axs[1]
-    ax.plot(time, obs_amount,'bo-', marker = 'o', markersize = 15,linewidth=5.0,label = 'observed value')
-    ax.plot(time, modave_now_amount,'g-', marker = '^', markersize = 25,linewidth=5.0,label = 'average 3m nowcast value')
-    ax.plot(time, modave_new_amount,'y-', marker = '*', markersize = 25,linewidth=5.0,label = 'average 3m new result value')
+    ax.plot(time, obs_amount,'bo-', marker = 'o', markersize = 35,linewidth=5.0,label = 'observed value')
+    ax.plot(time, modave_now_amount,'g-', marker = '^', markersize = 35,linewidth=5.0,label = 'average 3m nowcast value')
+    ax.plot(time, modave_new_amount,'y-', marker = 's', markersize = 35,linewidth=5.0,label = 'average 3m new result value')
     plt.setp(ax, xticks=[0, 4, 10 ], xticklabels=group_labels)
     plt.setp(ax.get_xticklabels(), fontsize=65)
     plt.setp(ax.get_yticklabels(), fontsize=65)
@@ -572,7 +572,7 @@ def plot_freshwater_amount(obs_amount, mod15_now_amount, mod15_new_amount,modave
     ax.set_xlabel('Date', fontsize = 65)
     ax.set_ylabel('Total freshwater amount [m]', fontsize = 65)
     ax.grid('on')
-    ax.legend(fontsize = 55)
+    ax.legend(loc = 2,fontsize = 55)
     return fig
 
 
