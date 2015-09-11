@@ -4,7 +4,7 @@ from salishsea_tools import (nc_tools,viz_tools,stormtools,tidetools)
 from salishsea_tools.nowcast import figures
 from datetime import datetime, timedelta
 from pylab import *
-from sklearn import linear_model
+#from sklearn import linear_model
 from glob import glob
 from IPython.core.display import HTML
 from salishsea_tools.nowcast import figures
@@ -64,11 +64,11 @@ def find_dist (q, lon11, lat11, X, Y, bathy, longitude, latitude, saline_nemo_3r
     weights = np.zeros(9)
     value_3rd=np.zeros(9)
     value_4rd=np.zeros(9)
-    regr =linear_model.LinearRegression()
-    regr.fit(lon11,lat11);
-    regr.coef_
+    #regr =linear_model.LinearRegression()
+    #regr.fit(lon11,lat11);
+    #regr.coef_
 
-    [x1, j1] = tidetools.find_closest_model_point(lon11[q],regr.predict(lon11[q]),\
+    [x1, j1] = tidetools.find_closest_model_point(lon11[q],lat11[q]),\
                                         X,Y,bathy,lon_tol=0.0052,lat_tol=0.00210,allow_land=False)
     for i in np.arange(x1-1,x1+2):
         for j in np.arange(j1-1,j1+2):
@@ -90,11 +90,11 @@ def find_dist_ave (q, lon11, lat11, X, Y, bathy, longitude, latitude, saline_nem
     weights = np.zeros(9)
     value_3rd=np.zeros(9)
     value_4rd=np.zeros(9)
-    regr =linear_model.LinearRegression()
-    regr.fit(lon11,lat11);
-    regr.coef_
+    #regr =linear_model.LinearRegression()
+    #regr.fit(lon11,lat11);
+    #regr.coef_
 
-    [x1, j1] = tidetools.find_closest_model_point(lon11[q],regr.predict(lon11[q]),\
+    [x1, j1] = tidetools.find_closest_model_point(lon11[q],lat11[q]),\
                                         X,Y,bathy,lon_tol=0.0052,lat_tol=0.00210,allow_land=False)
     for i in np.arange(x1-1,x1+2):
         for j in np.arange(j1-1,j1+2):
@@ -266,6 +266,21 @@ def salinity_fxn(saline, run_date, results_home):
     value_mean_3rd_hour, value_mean_4rd_hour, \
     value_mean_ave3rd, value_mean_ave4rd,\
     salinity11, salinity1_2_4, date_str
+
+def j_i_model_points(saline, run_date, results_home):
+    """This function was made to find the ferry route longitude and
+	latitude for model results, return lon and lat indices in list"""
+    lon11, lat11, lon1_2_4, lat1_2_4,\
+    value_mean_3rd_hour, value_mean_4rd_hour, \
+    value_mean_ave3rd, value_mean_ave4rd,\
+    salinity11, salinity1_2_4,date_str = salinity_fxn(saline, run_date, results_home)
+    
+    [x1, j1] = tidetools.find_closest_model_point(lon11[q],lat11[q]),\
+                                        X,Y,bathy,lon_tol=0.0052,lat_tol=0.00210,allow_land=False)
+
+
+
+
 
 def salinity_ferry_route(grid_T, grid_B, PNW_coastline, sal_hr, saline, run_date,results_home):
     """ plot daily salinity comparisons between ferry observations 
