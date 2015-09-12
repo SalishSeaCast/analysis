@@ -98,7 +98,43 @@ def daytime_hightide(ssh, times):
     return max_inds
 
 
-def compare_model(to, tf, lighthouse, mode, period, grid_B, smin=28, smax=33):
+def compare_model(to, tf, lighthouse,  mode, period,
+                  grid_B, smin=28, smax=33, tmin=6, tmax=14):
+    """Compare model surface salinity with lighthouse observations in a date
+    range.
+
+    :arg to: the beginning of the date range
+    :type to: datetime object
+
+    :arg tf: the end of the date range
+    :type tf: datetime object
+
+    :arg lighthouse: the name of the lighthouse
+    :type lighthouse: string
+
+    :arg mode: the model simulation mode - nowcast or spinup
+    :type mode: string
+
+    :arg period: the averaging period for model results - 1h or 1d
+    :type period: string
+
+    :arg grid_B: NEMO bathymetry grid
+    :type grid_B: netCDF4 handle
+
+    :arg smin: minumum salinity for axis limits
+    :type smin: float
+
+    :arg smax: maximium salinity for axis limits
+    :type smax: float
+
+    :arg tmin: minumum temperature for axis limits
+    :type tmin: float
+
+    :arg tmax: maximium temperature for axis limits
+    :type tmax: float
+
+    :returns: fig, a figure object
+    """
     # Load observations
     data, lat, lon = load_lighthouse(LIGHTHOUSES[lighthouse])
     # Look up modle grid point
@@ -110,20 +146,23 @@ def compare_model(to, tf, lighthouse, mode, period, grid_B, smin=28, smax=33):
     # load model
     files = analyze.get_filenames(to, tf, period, 'grid_T', MODEL_PATHS[mode])
     sal, time = analyze.combine_files(files, 'vosaline', 0, j, i)
+    temp, time = analyze.combine_files(files, 'votemper', 0, j, i)
     if period == '1h':
         # look up times of high tides
         ssh, times = analyze.combine_files(files, 'sossheig', 'None', j, i)
-        print ssh.shape, sal.shape
         max_inds = daytime_hightide(ssh, times)
         sal = sal[max_inds]
+        temp = temp[max_inds]
         time = time[max_inds]
         title_str = 'max daytime tides'
     else:
         title_str = 'daily average'
 
     # plotting
-    fig, ax = plt.subplots(1, 1, figsize=(8, 5))
+    fig, axs = plt.subplots(1, 2, figsize=(15, 5))
     # plot time series
+    # salinity
+    ax = axs[0]
     ax.plot(time, sal, label=mode)
     ax.plot(data['date'], data['Salinity(psu)'], label='observations')
     ax.legend(loc=0)
@@ -131,23 +170,57 @@ def compare_model(to, tf, lighthouse, mode, period, grid_B, smin=28, smax=33):
     ax.set_xlim([to, tf])
     ax.set_ylim([smin, smax])
     ax.set_ylabel('Salinity [psu]')
+    # temperature
+    ax = axs[1]
+    ax.plot(time, temp, label=mode)
+    ax.plot(data['date'], data['Temperature(C)'], label='observations')
+    ax.legend(loc=0)
+    ax.set_title('{} Temperature - {}'.format(lighthouse, title_str))
+    ax.set_xlim([to, tf])
+    ax.set_ylim([tmin, tmax])
+    ax.set_ylabel('Temperature [deg C]')
     fig.autofmt_xdate()
 
     return fig
 
 
-def monthly_means(lighthouse, grid_B, smin=28, smax=33):
+def monthly_means(lighthouse, grid_B, smin=28, smax=33, tmin=6, tmax=12):
+    """Plot the monthly mean temperature and salinity at a lighthouse
 
+    :arg lighthouse: the lighthouse name
+    :type lighthouse: string
+
+    :arg grid_B: NEMO bathymetry grid
+    :type grid_B: netCDF4 handle
+
+    :arg smin: minumum salinity for axis limits
+    :type smin: float
+
+    :arg smax: maximium salinity for axis limits
+    :type smax: float
+
+    :arg tmin: minumum temperature for axis limits
+    :type tmin: float
+
+    :arg tmax: maximium temperature for axis limits
+    :type tmax: float
+
+    :returns: fig, a figure object
+    """
     data, lat, lon = load_lighthouse(LIGHTHOUSES[lighthouse])
-    fig, axs = plt.subplots(1, 2, figsize=(15, 5))
+    fig, axs = plt.subplots(1, 3, figsize=(15, 5))
     grouped = data.groupby(['Month'])
     mean = grouped.apply(np.mean)
     ax = axs[0]
     mean.plot(y='Salinity(psu)', ax=ax)
     ax.set_ylim([smin, smax])
-    ax.set_title('{} Monthly Mean Salinity'.format(lighthouse))
+    ax.set_title('{} Monthly Mean Observed Salinity'.format(lighthouse))
+    ax2=axs[1]
+    mean.plot(y='Temperature(C)', ax=ax2)
+    ax2.set_ylim([tmin, tmax])
+    ax2.set_title('{} Monthly Mean Observed Temperature'.format(lighthouse))
     # plot map
-    axm = axs[1]
+    axm = axs[2]
     axm.plot(lon, lat, 'o')
     viz_tools.plot_coastline(axm, grid_B, coords='map')
 
