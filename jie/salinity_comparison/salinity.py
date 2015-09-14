@@ -267,6 +267,96 @@ def salinity_fxn(saline, run_date, results_home):
     value_mean_ave3rd, value_mean_ave4rd,\
     salinity11, salinity1_2_4, date_str
 
+def salinity_fxn_five_times(saline, run_date, results_home):
+    """The significance of this function was to return longitude,
+       latitude, salinity values for observations, 1.5m of 3rd & 4rd, 
+       3m average of 3rd & 4rd model result """
+
+    a=saline['ferryData']
+    b=a['data']
+    dataa = b[0,0]
+    time=dataa['matlabtime'][0,0]
+    lonn=dataa['Longitude'][0,0]
+    latt=dataa['Latitude'][0,0]
+    salinity=dataa['Practical_Salinity'][0,0]
+       
+    a=len(time)
+    lon1=np.zeros([a,1])
+    lat1=np.zeros([a,1])
+    salinity1=np.zeros([a,1])
+    for i in np.arange(0,a):
+        matlab_datenum = np.float(time[i])
+        python_datetime = datetime.datetime.fromordinal(int(matlab_datenum))\
+        + timedelta(days=matlab_datenum%1) - timedelta(days = 366)
+        
+        if((python_datetime.year == run_date.year) & (python_datetime.month == run_date.month)\
+           & (python_datetime.day == run_date.day)
+           & (python_datetime.hour >= 3))&(python_datetime.hour < 5):
+            lon1[i]=lonn[i]
+            lat1[i]=latt[i]
+            salinity1[i]=salinity[i]
+            
+    mask=lon1[:,0]!=0
+    lon1_2_4=lon1[mask]
+    lat1_2_4=lat1[mask]
+    salinity1_2_4=salinity1[mask]
+    lon11=lon1_2_4[0:-1:20]
+    lat11=lat1_2_4[0:-1:20]
+    salinity11=salinity1_2_4[0:-1:20]
+    if results_home == paths['longerresult']: 
+        bathynew, X, Y = get_SS5_bathy_data()
+    elif results_home == paths['nowcast']: 
+        bathyold, X, Y = get_SS2_bathy_data()
+    
+    date_str = run_date.strftime('%d-%b-%Y') ##create a string based on this date
+    filepath_name = date(run_date.year,run_date.month, run_date.day,\
+    run_date.day,run_date.day, results_home,'1h','grid_T') 
+    tracers=nc.Dataset(filepath_name[0])
+    latitude=tracers.variables['nav_lat'][:] 
+    longitude=tracers.variables['nav_lon'][:] 
+    saline_nemo = tracers.variables['vosaline']
+    saline_nemo_3rd = saline_nemo[3,1, 0:898, 0:398] 
+    saline_nemo_4rd = saline_nemo[4,1, 0:898, 0:398]
+    saline_nemo_ave3rd = np.mean(saline_nemo[3, 0:3, 0:898, 0:398], axis = 0)
+    saline_nemo_ave4rd = np.mean(saline_nemo[4, 0:3, 0:898, 0:398], axis = 0)
+    
+    matrix=np.zeros([len(lon11),9])
+    matrix_ave=np.zeros([len(lon11),9])
+    values=np.zeros([len(lon11),1])
+    valuess=np.zeros([len(lon11),1])
+    values_ave=np.zeros([len(lon11),1])
+    valuess_ave=np.zeros([len(lon11),1])
+    value_mean_3rd_hour=np.zeros([len(lon11),1])
+    value_mean_ave3rd=np.zeros([len(lon11),1])
+    value_mean_ave4rd=np.zeros([len(lon11),1]) 
+    value_mean_4rd_hour=np.zeros([len(lon11),1])
+    for q in np.arange(0,len(lon11)):
+        if results_home == paths['longerresult']:
+            values[q], valuess[q], matrix[q,:]=find_dist(q, lon11, lat11, X, Y,\
+                                     bathynew, longitude, latitude, saline_nemo_3rd, saline_nemo_4rd)
+            value_mean_3rd_hour[q]=values[q]/sum(matrix[q])
+            value_mean_4rd_hour[q]=valuess[q]/sum(matrix[q])
+            
+            values_ave[q], valuess_ave[q], matrix_ave[q,:]=find_dist_ave(q, lon11, lat11, X, Y,\
+                                     bathynew, longitude, latitude, saline_nemo_ave3rd, saline_nemo_ave4rd)
+            value_mean_ave3rd[q]=values_ave[q]/sum(matrix_ave[q])
+            value_mean_ave4rd[q]=valuess_ave[q]/sum(matrix_ave[q])
+        elif results_home == paths['nowcast']:
+            values[q], valuess[q], matrix[q,:]=find_dist(q, lon11, lat11, X, Y,\
+                                     bathyold, longitude, latitude, saline_nemo_3rd, saline_nemo_4rd)
+            value_mean_3rd_hour[q]=values[q]/sum(matrix[q])
+            value_mean_4rd_hour[q]=valuess[q]/sum(matrix[q])
+
+            values_ave[q], valuess_ave[q], matrix_ave[q,:]=find_dist_ave(q, lon11, lat11, X, Y,\
+                                     bathyold, longitude, latitude, saline_nemo_ave3rd, saline_nemo_ave4rd)
+            value_mean_ave3rd[q]=values_ave[q]/sum(matrix_ave[q])
+            value_mean_ave4rd[q]=valuess_ave[q]/sum(matrix_ave[q])
+
+    return lon11, lat11, lon1_2_4, lat1_2_4,\
+    value_mean_3rd_hour, value_mean_4rd_hour, \
+    value_mean_ave3rd, value_mean_ave4rd,\
+    salinity11, salinity1_2_4, date_str
+
 def j_i_model_points(saline, run_date, results_home):
     """This function was made to find the ferry route longitude and
 	latitude for model results, return lon and lat indices in list"""
