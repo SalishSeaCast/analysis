@@ -6,7 +6,52 @@ import numpy as np
 import matplotlib.pyplot as plt
 import datetime
 from salishsea_tools.nowcast import analyze
+from wodpy import wod
+import pandas as pd
 
+def read_file_to_dataframe(filename):
+    """Reads a WOD file (filename) and returns data as a dataframe.
+    data inlcudes columns Temperature, Salinity, Depth, Year, Month, Day, Longitude, Latitude, Datetime"""
+    
+    file = open(filename)
+    
+    #empty list for gatherting profiles.
+    list_data=[]
+    
+    #loop through profiles
+    profile = wod.WodProfile(file)
+    while not profile.is_last_profile_in_file(file):
+        year = profile.year()
+        lat = profile.latitude()
+        lon = profile.longitude()
+        s=profile.s()
+        d=profile.z()
+        t=profile.t()
+        month = profile.month()
+        day = profile.day()
+        date = datetime.datetime(year, month, day)
+        tmp={'Year': year, 'Month': month, 'Day': day, 'Longitude': lon, 'Latitude': lat,
+            'Salinity': s, 'Temperature': t, 'Depth': d, 'Datetime': date} 
+        list_data.append(tmp)
+        profile = wod.WodProfile(file)
+        
+    #again for last profile
+    year = profile.year()
+    lat = profile.latitude()
+    lon = profile.longitude()
+    s=profile.s()
+    d=profile.z()
+    t=profile.t()
+    month = profile.month()
+    day = profile.day()
+    tmp={'Year': year, 'Month': month, 'Day': day, 'Longitude': lon, 'Latitude': lat,
+        'Salinity': s, 'Temperature': t, 'Depth': d} 
+    list_data.append(tmp)
+
+    #convert to data frame    
+    data = pd.DataFrame(list_data)     
+    
+    return data
 
 def isolate_region(data, lon_min, lon_max, lat_min, lat_max):
     """
