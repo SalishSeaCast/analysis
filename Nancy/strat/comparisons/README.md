@@ -87,6 +87,12 @@ Descriptions below the links are from the first cell of the notebooks
       
     Temperature is also available, but it is complicated by the time shift in the high tide and the diurnal vairability in temperature. I will not look at temperature for now, but could come up with a fair comparison later.  
 
+* ##[Another look at JDF BCS.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Another look at JDF BCS.ipynb)  
+    
+    A notebook to look at the JDF boundary conditions with comparisons to WOD database and IOS data.  
+      
+    Observed data in this region is from 1976 to 2014.  
+
 * ##[Nowcast, Spinup, Observations Comparison - Haro.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Nowcast, Spinup, Observations Comparison - Haro.ipynb)  
     
     Comparisons between nowcast, spinup, and observed salinity in the Haro Strait  
