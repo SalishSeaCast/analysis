@@ -6,6 +6,10 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[BathyImage.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/bathymetry/BathyImage.ipynb)  
+    
+    *  This notebook was used to make salish sea model domain bathymetry image for presentation with bathymetry and location of rivers.  
+
 * ##[ChangeBanksToLand.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/bathymetry/ChangeBanksToLand.ipynb)  
     
     * This notebook was to modify the banks area in the SoG into land  
