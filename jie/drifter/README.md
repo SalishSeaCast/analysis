@@ -12,7 +12,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[DrifterParticleFurther.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/DrifterParticleFurther.ipynb)  
     
-    * This notebook was made to further look at trajectory comparisons under different conditions. With/Without wind; Default/reduced vertical viscosity; With banks/without .  
+    * This notebook was made to further look at trajectory comparisons under different conditions. With/Without wind; Default/reduced vertical viscosity; With banks/without banks.  
 
 
 ##License
