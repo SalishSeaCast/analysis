@@ -8,6 +8,18 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[Tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/tides/Tides.ipynb)  
     
+* ##[Tides and background vertical viscosity.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/tides/Tides and background vertical viscosity.ipynb)  
+    
+    Examine tidal constituents - M2/K1 elevation  
+      
+    M2/K1 tidal currents are also examined at the VENUS nodes.  
+      
+    Inference for P1 and K2 is not applied  
+      
+    Comparing background visc = 1e-4 and 1e-6.   
+      
+    Simulaitons had no weather, isoneutral lateral mixing.  
+
 * ##[Compare DFO tides with my tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/tides/Compare DFO tides with my tides.ipynb)  
     
     Notebook to compare DFO tides with my tides  
