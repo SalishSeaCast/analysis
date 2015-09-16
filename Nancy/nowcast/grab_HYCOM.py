@@ -9,7 +9,7 @@ import datetime
 import os
 import urllib2
 
-SAVE_PATH = '/data/nsoontie/MEOPAR/analysis/Nancy/nowcast/'
+SAVE_PATH = '/ocean/nsoontie/MEOPAR/HYCOM/text/'
 
 
 def main():
