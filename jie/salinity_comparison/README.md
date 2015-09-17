@@ -10,6 +10,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     * This notebook was made to look at the salinity / V velocity vertical profiles at Sandheads, VENUS central/east/delta and station S4-3.  
 
+* ##[PlotThreeFerryRoutes.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/salinity_comparison/PlotThreeFerryRoutes.ipynb)  
+    
+    * This notebook was made to create three ferry routes shown in the map.   
+
 
 ##License
 
