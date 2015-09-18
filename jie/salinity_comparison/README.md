@@ -14,6 +14,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     * This notebook was made to create three ferry routes shown in the map.   
 
+* ##[ThreeRouteSalinityTemplate.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/salinity_comparison/ThreeRouteSalinityTemplate.ipynb)  
+    
+    **Imports from research_ferries.py in my own directory**  
+
 
 ##License
 
