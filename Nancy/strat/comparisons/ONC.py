@@ -179,7 +179,7 @@ def load_model_data(sdt, edt, grid_B, results_home, period,
     # Grab model data
     var, times = analyze.combine_files(files, variable,
                                        np.arange(mdepths.shape[0]), j, i)
-
+    print 'Model bathymetry:', bathy[j, i]
     return var, times, mdepths
 
 
@@ -307,14 +307,21 @@ def compare_ONC_model(csvfilename, sdt, edt, grid_B, results_home, period='1h',
     ax = axs[0]
     ax.plot(times, sal, label='model')
     qc_data = isolate_qc_data(data, 'Practical Salinity QC Flag  ')
-    ax.plot(qc_data['time'], qc_data['Practical Salinity (psu)'],
-            label='observations')
+    obs_sal = qc_data['Practical Salinity (psu)']
+    ax.plot(qc_data['time'], obs_sal, label='observations')
+    ax.plot([sdt, edt], [sal.mean(), sal.mean()], 'b--', label='model mean')
+    ax.plot([sdt, edt], [obs_sal.mean(), obs_sal.mean()], 'g--',
+            label='observed mean')
     ax.set_ylabel('Practical Salinity [psu]')
     # Temperature
     ax = axs[1]
     ax.plot(times, temp, label='model')
     qc_data = isolate_qc_data(data, 'Temperature QC Flag  ')
-    ax.plot(qc_data['time'], qc_data['Temperature (C)'], label='observations')
+    obs_temp = qc_data['Temperature (C)']
+    ax.plot(qc_data['time'], obs_temp, label='observations')
+    ax.plot([sdt, edt], [temp.mean(), temp.mean()], 'b--', label='model mean')
+    ax.plot([sdt, edt], [obs_temp.mean(), obs_temp.mean()], 'g--',
+            label='observed mean')
     ax.set_ylabel('Temperature [C]')
 
     # Format figure
