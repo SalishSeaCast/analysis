@@ -12,10 +12,13 @@ import matplotlib.pyplot as plt
 import scipy.io as sio
 import netCDF4 as nc
 import numpy as np
+import seaborn as sns
 import math
 #import glob
 import os
 import datetime
+
+sns.set_style('darkgrid')
 
 title_font = {
     'fontname': 'Bitstream Vera Sans', 'size': '15', 'color': 'black',
@@ -357,16 +360,16 @@ def salinity_fxn_five_times(saline, run_date, results_home):
     value_mean_ave3rd, value_mean_ave4rd,\
     salinity11, salinity1_2_4, date_str
 
-def j_i_model_points(saline, run_date, results_home):
-    """This function was made to find the ferry route longitude and
-	latitude for model results, return lon and lat indices in list"""
-    lon11, lat11, lon1_2_4, lat1_2_4,\
-    value_mean_3rd_hour, value_mean_4rd_hour, \
-    value_mean_ave3rd, value_mean_ave4rd,\
-    salinity11, salinity1_2_4,date_str = salinity_fxn(saline, run_date, results_home)
+#def j_i_model_points(saline, run_date, results_home):
+    #"""This function was made to find the ferry route longitude and
+	#latitude for model results, return lon and lat indices in list"""
+    #lon11, lat11, lon1_2_4, lat1_2_4,\
+    #value_mean_3rd_hour, value_mean_4rd_hour, \
+    #value_mean_ave3rd, value_mean_ave4rd,\
+    #salinity11, salinity1_2_4,date_str = salinity_fxn(saline, run_date, results_home)
     
-    [x1, j1] = tidetools.find_closest_model_point(lon11[q],lat11[q]),\
-                                        X,Y,bathy,lon_tol=0.0052,lat_tol=0.00210,allow_land=False)
+    #[x1, j1] = tidetools.find_closest_model_point(lon11[q],lat11[q]),\
+                                        #X,Y,bathy,lon_tol=0.0052,lat_tol=0.00210,allow_land=False)
 
 
 
