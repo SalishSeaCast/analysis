@@ -8,7 +8,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[SalinityVVelocityPlotAtStations.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/salinity_comparison/SalinityVVelocityPlotAtStations.ipynb)  
     
-    * This notebook was made to look at the salinity / V velocity vertical profiles at Sandheads, VENUS central/east/delta and station S4-3.  
+    * This notebook was made to look at the salinity / U, V velocity vertical profiles with reduced viscosity, new bathymetry 6, nowcasts, no_banks at Sandheads, VENUS central/east/delta and station S4-3 during ebb and flood tide respectively.  
 
 * ##[PlotThreeFerryRoutes.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/salinity_comparison/PlotThreeFerryRoutes.ipynb)  
     
@@ -17,6 +17,10 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[ThreeRouteSalinityTemplate.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/salinity_comparison/ThreeRouteSalinityTemplate.ipynb)  
     
     **Imports from research_ferries.py in my own directory**  
+
+* ##[FerrySalinityForHindcast.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/salinity_comparison/FerrySalinityForHindcast.ipynb)  
+    
+    * This notebook was made to look at 1.5 m salinity comparison between reduced viscosity, no_banks, new bathymetry, nowcast model result and ferry salinity in the hindcast.  
 
 
 ##License
