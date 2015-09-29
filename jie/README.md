@@ -44,6 +44,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     Reading IOS data in Rich's directory using Rob's reader.  
 
+* ##[RMS.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/RMS.ipynb)  
+    
+     This notebook was part of TestUVfromColdStart, just plot to see the RMS between original nowcast and that from cold start, with other conditions all the same.   
+
 * ##[function compare surface currents with different river treatments.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/function compare surface currents with different river treatments.ipynb)  
     
     This notebook was made to compare surface currents in Fraser River plume during ebb tides with different river treatments  
@@ -98,6 +102,8 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[DrifterParticleComparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/DrifterParticleComparison.ipynb)  
     
+    * Look at drifer particle comparison and explore wind factor between model and obs.  
+
 * ##[Amount of fresh water comparison calculation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Amount of fresh water comparison calculation.ipynb)  
     
 * ##[HBDB_FerryRouteSalinity.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/HBDB_FerryRouteSalinity.ipynb)  
@@ -154,6 +160,10 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[SaliCom_13apr15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/SaliCom_13apr15.ipynb)  
     
+* ##[DrifterParticleFurther.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/DrifterParticleFurther.ipynb)  
+    
+    * This notebook was made to further look at trajectory comparisons under different conditions. With/Without wind; Default/reduced vertical viscosity; With banks/without banks.  
+
 * ##[IOS vs model comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/IOS vs model comparison.ipynb)  
     
     Data stored at   
