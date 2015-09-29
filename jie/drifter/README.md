@@ -10,9 +10,13 @@ Descriptions below the links are from the first cell of the notebooks
     
     * This notebook was made to reproduce drifter track with reference of Nancy's notebook with longitude ticks shown completely in the figure.  
 
+* ##[MoreDrifterComparisons.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/MoreDrifterComparisons.ipynb)  
+    
+    This notebook was made to compare more drifter-model results, with new river channel, reduced viscosty, no_banks and reduced viscosity&old river.  
+
 * ##[DrifterParticleFurther.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/DrifterParticleFurther.ipynb)  
     
-    * This notebook was made to further look at trajectory comparisons under different conditions. With/Without wind; Default/reduced vertical viscosity; With banks/without banks.  
+    * This notebook was made to further look at trajectory comparisons under different conditions. With/Without wind; Default/reduced vertical viscosity; With banks/without banks and all reduced with viscosity and not.  
 
 
 ##License
