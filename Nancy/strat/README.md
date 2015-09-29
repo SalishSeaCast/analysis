@@ -23,6 +23,16 @@ Descriptions below the links are from the first cell of the notebooks
     Compares diff=1e-6 and visc=1e-5 with winds to base case with winds.   
 
 
+* ##[Eddy values at VENUS nodes.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/Eddy values at VENUS nodes.ipynb)  
+    
+    This notebook will compare the vertical eddy diffusivity and viscosity at the the VENUS nodes. Two simulations are compared -   
+      
+    1. dwr_notsmooth_kappa10_winds (rn_avt0=1e-5, rn_avt0 = 1e-4)  
+    2. dwr_diff1e-6_visc1e-5_wind (rn_avt0= 1e-6, rn_avm0 = 1e-5)  
+      
+      
+    Both used winds  
+
 * ##[DWR_diff1e-6_visc1e-5_winds.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_diff1e-6_visc1e-5_winds.ipynb)  
     
     This notebook looks at the vertical eddy viscosity/diffusivity during a deep water renewal event in late August 2003.  
