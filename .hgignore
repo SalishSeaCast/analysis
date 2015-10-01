@@ -1,6 +1,7 @@
 syntax: glob
 
 Muriel/TidalEllipseData/
+Nancy/Ariane/*.mp4
 Nancy/drifters/*.csv
 Nancy/animations/*.mp4
 Nancy/*.csv
@@ -8,6 +9,7 @@ Nancy/nowcast/*/*.txt
 Nancy/strat/*.csv
 Nancy/strat/comparisons/*.dat
 Nancy/tides/*.csv
+Nancy/currents/*.nc
 storm_surges/*.csv
 storm_surges/pathdef.m
 storm_surges/data/pathdef.m
