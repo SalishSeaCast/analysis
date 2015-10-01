@@ -12,7 +12,7 @@ NodalCorr = tidetools.CorrTides
 
 def save_netcdf(times, us, vs, depths, station, lons, lats, to, tf):
     fname = '{}_currents_{}_{}.nc'.format(station, to.strftime('%Y%m%d'),
-                                       tf.strftime('%Y%m%d'))
+                                          tf.strftime('%Y%m%d'))
     nc_file = nc.Dataset(fname, 'w', zlib=True)
     # dataset attributes
     nc_tools.init_dataset_attrs(
@@ -23,20 +23,20 @@ def save_netcdf(times, us, vs, depths, station, lons, lats, to, tf):
         comment='Generated for tidal analysis')
     # dimensions
     nc_file.createDimension('time_counter', None)
-    nc_file.createDimension('deptht', depths.shape[0])
+    nc_file.createDimension('deptht', us.shape[1])
     nc_file.createDimension('y', us.shape[2])
     nc_file.createDimension('x', us.shape[3])
     # variables
     # time_counter
     time_counter = nc_file.createVariable(
-        'time_counter', 'float32', ('time_counter'))
+        'time_counter', 'float64', ('time_counter'))
     time_counter.long_name = 'Time axis'
     time_counter.axis = 'T'
-    time_counter.units = 'hour since 00:00:00 on {}'.format(NodalCorr['reftime'])
+    time_counter.units = 'hour since {}'.format(NodalCorr['reftime'])
     # lat, lon
-    lon = nc_file.createVariable('nav_lon', float, ('y', 'x'), zlib=True)
+    lon = nc_file.createVariable('nav_lon', 'float32', ('y', 'x'), zlib=True)
     lon[:] = lons[:]
-    lat = nc_file.createVariable('nav_lat', float, ('y', 'x'), zlib=True)
+    lat = nc_file.createVariable('nav_lat', 'float32', ('y', 'x'), zlib=True)
     lat[:] = lats[:]
     # u, v
     u = nc_file.createVariable('vozocrtx', 'float32',
@@ -56,10 +56,10 @@ def save_netcdf(times, us, vs, depths, station, lons, lats, to, tf):
     depth.long_name = 'Depth'
     depth.coordinates = 'deptht'
 
-    u[:] = us[:]
-    v[:] = vs[:]
-    depth[:] = depths[:]
-    time_counter[:] = times[:]
+    u[:] = us
+    v[:] = vs
+    depth[:] = depths
+    time_counter[:] = times
 
     nc_file.close()
 
