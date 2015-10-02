@@ -1,60 +1,9 @@
 import datetime
-import numpy as np
 import netCDF4 as nc
 
 from salishsea_tools import (tidetools, nc_tools, ellipse)
-from salishsea_tools.nowcast import (analyze)
 
-
-# Functions
-def nodal_corrections(tide, tidecorr):
-    """apply nodal corrections to tidal constituent amplude and phase
-
-    tide is a nested dictionary with phase and ampliude for each constituent
-    tidecorr is also a nested dictionary with nodal factors and phase shift
-    for each constituent"""
-    for const in tide:
-        tide[const]['phase'] = (tide[const]['phase'] + tidecorr[const]['uvt'])
-        tide[const]['amp'] = tide[const]['amp'] / tidecorr[const]['ft']
-
-        shape = tide[const]['phase'].shape
-        corr_amp = tide[const]['amp'].flatten()
-        corr_phase = tide[const]['phase'].flatten()
-        ind = 0
-        for amp, phase in zip(corr_amp, corr_phase):
-            corr_amp[ind], corr_phase[ind] = tidetools.convention_pha_amp(amp, phase)
-            ind = ind + 1
-        tide[const]['phase'] = np.reshape(corr_phase, shape)
-        tide[const]['amp'] = np.reshape(corr_amp, shape)
-    return tide
-
-
-def baroclinic_tide(u, time, depth, nconst):
-    """Perform a harmonic analysis on the baroclinic tide
-
-    u is the full depth profile of a current
-    If u is from NEMO output, it should be unstaggered before this funcion
-    is applied.
-    u should have at least a time and depth dimension but could also have
-    y, x shape
-    the depth dimensions must be in axis 1.
-    time is the times associated with the current.
-    depth is an array of depths associated with u
-    nconsts is the number of constituents to analyze
-    returns tide_bc - a nested dictionary with amp and phase for each
-    constituent eg. tide_bc['M2']['phase']
-    also returns the baroclinic currnt, u_bc"""
-
-    # Calculate depth-averaged current
-    u_depav = analyze.depth_average(u, depth, depth_axis=1)
-    u_depav = np.expand_dims(u_depav, axis=1)
-    # Calculate baroclinic current by removing depth averaged bit
-    u_bc = u - u_depav
-
-    # tidal analysis of baroclinic current
-    tide_bc = tidetools.fittit(u_bc, time, nconst)
-
-    return tide_bc, u_bc
+import baroclinic
 
 
 def save_netcdf(tide, depths, const, lons, lats, to, tf):
@@ -133,15 +82,19 @@ lats = f.variables['nav_lat'][:]
 nconst = 8
 
 u_rot, v_rot = ellipse.prepare_vel(us, vs)
-u_tide_bc, u_bc = baroclinic_tide(u_rot, times, depths, nconst)
-v_tide_bc, v_bc = baroclinic_tide(v_rot, times, depths, nconst)
+u_tide_bc, u_bc = baroclinic.baroclinic_tide(u_rot, times, depths, nconst)
+v_tide_bc, v_bc = baroclinic.baroclinic_tide(v_rot, times, depths, nconst)
+print 'Finished tide fitting'
 # nodal corrections
-u_tide_bc = nodal_corrections(u_tide_bc, NodalCorr)
-v_tide_bc = nodal_corrections(v_tide_bc, NodalCorr)
+u_tide_bc = baroclinic.nodal_corrections(u_tide_bc, NodalCorr)
+v_tide_bc = baroclinic.nodal_corrections(v_tide_bc, NodalCorr)
+print 'Finished nodal corrections'
 baroclinic_ellipse = ellipse.get_params(u_bc, v_bc, times, nconst,
                                         tidecorr=NodalCorr)
+print 'Finished Ellipse calculations. Saving files next'
 
 # Save things
 for const in baroclinic_ellipse:
-    save_netcdf(baroclinic_ellipse[const], depths, const, lons, lats, to, tf)
+    baroclinic.save_netcdf(baroclinic_ellipse[const], depths, const,
+                           lons, lats, to, tf)
     print 'Saved {}'.format(const)
