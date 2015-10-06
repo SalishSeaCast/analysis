@@ -79,22 +79,26 @@ depths = f.variables['deptht'][:]
 times = f.variables['time_counter'][:]
 lons = f.variables['nav_lon'][:]
 lats = f.variables['nav_lat'][:]
-nconst = 8
+nconst = 2
 
-u_rot, v_rot = ellipse.prepare_vel(us, vs)
-u_tide_bc, u_bc = baroclinic.baroclinic_tide(u_rot, times, depths, nconst)
-v_tide_bc, v_bc = baroclinic.baroclinic_tide(v_rot, times, depths, nconst)
-print 'Finished tide fitting'
+dep = 0
+u_rot, v_rot = ellipse.prepare_vel(us[:, dep, :, :], vs[:, dep, :, :])
+#u_tide_bc, u_bc = baroclinic.baroclinic_tide(u_rot, times, depths, nconst)
+#v_tide_bc, v_bc = baroclinic.baroclinic_tide(v_rot, times, depths, nconst)
+#print 'Finished tide fitting'
+
 # nodal corrections
-u_tide_bc = baroclinic.nodal_corrections(u_tide_bc, NodalCorr)
-v_tide_bc = baroclinic.nodal_corrections(v_tide_bc, NodalCorr)
-print 'Finished nodal corrections'
-baroclinic_ellipse = ellipse.get_params(u_bc, v_bc, times, nconst,
+#u_tide_bc = baroclinic.nodal_corrections(u_tide_bc, NodalCorr)
+#v_tide_bc = baroclinic.nodal_corrections(v_tide_bc, NodalCorr)
+#print 'Finished nodal corrections'
+#baroclinic_ellipse = ellipse.get_params(u_bc, v_bc, times, nconst,
+                                        #tidecorr=NodalCorr)
+baroclinic_ellipse = ellipse.get_params(u_rot, v_rot, times, nconst,
                                         tidecorr=NodalCorr)
 print 'Finished Ellipse calculations. Saving files next'
 
 # Save things
 for const in baroclinic_ellipse:
-    baroclinic.save_netcdf(baroclinic_ellipse[const], depths, const,
+    save_netcdf(baroclinic_ellipse[const], depths, const,
                            lons, lats, to, tf)
     print 'Saved {}'.format(const)
