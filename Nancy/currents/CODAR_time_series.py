@@ -12,7 +12,7 @@ import baroclinic
 NodalCorr = tidetools.CorrTides
 
 to = datetime.datetime(2014, 11, 26)
-tf = datetime.datetime(2015, 4, 26)
+tf = datetime.datetime(2015, 7, 13)
 path = '/data/dlatorne/MEOPAR/SalishSea/nowcast/'
 grid = nc.Dataset('/data/nsoontie/MEOPAR/NEMO-forcing/grid/bathy_meter_SalishSea2.nc')
 lon_grid = grid.variables['nav_lon']
