@@ -14,6 +14,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     * This notebook was to modify the banks area in the SoG into land  
 
+* ##[Bathymetry10WithJetty.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/bathymetry/Bathymetry10WithJetty.ipynb)  
+    
+    * This notebook was to add jetty in the model based on bathymetry6 and thus create bathymetry 10  
+
 
 ##License
 
