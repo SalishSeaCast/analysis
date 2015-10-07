@@ -1,4 +1,5 @@
 %%% Script to do a tidal analysis with t_tide
+%%% CODAR region at the surface
 
 filename = '/ocean/nsoontie/MEOPAR/TidalEllipseData/ModelTimeSeries/CODAR_currents_20141126_20150426.nc';
 %depth index for tidal analysis
