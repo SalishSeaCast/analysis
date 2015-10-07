@@ -1,5 +1,6 @@
 import datetime
 import netCDF4 as nc
+import os
 
 from salishsea_tools import (tidetools, nc_tools, ellipse)
 
@@ -120,8 +121,10 @@ NodalCorr = tidetools.CorrTides
 # Load Data
 to = datetime.datetime(2014, 11, 26)
 tf = datetime.datetime(2015, 4, 26)
+path = '/ocean/nsoontie/MEOPAR/TidalEllipseData/CODAR/'
 fname = '{}_currents_{}_{}.nc'.format('CODAR', to.strftime('%Y%m%d'),
                                       tf.strftime('%Y%m%d'))
+fname = os.path.join(path, fname)
 f = nc.Dataset(fname)
 us = f.variables['vozocrtx'][:]
 vs = f.variables['vomecrty'][:]
@@ -143,8 +146,6 @@ v_tide_bc = baroclinic.nodal_corrections(v_tide_bc, NodalCorr)
 print 'Finished nodal corrections'
 baroclinic_ellipse = ellipse.get_params(u_bc, v_bc, times, nconst,
                                         tidecorr=NodalCorr)
-#surface_ellipse = ellipse.get_params(u_rot, v_rot, times, nconst,
-                               #      tidecorr=NodalCorr)
 print 'Finished Ellipse calculations. Saving files next'
 
 # Save things
