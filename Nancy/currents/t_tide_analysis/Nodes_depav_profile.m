@@ -1,4 +1,5 @@
 %%% Script to do a tidal analysis with t_tide
+%%% Full depth profile and depth averaged values at VENUS Central or East
 
 filename = '/ocean/nsoontie/MEOPAR/TidalEllipseData/ModelTimeSeries/Central_currents_20141126_20150426.nc';
 %depth index for tidal analysis

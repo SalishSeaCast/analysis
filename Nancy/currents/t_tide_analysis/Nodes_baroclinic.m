@@ -1,4 +1,5 @@
 %%% Script to do baroclinic tidal analysis with t_tide
+%%% VENUS Central or East
 
 filename = '/ocean/nsoontie/MEOPAR/TidalEllipseData/ModelTimeSeries/Central_currents_20141126_20150426.nc';
 output_file = '/ocean/nsoontie/MEOPAR/TidalEllipseData/Nodes/Central_20141126_20150426_baroclinic';
