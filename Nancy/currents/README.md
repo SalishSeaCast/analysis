@@ -8,13 +8,17 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[Baroclinic tide.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Baroclinic tide.ipynb)  
     
-    Analyzing the baroclini tide at VENUS nodes  
+    Analyzing the baroclinic tide at VENUS nodes  
 
 * ##[Tidal currents .ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Tidal currents .ipynb)  
     
     An example of analyzing tidal currents.  
       
 
+
+* ##[Baroclinic Tides - CODAR Region.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Baroclinic Tides - CODAR Region.ipynb)  
+    
+    This notebook will be used to analyze the baroclinic tides over the CODAR region.  
 
 
 ##License
