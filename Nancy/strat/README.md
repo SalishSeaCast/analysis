@@ -6,6 +6,16 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[DWR_kw.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_kw.ipynb)  
+    
+    This notebook looks at the vertical eddy viscosity/diffusivity during a deep water renewal event in late August 2003.  
+      
+    Compares a kw closure with k-eps closure  
+      
+    Both have no wind, rm_avm0 =1e-4, rn_avt0 = 1e-5, no bbl, isoneutral mixing  
+      
+    dwr_kw compared to dwr_isoneutral  
+
 * ##[DWR_new_bcs.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_new_bcs.ipynb)  
     
     This notebook looks at the vertical eddy viscosity/diffusivity during a deep water renewal event in late August 2003.  
