@@ -69,10 +69,6 @@ Descriptions below the links are from the first cell of the notebooks
     A code to look at the data from the crashed run. What is going wrong!  
     Looks at currents, bathymetry, and sea surface height around the crashed time step.   
 
-* ##[Surface salininty animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Surface salininty animation.ipynb)  
-    
-    A notebook to make an animation of the surface salinity.  
-
 * ##[Sea Level Pressure.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Sea Level Pressure.ipynb)  
     
     Given the altitude of a CGRF grid cell, calculate the pressure at sea level.  
@@ -82,10 +78,6 @@ Descriptions below the links are from the first cell of the notebooks
     This notebook runs a comparison between the $\nu=200$ and $\nu=50$ simulations by Doug.   
       
     The focus is on currents and tracers.   
-
-* ##[thalweg animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/thalweg animation.ipynb)  
-    
-    Create renewal movie with tides at Point Atkinson  
 
 * ##[New GEM Time Series May 2015.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/New GEM Time Series May 2015.ipynb)  
     
@@ -104,10 +96,6 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[Seymour Narrows.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Seymour Narrows.ipynb)  
     
-* ##[Internal tide animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Internal tide animation.ipynb)  
-    
-    A notebook to make an animation of the internal tide...  
-
 * ##[interpolation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/interpolation.ipynb)  
     
     Just a quick notebook to play around with interpolating CGRF data into our grid.  
@@ -127,13 +115,9 @@ Descriptions below the links are from the first cell of the notebooks
     This is a 10 day simulation with daily averaged output.  
 
 
-* ##[Ariane.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Ariane.ipynb)  
+* ##[MakingSusansGrid.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/MakingSusansGrid.ipynb)  
     
-    First attempt at an Ariane run.   
-
-* ##[Curents animation.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Curents animation.ipynb)  
-    
-    A notebook to make an animation of the currents and salinity.  
+    Translating Susan's grid into NEMO parameters  
 
 
 ##License
