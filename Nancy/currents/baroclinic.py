@@ -3,6 +3,7 @@
 import netCDF4 as nc
 import numpy as np
 
+
 from salishsea_tools import (tidetools, nc_tools)
 from salishsea_tools.nowcast import (analyze)
 
@@ -10,6 +11,7 @@ NodalCorr = tidetools.CorrTides
 
 
 def save_netcdf(times, us, vs, depths, station, lons, lats, to, tf):
+    """Saves the u/v time series over volume into a netcdf file"""
     fname = '{}_currents_{}_{}.nc'.format(station, to.strftime('%Y%m%d'),
                                           tf.strftime('%Y%m%d'))
     nc_file = nc.Dataset(fname, 'w', zlib=True)
@@ -111,3 +113,47 @@ def baroclinic_tide(u, time, depth, nconst):
     tide_bc = tidetools.fittit(u_bc, time, nconst)
 
     return tide_bc, u_bc
+
+
+def get_constituent(const, datastruc):
+    """returns major axis, minor axis, phase and inlincation for a
+    tidal constituent in matlab datastruc
+    Example get_constituent('M2', datastruc)"""
+
+    var = datastruc[const]
+
+    major = var[0, 0]['major'][0, 0][:]
+    major = np.ma.masked_invalid(major)
+
+    phase = var[0, 0]['phase'][0, 0][:]
+    phase = np.ma.masked_invalid(phase)
+
+    minor = var[0, 0]['minor'][0, 0][:]
+    minor = np.ma.masked_invalid(minor)
+
+    incli = var[0, 0]['incli'][0, 0][:]
+    incli = np.ma.masked_invalid(incli)
+
+    return major, minor, phase, incli
+
+
+def get_constituent_errors(const, datastruc):
+    """returns major axis, minor axis, phase and inclination errors for a
+    tidal constituent in a matlab datastruc
+    Example get_constituent_errors('M2', datastruc)"""
+
+    var = datastruc[const]
+
+    emajor = var[0, 0]['emajo'][0, 0][:]
+    emajor = np.ma.masked_invalid(emajor)
+
+    ephase = var[0, 0]['ephas'][0, 0][:]
+    ephase = np.ma.masked_invalid(ephase)
+
+    eminor = var[0, 0]['emino'][0, 0][:]
+    eminor = np.ma.masked_invalid(eminor)
+
+    eincli = var[0, 0]['eincl'][0, 0][:]
+    eincli = np.ma.masked_invalid(eincli)
+
+    return emajor, eminor, ephase, eincli
