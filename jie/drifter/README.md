@@ -12,11 +12,15 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[MoreDrifterComparisons.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/MoreDrifterComparisons.ipynb)  
     
-    This notebook was made to compare more drifter-model results, with new river channel, reduced viscosty, no_banks and reduced viscosity&old river.  
+    This notebook was made to compare more drifter-model results, with new river channel, reduced viscosty, no_banks and reduced viscosity&old river as well as vertical profiles at some grid points during flood tide.  
 
 * ##[DrifterParticleFurther.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/DrifterParticleFurther.ipynb)  
     
     * This notebook was made to further look at trajectory comparisons under different conditions. With/Without wind; Default/reduced vertical viscosity; With banks/without banks and all reduced with viscosity and not.  
+
+* ##[CODARCurrents.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/CODARCurrents.ipynb)  
+    
+      * This notebook was made to look at a big picture of surface currents in the plume area with CODAR data, aiming to get some insights of the currents besides line or point comparison.  
 
 
 ##License
