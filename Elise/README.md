@@ -65,6 +65,11 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[Untitled.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/Untitled.ipynb)  
     
+* ##[plot_SOGComp_SS2DSOG_p4zprod-physOnly.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot_SOGComp_SS2DSOG_p4zprod-physOnly.ipynb)  
+    
+    **SOGComp is SOG run for comparison with SS2DSOG5x5**  
+    - compare starting values to check initialization of IC's  
+
 * ##[SOG_loadutils.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SOG_loadutils.ipynb)  
     
 * ##[plotSOGR08.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plotSOGR08.ipynb)  
@@ -76,8 +81,6 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[SS2Dplots-loop-fxn.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots-loop-fxn.ipynb)  
     
 * ##[SS2Dplots.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots.ipynb)  
-    
-* ##[Untitled0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/Untitled0.ipynb)  
     
 * ##[plot_SOGComp_SS2DSOG_p4zprod-MyriCodeNoZooRun_1hres.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot_SOGComp_SS2DSOG_p4zprod-MyriCodeNoZooRun_1hres.ipynb)  
     
@@ -97,12 +100,22 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[plotSOG.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plotSOG.ipynb)  
     
+* ##[plot_SOGComp_SS2DSOG_p4zprod-mesozooEff.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot_SOGComp_SS2DSOG_p4zprod-mesozooEff.ipynb)  
+    
+    **SOGComp is SOG run for comparison with SS2DSOG5x5**  
+    - compare starting values to check initialization of IC's  
+
 * ##[ATtoConst.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/ATtoConst.ipynb)  
     
     <span style="background-color:black; color:cyan; vertical-align: middle; padding:2px 0; font-size:20px">Script to read in atmospheric temperature SOG input file, replace all temperature readings with constant value (12.0611=surface value in SG-S3-2004-10-19.sog CTD file), and write to a new file.</span>  
 
 * ##[Untitled2.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/Untitled2.ipynb)  
     
+* ##[plot_SOGComp_SS2DSOG_1100x10.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot_SOGComp_SS2DSOG_1100x10.ipynb)  
+    
+    **SOGComp is SOG run for comparison with SS2DSOG5x5**  
+    - compare starting values to check initialization of IC's  
+
 * ##[plot_SOGComp_SS2DSOG_p4zprod-Myri.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot_SOGComp_SS2DSOG_p4zprod-Myri.ipynb)  
     
     SOGComp is SOG run for comparison with SS2DSOG5x5  
@@ -112,6 +125,13 @@ Descriptions below the links are from the first cell of the notebooks
     
     SOGComp is SOG run for comparison with SS2DSOG5x5  
     - compare starting values to check initialization of IC's  
+
+* ##[plot-runSOG_02-1100x10-river-5day.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-runSOG_02-1100x10-river-5day.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 5 days  
+    - river on  
 
 * ##[plot_SOGComp_SS2DSOG_p4zprod-r216.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot_SOGComp_SS2DSOG_p4zprod-r216.ipynb)  
     
@@ -130,12 +150,14 @@ Descriptions below the links are from the first cell of the notebooks
     SOGComp is SOG run for comparison with SS2DSOG5x5  
     - compare starting values to check initialization of IC's  
 
-* ##[plot_SOGComp_SS2DSOG_p4zprod-Sink-Copy1.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot_SOGComp_SS2DSOG_p4zprod-Sink-Copy1.ipynb)  
+* ##[plot_SOGComp_SS2DSOG_p4zprod-namelistCheck.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot_SOGComp_SS2DSOG_p4zprod-namelistCheck.ipynb)  
     
     SOGComp is SOG run for comparison with SS2DSOG5x5  
     - compare starting values to check initialization of IC's  
 
 * ##[alterTS_matchSOG_SG-S3-2004-10-19.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/alterTS_matchSOG_SG-S3-2004-10-19.ipynb)  
+    
+* ##[TS_SS2DSOG5x5_SG-S3-2004-10-19-2d.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/TS_SS2DSOG5x5_SG-S3-2004-10-19-2d.ipynb)  
     
 * ##[plot_SOGComp_SS2DSOG_p4zprod.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot_SOGComp_SS2DSOG_p4zprod.ipynb)  
     
@@ -155,6 +177,15 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubraMicrozooRemin.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubraMicrozooRemin.ipynb)  
     
 * ##[SS2Dplots-loop-fxn-SS2DSOGruns00_e.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots-loop-fxn-SS2DSOGruns00_e.ipynb)  
+    
+* ##[compare1100x10River_Phys_SOG.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/compare1100x10River_Phys_SOG.ipynb)  
+    
+* ##[plot_SOGComp_SS2DSOG_p4zprod-withPhys.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot_SOGComp_SS2DSOG_p4zprod-withPhys.ipynb)  
+    
+    **SOGComp is SOG run for comparison with SS2DSOG5x5**  
+    - compare starting values to check initialization of IC's  
+
+* ##[createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubraMicrozooRemin-2d.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubraMicrozooRemin-2d.ipynb)  
     
 * ##[SS2Dplots-Copy0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots-Copy0.ipynb)  
     
@@ -200,6 +231,8 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19.ipynb)  
     
 * ##[alterBathy.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/alterBathy.ipynb)  
+    
+* ##[atmosForcing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/atmosForcing.ipynb)  
     
 * ##[plotSOGR05.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plotSOGR05.ipynb)  
     
