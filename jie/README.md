@@ -60,6 +60,8 @@ Descriptions below the links are from the first cell of the notebooks
     
     Salinity figure  
 
+* ##[RFraserDischargeFile.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/RFraserDischargeFile.ipynb)  
+    
 * ##[Heights of high low water in different stns.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Heights of high low water in different stns.ipynb)  
     
     This notebook was made to predict the heights and time for high and low waters in New West, Mission, Sandheads, Steveston, Deas Island by relating them to the corresponding higher high and lower low water at Point Atkinson and discharge at Hope.  
