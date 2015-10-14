@@ -140,6 +140,10 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[north-not until Howe extended current comparison June 15-18.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/north-not until Howe extended current comparison June 15-18.ipynb)  
     
+* ##[Smooth bathymetry & Create New TS file-bathymetry6&10.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Smooth bathymetry & Create New TS file-bathymetry6&10.ipynb)  
+    
+    **Smooth bathymetry  -grab from Susan's notebook**  
+
 * ##[Test New salinity file with north channel.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Test New salinity file with north channel.ipynb)  
     
     **Salinity comparison**  
