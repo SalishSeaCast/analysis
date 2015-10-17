@@ -97,7 +97,7 @@ def ios_read_state_data(dat,line):
             try:
                 dat['DATA'][count].append(float(raw_dat[count]))
             except:
-                print '> ERR: ', raw_dat[count]
+                print ('> ERR: ', raw_dat[count])
                 dat['DATA'][count].append(np.nan)
     
     # return the modified data structure
