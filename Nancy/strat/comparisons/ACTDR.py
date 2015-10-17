@@ -29,15 +29,15 @@ def conv_v02():
     '''
     global CTD_DAT, STANDARD_KEYS
     
-    print '> Converting to v02'
-    print '> Appending calculated sigmaT values'
+    print( '> Converting to v02')
+    print('> Appending calculated sigmaT values')
     for cast in CTD_DAT:
         P = SW.pres(cast['Depth'],cast['Latitude'])
         cast['sigmaT'] = SW.dens(cast['Salinity'],cast['Temperature'],P)-1000
         inds = ~np.isnan(cast['sigmaT'])
         cast['sigmaT'] = np.interp(np.arange(0,len(cast['sigmaT'])),np.arange(0,len(cast['sigmaT']))[inds],cast['sigmaT'][inds])
         
-    print '> Complete'
+    print('> Complete')
     
 
 def save_dat(fnm):
@@ -48,21 +48,21 @@ def save_dat(fnm):
     '''
     global CTD_DAT, STANDARD_KEYS
     
-    print '> open ', fnm
+    print ('> open ', fnm)
     # open the file
     fid = open(fnm,'wb')
     
     # dump in order : CTD_DAT then STANDARD_KEYS
     
-    print '> dump CTD_DAT'
+    print ('> dump CTD_DAT')
     pickle.dump(CTD_DAT,fid)
-    print '> dump STANDARD_KEYS'
+    print ('> dump STANDARD_KEYS')
     pickle.dump(STANDARD_KEYS,fid)
     
     # close file
-    print '> close ', fnm
+    print ('> close ', fnm)
     fid.close()
-    print '> complete'
+    print ('> complete')
     
 def load_dat(fnm):
     '''
@@ -78,20 +78,20 @@ def load_dat(fnm):
     #print '> delete global CTD_DAT'
     #reset_global()
     
-    print '> open ', fnm
+    print ('> open ', fnm)
     fid = open(fnm,'rb')
     
-    print '> load CTD_DAT'
+    print ('> load CTD_DAT')
     CTD_DAT.extend(pickle.load(fid))
-    print '> load STANDARD_KEYS'
+    print ('> load STANDARD_KEYS')
     STANDARD_KEYS.extend(pickle.load(fid))
     
     # remove duplicate key entries
     STANDARD_KEYS = list(set(STANDARD_KEYS))
     
-    print '> close ', fnm
+    print ('> close ', fnm)
     fid.close()
-    print '> complete'
+    print ('> complete')
 
 def filter_keys():
     '''
@@ -184,17 +184,17 @@ def load_ios(DIR = '/ocean/rirwin/2_FALKOR_Data/6_IOS_Data/', ignore_che=True ):
         filenames.sort(key=os.path.basename)
 
     for count,filename in enumerate(sorted(filenames)):
-        print '> reading ', filename
+        print ('> reading ', filename)
         dat = ios_ctd.ios_read(filename)        
-        print '> success'
+        print ('> success')
         
-        print '> convert and append'
+        print ('> convert and append')
         tmp = convert_ios_dict(dat)
         if tmp is None:
-            print '> ERROR :: CONVERT FAILED, NOT APPENDED'
+            print ('> ERROR :: CONVERT FAILED, NOT APPENDED')
         else:
             CTD_DAT.append(tmp)
-        print '> success'
+        print ('> success')
         
 def load_noaa():
     '''
@@ -211,19 +211,19 @@ def load_noaa():
 
     # loop through the files and read in using the csvWOD module
     for count,filename in enumerate(sorted(filenames)):
-        print '> reading ', filename
+        print ('> reading ', filename)
         noaa_casts = csvWOD.read_casts(filename)
-        print '> success'
+        print ('> success')
         
-        print '> convert and append'
+        print ('> convert and append')
         # after reading, convert the casts to dictionaries
         for dat in noaa_casts:
             tmp = convert_noaa_dict(dat)
             if tmp is None:
-                print '> ERROR :: CONVERT FAILED, NOT APPENDED'
+                print ('> ERROR :: CONVERT FAILED, NOT APPENDED')
             else:
                 CTD_DAT.append(tmp)
-        print '> success'
+        print ('> success')
 
 def remove_duplicates():
     '''
@@ -252,19 +252,19 @@ def remove_duplicates():
                         dupl_inds.append(cnt1)
                     else:
                         dupl_inds.append(cnt1+cnt2+1)
-                print '> DUPLICATE IDS ', cast1['ID']
+                print ('> DUPLICATE IDS ', cast1['ID'])
     
     # remove any duplicate entries of the duplicates
     dupl_inds = list(set(dupl_inds))
     
-    print '> removing ', str(len(dupl_inds)), ' casts'
+    print ('> removing ', str(len(dupl_inds)), ' casts')
     
     # loop through the duplicate list in reverse, so that indices are consistent
     dupl_inds = sorted(dupl_inds)[::-1]
     for ii in dupl_inds:
         del CTD_DAT[ii]
     
-    print '> finished'
+    print ('> finished')
 
 def convert_ios_dict(dat):
     '''
@@ -330,15 +330,15 @@ def convert_ios_dict(dat):
     
     # archaic error handling for now
     if 'Temperature' not in new_dat:
-        print '> ERROR :: TEMP ENTRY NOT FOUND'
+        print ('> ERROR :: TEMP ENTRY NOT FOUND')
         return None
     
     if 'Salinity' not in new_dat:
-        print '> ERROR :: SALN ENTRY NOT FOUND'
+        print ('> ERROR :: SALN ENTRY NOT FOUND')
         return None
     
     if 'Depth' not in new_dat:
-        print '> ERROR :: PRESS ENTRY NOT FOUND'
+        print ('> ERROR :: PRESS ENTRY NOT FOUND')
         return None
     
     return new_dat
@@ -382,19 +382,19 @@ def convert_noaa_dict(dat):
     if 'Temperatur' in dat:
         new_dat['Temperature'] = dat['Temperatur']
     else:
-        print '> ERROR :: TEMP ENTRY NOT FOUND'
+        print ('> ERROR :: TEMP ENTRY NOT FOUND')
         return None
     
     if 'Salinity' in dat:
         new_dat['Salinity'] = dat['Salinity']
     else:
-        print '> ERROR :: SALN ENTRY NOT FOUND'
+        print ('> ERROR :: SALN ENTRY NOT FOUND')
         return None
         
     if 'Depth' in dat:
         new_dat['Depth'] = dat['Depth']
     else:
-        print '> ERROR :: DPTH ENTRY NOT FOUND'
+        print ('> ERROR :: DPTH ENTRY NOT FOUND')
         return None
     
     return new_dat
