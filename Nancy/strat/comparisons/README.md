@@ -73,6 +73,10 @@ Descriptions below the links are from the first cell of the notebooks
       
 
 
+* ##[Check on modified BCs.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Check on modified BCs.ipynb)  
+    
+    Comparing corrected western boundary constions with observations.  
+
 * ##[Nowcast, Spinup, Observations Comparison - SOG.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Nowcast, Spinup, Observations Comparison - SOG.ipynb)  
     
     Comparisons between nowcast, spinup, and observed salinity in the Strait of Georgia  
