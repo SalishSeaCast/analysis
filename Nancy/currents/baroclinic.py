@@ -2,7 +2,7 @@
 
 import netCDF4 as nc
 import numpy as np
-
+import os
 
 from salishsea_tools import (tidetools, nc_tools)
 from salishsea_tools.nowcast import (analyze)
@@ -12,15 +12,16 @@ NodalCorr = tidetools.CorrTides
 
 def save_netcdf(times, us, vs, depths, station, lons, lats, to, tf):
     """Saves the u/v time series over volume into a netcdf file"""
+    path = '/ocean/nsoontie/MEOPAR/TidalEllipseData/ModelTimeSeries/'
     fname = '{}_currents_{}_{}.nc'.format(station, to.strftime('%Y%m%d'),
                                           tf.strftime('%Y%m%d'))
-    nc_file = nc.Dataset(fname, 'w', zlib=True)
+    nc_file = nc.Dataset(os.path.join(path, fname), 'w', zlib=True)
     # dataset attributes
     nc_tools.init_dataset_attrs(
         nc_file,
         title='{} currents'.format(station),
         notebook_name='N/A',
-        nc_filepath='/data/nsoontie/MEOPAR/analysis/Nancy/tides/' + fname,
+        nc_filepath=os.path.join(path, fname),
         comment='Generated for tidal analysis')
     # dimensions
     nc_file.createDimension('time_counter', None)
