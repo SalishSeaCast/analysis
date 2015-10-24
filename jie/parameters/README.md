@@ -10,6 +10,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook was made to compare magnitude of bacground vertical eddy viscosity and that produced by GLS at Sandheads, VENUS nodes. Two simulations from October 8-10 was performed with all the same conditions except background vertical viscosity.  
 
+* ##[ViscDiff.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/parameters/ViscDiff.ipynb)  
+    
+    * This notebook was made to understand the effect of background viscosity and diffusivity on the plume.  
+
 
 ##License
 
