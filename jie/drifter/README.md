@@ -18,6 +18,10 @@ Descriptions below the links are from the first cell of the notebooks
     
      This notebook was part of TestUVfromColdStart, just plot to see the RMS between original nowcast and that from cold start, with other conditions all the same.   
 
+* ##[MoreDrifterComparisons_SepInitialFile.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/MoreDrifterComparisons_SepInitialFile.ipynb)  
+    
+    Same comparisons except this is more recent(Sep 24) restart file for the simulation.  
+
 * ##[DrifterParticleFurther.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/DrifterParticleFurther.ipynb)  
     
     * This notebook was made to further look at trajectory comparisons under different conditions. With/Without wind; Default/reduced vertical viscosity; With banks/without banks and all reduced with viscosity and not.  
