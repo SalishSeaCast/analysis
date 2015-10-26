@@ -16,6 +16,10 @@ Descriptions below the links are from the first cell of the notebooks
       
 
 
+* ##[Explore recombining CODAR files.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Explore recombining CODAR files.ipynb)  
+    
+    Attempt at concatenating netcdf subdomain files.  
+
 * ##[Baroclinic Tides - CODAR Region.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Baroclinic Tides - CODAR Region.ipynb)  
     
     This notebook will be used to analyze the baroclinic tides over the CODAR region.  

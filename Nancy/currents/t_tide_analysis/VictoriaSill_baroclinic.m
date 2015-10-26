@@ -7,7 +7,7 @@ depav = 0; %depth average
 dlevel = 1; % surface
 trun = 0; %truncate water column
 d1 = 0; d2 = 0; %depth range
-outfile = '/ocean/nsoontie/MEOPAR/TidalEllipseData/VictotriaSill_region_baroclinic_20141126_20150426';
+outfile = '/ocean/nsoontie/MEOPAR/TidalEllipseData/VictoriaSill_region_baroclinic_20141126_20150426';
 
 % load data
 [u, v, depth, time, lons, lats] = load_netcdf(filename);
