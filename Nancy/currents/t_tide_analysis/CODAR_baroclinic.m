@@ -1,21 +1,25 @@
 %%% Script to do a BAROCLINIC tidal analysis with t_tide
 %%% Full CODAR region
 
-filename = '/ocean/nsoontie/MEOPAR/TidalEllipseData/ModelTimeSeries/CODAR_currents_20141126_20150426.nc';
+filename = '/data/nsoontie/MEOPAR/SalishSea/results/tides/bathymods/bathy2_nowinds/CODAR_all.nc';
 %depth index for tidal analysis
 depav = 0; %depth average
 dlevel = 1; % surface
 trun = 0; %truncate water column
 d1 = 0; d2 = 0; %depth range
-outfile = '/ocean/nsoontie/MEOPAR/TidalEllipseData/CODAR/CODAR_region_baroclinic_20141126_20150426';
+outfile = '/data/nsoontie/MEOPAR/SalishSea/results/tides/bathymods/bathy2_nowinds/baroclinic_tides';
+%Define initial time index - neglect first 10 days (t=240 with hourly
+%output)
+t0=240;
 
 % load data
 [u, v, depth, time, lons, lats] = load_netcdf(filename);
 
 %prepare time
-ref_time = [2014, 09, 10];
+%ref_time = [2014, 09, 10];
+ref_time = [2003, 4, 21];
 mtimes = time_to_mtime(time, ref_time); 
-start = mtimes(1);
+start = mtimes(t0);
 
 %initialize strucuure for saving data array
 area = squeeze(size(u(:,:,1,1)));
@@ -29,8 +33,8 @@ datastruc = struct('lats',lats(2:end,2:end), 'lons', lons(2:end,2:end));
 tide_count=0;
 for i=1:Nx-1
     for j=1:Ny-1
-        urot = u(i:i+1,j:j+1,:,:);
-        vrot = v(i:i+1,j:j+1,:,:);
+        urot = u(i:i+1,j:j+1,:,t0:end);
+        vrot = v(i:i+1,j:j+1,:,t0:end);
         % prepare velocities for tidal analysis
         % That is, mask, unstagger and rotate
         [urot, vrot] = prepare_velocities(urot, vrot);
