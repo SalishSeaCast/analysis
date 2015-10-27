@@ -16,9 +16,9 @@ Descriptions below the links are from the first cell of the notebooks
       
     Inference for P1 and K2 is not applied  
       
-    Comparing background visc = 1e-4 and 1e-6.   
+    Comparing background visc = 1e-4, 1e-5, and 1e-6.   
       
-    Simulaitons had no weather, isoneutral lateral mixing.  
+    Simulations had no weather, isoneutral lateral mixing.  
 
 * ##[Compare DFO tides with my tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/tides/Compare DFO tides with my tides.ipynb)  
     
@@ -37,6 +37,10 @@ Descriptions below the links are from the first cell of the notebooks
     DFO tides are from Anne's 07795const.wlev constituent file. The predictions are calculated with ttide using these constituents.  
       
     See /data/nsoontie/annes_tides/  
+
+* ##[Bathymetry modifications and tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/tides/Bathymetry modifications and tides.ipynb)  
+    
+    A notebook to examine how modifications to the bathymetry have affected the baroclinic tides.  
 
 
 ##License
