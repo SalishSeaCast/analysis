@@ -2,13 +2,13 @@
 %%% CODAR region, depth averaged. Note - does not account for boundary
 %%% layer effects
 
-filename = '/ocean/nsoontie/MEOPAR/TidalEllipseData/ModelTimeSeries/CODAR_currents_20141126_20150426.nc';
+filename = '/data/nsoontie/MEOPAR/SalishSea/results/tides/bathymods/bathy6/CODAR_all.nc';
 %depth index for tidal analysis
 depav = 1; %depth average
 dlevel = 1; % surface
 trun = 0; %truncate water column
 d1 = 0; d2 = 0; %depth range
-outfile = '/ocean/nsoontie/MEOPAR/TidalEllipseData/CODAR/CODAR_region_depav_20141126_20150426';
+outfile = '/data/nsoontie/MEOPAR/SalishSea/results/tides/bathymods/bathy6/barotropic_tides';
 
 % load data
 [u, v, depth, time, lons, lats] = load_netcdf(filename);
