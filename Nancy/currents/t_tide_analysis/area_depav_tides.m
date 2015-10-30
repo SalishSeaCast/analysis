@@ -1,14 +1,16 @@
+function area_depav_tides(filename, outfile)
+
 %%% Script to do a tidal analysis with t_tide
-%%% CODAR region, depth averaged. Note - does not account for boundary
+%%% full region, depth averaged. Note - does not account for boundary
 %%% layer effects
 
-filename = '/data/nsoontie/MEOPAR/SalishSea/results/tides/bathymods/bathy9/CODAR_all.nc';
 %depth index for tidal analysis
 depav = 1; %depth average
 dlevel = 1; % surface
 trun = 0; %truncate water column
 d1 = 0; d2 = 0; %depth range
-outfile = '/data/nsoontie/MEOPAR/SalishSea/results/tides/bathymods/bathy9/barotropic_tides';
+%Define initial time index - default is one
+t0=1;
 
 % load data
 [u, v, depth, time, lons, lats] = load_netcdf(filename);
@@ -16,7 +18,7 @@ outfile = '/data/nsoontie/MEOPAR/SalishSea/results/tides/bathymods/bathy9/barotr
 %prepare time
 ref_time = [2014, 09, 10];
 mtimes = time_to_mtime(time, ref_time); 
-start = mtimes(1);
+start = mtimes(t0);
 
 %initialize strucuure for saving data array
 area = squeeze(size(u(:,:,1,1)));
@@ -29,8 +31,8 @@ datastruc = struct('lats',lats(2:end,2:end), 'lons', lons(2:end,2:end));
 tide_count=0;
 for i=1:Nx-1
     for j=1:Ny-1
-        urot = u(i:i+1,j:j+1,:,:);
-        vrot = v(i:i+1,j:j+1,:,:);
+        urot = u(i:i+1,j:j+1,:,t0:end);
+        vrot = v(i:i+1,j:j+1,:,t0:end);
         % prepare velocities for tidal analysis
         % That is, mask, unstagger and rotate
         [urot, vrot] = prepare_velocities(urot, vrot);

@@ -1,16 +1,15 @@
-%%% Script to do a BAROCLINIC tidal analysis with t_tide
-%%% Full CODAR region
+function area_baroclinic_tides(filename, outfile)
 
-filename = '/data/nsoontie/MEOPAR/SalishSea/results/tides/bathymods/bathy2_nowinds/CODAR_all.nc';
+%%% Script to do a BAROCLINIC tidal analysis with t_tide
+%%% Full region
+
 %depth index for tidal analysis
 depav = 0; %depth average
 dlevel = 1; % surface
 trun = 0; %truncate water column
 d1 = 0; d2 = 0; %depth range
-outfile = '/data/nsoontie/MEOPAR/SalishSea/results/tides/bathymods/bathy2_nowinds/baroclinic_tides';
-%Define initial time index - neglect first 10 days (t=240 with hourly
-%output)
-t0=240;
+%Define initial time index - default is one
+t0=1;
 
 % load data
 [u, v, depth, time, lons, lats] = load_netcdf(filename);
