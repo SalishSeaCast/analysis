@@ -1,15 +1,15 @@
-function area_surface_tides(filename, outfile)
+function area_surface_tides(filename, outfile,t0)
 
 %%% Script to do a tidal analysis with t_tide
 %%% A region at the surface
+%%% t0 is initial time index
 
 %depth index for tidal analysis
 depav = 0; %depth average
 dlevel = 1; % surface
 trun = 0; %truncate water column
 d1 = 0; d2 = 0; %depth range
-%Define initial time index - default is one
-t0=1
+
 
 % load data
 [u, v, depth, time, lons, lats] = load_netcdf(filename);
