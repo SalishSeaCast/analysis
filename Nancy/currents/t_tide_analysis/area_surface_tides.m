@@ -1,13 +1,13 @@
-%%% Script to do a tidal analysis with t_tide
-%%% CODAR region at the surface
+function area_surface_tides(filename, outfile)
 
-filename = '/ocean/nsoontie/MEOPAR/TidalEllipseData/ModelTimeSeries/CODAR_currents_20141126_20150426.nc';
+%%% Script to do a tidal analysis with t_tide
+%%% A region at the surface
+
 %depth index for tidal analysis
 depav = 0; %depth average
 dlevel = 1; % surface
 trun = 0; %truncate water column
 d1 = 0; d2 = 0; %depth range
-outfile = '/ocean/nsoontie/MEOPAR/TidalEllipseData/CODAR/CODAR_region_surface_20141126_20150426';
 
 % load data
 [u, v, depth, time, lons, lats] = load_netcdf(filename);
