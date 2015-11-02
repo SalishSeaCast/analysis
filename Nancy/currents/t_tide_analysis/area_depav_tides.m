@@ -40,8 +40,8 @@ for i=1:Nx-1
         if ~all(isnan(urot))
             e3t = squeeze(e3t_full(istart,jstart,:));
             tmask = squeeze(tmask_full(istart,jstart,:));
-            uavg = depth_average_masked(squeeze(urot), e3t, tmask);
-            vavg = depth_average_masked(squeeze(vrot), e3t, tmask);
+            uavg = depth_average_mask(squeeze(urot), e3t, tmask);
+            vavg = depth_average_mask(squeeze(vrot), e3t, tmask);
             complex_vel = uavg + 1i*vavg;
             [tidestruc,~] = t_tide(complex_vel,'start time',start,'latitude',lat,'output','none');
             if tide_count==0
