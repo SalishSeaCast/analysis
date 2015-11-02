@@ -118,6 +118,16 @@ Descriptions below the links are from the first cell of the notebooks
     Compares isoneutral mixing to default case  
 
 
+* ##[DWR_corrected.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_corrected.ipynb)  
+    
+    This notebook looks at the vertical eddy viscosity/diffusivity during a deep water renewal event in late August 2003.  
+      
+    Compares dwr_new_bcs with dwr_base_bcs  
+      
+    Both have diff/visc 1e-6/1e-5, isoneutral, winds  
+      
+    dwr_corrected applies a correction to the origial bcs.  
+
 * ##[DWR_kappa10.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_kappa10.ipynb)  
     
     This notebook looks at the vertical eddy viscosity/diffusivity during a deep water renewal event in late August 2003.  
