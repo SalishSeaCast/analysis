@@ -1,13 +1,21 @@
 %%% Script to do baroclinic tidal analysis with t_tide
 %%% VENUS Central or East
 
-filename = '/ocean/nsoontie/MEOPAR/TidalEllipseData/ModelTimeSeries/Central_currents_20141126_20150426.nc';
-output_file = '/ocean/nsoontie/MEOPAR/TidalEllipseData/Nodes/Central_20141126_20150426_baroclinic';
+filename = '/ocean/nsoontie/MEOPAR/TidalEllipseData/ModelTimeSeries/East_currents_20141126_20150426.nc';
+output_file = '/ocean/nsoontie/MEOPAR/TidalEllipseData/Nodes/East_20141126_20150426_baroclinic_masked';
 
 % load data
 [u, v, depth, time, lons, lats] = load_netcdf(filename);
 lat=lats(end,end);
 params = ellipse_parameters;
+% i and j of node coordinate - must be set for the mesh mask
+[i, j] = find_starting_index(lons , lats);
+% load dept, scale factors and tmask
+[dept, e3t, tmask] = load_depth_t();
+%isolate to i,j coords
+dept = squeeze(dept(i,j,:));
+e3t=squeeze(e3t(i,j,:));
+tmask = squeeze(tmask(i,j,:));
 
 %prepare time
 ref_time = [2014, 09, 10];
@@ -17,8 +25,8 @@ start = mtimes(1);
 % prepare velocities for tidal analysis
 % That is, mask, unstagger and rotate, truncate
 [urot, vrot] = prepare_velocities(u, v);
-ubc = baroclinic_current(urot, depth);
-vbc = baroclinic_current(vrot, depth);
+ubc = baroclinic_current_masked(urot, e3t, tmask);
+vbc = baroclinic_current_masked(vrot, e3t, tmask);
 Nz = length(urot(:,1));
 
 %Tidal analysis over each model level first

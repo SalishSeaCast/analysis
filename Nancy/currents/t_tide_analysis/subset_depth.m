@@ -35,10 +35,10 @@ end
 if depav
     utmp = depth_average(utmp, dtmp);
     vtmp = depth_average(vtmp, dtmp);
-else
+else if ~trun
     utmp = squeeze(utmp(dlevel,:));
     vtmp = squeeze(vtmp(dlevel,:));
-    dtmp = din(dlevel);
+    dtmp = dtmp(dlevel);
 end
 uout=utmp;
 vout=vtmp;

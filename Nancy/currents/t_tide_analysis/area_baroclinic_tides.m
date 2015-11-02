@@ -4,14 +4,11 @@ function area_baroclinic_tides(filename, outfile, t0)
 %%% Full region
 %%% t0 is initial time index
 
-%depth index for tidal analysis
-depav = 0; %depth average
-dlevel = 1; % surface
-trun = 0; %truncate water column
-d1 = 0; d2 = 0; %depth range
-
 % load data
 [u, v, depth, time, lons, lats] = load_netcdf(filename);
+[istart, jstart] = find_starting_index(lons , lats);
+% load dept, scale factors and tmask
+[dept_full, e3t_full, tmask_full] = load_depth_t();
 
 %prepare time
 %ref_time = [2014, 09, 10];
@@ -36,8 +33,10 @@ for i=1:Nx-1
         % prepare velocities for tidal analysis
         % That is, mask, unstagger and rotate
         [urot, vrot] = prepare_velocities(urot, vrot);
-        ubc = baroclinic_current(urot, depth);
-        vbc = baroclinic_current(vrot, depth);
+        e3t = squeeze(e3t_full(istart,jstart,:));
+        tmask = squeeze(tmask_full(istart,jstart,:));
+        ubc = baroclinic_current_masked(urot, e3t, tmask);
+        vbc = baroclinic_current_masked(vrot, e3t, tmask);
         % do t_tide analysis
         lat=lats(i+1,j+1);
         for k=1:Nz;
@@ -71,7 +70,9 @@ for i=1:Nx-1
                 tide_count=tide_count+1;
             end
         end
+        jstart=jstart+1;
     end
+    istart=istart+1;
 end
 datastruc.('depth') = depth;
 

@@ -5,14 +5,12 @@ function area_depav_tides(filename, outfile, t0)
 %%% layer effects
 %%% t0 is initial time index
 
-%depth index for tidal analysis
-depav = 1; %depth average
-dlevel = 1; % surface
-trun = 0; %truncate water column
-d1 = 0; d2 = 0; %depth range
 
 % load data
 [u, v, depth, time, lons, lats] = load_netcdf(filename);
+[istart, jstart] = find_starting_index(lons , lats);
+% load dept, scale factors and tmask
+[dept_full, e3t_full, tmask_full] = load_depth_t();
 
 %prepare time
 ref_time = [2014, 09, 10];
@@ -40,8 +38,10 @@ for i=1:Nx-1
         lat=lats(i+1,j+1);
 
         if ~all(isnan(urot))
-            uavg = depth_average(squeeze(urot), depth);
-            vavg = depth_average(squeeze(vrot), depth);
+            e3t = squeeze(e3t_full(istart,jstart,:));
+            tmask = squeeze(tmask_full(istart,jstart,:));
+            uavg = depth_average_masked(squeeze(urot), e3t, tmask);
+            vavg = depth_average_masked(squeeze(vrot), e3t, tmask);
             complex_vel = uavg + 1i*vavg;
             [tidestruc,~] = t_tide(complex_vel,'start time',start,'latitude',lat,'output','none');
             if tide_count==0
@@ -69,7 +69,9 @@ for i=1:Nx-1
             end
             tide_count=tide_count+1;
         end
+        jstart=jstart+1;
     end
+    istart=istart+1;
 end
 datastruc.('depth') = depth;
 
