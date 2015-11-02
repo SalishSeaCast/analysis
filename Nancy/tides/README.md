@@ -38,10 +38,6 @@ Descriptions below the links are from the first cell of the notebooks
       
     See /data/nsoontie/annes_tides/  
 
-* ##[Bathymetry modifications and tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/tides/Bathymetry modifications and tides.ipynb)  
-    
-    A notebook to examine how modifications to the bathymetry have affected the baroclinic tides.  
-
 
 ##License
 

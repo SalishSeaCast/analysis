@@ -35,6 +35,10 @@ Descriptions below the links are from the first cell of the notebooks
       
     Both barotropic and baroclinic were calcualted using a now cast time series Nov 26, 2014- April 26, 2015  
 
+* ##[Bathymetry modifications and tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Bathymetry modifications and tides.ipynb)  
+    
+    A notebook to examine how modifications to the bathymetry have affected the baroclinic tides.  
+
 
 ##License
 
