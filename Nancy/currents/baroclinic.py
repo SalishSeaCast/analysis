@@ -3,8 +3,10 @@
 import netCDF4 as nc
 import numpy as np
 import os
+import matplotlib.pyplot as plt
+from matplotlib.patches import Ellipse
 
-from salishsea_tools import (tidetools, nc_tools)
+from salishsea_tools import (tidetools, nc_tools, viz_tools)
 from salishsea_tools.nowcast import (analyze)
 
 NodalCorr = tidetools.CorrTides
@@ -158,3 +160,153 @@ def get_constituent_errors(const, datastruc):
     eincli = np.ma.masked_invalid(eincli)
 
     return emajor, eminor, ephase, eincli
+
+
+def plot_ellipse(lon, lat, inc, major, minor, ax, scale):
+    """Plot a tidal ellipse at lon, lat given byt the inclination,
+    major and minor axis. The ellipse is plotted in ax with scale"""
+    if minor > 0:
+        thecolor = 'firebrick'
+    else:
+        thecolor = 'dodgerblue'
+    ellsc = Ellipse(xy=(lon, lat),
+                    width=scale * major,
+                    height=scale * minor,
+                    angle=inc,
+                    color=thecolor)
+    ax.add_artist(ellsc)
+
+
+def plot_CODAR_ellipse(ax, lons, lats, const, datastruc, depths, grid, step=3,
+                       scale=0.08, baroclinic=False, depth_level=0,
+                       barotropic=False, isobaths=[5, 20]):
+    """Plot ellipses over the CODAR region"""
+    major, minor, pha, inc = get_constituent(const, datastruc)
+    if baroclinic:
+        major = major[:, :, depth_level]
+        minor = minor[:, :, depth_level]
+        inc = inc[:, :, depth_level]
+        title_str = 'baroclinic {0:.3g} m'.format(depths[depth_level][0])
+    elif barotropic:
+        title_str = 'barotropic'
+    else:
+        title_str = 'surface'
+    for i in np.arange(0, lons.shape[-1], step):
+        for j in np.arange(0, lats.shape[-1], step):
+            if major[i, j]:
+                plot_ellipse(lons[i, j], lats[i, j], inc[i, j],
+                             major[i, j],
+                             minor[i, j], ax, scale)
+
+    ax.set_title('{} {} tidal ellipses'.format(const, title_str))
+
+    ax.set_ylabel('Latitude (degrees N)')
+    ax.set_xlabel('Longitude (degrees W)')
+
+    viz_tools.plot_land_mask(ax, grid, coords='map')
+    for isobath in isobaths:
+        viz_tools.plot_coastline(ax, grid, coords='map', isobath=isobath)
+
+
+def add_scale_ellipse(ax, lon, lat, dx=-.1, dy=.01, scale=0.08):
+    """Add scale ellipse"""
+    ell = Ellipse(xy=(lon, lat), width = scale*0.5, height = scale*0.5,
+                  angle = 45, color='g')
+    ax.add_artist(ell)
+    ax.text(lon + dx, lat + dy, '0.5 m/s', color='g',
+            fontsize=12, fontweight='heavy')
+
+
+def rotate_ellipse_NS(time_deg, datastruc, const):
+    """Rotate ellipse major/minor axis to north/south orientation."""
+    # Construct major and minor
+    major, minor, pha, inc = get_constituent(const, datastruc)
+    # construct current at this time
+    try:
+        major_current = major*np.cos(np.deg2rad(time_deg - pha))
+        minor_current = minor*np.cos(np.deg2rad(time_deg - pha) - np.pi/2)
+    except ValueError:
+        time_deg = np.expand_dims(time_deg, 2)
+        major_current = major*np.cos(np.deg2rad(time_deg - pha))
+        minor_current = minor*np.cos(np.deg2rad(time_deg - pha) - np.pi/2)
+    # Rotate to u and v
+    rotated_current = ((major_current + 1j*minor_current)
+                       * np.exp(1j*np.deg2rad(inc)))
+    u = np.real(rotated_current)
+    v = np.imag(rotated_current)
+
+    return u, v
+
+
+def plot_ellipse_phase_arrow(ax, lons, lats, const, datastruc, time_deg,
+                             step=3, scale=10, baroclinic=False,
+                             depth_level=0):
+    """Plot phase arrow relative to time_deg"""
+    u, v = rotate_ellipse_NS(time_deg, datastruc, const)
+    if baroclinic:
+        u = u[:, :, depth_level]
+        v = v[:, :, depth_level]
+    ax.quiver(lons[::step, ::step], lats[::step, ::step],
+              u[::step, ::step], v[::step, ::step], scale=scale,
+              width=0.008, zorder=10, color='black', pivot='tail',
+              headwidth=1, headlength=1)
+
+
+def ellipse_to_uv(datastruc, const):
+    """convert ellipse parameters to u/v amp and phase"""
+    major, minor, pha, inc = get_constituent(const, datastruc)
+    # positive and negative bits
+    thetap = np.deg2rad(inc-pha)
+    thetam = np.deg2rad(inc+pha)
+    ecc = minor/major
+    Wp = (1+ecc)/2.*major
+    Wm = (1-ecc)/2.*major
+
+    # complex positive and negative
+    wp = Wp*np.exp(1j*thetap)
+    wm = Wm*np.exp(1j*thetam)
+    # Complex UV
+    cU = wp+np.conjugate(wm)
+    cV = (wp-np.conjugate(wm))/1j
+    # u/v ampl and phase
+    uamp = np.abs(cU)
+    upha = -np.angle(cU)
+    vamp = np.abs(cV)
+    vpha = -np.angle(cV)
+
+    return uamp, np.rad2deg(upha), vamp, np.rad2deg(vpha)
+
+
+def rotate_baroclinc(bc_struc, bt_struc, const):
+    """Rotate the baroclinic ellipse onto the barotropic major/minor axis"""
+
+    major_bt, minor_bt, pha_bt, inc_bt = get_constituent(const, bt_struc)
+    major_bc, minor_bc, pha_bc, inc_bc = get_constituent(const, bc_struc)
+
+    # rotation angle is the difference between baroclinic and
+    # barotropic inclinations
+    # construct complex representation of rotated velocities
+    inc_diff = np.deg2rad(inc_bc - np.expand_dims(inc_bt, 2))
+    pha_bc = np.deg2rad(pha_bc)
+    # Complex representation of the rotated major
+    rotated_major_complex = (major_bc*np.cos(inc_diff)*np.exp(1j*pha_bc) -
+                             (minor_bc*np.sin(inc_diff)
+                              * np.exp(1j*(pha_bc+np.pi/2))))
+    rotated_major_phase = np.angle(rotated_major_complex)
+    rotated_major_amp = np.abs(rotated_major_complex)
+    # Complex representation of the rotated minor
+    rotated_minor_complex = (major_bc*np.sin(inc_diff)*np.exp(1j*pha_bc) +
+                             (minor_bc*np.cos(inc_diff)
+                             * np.exp(1j*(pha_bc+np.pi/2))))
+    rotated_minor_phase = np.angle(rotated_minor_complex)
+    rotated_minor_amp = np.abs(rotated_minor_complex)
+    # Conversion to degrees
+    rotated_minor_phase = np.rad2deg(rotated_minor_phase)
+    rotated_major_phase = np.rad2deg(rotated_major_phase)
+    # Force phase between 0 and 360
+    rotated_minor_phase = rotated_minor_phase + 360*(rotated_minor_phase < 0)
+    rotated_major_phase = rotated_major_phase + 360*(rotated_major_phase < 0)
+
+    return rotated_major_phase, rotated_major_amp, rotated_minor_phase, rotated_minor_amp
+
+
