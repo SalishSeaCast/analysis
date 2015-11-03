@@ -7,7 +7,7 @@ import pandas as pd
 import netCDF4 as nc
 import datetime
 import os
-import urllib2
+import urllib
 
 SAVE_PATH = '/ocean/nsoontie/MEOPAR/HYCOM/text/'
 
@@ -41,7 +41,7 @@ def read_url(date, i, j):
            '?ssh[0:64][0][{}][{}]'.format(date.strftime('%Y%m%d'), j, i)
            )
 
-    response = urllib2.urlopen(url)
+    response = urllib.urlopen(url)
     html = response.read()
 
     # We might want to save output like we do for neah bay
