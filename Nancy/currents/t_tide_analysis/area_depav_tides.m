@@ -9,6 +9,8 @@ function area_depav_tides(filename, outfile, t0)
 % load data
 [u, v, depth, time, lons, lats] = load_netcdf(filename);
 [istart, jstart] = find_starting_index(lons , lats);
+jcount=jstart;
+icount=istart;
 % load dept, scale factors and tmask
 [dept_full, e3t_full, tmask_full] = load_depth_t();
 
@@ -36,10 +38,12 @@ for i=1:Nx-1
         
         % do t_tide analysis
         lat=lats(i+1,j+1);
+        e3t = squeeze(e3t_full(icount,jcount,:));
+        tmask = squeeze(tmask_full(icount,jcount,:));
 
         if ~all(isnan(urot))
-            e3t = squeeze(e3t_full(istart,jstart,:));
-            tmask = squeeze(tmask_full(istart,jstart,:));
+            if ~all(tmask==0)
+
             uavg = depth_average_mask(squeeze(urot), e3t, tmask);
             vavg = depth_average_mask(squeeze(vrot), e3t, tmask);
             complex_vel = uavg + 1i*vavg;
@@ -68,10 +72,12 @@ for i=1:Nx-1
 
             end
             tide_count=tide_count+1;
+            end
         end
-        jstart=jstart+1;
+        jcount=jcount+1;
     end
-    istart=istart+1;
+    jcount=jstart;
+    icount=icount+1;
 end
 datastruc.('depth') = depth;
 
