@@ -7,6 +7,8 @@ function area_baroclinic_tides(filename, outfile, t0)
 % load data
 [u, v, depth, time, lons, lats] = load_netcdf(filename);
 [istart, jstart] = find_starting_index(lons , lats);
+icount=istart;
+jcount=jstart;
 % load dept, scale factors and tmask
 [dept_full, e3t_full, tmask_full] = load_depth_t();
 
@@ -44,6 +46,7 @@ for i=1:Nx-1
 
             %Setting the values. Simplify somehow...
             if ~all(isnan(ubc(k,:)))
+                if ~all(tmask==0)
                 [tidestruc,~] = t_tide(complex_vel,'start time',start,'latitude',lat,'output','none');
                 if tide_count==0
                     const = tidestruc.name;
@@ -68,11 +71,13 @@ for i=1:Nx-1
                     end
                 end
                 tide_count=tide_count+1;
+                end
             end
         end
-        jstart=jstart+1;
+        jcount=jcount+1;
     end
-    istart=istart+1;
+    jcount=jsart;
+    icount=icount+1;
 end
 datastruc.('depth') = depth;
 
