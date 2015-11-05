@@ -35,48 +35,47 @@ for i=1:Nx-1
         % prepare velocities for tidal analysis
         % That is, mask, unstagger and rotate
         [urot, vrot] = prepare_velocities(urot, vrot);
-        e3t = squeeze(e3t_full(istart,jstart,:));
-        tmask = squeeze(tmask_full(istart,jstart,:));
-        ubc = baroclinic_current_masked(urot, e3t, tmask);
-        vbc = baroclinic_current_masked(vrot, e3t, tmask);
-        % do t_tide analysis
-        lat=lats(i+1,j+1);
-        for k=1:Nz;
-            complex_vel = squeeze(ubc(k,:)) + 1i*squeeze(vbc(k,:));
-
-            %Setting the values. Simplify somehow...
-            if ~all(isnan(ubc(k,:)))
-                if ~all(tmask==0)
-                [tidestruc,~] = t_tide(complex_vel,'start time',start,'latitude',lat,'output','none');
-                if tide_count==0
-                    const = tidestruc.name;
-                end
-                for n =1:length(const)
-                    c = const(n,:);
-                    if ismember(c(1),'0123456789')
-                        cword=['x', strtrim(c)];
-                    else
-                        cword = strtrim(c);
-                    end
-                    ind = strmatch(c,tidestruc.name,'exact');
-                    if tide_count ==0
-                        datastruc.(cword).('freq') = tidestruc.freq(ind);
-                    end
-                    for p =1:length(params)
-                        param = params(p, :);
-                        if tide_count ==0
-                            datastruc.(cword).(params(p,:)) = NaN(Nx-1, Ny-1, Nz);
-                        end
-                        datastruc.(cword).(param)(i,j,k) = tidestruc.tidecon(ind,p);
-                    end
-                end
-                tide_count=tide_count+1;
-                end
+        e3t = squeeze(e3t_full(icount,jcount,:));
+        tmask = squeeze(tmask_full(icount,jcount,:));
+        if ~all(tmask==0)
+           ubc = baroclinic_current_masked(urot, e3t, tmask);
+           vbc = baroclinic_current_masked(vrot, e3t, tmask);
+           % do t_tide analysis
+           lat=lats(i+1,j+1);
+           for k=1:Nz;
+              complex_vel = squeeze(ubc(k,:)) + 1i*squeeze(vbc(k,:));
+              %Setting the values. Simplify somehow...
+              if ~all(isnan(ubc(k,:)))
+                  [tidestruc,~] = t_tide(complex_vel,'start time',start,'latitude',lat,'output','none');
+                   if tide_count==0
+                       const = tidestruc.name;
+                   end
+                   for n =1:length(const)
+                       c = const(n,:);
+                       if ismember(c(1),'0123456789')
+                           cword=['x', strtrim(c)];
+                       else
+                           cword = strtrim(c);
+                       end
+                       ind = strmatch(c,tidestruc.name,'exact');
+                       if tide_count ==0
+                           datastruc.(cword).('freq') = tidestruc.freq(ind);
+                       end
+                       for p =1:length(params)
+                           param = params(p, :);
+                           if tide_count ==0
+                               datastruc.(cword).(params(p,:)) = NaN(Nx-1, Ny-1, Nz);
+                           end
+                           datastruc.(cword).(param)(i,j,k) = tidestruc.tidecon(ind,p);
+                       end
+                   end
+                   tide_count=tide_count+1;
+              end
             end
         end
         jcount=jcount+1;
     end
-    jcount=jsart;
+    jcount=jstart;
     icount=icount+1;
 end
 datastruc.('depth') = depth;
