@@ -18,6 +18,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook will look up indices for subsetting the HYCOM netcdf files  
 
+* ##[Understanding NOAA tides and residuals.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/Understanding NOAA tides and residuals.ipynb)  
+    
+    Thie notebook examines the NOAA tidal predictions at Neah Bay.  
+
 * ##[VENUS.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/VENUS.ipynb)  
     
     Playing with pulling VENUS data.  
