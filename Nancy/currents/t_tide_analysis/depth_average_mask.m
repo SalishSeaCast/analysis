@@ -17,7 +17,7 @@ function [ var_avg ] = depth_average_mask(var, e3t, tmask)
       end
       total_depth = sum(e3t.*tmask);
       if total_depth==0
-          var_avg=NaN(size(var(1,:)))
+          var_avg=NaN(size(var(1,:)));
       else
           var_avg = integral/total_depth;
       end
