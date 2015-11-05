@@ -60,7 +60,7 @@ for row=1:length(tidestruc.freq)
     fprintf(fid,' %f\t', tidestruc.tidecon(row,1));
     fprintf(fid,' %f\t', tidestruc.tidecon(row,2));
     fprintf(fid,' %f\t', tidestruc.tidecon(row,3));
-    fprintf(fid,' %f\t', tidestruc.tidecon(row,4));
+    fprintf(fid,' %f\t \n', tidestruc.tidecon(row,4));
 end
 fclose(fid);
 
