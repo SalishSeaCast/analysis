@@ -166,8 +166,8 @@ datetick('x','mm/yyyy')
 %% Save predictions
 M = datestr(tim);
 n = length(tim);
-filename = [location  '_tidal_prediction_' starts '_' ends '.csv'];
-fid = fopen(filename, 'w');
+newfile = [location  '_tidal_prediction_' starts '_' ends '.csv'];
+fid = fopen(newfile, 'w');
 %add some headers
 fprintf(fid, 'Harmonics from: ,');
 fprintf(fid, '%s,\n',filename);
