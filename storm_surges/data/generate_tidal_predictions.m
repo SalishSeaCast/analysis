@@ -11,9 +11,11 @@ function [pred_all,pred_8,pred_no_shallow, tim] = generate_tidal_predictions(fil
 %starts is that start date for predictions (eg. 01-Jan-2006)
 %ends is the end date for the predictions (eg. 31-Dec-2006)
 
-%type representes the type of water level measurements (NOAA or DFO or CHS)
-%if type is CHS then the csvfilename is actually a file that contains the
+%type representes the type of water level measurements (NOAA or DFO or CHS or NOAA_const)
+%if type is CHS then the filename is actually a file that contains the
 %CHS harmoncic constituents
+%if type is NOAA_const then filename is a file that contains the NOAA
+%constiuents.
 
 %exclude_long is 1 if long period constituents should be removed from 
 %predictions, 0 otherwise
@@ -50,6 +52,9 @@ elseif strcmp(type,'NOAA')
     [tidestruc,lat,msl]=calculate_harmonics_filter_NOAA(filename,location, cut_off);
 elseif strcmp(type, 'CHS')
     [tidestruc,lat,msl]=read_CHS_harmonics(filename);
+    snr=0;
+elseif strcmp(type, 'NOAA_const')
+    [tidestruc,lat,msl]=read_NOAA_harmonics(filename);
     snr=0;
 else print('Unrecognised type')
 end
