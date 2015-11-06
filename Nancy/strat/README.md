@@ -16,6 +16,16 @@ Descriptions below the links are from the first cell of the notebooks
       
     dwr_kw compared to dwr_isoneutral  
 
+* ##[DWR_corrected_april.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_corrected_april.ipynb)  
+    
+    This notebook looks at the vertical eddy viscosity/diffusivity during a deep water renewal event in late August 2003.  
+      
+    Compares dwr_new_bcs with dwr_base_bcs  
+      
+    Both have diff/visc 1e-6/1e-5, isoneutral, winds  
+      
+    dwr_corrected applies a correction to the origial bcs.  
+
 * ##[DWR_new_bcs.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_new_bcs.ipynb)  
     
     This notebook looks at the vertical eddy viscosity/diffusivity during a deep water renewal event in late August 2003.  
