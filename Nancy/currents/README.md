@@ -29,6 +29,16 @@ Descriptions below the links are from the first cell of the notebooks
     
     Notebook to explore the possibility of internal wave beams generate at the slopes of the fraser river.  
 
+* ##[Baroclinic Tides - CODAR region - phase and inclination-masked.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Baroclinic Tides - CODAR region - phase and inclination-masked.ipynb)  
+    
+    Another look at CODAR baroclinc tides, but focusing on the inclination and phase.  
+      
+    Comparing the baroclinic and barotropic ellipses.  
+      
+    Barotropic ellipses are found with the depth averaged currents. Depth averaging is performed over the entire water column.  
+      
+    Both barotropic and baroclinic were calcualted using a now cast time series Nov 26, 2014- April 26, 2015  
+
 * ##[Baroclinic Tides - CODAR region - phase and inclination.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Baroclinic Tides - CODAR region - phase and inclination.ipynb)  
     
     Another look at CODAR baroclinc tides, but focusing on the inclination and phase.  
