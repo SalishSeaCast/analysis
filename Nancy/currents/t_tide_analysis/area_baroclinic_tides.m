@@ -1,4 +1,4 @@
-function area_baroclinic_tides(filename, outfile, t0)
+function area_baroclinic_tides(filename, outfile, t0, ref_time)
 
 %%% Script to do a BAROCLINIC tidal analysis with t_tide
 %%% Full region
@@ -13,8 +13,6 @@ jcount=jstart;
 [dept_full, e3t_full, tmask_full] = load_depth_t();
 
 %prepare time
-%ref_time = [2014, 09, 10];
-ref_time = [2003, 4, 21];
 mtimes = time_to_mtime(time, ref_time); 
 start = mtimes(t0);
 
