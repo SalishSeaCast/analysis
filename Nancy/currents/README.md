@@ -20,6 +20,8 @@ Descriptions below the links are from the first cell of the notebooks
     
     Attempt at concatenating netcdf subdomain files.  
 
+* ##[Baroclinic tides domain.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Baroclinic tides domain.ipynb)  
+    
 * ##[Baroclinic Tides - CODAR Region.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Baroclinic Tides - CODAR Region.ipynb)  
     
     This notebook will be used to analyze the baroclinic tides over the CODAR region.  
@@ -38,6 +40,10 @@ Descriptions below the links are from the first cell of the notebooks
     Barotropic ellipses are found with the depth averaged currents. Depth averaging is performed over the entire water column.  
       
     Both barotropic and baroclinic were calcualted using a now cast time series Nov 26, 2014- April 26, 2015  
+
+* ##[Internal waves - theory.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Internal waves - theory.ipynb)  
+    
+    This notebook will look at some internal wave speed theory. I will try to pick out things like the phase speed of the waves in the surface layer and slope of internal wave beams...  
 
 * ##[Baroclinic Tides - CODAR region - phase and inclination.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Baroclinic Tides - CODAR region - phase and inclination.ipynb)  
     
