@@ -1,4 +1,4 @@
-function area_surface_tides(filename, outfile,t0)
+function area_surface_tides(filename, outfile,t0, ref_time)
 
 %%% Script to do a tidal analysis with t_tide
 %%% A region at the surface
@@ -15,7 +15,6 @@ d1 = 0; d2 = 0; %depth range
 [u, v, depth, time, lons, lats] = load_netcdf(filename);
 
 %prepare time
-ref_time = [2014, 09, 10];
 mtimes = time_to_mtime(time, ref_time); 
 start = mtimes(t0);
 
