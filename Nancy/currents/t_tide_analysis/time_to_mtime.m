@@ -5,7 +5,7 @@ function [ mtime ] = time_to_mtime( times, ref_time )
     
     ref = datenum(ref_time);
     
-    mtime = ref +times/24;
+    mtime = ref +times/24/3600;
 
 end
 
