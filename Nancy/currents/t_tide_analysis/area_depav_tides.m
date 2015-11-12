@@ -1,9 +1,12 @@
-function area_depav_tides(filename, outfile, t0, ref_time)
+function area_depav_tides(filename, outfile, t0, ref_time, time_units)
 
 %%% Script to do a tidal analysis with t_tide
 %%% full region, depth averaged. Note - does not account for boundary
 %%% layer effects
 %%% t0 is initial time index
+%%% ref_time is the reference time (datevec)
+%%% time_uinits is a string 's' or 'h' indicating if the time in the files
+%%% is measure in seconds or hours.
 
 
 % load data
@@ -15,7 +18,7 @@ icount=istart;
 [dept_full, e3t_full, tmask_full] = load_depth_t();
 
 %prepare time
-mtimes = time_to_mtime(time, ref_time); 
+mtimes = time_to_mtime(time, ref_time, time_units); 
 start = mtimes(t0);
 
 %initialize strucuure for saving data array
