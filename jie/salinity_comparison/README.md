@@ -6,6 +6,10 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[FerrySalinityMixingRegion.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/salinity_comparison/FerrySalinityMixingRegion.ipynb)  
+    
+    This notebook was made to check the mixing region of jetty bathymetry with ferry data, to investigate if the modelled result makes sense.  
+
 * ##[SalinityVVelocityPlotAtStations.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/salinity_comparison/SalinityVVelocityPlotAtStations.ipynb)  
     
     * This notebook was made to look at the salinity / U, V velocity vertical profiles with reduced viscosity, new bathymetry 6, nowcasts, no_banks at Sandheads, VENUS central/east/delta and station S4-3 during ebb and flood tide respectively.  

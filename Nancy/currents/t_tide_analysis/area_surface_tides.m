@@ -1,8 +1,11 @@
-function area_surface_tides(filename, outfile,t0, ref_time)
+function area_surface_tides(filename, outfile,t0, ref_time, time_units)
 
 %%% Script to do a tidal analysis with t_tide
 %%% A region at the surface
 %%% t0 is initial time index
+%%% ref_time is the reference time (datevec)
+%%% time_uinits is a string 's' or 'h' indicating if the time in the files
+%%% is measure in seconds or hours.
 
 %depth index for tidal analysis
 depav = 0; %depth average
@@ -15,7 +18,7 @@ d1 = 0; d2 = 0; %depth range
 [u, v, depth, time, lons, lats] = load_netcdf(filename);
 
 %prepare time
-mtimes = time_to_mtime(time, ref_time); 
+mtimes = time_to_mtime(time, ref_time, time_units); 
 start = mtimes(t0);
 
 %initialize strucuure for saving data array
