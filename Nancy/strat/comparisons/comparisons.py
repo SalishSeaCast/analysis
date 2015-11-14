@@ -357,18 +357,18 @@ def compare_cast_hourly(month, model_year, field, data_obs, model_path,
                     t_ind = count
                     date = datetime.datetime(model_year, date.month, date.day)
                     hourly_grid = get_hourly_grid(date, model_path)
-        if t_ind:
-            var_plot = var_mod[t_ind, :, j, i]
-            var_plot = np.ma.masked_values(var_plot, 0)
-            max_h, min_h = calculate_hourly_ext(model_field, hourly_grid, j, i)
-            if j:
-                ax.plot(var_plot, depth_mod, '-b', label='daily mean',
-                        alpha=0.5)
-                ax.plot(max_h, depth_mod, 'k--', label='daily max')
-                ax.plot(min_h, depth_mod, 'k:', label='daily min')
-        else:
-             print ('No model data for {}/{}'.format(day, month)
-                    )
+                    var_plot = var_mod[t_ind, :, j, i]
+                    var_plot = np.ma.masked_values(var_plot, 0)
+                    max_h, min_h = calculate_hourly_ext(model_field,
+                                                        hourly_grid, j, i)
+                    if j:
+                        ax.plot(var_plot, depth_mod, '-b', label='daily mean',
+                                alpha=0.5)
+                        ax.plot(max_h, depth_mod, 'k--', label='daily max')
+                        ax.plot(min_h, depth_mod, 'k:', label='daily min')
+            else:
+                print ('No model data for {}/{}'.format(day, month)
+                       )
         # plot observations and location on map
         ax.plot(var_obs, dep_obs, '-*r', label='obs')
         axm.plot(lon, lat, '*r')
