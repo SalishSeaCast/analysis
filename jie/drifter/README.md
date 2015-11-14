@@ -14,6 +14,8 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook was made to compare more drifter-model results, with new river channel, reduced viscosty, no_banks and reduced viscosity&old river as well as vertical profiles at some grid points during flood tide.  
 
+* ##[DrifterParticleTestWeakSlip.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/DrifterParticleTestWeakSlip.ipynb)  
+    
 * ##[RMS_restart.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/RMS_restart.ipynb)  
     
      This notebook was part of TestUVfromColdStart, just plot to see the RMS between original nowcast and that from cold start, with other conditions all the same.   
