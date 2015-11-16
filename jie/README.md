@@ -70,6 +70,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook was to deepen Fraser River channel at beginning and widen it to New Westminster, other depth does not change(same with bathymetry5)   
 
+* ##[CreateTSForSusan.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/CreateTSForSusan.ipynb)  
+    
+    * This notebook was made to create TS initial files based on 11arp20arp with bathymetry6 for Susan's NEMO 3.6 run case.  
+
 * ##[Particle notebook.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/Particle notebook.ipynb)  
     
 * ##[U&V plot near Fraser mouth.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/U&V plot near Fraser mouth.ipynb)  
