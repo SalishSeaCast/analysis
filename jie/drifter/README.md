@@ -36,6 +36,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     * This notebook was made to further look at trajectory comparisons under different conditions. With/Without wind; Default/reduced vertical viscosity; With banks/without banks and all reduced with viscosity and not.  
 
+* ##[SalinityQuiverShlat.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/SalinityQuiverShlat.ipynb)  
+    
+    * This notebook was made to look at salinity and current field difference between original and weakslip case within three days (Oct8-10, 2014)  
+
 * ##[CODARCurrents.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/CODARCurrents.ipynb)  
     
       * This notebook was made to look at a big picture of surface currents in the plume area with CODAR data, aiming to get some insights of the currents besides line or point comparison.  
