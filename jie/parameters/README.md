@@ -14,6 +14,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     * This notebook was made to understand the effect of background viscosity and diffusivity on the plume.  
 
+* ##[WeakSlipComparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/parameters/WeakSlipComparison.ipynb)  
+    
+    * This notebook was made to compare salinity and current field with weakslip and normal for bathymetry6 and bathymetry10.  
+
 
 ##License
 
