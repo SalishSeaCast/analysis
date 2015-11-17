@@ -54,6 +54,13 @@ Descriptions below the links are from the first cell of the notebooks
     
     Plot output of SOG runs with no physics for R06; difference is turned off upwelling directly in code. There is no difference from R05, so this was not the issue. Why differences in surface/low salinity layer? Why no NH4 in upper 4 layers?  
 
+* ##[plot-runNoBio.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-runNoBio.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - river on  
+
 * ##[plotSOGR08-R07.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plotSOGR08-R07.ipynb)  
     
     changed to use constant cloud fraction of 0, but no difference in PAR from R07; ????  
@@ -153,6 +160,13 @@ Descriptions below the links are from the first cell of the notebooks
       
     - How are plankton concentrations initialized?  
 
+* ##[plot-runNoBioPISCESEulerTrue.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-runNoBioPISCESEulerTrue.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - river on  
+
 * ##[plot_SOGComp_SS2DSOG_p4zprod-r215With214ProdFixedMort-exp1m.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot_SOGComp_SS2DSOG_p4zprod-r215With214ProdFixedMort-exp1m.ipynb)  
     
     SOGComp is SOG run for comparison with SS2DSOG5x5  
@@ -217,6 +231,13 @@ Descriptions below the links are from the first cell of the notebooks
     This notebook generates new boundary conditions and initial conditions for the triple tanh vertical resolution.   
 
 
+* ##[plot-runNoBioSOGEulerFalse.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-runNoBioSOGEulerFalse.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - river on  
+
 * ##[plot-runPISCES.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-runPISCES.ipynb)  
     
     plots of SOG model run  
@@ -263,6 +284,13 @@ Descriptions below the links are from the first cell of the notebooks
     
     SOGComp is SOG run for comparison with SS2DSOG5x5  
     - compare starting values to check initialization of IC's  
+
+* ##[plot-runNoBioSOGEulerTrue.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-runNoBioSOGEulerTrue.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - river on  
 
 * ##[SS2Dplots-loop-fxn-SS2DSOGruns5x5_04.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots-loop-fxn-SS2DSOGruns5x5_04.ipynb)  
     
