@@ -167,15 +167,20 @@ def compare_model_obs(month, model_year, field, data_obs, model_path,
         # model grid points
         [j, i] = tidetools.find_closest_model_point(lon, lat, X, Y, bathy)
         # model time index
+        t_ind = []
         for count, date in enumerate(dates_mod):
-            if date.day == day:
-                t_ind = count
+            if date.month == month:
+                if date.day == day:
+                    t_ind = count
         var_plot = var_mod[t_ind, :, j, i]
         var_plot = np.ma.masked_values(var_plot, 0)
 
         ax.plot(var_obs, dep_obs, '-*r', label='obs', alpha=0.5)
         if j:
-            ax.plot(var_plot, depth_mod, '-ob', label='model', alpha=0.5)
+            try:
+                ax.plot(var_plot, depth_mod, '-ob', label='model', alpha=0.5)
+            except ValueError:
+                print ('No model data for {}/{}'.format(day, month))
         # plot location on map
         axm.plot(lon, lat, '*r')
 
@@ -236,7 +241,7 @@ def compare_cast_model(month, model_year, field, data_obs, model_path,
     # plot obs and model
     data_m = data_obs[data_obs['Month'] == month]
     num_casts = len(data_m.index)
-    fig, axs = plt.subplots(num_casts, 2, figsize=(8, 3.5*num_casts))
+    fig, axs = plt.subplots(num_casts, 2, figsize=(10, 3.5*num_casts))
     cast = 0
     for dep_obs, var_obs, lon, lat, day, year in zip(data_m['Depth'],
                                                      data_m[field],
@@ -321,10 +326,7 @@ def compare_cast_hourly(month, model_year, field, data_obs, model_path,
     elif field == 'Temperatute':
         model_field = 'votemper'
     # Is this a nowcast?
-    if model_year == 2014 or model_year == 2015:
-        nowcast_flag = True
-    else:
-        nowcast_flag = False
+    nowcast_flag = True
 
     # load model variables
     depth_mod, var_mod, dates_mod = load_model(model_path, sdt, edt,
@@ -333,7 +335,7 @@ def compare_cast_hourly(month, model_year, field, data_obs, model_path,
     # plot obs and model
     data_m = data_obs[data_obs['Month'] == month]
     num_casts = len(data_m.index)
-    fig, axs = plt.subplots(num_casts, 2, figsize=(8, 3.5*num_casts))
+    fig, axs = plt.subplots(num_casts, 2, figsize=(10, 3.5*num_casts))
     cast = 0
     for dep_obs, var_obs, lon, lat, day, year in zip(data_m['Depth'],
                                                      data_m[field],
@@ -362,13 +364,14 @@ def compare_cast_hourly(month, model_year, field, data_obs, model_path,
                     max_h, min_h = calculate_hourly_ext(model_field,
                                                         hourly_grid, j, i)
                     if j:
-                        ax.plot(var_plot, depth_mod, '-b', label='daily mean',
-                                alpha=0.5)
-                        ax.plot(max_h, depth_mod, 'k--', label='daily max')
-                        ax.plot(min_h, depth_mod, 'k:', label='daily min')
-            else:
-                print ('No model data for {}/{}'.format(day, month)
-                       )
+                        try:
+                            ax.plot(var_plot, depth_mod, '-b',
+                                    label='daily mean', alpha=0.5)
+                            ax.plot(max_h, depth_mod, 'k--', label='daily max')
+                            ax.plot(min_h, depth_mod, 'k:', label='daily min')
+                        except ValueError:
+                            print ('No model data for'
+                                   ' {}/{}'.format(day, month))
         # plot observations and location on map
         ax.plot(var_obs, dep_obs, '-*r', label='obs')
         axm.plot(lon, lat, '*r')
