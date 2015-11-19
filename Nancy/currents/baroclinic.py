@@ -68,6 +68,83 @@ def save_netcdf(times, us, vs, depths, station, lons, lats, to, tf):
     nc_file.close()
 
 
+def save_netcdf_TS(times, Ts, Ss, Ws, sshs, depthst, depthsw,
+                   name, lons, lats, to, tf):
+    """Saves the u/v time series over volume into a netcdf file"""
+    path = '/ocean/nsoontie/MEOPAR/TidalEllipseData/ModelTimeSeries/'
+    fname = '{}_TS_{}_{}.nc'.format(name, to.strftime('%Y%m%d'),
+                                    tf.strftime('%Y%m%d'))
+    nc_file = nc.Dataset(os.path.join(path, fname), 'w', zlib=True)
+    # dataset attributes
+    nc_tools.init_dataset_attrs(
+        nc_file,
+        title='{} TS, w, ssh'.format(name),
+        notebook_name='N/A',
+        nc_filepath=os.path.join(path, fname),
+        comment='Generated for tidal and energy analysis')
+    # dimensions
+    nc_file.createDimension('time_counter', None)
+    nc_file.createDimension('deptht', Ts.shape[1])
+    nc_file.createDimension('y', Ts.shape[2])
+    nc_file.createDimension('x', Ts.shape[3])
+    nc_file.createDimension('depthw', Ws.shape[1])
+    # variables
+    # time_counter
+    time_counter = nc_file.createVariable(
+        'time_counter', 'float64', ('time_counter'))
+    time_counter.long_name = 'Time axis'
+    time_counter.axis = 'T'
+    time_counter.units = 'hour since {}'.format(NodalCorr['reftime'])
+    # lat, lon
+    lon = nc_file.createVariable('nav_lon', 'float32', ('y', 'x'), zlib=True)
+    lon[:] = lons[:]
+    lat = nc_file.createVariable('nav_lat', 'float32', ('y', 'x'), zlib=True)
+    lat[:] = lats[:]
+    # T
+    T = nc_file.createVariable('votemper', 'float32',
+                               ('time_counter', 'deptht', 'y', 'x'), zlib=True)
+    T.units = 'deg C'
+    T.long_name = 'Temperature'
+    T.coordinates = 'time_counter, deptht'
+    # S
+    S = nc_file.createVariable('vosaline', 'float32',
+                               ('time_counter', 'deptht', 'y', 'x'), zlib=True)
+    S.units = '[psu]'
+    S.long_name = 'Practical Salinity'
+    S.coordinates = 'time_counter, deptht'
+    # W
+    W = nc_file.createVariable('vovecrtz', 'float32',
+                               ('time_counter', 'depthw', 'y', 'x'), zlib=True)
+    W.units = 'm/s'
+    W.long_name = 'Vertical Velocity'
+    W.coordinates = 'time_counter, depthw'
+    # SSH
+    SSH = nc_file.createVariable('sossheig', 'float32',
+                                 ('time_counter', 'y', 'x'), zlib=True)
+    SSH.units = 'm'
+    SSH.long_name = 'Sea Surface height'
+    SSH.coordinates = 'time_counter'
+    # deptht
+    depth = nc_file.createVariable('deptht', 'float32', ('deptht'), zlib=True)
+    depth.units = 'm'
+    depth.long_name = 'Depth'
+    depth.coordinates = 'deptht'
+    # depthw
+    depthw = nc_file.createVariable('depthw', 'float32', ('depthw'), zlib=True)
+    depthw.units = 'm'
+    depthw.long_name = 'Depth'
+    depthw.coordinates = 'depthw'
+
+    T[:] = Ts
+    S[:] = Ss
+    depth[:] = depthst
+    depthw[:] = depthsw
+    time_counter[:] = times
+    SSH[:] = sshs
+
+    nc_file.close()
+
+
 def nodal_corrections(tide, tidecorr):
     """apply nodal corrections to tidal constituent amplude and phase
 
