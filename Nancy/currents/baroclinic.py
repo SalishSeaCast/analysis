@@ -17,7 +17,7 @@ def save_netcdf(times, us, vs, depths, station, lons, lats, to, tf):
     path = '/ocean/nsoontie/MEOPAR/TidalEllipseData/ModelTimeSeries/'
     fname = '{}_currents_{}_{}.nc'.format(station, to.strftime('%Y%m%d'),
                                           tf.strftime('%Y%m%d'))
-    nc_file = nc.Dataset(os.path.join(path, fname), 'w', zlib=True)
+    nc_file = nc.Dataset(os.path.join(path, fname), 'w')
     # dataset attributes
     nc_tools.init_dataset_attrs(
         nc_file,
@@ -113,8 +113,9 @@ def save_netcdf_TS(times, Ts, Ss, Ws, sshs, depthst, depthsw,
     S.long_name = 'Practical Salinity'
     S.coordinates = 'time_counter, deptht'
     # W
-    W = nc_file.createVariable('vovecrtz', 'float32',
-                               ('time_counter', 'depthw', 'y', 'x'), zlib=True)
+    W = nc_file.createVariable('vovecrtz', 'f8',
+                               ('time_counter', 'depthw', 'y', 'x'), zlib=True,
+                               least_significant_digit=9)
     W.units = 'm/s'
     W.long_name = 'Vertical Velocity'
     W.coordinates = 'time_counter, depthw'
@@ -130,7 +131,7 @@ def save_netcdf_TS(times, Ts, Ss, Ws, sshs, depthst, depthsw,
     depth.long_name = 'Depth'
     depth.coordinates = 'deptht'
     # depthw
-    depthw = nc_file.createVariable('depthw', 'float32', ('depthw'), zlib=True)
+    depthw = nc_file.createVariable('depthw', 'float32', ('depthw'),  zlib=True)
     depthw.units = 'm'
     depthw.long_name = 'Depth'
     depthw.coordinates = 'depthw'
@@ -141,6 +142,7 @@ def save_netcdf_TS(times, Ts, Ss, Ws, sshs, depthst, depthsw,
     depthw[:] = depthsw
     time_counter[:] = times
     SSH[:] = sshs
+    W[:] = Ws
 
     nc_file.close()
 
