@@ -20,6 +20,10 @@ Descriptions below the links are from the first cell of the notebooks
     
      This notebook was part of TestUVfromColdStart, just plot to see the RMS between original nowcast and that from cold start, with other conditions all the same.   
 
+* ##[DrifterSeries.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/DrifterSeries.ipynb)  
+    
+    * This notebook was made to explore the surface currents of model response spatially and temporally by releasing particles within t=+-30min, l+-1km.  
+
 * ##[CODARCurrents_more.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/CODARCurrents_more.ipynb)  
     
       * This notebook was made to look at a big picture of surface currents in the plume area with CODAR data, aiming to get some insights of the currents besides line or point comparison.  
