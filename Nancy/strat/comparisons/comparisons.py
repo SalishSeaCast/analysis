@@ -11,6 +11,8 @@ import pandas as pd
 import os
 import glob
 
+FIRST_NOWCAST = datetime.datetime(2014, 10, 27)
+
 
 def read_file_to_dataframe(filename):
     """Reads a WOD file (filename) and returns data as a dataframe.
@@ -350,28 +352,28 @@ def compare_cast_hourly(month, model_year, field, data_obs, model_path,
         except IndexError:
             ax = axs[0]
             axm = axs[1]
-        [j, i] = tidetools.find_closest_model_point(lon, lat, X, Y, bathy)
-        # model time index
-        t_ind = []
-        for count, date in enumerate(dates_mod):
-            if date.day == day:
-                if date.month == month:
-                    t_ind = count
-                    date = datetime.datetime(model_year, date.month, date.day)
-                    hourly_grid = get_hourly_grid(date, model_path)
-                    var_plot = var_mod[t_ind, :, j, i]
-                    var_plot = np.ma.masked_values(var_plot, 0)
-                    max_h, min_h = calculate_hourly_ext(model_field,
-                                                        hourly_grid, j, i)
-                    if j:
-                        try:
-                            ax.plot(var_plot, depth_mod, '-b',
-                                    label='daily mean', alpha=0.5)
-                            ax.plot(max_h, depth_mod, 'k--', label='daily max')
-                            ax.plot(min_h, depth_mod, 'k:', label='daily min')
-                        except ValueError:
-                            print ('No model data for'
-                                   ' {}/{}'.format(day, month))
+        j, i = tidetools.find_closest_model_point(lon, lat, X, Y, bathy)
+        date = datetime.datetime(model_year, date.month, date.day)
+        if date >= FIRST_NOWCAST:
+            results_dir = os.path.join(model_path,
+                                       date.strftime('%d%b%y').lower())
+            hourly_grid = results_dataset('1h', 'grid_T', results_dir)
+            max_h, min_h, var_model = calculate_hourly_ext(model_field,
+                                                           hourly_grid, j, i)
+        else:
+            var_model = early_model_data(date, j, i, '1h',
+                                         'grid_T', model_field, model_path)
+            var_plot = np.mean(var_model, axis=0)
+            min_h = np.min(var_model, axis=0)
+            max_h = np.max(var_model, axis=0)
+        if j:
+            try:
+                ax.plot(var_plot, depth_mod, '-b',
+                        label='daily mean', alpha=0.5)
+                ax.plot(max_h, depth_mod, 'k--', label='daily max')
+                ax.plot(min_h, depth_mod, 'k:', label='daily min')
+            except ValueError:
+                print ('No model data for {}/{}'.format(day, month))
         # plot observations and location on map
         ax.plot(var_obs, dep_obs, '-*r', label='obs')
         axm.plot(lon, lat, '*r')
@@ -416,4 +418,40 @@ def calculate_hourly_ext(varname, grid_T, j, i):
     var = np.ma.masked_values(var, 0)
     min_h = np.min(var, axis=0)
     max_h = np.max(var, axis=0)
-    return max_h, min_h
+    mean = np.mean(var, axis=0)
+    return max_h, min_h, mean
+
+
+def get_early_filename(t_orig, period, grid, results_dir):
+
+    early_dir = os.path.join(results_dir, 'early-days')
+    allfiles = glob.glob(
+        os.path.join(early_dir,
+                     '*/SalishSea_{}*_{}.nc'.format(period, grid)))
+
+    files = []
+    for filename in allfiles:
+        base = os.path.basename(filename).split('_')
+        if base[2] <= t_orig.strftime('%Y%m%d'):
+            if base[3] >= t_orig.strftime('%Y%m%d'):
+                files.append(filename)
+
+    files.sort(key=os.path.basename)
+
+    return files[0]
+
+
+def early_model_data(date, j, i, period, grid, var, nowcast_dir):
+
+    sdt = date
+    edt = date + datetime.timedelta(days=1)
+
+    filename = get_early_filename(date, period, grid, nowcast_dir)
+    grid = nc.Dataset(filename)
+
+    times = grid.variables['time_counter']
+    dates = nc.num2date(times[:], units=times.units, calendar=times.calendar)
+    inds = np.where(np.logical_and(dates[:] >= sdt, dates[:] <= edt))
+    var_model = grid.variables[var][inds[0], :, j, i]
+
+    return var_model
