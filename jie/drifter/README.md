@@ -16,6 +16,10 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[DrifterParticleTestWeakSlip.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/DrifterParticleTestWeakSlip.ipynb)  
     
+* ##[ParticleBlast.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/ParticleBlast.ipynb)  
+    
+    * By combining particles with different positions into one plot, it enables us to see what position the model predicts to go within +-30min and +-1km.  
+
 * ##[RMS_restart.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/RMS_restart.ipynb)  
     
      This notebook was part of TestUVfromColdStart, just plot to see the RMS between original nowcast and that from cold start, with other conditions all the same.   
