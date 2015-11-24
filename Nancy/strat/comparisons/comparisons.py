@@ -316,24 +316,16 @@ def compare_cast_hourly(month, model_year, field, data_obs, model_path,
     bathy = f.variables['Bathymetry'][:]
     X = f.variables['nav_lon'][:]
     Y = f.variables['nav_lat'][:]
+    mesh = '/data/nsoontie/MEOPAR/NEMO-forcing/grid/mesh_mask_SalishSea2.nc'
+    g = nc.Dataset(mesh)
+    depth_mod = g.variables['gdept_0'][0, :]
 
-    # date ranges based on month and model_year
-    date = datetime.datetime(model_year, month, 1)
-    sdt = date - datetime.timedelta(days=31)
-    edt = date + datetime.timedelta(days=60)
-
-    # Model variables and nowcast/spinup?
+    # Model variables
     if field == 'Salinity':
         model_field = 'vosaline'
-    elif field == 'Temperatute':
+    elif field == 'Temperature':
         model_field = 'votemper'
-    # Is this a nowcast?
-    nowcast_flag = True
 
-    # load model variables
-    depth_mod, var_mod, dates_mod = load_model(model_path, sdt, edt,
-                                               model_field,
-                                               nowcast_flag=nowcast_flag)
     # plot obs and model
     data_m = data_obs[data_obs['Month'] == month]
     num_casts = len(data_m.index)
@@ -353,27 +345,24 @@ def compare_cast_hourly(month, model_year, field, data_obs, model_path,
             ax = axs[0]
             axm = axs[1]
         j, i = tidetools.find_closest_model_point(lon, lat, X, Y, bathy)
-        date = datetime.datetime(model_year, date.month, date.day)
+        date = datetime.datetime(year, month, day)
         if date >= FIRST_NOWCAST:
-            results_dir = os.path.join(model_path,
-                                       date.strftime('%d%b%y').lower())
-            hourly_grid = results_dataset('1h', 'grid_T', results_dir)
-            max_h, min_h, var_model = calculate_hourly_ext(model_field,
-                                                           hourly_grid, j, i)
+            hourly_grid = get_hourly_grid(date, model_path)
+            depth_mod = hourly_grid.variables['deptht'][:]
+            max_h, min_h, var_plot = calculate_hourly_ext(model_field,
+                                                          hourly_grid, j, i)
         else:
             var_model = early_model_data(date, j, i, '1h',
                                          'grid_T', model_field, model_path)
             var_plot = np.mean(var_model, axis=0)
             min_h = np.min(var_model, axis=0)
             max_h = np.max(var_model, axis=0)
-        if j:
-            try:
-                ax.plot(var_plot, depth_mod, '-b',
-                        label='daily mean', alpha=0.5)
-                ax.plot(max_h, depth_mod, 'k--', label='daily max')
-                ax.plot(min_h, depth_mod, 'k:', label='daily min')
-            except ValueError:
-                print ('No model data for {}/{}'.format(day, month))
+
+        # plot model
+        ax.plot(var_plot, depth_mod, '-b',
+                label='daily mean', alpha=0.5)
+        ax.plot(max_h, depth_mod, 'k--', label='daily max')
+        ax.plot(min_h, depth_mod, 'k:', label='daily min')
         # plot observations and location on map
         ax.plot(var_obs, dep_obs, '-*r', label='obs')
         axm.plot(lon, lat, '*r')
@@ -382,13 +371,11 @@ def compare_cast_hourly(month, model_year, field, data_obs, model_path,
         ax.set_xlim([vmin, vmax])
         ax.set_ylabel('Depth [m]')
         ax.set_xlabel(field)
-
         # plot mode coastline
         viz_tools.plot_coastline(axm, f, coords='map')
         axm.set_ylim([ymin, ymax])
         axm.set_xlim([xmin, xmax])
         axm.set_title('{}-{}-{}'.format(year, month, day))
-
         # legend
         ax.legend(loc=0)
         cast = cast+1
@@ -453,5 +440,6 @@ def early_model_data(date, j, i, period, grid, var, nowcast_dir):
     dates = nc.num2date(times[:], units=times.units, calendar=times.calendar)
     inds = np.where(np.logical_and(dates[:] >= sdt, dates[:] <= edt))
     var_model = grid.variables[var][inds[0], :, j, i]
+    var_model = np.ma.masked_values(var_model, 0)
 
     return var_model
