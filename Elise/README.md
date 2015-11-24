@@ -6,6 +6,13 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[plot-runSOG2d_forcing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-runSOG2d_forcing.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 40 domain  
+    - 2 days  
+    - surfae forcing  
+
 * ##[createSinBathyLevel.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createSinBathyLevel.ipynb)  
     
 * ##[NancyGenerateT+SForcing-Nemo3.6.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/NancyGenerateT+SForcing-Nemo3.6.ipynb)  
@@ -294,13 +301,6 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[SS2Dplots-loop-fxn-SS2DSOGruns5x5_04.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots-loop-fxn-SS2DSOGruns5x5_04.ipynb)  
     
-* ##[plot-runSOG2D_01-BCs.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-runSOG2D_01-BCs.ipynb)  
-    
-    plots of SOG model run  
-    - 1100 x 10 x 101 domain  
-    - 5 days  
-    - river on  
-
 * ##[createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubraAndMicrozoo.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubraAndMicrozoo.ipynb)  
     
 * ##[createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubra.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubra.ipynb)  
