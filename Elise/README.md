@@ -340,6 +340,13 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[Untitled4.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/Untitled4.ipynb)  
     
+* ##[plot-runSOG2d_check.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-runSOG2d_check.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - river on  
+
 * ##[SS2Dplots-Copy0.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots-Copy0.ipynb)  
     
 * ##[createSinBathy.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createSinBathy.ipynb)  
