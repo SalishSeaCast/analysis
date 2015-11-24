@@ -72,9 +72,9 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[plot-run_36ExpSOGTides_00.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run_36ExpSOGTides_00.ipynb)  
     
     plots of SOG model run  
-    - 1100 x 10 x 101 domain  
-    - 5 days  
-    - river on  
+    - 1100 x 10 x 40 domain  
+    - 2 days  
+    - boundary conditions and tides  
 
 * ##[temp.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/temp.ipynb)  
     
