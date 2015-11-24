@@ -73,6 +73,10 @@ Descriptions below the links are from the first cell of the notebooks
       
 
 
+* ##[Summarizing IOS comparisons.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Summarizing IOS comparisons.ipynb)  
+    
+    Notebook to summarize IOS Fall 2014 comparisons. Profile comaprisons condensed to a scatter plot.  
+
 * ##[Check on modified BCs.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Check on modified BCs.ipynb)  
     
     Comparing corrected western boundary constions with observations.  
