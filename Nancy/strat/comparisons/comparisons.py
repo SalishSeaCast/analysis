@@ -10,6 +10,7 @@ from wodpy import wod
 import pandas as pd
 import os
 import glob
+from scipy import interpolate as interp
 
 FIRST_NOWCAST = datetime.datetime(2014, 10, 27)
 
@@ -443,3 +444,16 @@ def early_model_data(date, j, i, period, grid, var, nowcast_dir):
     var_model = np.ma.masked_values(var_model, 0)
 
     return var_model
+
+
+def interpolate_depth(variable, depth_array, depth_new):
+    """ interpolates a variable depth profile field to desire depth.
+    Ideally the variable is already masked but this method masked invalid data.
+    """
+    # mask
+    var_mask = np.ma.masked_invalid(variable)
+    d_mask = np.ma.masked_invalid(depth_array)
+    f = interp.interp1d(d_mask, var_mask, bounds_error=False)
+    var_new = f(depth_new)
+
+    return var_new
