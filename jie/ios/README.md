@@ -10,6 +10,14 @@ Descriptions below the links are from the first cell of the notebooks
     
     *  Look at data-new model temperature results comparison in fall, 2014.  
 
+* ##[ScatterComparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/ios/ScatterComparison.ipynb)  
+    
+    Similarly, this notebook was to make scatter plot of S and T.  
+      
+    1) Compare with obs.  
+      
+    2) Compare with nowcasts.  
+
 * ##[IOS_fall2014.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/ios/IOS_fall2014.ipynb)  
     
     * Look at data-new model salinity results comparison in fall, 2014.  
