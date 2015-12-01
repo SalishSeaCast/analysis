@@ -133,6 +133,13 @@ Descriptions below the links are from the first cell of the notebooks
     **SOGComp is SOG run for comparison with SS2DSOG5x5**  
     - compare starting values to check initialization of IC's  
 
+* ##[plot-TdiffCompLightFormulationBio.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-TdiffCompLightFormulationBio.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - river on  
+
 * ##[plotcomp-SOGComp-SS36-SOG5x5_00.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plotcomp-SOGComp-SS36-SOG5x5_00.ipynb)  
     
     **SOGComp is SOG run for comparison with SS2DSOG5x5**  
@@ -219,6 +226,13 @@ Descriptions below the links are from the first cell of the notebooks
     SOGComp is SOG run for comparison with SS2DSOG5x5  
     - compare starting values to check initialization of IC's  
 
+* ##[plot-run_SOG_00-codeTest.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run_SOG_00-codeTest.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - river on  
+
 * ##[plot-runSOG_02-1100x10-river-5day.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-runSOG_02-1100x10-river-5day.ipynb)  
     
     plots of SOG model run  
@@ -253,6 +267,13 @@ Descriptions below the links are from the first cell of the notebooks
     - river on  
 
 * ##[plot-runSOG2D_exp-Copy1.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-runSOG2D_exp-Copy1.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - river on  
+
+* ##[plot-run_SOG_00-codeTest-Copy1.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run_SOG_00-codeTest-Copy1.ipynb)  
     
     plots of SOG model run  
     - 1100 x 10 x 101 domain  
@@ -368,6 +389,13 @@ Descriptions below the links are from the first cell of the notebooks
     
     SOGComp is SOG run for comparison with SS2DSOG5x5  
     - compare starting values to check initialization of IC's  
+
+* ##[plot-run_SOG_00.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run_SOG_00.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - river on  
 
 * ##[alterBathy2DLonLat.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/alterBathy2DLonLat.ipynb)  
     
