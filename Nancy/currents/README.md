@@ -16,9 +16,17 @@ Descriptions below the links are from the first cell of the notebooks
       
 
 
+* ##[NEMO 3.6 tidal currents.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/NEMO 3.6 tidal currents.ipynb)  
+    
+    Compare NEMO 3.6 tidal curretns with NEMO 3.4  
+
 * ##[Explore recombining CODAR files.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Explore recombining CODAR files.ipynb)  
     
     Attempt at concatenating netcdf subdomain files.  
+
+* ##[Idealized wave problem.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Idealized wave problem.ipynb)  
+    
+    Notebook to solve idealized wave problem. Barotropic current interacting with a step.  
 
 * ##[Baroclinic tides domain.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Baroclinic tides domain.ipynb)  
     
@@ -58,10 +66,6 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[M2 Baroclinic Kinetic Energy.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/M2 Baroclinic Kinetic Energy.ipynb)  
     
     Looking at the M2 baroclinic kinetic energy which I define as 0.5*(major^2 +minor^2)  
-
-* ##[Bathymetry modifications and tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Bathymetry modifications and tides.ipynb)  
-    
-    A notebook to examine how modifications to the bathymetry have affected the baroclinic tides.  
 
 
 ##License
