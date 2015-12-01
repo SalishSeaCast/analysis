@@ -6,9 +6,13 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[IOS_fall2014Temp.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/ios/IOS_fall2014Temp.ipynb)  
+    
+    *  Look at data-new model temperature results comparison in fall, 2014.  
+
 * ##[IOS_fall2014.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/ios/IOS_fall2014.ipynb)  
     
-    * Look at data-new model results comparison in fall, 2014.  
+    * Look at data-new model salinity results comparison in fall, 2014.  
 
 
 ##License
