@@ -1,4 +1,4 @@
-function area_baroclinic_tides(filename, outfile, t0, ref_time, time_units)
+function area_baroclinic_tides(filename, outfile, depthfile, t0, ref_time, time_units, use_mask)
 
 %%% Script to do a BAROCLINIC tidal analysis with t_tide
 %%% Full region
@@ -13,7 +13,7 @@ function area_baroclinic_tides(filename, outfile, t0, ref_time, time_units)
 icount=istart;
 jcount=jstart;
 % load dept, scale factors and tmask
-[dept_full, e3t_full, tmask_full] = load_depth_t();
+[dept_full, e3t_full, tmask_full] = load_depth_t(depthfile);
 
 %prepare time
 mtimes = time_to_mtime(time, ref_time, time_units); 
@@ -39,8 +39,13 @@ for i=1:Nx-1
         e3t = squeeze(e3t_full(icount,jcount,:));
         tmask = squeeze(tmask_full(icount,jcount,:));
         if ~all(tmask==0)
-           ubc = baroclinic_current_masked(urot, e3t, tmask);
-           vbc = baroclinic_current_masked(vrot, e3t, tmask);
+           if use_mask
+               ubc = baroclinic_current_masked(urot, e3t, tmask);
+               vbc = baroclinic_current_masked(vrot, e3t, tmask);
+           else
+               ubc =baroclinc_current(urot, depth);
+               vbc =baroclinc_current(vrot, depth);
+           end
            % do t_tide analysis
            lat=lats(i+1,j+1);
            for k=1:Nz;

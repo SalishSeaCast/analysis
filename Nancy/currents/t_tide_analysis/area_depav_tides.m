@@ -1,4 +1,4 @@
-function area_depav_tides(filename, outfile, t0, ref_time, time_units)
+function area_depav_tides(filename, outfile, depthfile, t0, ref_time, time_units, use_mask)
 
 %%% Script to do a tidal analysis with t_tide
 %%% full region, depth averaged. Note - does not account for boundary
@@ -15,7 +15,7 @@ function area_depav_tides(filename, outfile, t0, ref_time, time_units)
 jcount=jstart;
 icount=istart;
 % load dept, scale factors and tmask
-[dept_full, e3t_full, tmask_full] = load_depth_t();
+[dept_full, e3t_full, tmask_full] = load_depth_t(depthfile);
 
 %prepare time
 mtimes = time_to_mtime(time, ref_time, time_units); 
@@ -45,9 +45,13 @@ for i=1:Nx-1
 
         if ~all(isnan(urot))
             if ~all(tmask==0)
-
-            uavg = depth_average_mask(squeeze(urot), e3t, tmask);
-            vavg = depth_average_mask(squeeze(vrot), e3t, tmask);
+                 if use_mask
+                    uavg = depth_average_mask(squeeze(urot), e3t, tmask);
+                    vavg = depth_average_mask(squeeze(vrot), e3t, tmask);
+                 else 
+                    uavg = depth_average(squeeze(urot),depht);
+                    vavg = depth_average(squeeze(vrot),depth);
+                 end
             complex_vel = uavg + 1i*vavg;
             [tidestruc,~] = t_tide(complex_vel,'start time',start,'latitude',lat,'output','none');
             if tide_count==0

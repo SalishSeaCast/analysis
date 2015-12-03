@@ -1,9 +1,8 @@
-function [dept, e3t, tmask] = load_depth_t()
+function [dept, e3t, tmask] = load_depth_t(depthfile)
 % Load and return the t vertical grid points, scale factors and mask
 
-filename = '/ocean/nsoontie/MEOPAR/Ariane/mesh_mask.nc';
 % Load netcdf
-ncid = netcdf.open(filename);
+ncid = netcdf.open(depthfile);
 dept = netcdf.getVar(ncid, netcdf.inqVarID(ncid,'gdept'));
 dept = dept(:,:,:,1);
 e3t = netcdf.getVar(ncid, netcdf.inqVarID(ncid,'e3t'));
