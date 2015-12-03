@@ -117,6 +117,8 @@ Descriptions below the links are from the first cell of the notebooks
       
     2D model had no wind.  
 
+* ##[Deep Water Renewal - East of Central.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/Deep Water Renewal - East of Central.ipynb)  
+    
 * ##[Rich's IOS data.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/Rich's IOS data.ipynb)  
     
     Notebook to determine the temporal and spatial coverage of IOS data that Rich has stored.  
