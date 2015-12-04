@@ -161,6 +161,13 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[SS2Dplots.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots.ipynb)  
     
+* ##[plot-codeTest.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-codeTest.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - river on  
+
 * ##[createIC_NutsPhy_SS2DSOG1100x10x40.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createIC_NutsPhy_SS2DSOG1100x10x40.ipynb)  
     
 * ##[plot_SOGComp_SS2DSOG_p4zprod-MyriCodeNoZooRun_1hres.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot_SOGComp_SS2DSOG_p4zprod-MyriCodeNoZooRun_1hres.ipynb)  
@@ -185,6 +192,13 @@ Descriptions below the links are from the first cell of the notebooks
     
     SOGComp is SOG run for comparison with SS2DSOG5x5  
     - compare starting values to check initialization of IC's  
+
+* ##[plot-run_SOG_02.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run_SOG_02.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - Neumann boundary conditions; know that function is called, but is it working?  
 
 * ##[plotSOG.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plotSOG.ipynb)  
     
@@ -226,6 +240,13 @@ Descriptions below the links are from the first cell of the notebooks
     SOGComp is SOG run for comparison with SS2DSOG5x5  
     - compare starting values to check initialization of IC's  
 
+* ##[plot-run_full_01.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run_full_01.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - river on  
+
 * ##[plot-run_SOG_00-codeTest.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run_SOG_00-codeTest.ipynb)  
     
     plots of SOG model run  
@@ -239,6 +260,12 @@ Descriptions below the links are from the first cell of the notebooks
     - 1100 x 10 x 101 domain  
     - 5 days  
     - river on  
+
+* ##[createIC_NutsPhy_fullDomain.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createIC_NutsPhy_fullDomain.ipynb)  
+    
+    Code to create biochem ICs for SOG model for full Salish Sea domain  
+    - not final; should find climatology of deep values and try to find more measurements for lateral resolution  
+    - all based on S3 from October 2004  
 
 * ##[plot_SOGComp_SS2DSOG_p4zprod-r216.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot_SOGComp_SS2DSOG_p4zprod-r216.ipynb)  
     
@@ -322,6 +349,13 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[SS2Dplots-loop-fxn-SS2DSOGruns5x5_04.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots-loop-fxn-SS2DSOGruns5x5_04.ipynb)  
     
+* ##[plot-run_full_00.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run_full_00.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - river on  
+
 * ##[createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubraAndMicrozoo.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubraAndMicrozoo.ipynb)  
     
 * ##[createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubra.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubra.ipynb)  
@@ -389,13 +423,6 @@ Descriptions below the links are from the first cell of the notebooks
     
     SOGComp is SOG run for comparison with SS2DSOG5x5  
     - compare starting values to check initialization of IC's  
-
-* ##[plot-run_SOG_00.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run_SOG_00.ipynb)  
-    
-    plots of SOG model run  
-    - 1100 x 10 x 101 domain  
-    - 1 day  
-    - river on  
 
 * ##[alterBathy2DLonLat.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/alterBathy2DLonLat.ipynb)  
     
