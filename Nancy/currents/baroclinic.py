@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Ellipse
 
 from salishsea_tools import (tidetools, nc_tools, viz_tools)
-from salishsea_tools.nowcast import (analyze)
+from nowcast import (analyze)
 
 NodalCorr = tidetools.CorrTides
 
