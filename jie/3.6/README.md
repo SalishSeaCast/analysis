@@ -6,6 +6,10 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[TS2TS4.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/TS2TS4.ipynb)  
+    
+    * This notebook was to explore the effect of long river on salinity and surface current in the plume.  
+
 * ##[TS3TS43.4.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/TS3TS43.4.ipynb)  
     
     * This notebook was made to dig out difference with NEMO 3.6 and 3.4, by taking a look at Susan's 3.6 results and commpare with my run in 3.4 version.  
