@@ -10,6 +10,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     * This notebook was to explore the effect of long river on salinity and surface current in the plume.  
 
+* ##[ParticleTS3TS4.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/3.6/ParticleTS3TS4.ipynb)  
+    
+    * Put particles in results of TS3 and TS4 and explore the difference behaviors.  
+
 * ##[TS3TS43.4.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/3.6/TS3TS43.4.ipynb)  
     
     * This notebook was made to dig out difference with NEMO 3.6 and 3.4, by taking a look at Susan's 3.6 results and commpare with my run in 3.4 version.  
