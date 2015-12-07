@@ -5,7 +5,7 @@ from salishsea_tools import tidetools, viz_tools
 import numpy as np
 import matplotlib.pyplot as plt
 import datetime
-from salishsea_tools.nowcast import analyze
+from nowcast import analyze
 from wodpy import wod
 import pandas as pd
 import os

@@ -10,7 +10,7 @@ from scipy import interpolate as interp
 
 
 from salishsea_tools import tidetools, viz_tools
-from salishsea_tools.nowcast import analyze
+from nowcast import analyze
 
 
 def load_mooring_csv(csvfilename):
@@ -179,7 +179,7 @@ def load_model_data(sdt, edt, grid_B, results_home, period,
     # Grab model data
     var, times = analyze.combine_files(files, variable,
                                        np.arange(mdepths.shape[0]), j, i)
-    print 'Model bathymetry:', bathy[j, i]
+    print ('Model bathymetry:', bathy[j, i])
     return var, times, mdepths
 
 
