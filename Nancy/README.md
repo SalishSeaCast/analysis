@@ -115,6 +115,16 @@ Descriptions below the links are from the first cell of the notebooks
     This is a 10 day simulation with daily averaged output.  
 
 
+* ##[Boundary Pass bathymetry.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Boundary Pass bathymetry.ipynb)  
+    
+    I've noticed in some places that the model bathymetry in Boundary Pass doesn't seem to match with reality.   
+      
+    See these two notebooks:  
+    * http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/ONC%20Moorings.ipynb  
+    * http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Fall%202014%20IOS%20data.ipynb  
+      
+    Is this a consistent error or is it just a discrepancy with the closest model grid point? I will investigate by looking at the bathymetry near the observations points as well.  
+
 * ##[MakingSusansGrid.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/MakingSusansGrid.ipynb)  
     
     Translating Susan's grid into NEMO parameters  
