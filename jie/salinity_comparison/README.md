@@ -18,6 +18,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     * This notebook was made to create three ferry routes shown in the map.   
 
+* ##[DetermineDiffusivity.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/salinity_comparison/DetermineDiffusivity.ipynb)  
+    
+    * By looking at location and value of minimum saliniy along TWDP route to determine the whether or not have lower diffusivity case.  
+
 * ##[ThreeRouteSalinityTemplate.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/salinity_comparison/ThreeRouteSalinityTemplate.ipynb)  
     
     **Imports from research_ferries.py in my own directory**  
