@@ -18,9 +18,22 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook will look up indices for subsetting the HYCOM netcdf files  
 
+* ##[December residuals.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/December residuals.ipynb)  
+    
+    I donwloaded recent water level observations from this website.  
+    http://www.pac.dfo-mpo.gc.ca/science/charts-cartes/obs-app/observed-eng.aspx?StationID=07795  
+      
+    For comparison with nowcast.  
+
 * ##[Understanding NOAA tides and residuals.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/Understanding NOAA tides and residuals.ipynb)  
     
     Thie notebook examines the NOAA tidal predictions at Neah Bay.  
+
+* ##[Untitled2.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/Untitled2.ipynb)  
+    
+* ##[More on NOAA tides vs my tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/More on NOAA tides vs my tides.ipynb)  
+    
+    There is something funny about my tides compared to NOAA tides. What is it?  
 
 * ##[VENUS.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/VENUS.ipynb)  
     
