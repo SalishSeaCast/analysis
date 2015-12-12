@@ -6,6 +6,10 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[SurfaceCurrentsStnsHindcast.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/tides/SurfaceCurrentsStnsHindcast.ipynb)  
+    
+    * To check the surface currents within Fraser River channel and compare that with old river.  
+
 * ##[Tidal heights in jetty bathymetry.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/tides/Tidal heights in jetty bathymetry.ipynb)  
     
     * This notebook was made to look at tidal heights at Steveston, Deas Island channel, New Westminster and Mission in the jetty bathymetry case.  
