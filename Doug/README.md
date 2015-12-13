@@ -7,16 +7,28 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
-* ##[DFO-WaterLevelsService.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Doug/DFO-WaterLevelsService.ipynb)  
-    
-    **Getting Data from DFO Water Levels Service**  
-      
-    Example code to access the DFO Water Levels web service,  
-    and information about what data are available there.  
+* ##[DFO-WaterLevelsService.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Doug/DFO-WaterLevelsService.ipynb)
 
-* ##[SalishSeaTools_py3_issues.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Doug/SalishSeaTools_py3_issues.ipynb)  
-    
-    **Debug Python 3 Porting issues in SalishSeaTools Package**  
+    **Getting Data from DFO Water Levels Service**
+
+    Example code to access the DFO Water Levels web service,
+    and information about what data are available there.
+
+* ##[SalishSeaTools_py3_issues.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Doug/SalishSeaTools_py3_issues.ipynb)
+
+    **Debug Python 3 Porting issues in SalishSeaTools Package**
+
+* ##[StormSurgeAlertsFeed.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Doug/StormSurgeAlertsFeed.ipynb)
+
+    **Storm Surge Alerts Feeds**
+
+    **Development Notes**
+
+    Notes about development of ATOM/RSS feeds for storm surge alerts.
+    Started in the process of working out the details of how to provide
+    a feed to Port Metro Vancouver during the 2015/2016 storm surge season.
+    Consideration is also given to the possibility of providing a wider collection
+    of feeds in the future.
 
 
 ##License
