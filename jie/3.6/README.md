@@ -6,6 +6,10 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[CheckNowcastGreenSalinity.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/3.6/CheckNowcastGreenSalinity.ipynb)  
+    
+    * This notebook was made to evaluate nowcast-green salinity results.  
+
 * ##[TS2TS4.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/3.6/TS2TS4.ipynb)  
     
     * This notebook was to explore the effect of long river on salinity and surface current in the plume.  
