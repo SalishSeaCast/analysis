@@ -23,14 +23,18 @@ Descriptions below the links are from the first cell of the notebooks
     I donwloaded recent water level observations from this website.  
     http://www.pac.dfo-mpo.gc.ca/science/charts-cartes/obs-app/observed-eng.aspx?StationID=07795  
       
-    For comparison with nowcast.  
+    For comparison with nowcast or forecast.  
 
+* ##[SSH from JP.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/SSH from JP.ipynb)  
+    
 * ##[Understanding NOAA tides and residuals.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/Understanding NOAA tides and residuals.ipynb)  
     
     Thie notebook examines the NOAA tidal predictions at Neah Bay.  
 
-* ##[Untitled2.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/Untitled2.ipynb)  
+* ##[Which constituents.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/Which constituents.ipynb)  
     
+    Should we use constituents provided by NOAA/CHS or constituents derived from a ttide harmonic analysis?  
+
 * ##[More on NOAA tides vs my tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/More on NOAA tides vs my tides.ipynb)  
     
     There is something funny about my tides compared to NOAA tides. What is it?  
