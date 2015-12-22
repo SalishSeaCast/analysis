@@ -74,6 +74,13 @@ Descriptions below the links are from the first cell of the notebooks
       
     - How are plankton concentrations initialized?  
 
+* ##[plot-run_full_01-Copy1.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run_full_01-Copy1.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - river on  
+
 * ##[createZeroAtmosForcing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createZeroAtmosForcing.ipynb)  
     
 * ##[plot-run_36ExpSOGTides_00.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run_36ExpSOGTides_00.ipynb)  
@@ -157,6 +164,13 @@ Descriptions below the links are from the first cell of the notebooks
       
     - How are plankton concentrations initialized?  
 
+* ##[plot-run_SOG_02_rst.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run_SOG_02_rst.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - Neumann boundary conditions; know that function is called, but is it working?  
+
 * ##[SS2Dplots-loop-fxn.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots-loop-fxn.ipynb)  
     
 * ##[SS2Dplots.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots.ipynb)  
@@ -200,6 +214,10 @@ Descriptions below the links are from the first cell of the notebooks
     - 1 day  
     - Neumann boundary conditions; know that function is called, but is it working?  
 
+* ##[ExploringNowcast_GreenOutputs_EOversion.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/ExploringNowcast_GreenOutputs_EOversion.ipynb)  
+    
+    This notebook will be used to look at plots from the nowcast_green runs  
+
 * ##[plotSOG.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plotSOG.ipynb)  
     
 * ##[plot_SOGComp_SS2DSOG_p4zprod-mesozooEff.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot_SOGComp_SS2DSOG_p4zprod-mesozooEff.ipynb)  
@@ -210,6 +228,13 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[ATtoConst.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/ATtoConst.ipynb)  
     
     <span style="background-color:black; color:cyan; vertical-align: middle; padding:2px 0; font-size:20px">Script to read in atmospheric temperature SOG input file, replace all temperature readings with constant value (12.0611=surface value in SG-S3-2004-10-19.sog CTD file), and write to a new file.</span>  
+
+* ##[plot-run08dec15_12h_3.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run08dec15_12h_3.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - river on  
 
 * ##[Untitled2.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/Untitled2.ipynb)  
     
@@ -246,6 +271,10 @@ Descriptions below the links are from the first cell of the notebooks
     - 1100 x 10 x 101 domain  
     - 1 day  
     - river on  
+
+* ##[ExploringNowcast_GreenOutputs_EOversion-Copy1.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/ExploringNowcast_GreenOutputs_EOversion-Copy1.ipynb)  
+    
+    This notebook will be used to look at plots from the nowcast_green runs  
 
 * ##[plot-run_SOG_00-codeTest.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run_SOG_00-codeTest.ipynb)  
     
@@ -311,6 +340,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     SOGComp is SOG run for comparison with SS2DSOG5x5  
     - compare starting values to check initialization of IC's  
+
+* ##[plot-run08dec15_12h-Comp_Orcinus_Salish.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run08dec15_12h-Comp_Orcinus_Salish.ipynb)  
+    
+    Comparison between Orcinus and Salish runs for 08dec15 12 hour run  
 
 * ##[plot_SOGComp_SS2DSOG_p4zopt.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot_SOGComp_SS2DSOG_p4zopt.ipynb)  
     
@@ -380,6 +413,13 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubraMicrozooRemin.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19-WithMRubraMicrozooRemin.ipynb)  
     
+* ##[plot-run_full_01-Copy2.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run_full_01-Copy2.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - river on  
+
 * ##[SS2Dplots-loop-fxn-SS2DSOGruns00_e.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/SS2Dplots-loop-fxn-SS2DSOGruns00_e.ipynb)  
     
 * ##[compare1100x10River_Phys_SOG.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/compare1100x10River_Phys_SOG.ipynb)  
@@ -449,6 +489,39 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[alterBathy.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/alterBathy.ipynb)  
     
+* ##[createIC_NutsPhy_fullDomain_2.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createIC_NutsPhy_fullDomain_2.ipynb)  
+    
+    Code to create biochem ICs for SOG model for full Salish Sea domain  
+    - not final; should find climatology of deep values and try to find more measurements for lateral resolution  
+    - all based on S3 from October 2004 except for deep nuts from S4-1:  
+      
+    /ocean/shared/SoG/btl/04-01  
+    S4-1  9  January 16 2004    49 15.009 N    123 44.911 W  
+    depth corrdepth salnum sal oxnum oxML chl002 chl020 chl200  po4 si no3  po4r2 sir2 no3r2  po4r3 sir3 no3r3  
+    0    0.0     797  23.865   24   8.26  0.896   0.227   0.030   1.920     46.543  24.910   NaN     NaN     NaN    NaN     NaN     NaN  
+    5    4.0     798  27.479   23  15.33  1.150   0.217   0.046   1.848     40.247  21.750   NaN     NaN     NaN    NaN     NaN     NaN  
+    10   9.1     799  28.171   22   6.47  0.887   0.172   0.074   2.232     52.288  27.589  2.042   48.393  24.793 2.261   54.199  28.662  
+    30   26.3    804  29.275   25   6.76    NaN     NaN     NaN   2.414     54.349  30.095   NaN     NaN     NaN    NaN     NaN     NaN  
+    50   46.0    805  29.897   26   4.42    NaN     NaN     NaN   2.390     51.658  28.934   NaN     NaN     NaN    NaN     NaN     NaN  
+    100  100.0   803  30.190   27   5.00    NaN     NaN     NaN   2.400     54.737  30.301  2.183   47.700  26.245  NaN     NaN     NaN  
+    200  194.5   801  30.985   28   2.96    NaN     NaN     NaN   2.646     56.970  31.048   NaN     NaN     NaN    NaN     NaN     NaN  
+    300  300.0   802  31.140   29   2.62    NaN     NaN     NaN   2.709     60.422  30.919   NaN     NaN     NaN    NaN     NaN     NaN  
+    390  394.5   806  31.204   30   2.43    NaN     NaN     NaN   2.241     41.108  19.170   NaN     NaN     NaN    NaN     NaN     NaN  
+      
+      
+    =>  
+    depth    Si      NO3  
+    0        46.543  24.910  
+    5        40.247  21.750  
+    10       52.288  27.589  
+    30       54.349  30.095  
+    50       51.658  28.934  
+    100      54.737  30.301  
+    200      56.970  31.048  
+    300      60.422  30.919  
+    390      41.108  19.170  
+
+
 * ##[atmosForcing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/atmosForcing.ipynb)  
     
 * ##[plotSOGR05.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plotSOGR05.ipynb)  
