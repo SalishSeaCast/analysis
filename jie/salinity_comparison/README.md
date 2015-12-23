@@ -34,6 +34,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     * This notebook was made to compare ferry salinity with weakslip new river and weakslip jetty case.  
 
+* ##[SaliCom_22dec15.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/salinity_comparison/SaliCom_22dec15.ipynb)  
+    
+    **Imports from figures.py**  
+
 
 ##License
 
