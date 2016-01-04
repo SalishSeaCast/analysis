@@ -80,6 +80,18 @@ Descriptions below the links are from the first cell of the notebooks
       
     dwr_new_bcs_surface has salinity below 150m incrased by 0.3311 and salinity above 50m increased by 0.3311  
 
+* ##[DWR_enst.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_enst.ipynb)  
+    
+    This notebook looks stratification along thalweg in late April.  
+      
+    Compares dwr_base_enstr with dwr_enstr_eng  
+      
+    Both have diff/visc 1e-6/1e-5, isoneutral, winds  
+      
+    dwr_base_enstr has enstrophy conserving scheme.  
+      
+    dwr_enstr_eng has original choice - energy enstrophy conserving.  
+
 * ##[DWR_bbl.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/DWR_bbl.ipynb)  
     
     This notebook looks at the vertical eddy viscosity/diffusivity during a deep water renewal event in late August 2003.  
@@ -167,7 +179,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 ##License
 
-These notebooks and files are copyright 2013-2015
+These notebooks and files are copyright 2013-2016
 by the Salish Sea MEOPAR Project Contributors
 and The University of British Columbia.
 
