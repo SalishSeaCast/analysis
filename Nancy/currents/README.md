@@ -30,6 +30,8 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[Baroclinic tides domain.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Baroclinic tides domain.ipynb)  
     
+* ##[bathy on slopes and barotropic tides pattern.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/bathy on slopes and barotropic tides pattern.ipynb)  
+    
 * ##[Baroclinic Tides - CODAR Region.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Baroclinic Tides - CODAR Region.ipynb)  
     
     This notebook will be used to analyze the baroclinic tides over the CODAR region.  
@@ -53,6 +55,12 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook will look at some internal wave speed theory. I will try to pick out things like the phase speed of the waves in the surface layer and slope of internal wave beams...  
 
+* ##[Generation of internal waves at Boundary Pass.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Generation of internal waves at Boundary Pass.ipynb)  
+    
+    This notebook investigates the internal wave generation mechanism proposed by Gargett 1977 at Boundary Pass. Do we observe these features in the model as well?  
+      
+
+
 * ##[Baroclinic Tides - CODAR region - phase and inclination.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Baroclinic Tides - CODAR region - phase and inclination.ipynb)  
     
     Another look at CODAR baroclinc tides, but focusing on the inclination and phase.  
@@ -74,7 +82,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 ##License
 
-These notebooks and files are copyright 2013-2015
+These notebooks and files are copyright 2013-2016
 by the Salish Sea MEOPAR Project Contributors
 and The University of British Columbia.
 
