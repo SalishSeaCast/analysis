@@ -315,6 +315,10 @@ Descriptions below the links are from the first cell of the notebooks
     - 1 day  
     - river on  
 
+* ##[ExploringNowcast_GreenOutputs_EOversion2.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/ExploringNowcast_GreenOutputs_EOversion2.ipynb)  
+    
+    This notebook will be used to look at plots from the nowcast_green runs  
+
 * ##[plot-runPISCES.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-runPISCES.ipynb)  
     
     plots of SOG model run  
@@ -487,6 +491,8 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createIC_NutsPhy_SS2DSOG5x5_S3-2004-10-19.ipynb)  
     
+* ##[exploreDFOProfData-Discuss.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/exploreDFOProfData-Discuss.ipynb)  
+    
 * ##[alterBathy.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/alterBathy.ipynb)  
     
 * ##[createIC_NutsPhy_fullDomain_2.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createIC_NutsPhy_fullDomain_2.ipynb)  
@@ -531,7 +537,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 ##License
 
-These notebooks and files are copyright 2013-2015
+These notebooks and files are copyright 2013-2016
 by the Salish Sea MEOPAR Project Contributors
 and The University of British Columbia.
 
