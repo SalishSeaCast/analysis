@@ -28,6 +28,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     Notebook to solve idealized wave problem. Barotropic current interacting with a step.  
 
+* ##[Visualizing a wave.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Visualizing a wave.ipynb)  
+    
+    Notebook to help visualize a wave  
+
 * ##[Baroclinic tides domain.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Baroclinic tides domain.ipynb)  
     
 * ##[bathy on slopes and barotropic tides pattern.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/bathy on slopes and barotropic tides pattern.ipynb)  
