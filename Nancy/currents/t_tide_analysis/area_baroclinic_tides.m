@@ -2,10 +2,13 @@ function area_baroclinic_tides(filename, outfile, depthfile, t0, ref_time, time_
 
 %%% Script to do a BAROCLINIC tidal analysis with t_tide
 %%% Full region
+%%% depthfile is the mesh_mask file
 %%% t0 is initial time index
 %%% ref_time is the reference time (datevec)
 %%% time_uinits is a string 's' or 'h' indicating if the time in the files
 %%% is measure in seconds or hours.
+%%% use_mask specifies if the analysis is calculated with mesh_mask depths
+%%% (1) or grid depths printed in netcdf files (0)
 
 % load data
 [u, v, depth, time, lons, lats] = load_netcdf(filename);
