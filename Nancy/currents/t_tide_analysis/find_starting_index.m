@@ -1,6 +1,6 @@
 function [i ,j] = find_starting_index(lons , lats)
 %FIND_STARTING_INDEX - look up the starting index of this subdomain
-%Assumes start of subdomin is sctually at lats(2,2) and lons(2,2)
+%Assumes start of subdomin is actually at lats(2,2) and lons(2,2)
 %This is because of the way the unstaggering works and setting up my 
 %subdomains
 
