@@ -3,10 +3,13 @@ function area_depav_tides(filename, outfile, depthfile, t0, ref_time, time_units
 %%% Script to do a tidal analysis with t_tide
 %%% full region, depth averaged. Note - does not account for boundary
 %%% layer effects
+%%% depthfile is the mesh_mask file
 %%% t0 is initial time index
 %%% ref_time is the reference time (datevec)
-%%% time_uinits is a string 's' or 'h' indicating if the time in the files
+%%% time_units is a string 's' or 'h' indicating if the time in the files
 %%% is measure in seconds or hours.
+%%% use_mask specifies if the analysis is calculated with mesh_mask depths
+%%% (1) or grid depths printed in netcdf files (0)
 
 
 % load data
