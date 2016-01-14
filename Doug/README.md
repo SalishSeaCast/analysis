@@ -7,35 +7,50 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
-* ##[StormSurgeAlertsFeed.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Doug/StormSurgeAlertsFeed.ipynb)
+* ##[ThalwegSalinityVideo.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Doug/ThalwegSalinityVideo.ipynb)  
+    
+    **Working Toward a Daily Updated Thalweg Salinity Contours Video**  
 
-    **Storm Surge Alerts Feeds**
+* ##[NowcastFiguresRefactoring.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Doug/NowcastFiguresRefactoring.ipynb)  
+    
+    **Refactoring `nowcast.figures`**  
+      
+    Render figure objects returned by selected `nowcast.figures` functions.  
+    Provides data from visual testing to confirm that refactoring has not  
+    adversely changed figures for web pages.  
+      
+    Set-up and function calls should replicate as nearly as possible  
+    what is done in `nowcast.workers.make_plots` worker.  
 
-    **Development Notes**
+* ##[StormSurgeAlertsFeedDaily.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Doug/StormSurgeAlertsFeedDaily.ipynb)  
+    
+    **PMV Storm Surge Alert Feed Generator**  
+      
+    Notebook to generate `pmv.xml` feed while `nowcast.workers.make_feeds`  
+    worker is in development.  
 
-    Notes about development of ATOM/RSS feeds for storm surge alerts.
-    Started in the process of working out the details of how to provide
-    a feed to Port Metro Vancouver during the 2015/2016 storm surge season.
-    Consideration is also given to the possibility of providing a wider collection
-    of feeds in the future.
+* ##[StormSurgeAlertsFeed.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Doug/StormSurgeAlertsFeed.ipynb)  
+    
+    **Storm Surge Alerts Feeds**  
+      
+    **Development Notes**  
+      
+    Notes about development of ATOM/RSS feeds for storm surge alerts.  
+    Started in the process of working out the details of how to provide  
+    a feed to Port Metro Vancouver during the 2015/2016 storm surge season.  
+    Consideration is also given to the possibility of providing a wider collection  
+    of feeds in the future.  
 
-* ##[StormSurgeAlertsFeedDaily.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Doug/StormSurgeAlertsFeedDaily.ipynb)
+* ##[DFO-WaterLevelsService.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Doug/DFO-WaterLevelsService.ipynb)  
+    
+    **Getting Data from DFO Water Levels Service**  
+      
+    Example code to access the DFO Water Levels web service,  
+    and information about what data are available there.  
 
-    **PMV Storm Surge Alert Feed Generator**
-
-    Notebook to generate `pmv.xml` feed while `nowcast.workers.make_feeds`
-    worker is in development.
-
-* ##[DFO-WaterLevelsService.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Doug/DFO-WaterLevelsService.ipynb)
-
-    **Getting Data from DFO Water Levels Service**
-
-    Example code to access the DFO Water Levels web service,
-    and information about what data are available there.
-
-* ##[SalishSeaTools_py3_issues.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Doug/SalishSeaTools_py3_issues.ipynb)
-
-    **Debug Python 3 Porting issues in SalishSeaTools Package**
+* ##[SalishSeaTools_py3_issues.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Doug/SalishSeaTools_py3_issues.ipynb)  
+    
+    **Debug Python 3 Porting issues in SalishSeaTools Package**  
 
 
 ##License
