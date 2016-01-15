@@ -55,6 +55,12 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebooks is used to develope and test a function that will calulate the depth average of a model variable.  
 
+* ##[Masking with tmask.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Masking with tmask.ipynb)  
+    
+    This notebooks shows how to use the tmask from mesh_mask.nc file to mask variables.  
+      
+    It also compared the timing of using tmask vs searching for zeros.  
+
 * ##[Rivers2m.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Rivers2m.ipynb)  
     
     Quick comparison between a week long run in Dec 11-17 with rivers at different depths  
@@ -132,7 +138,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 ##License
 
-These notebooks and files are copyright 2013-2015
+These notebooks and files are copyright 2013-2016
 by the Salish Sea MEOPAR Project Contributors
 and The University of British Columbia.
 
