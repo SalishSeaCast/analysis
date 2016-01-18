@@ -64,9 +64,9 @@ for i=1:Nx
            for k=1:Nz;
               %n2 first
               if ~all(n2sub(k+1,:)==mask_value)
-                  [tidestruc,~] = t_tide(squeeze(n2sub(k+1,:)),'start time',start,'latitude',lat,'output','none');
+                  [tidestruc,~] = t_tide(squeeze(wsub(k+1,:)).*squeeze(n2sub(k+1,:)),'start time',start,'latitude',lat,'output','none');
                   if tide_count==0
-                      n2struc = initialize_struc(tidestruc,[Nx,Ny,Nz],lats,lons);
+                      wn2struc = initialize_struc(tidestruc,[Nx,Ny,Nz],lats,lons);
                   end
                   for n =1:length(const)
                       c = const(n,:);
@@ -74,7 +74,7 @@ for i=1:Nx
                       ind = strmatch(c,tidestruc.name,'exact');
                       for p =1:length(params)
                           param = params(p, :);
-                          n2struc.(cword).(param)(i,j,k) = tidestruc.tidecon(ind,p);
+                          wn2struc.(cword).(param)(i,j,k) = tidestruc.tidecon(ind,p);
                       end
                   end
               end
@@ -103,10 +103,10 @@ for i=1:Nx
     icount=icount+1;
 end
 wstruc.('depthw') = depthw(2:end);
-n2struc.('depthw') = depthw(2:end);
+wn2struc.('depthw') = depthw(2:end);
 
 %save
 
 save([outfile, '_ssh'], 'sshstruc')
 save([outfile, '_w',], 'wstruc')
-save([outfile, '_n2',], 'n2struc')
+save([outfile, '_wn2',], 'wn2struc')
