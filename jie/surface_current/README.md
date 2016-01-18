@@ -14,6 +14,14 @@ Descriptions below the links are from the first cell of the notebooks
     
     * To investigate the impact of each forcing, i.e., river flow, tides, winds and Coriolis force on the plume properties and stratification.  
 
+* ##[OnlyRiverMeanCurrent.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/surface_current/OnlyRiverMeanCurrent.ipynb)  
+    
+    * In addition to compare mean current of model results with codar by the same method, how about the idealized caseof mean current? That is, to run only with rivers, no tides, no weather. Two speculations of the potential results:  
+      
+    * 1 Only river mean flow is closer to codar, that indicates winds effects much of the mean currents in the previous way.  
+    * 2 None of them is closer to codar, something else is still going on...  
+    * 3 Analyze difference between only river and all conditions.  
+
 * ##[NoCoriolisMeanCurrent.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/surface_current/NoCoriolisMeanCurrent.ipynb)  
     
     * To check my four days mean current without Coriolis force.  
