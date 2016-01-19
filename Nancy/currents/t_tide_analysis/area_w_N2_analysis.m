@@ -24,7 +24,7 @@ start = mtimes(t0);
 %initialize strucuure for saving data array
 area = squeeze(size(w(:,:,1,1)));
 Nx=area(1)-1; Ny=area(2)-1;
-Nz = length(w(1,1,:,1))-1; %one less for Nz because exclude surface
+Nz = length(w(1,1,:,1)); %one less for Nz because exclude surface
 params = elev_parameters;
 %exclude first point in x/y to match with u/v analysis
 
@@ -36,12 +36,15 @@ tide_count=0;
 for i=1:Nx
     for j=1:Ny
         wsub = squeeze(w(i+1,j+1,:,t0:end));
+        winterp = interp1(depthw, wsub, deptht,'pchip','extrap');
         rhosub = calculate_density(squeeze(t(i+1,j+1,:,t0:end)), squeeze(s(i+1,j+1,:,t0:end)));
         sshsub =squeeze(ssh(i+1,j+1,t0:end));
         e3w = squeeze(e3w_full(icount,jcount,:));
         tmask = squeeze(tmask_full(icount,jcount,:));
         % calculate N2
         n2sub = calculate_n2(rhosub, e3w);
+        n2sub = bsxfun(@times, n2sub, tmask);
+        n2interp=interp1(depthw, n2sub, deptht,'pchip','extrap');
         if ~all(tmask==0)
            % do t_tide analysis
            lat=lats(i+1,j+1);
@@ -63,8 +66,8 @@ for i=1:Nx
            %%% Next is w, and n2 which both depend on z
            for k=1:Nz;
               %n2 first
-              if ~all(n2sub(k+1,:)==mask_value)
-                  [tidestruc,~] = t_tide(squeeze(wsub(k+1,:)).*squeeze(n2sub(k+1,:)),'start time',start,'latitude',lat,'output','none');
+              if ~all(n2interp(k,:)==mask_value)
+                  [tidestruc,~] = t_tide(squeeze(winterp(k,:)).*squeeze(n2interp(k,:)),'start time',start,'latitude',lat,'output','none');
                   if tide_count==0
                       wn2struc = initialize_struc(tidestruc,[Nx,Ny,Nz],lats,lons);
                   end
@@ -79,8 +82,8 @@ for i=1:Nx
                   end
               end
               %next w
-              if ~all(wsub(k+1,:)==mask_value)
-                  [tidestruc,~] = t_tide(squeeze(wsub(k+1,:)),'start time',start,'latitude',lat,'output','none');
+              if ~all(winterp(k,:)==mask_value)
+                  [tidestruc,~] = t_tide(squeeze(winterp(k,:)),'start time',start,'latitude',lat,'output','none');
                   if tide_count==0
                       wstruc = initialize_struc(tidestruc,[Nx,Ny,Nz],lats,lons);
                   end
@@ -102,8 +105,8 @@ for i=1:Nx
     jcount=jstart;
     icount=icount+1;
 end
-wstruc.('depthw') = depthw(2:end);
-wn2struc.('depthw') = depthw(2:end);
+wstruc.('deptht') = deptht;
+wn2struc.('deptht') = deptht;
 
 %save
 
