@@ -34,6 +34,10 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[Baroclinic tides domain.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Baroclinic tides domain.ipynb)  
     
+* ##[North SoG and BP Internal wave beams.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/North SoG and BP Internal wave beams.ipynb)  
+    
+    Notebook to explore the possibility of internal wave beams generate at the slopes of the fraser river.  
+
 * ##[bathy on slopes and barotropic tides pattern.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/bathy on slopes and barotropic tides pattern.ipynb)  
     
 * ##[Baroclinic Tides - CODAR Region.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Baroclinic Tides - CODAR Region.ipynb)  
