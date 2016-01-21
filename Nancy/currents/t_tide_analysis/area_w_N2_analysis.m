@@ -31,6 +31,8 @@ params = elev_parameters;
 %mask value - no need to tidal analysis because land
 mask_value=0; 
 
+rho0 = 1035; %kg/m^3 - NEMO reference density
+
 %Loop through everything
 tide_count=0;
 for i=1:Nx
@@ -40,11 +42,13 @@ for i=1:Nx
         rhosub = calculate_density(squeeze(t(i+1,j+1,:,t0:end)), squeeze(s(i+1,j+1,:,t0:end)));
         sshsub =squeeze(ssh(i+1,j+1,t0:end));
         e3w = squeeze(e3w_full(icount,jcount,:));
+        e3t = squeeze(e3t_full(icount,jcount,:));
         tmask = squeeze(tmask_full(icount,jcount,:));
         % calculate N2
         n2sub = calculate_n2(rhosub, e3w);
         n2sub = bsxfun(@times, n2sub, tmask);
         n2interp=interp1(depthw, n2sub, deptht,'pchip','extrap');
+        pbc_t = -rho0*vertical_integral(winterp.*n2interp,e3t);
         if ~all(tmask==0)
            % do t_tide analysis
            lat=lats(i+1,j+1);
@@ -63,13 +67,13 @@ for i=1:Nx
                    sshstruc.(cword).(param)(i,j) = tidestruc.tidecon(ind,p);
                end
            end
-           %%% Next is w, and n2 which both depend on z
+           %%% Next is w and pbc_t/rho0 which both depend on z
            for k=1:Nz;
               %n2 first
-              if ~all(n2interp(k,:)==mask_value)
-                  [tidestruc,~] = t_tide(squeeze(winterp(k,:)).*squeeze(n2interp(k,:)),'start time',start,'latitude',lat,'output','none');
+              if ~all(pbc_t(k,:)==mask_value)
+                  [tidestruc,~] = t_tide(squeeze(pbc_t(k,:)),'start time',start,'latitude',lat,'output','none');
                   if tide_count==0
-                      wn2struc = initialize_struc(tidestruc,[Nx,Ny,Nz],lats,lons);
+                      pbc_t_struc = initialize_struc(tidestruc,[Nx,Ny,Nz],lats,lons);
                   end
                   for n =1:length(const)
                       c = const(n,:);
@@ -77,7 +81,7 @@ for i=1:Nx
                       ind = strmatch(c,tidestruc.name,'exact');
                       for p =1:length(params)
                           param = params(p, :);
-                          wn2struc.(cword).(param)(i,j,k) = tidestruc.tidecon(ind,p);
+                          pbc_t_struc.(cword).(param)(i,j,k) = tidestruc.tidecon(ind,p);
                       end
                   end
               end
@@ -106,10 +110,10 @@ for i=1:Nx
     icount=icount+1;
 end
 wstruc.('deptht') = deptht;
-wn2struc.('deptht') = deptht;
+pbc_t_struc.('deptht') = deptht;
 
 %save
 
 save([outfile, '_ssh'], 'sshstruc')
 save([outfile, '_w',], 'wstruc')
-save([outfile, '_wn2',], 'wn2struc')
+save([outfile, '_pbc_t',], 'pbc_t_struc')
