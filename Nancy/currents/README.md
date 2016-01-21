@@ -63,6 +63,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     This notebook will look at some internal wave speed theory. I will try to pick out things like the phase speed of the waves in the surface layer and slope of internal wave beams...  
 
+* ##[Internal wave beams and boundary current.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Internal wave beams and boundary current.ipynb)  
+    
+    Notebook to explore the possibility of internal wave beams near the Fraser River banks and Rich's boundary current.  
+
 * ##[Generation of internal waves at Boundary Pass.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/currents/Generation of internal waves at Boundary Pass.ipynb)  
     
     This notebook investigates the internal wave generation mechanism proposed by Gargett 1977 at Boundary Pass. Do we observe these features in the model as well?  
