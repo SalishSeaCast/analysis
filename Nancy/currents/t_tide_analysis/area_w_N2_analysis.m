@@ -10,7 +10,8 @@ function area_w_N2_analysis(filename, outfile, depthfile, t0, ref_time, time_uni
 
 % load data
 [w, t, s, ssh, deptht, depthw, time, lons, lats] = load_netcdf_wts(filename);
-[istart, jstart] = find_starting_index(lons , lats); %index for lons/lats(2,2)
+[istart, jstart] = find_starting_index(lons(1,1) , lats(1,1));
+% T grid can start on lons(1,1) and lats(1,1)
 icount=istart;
 jcount=jstart;
 % load dept, scale factors and tmask
@@ -23,7 +24,7 @@ start = mtimes(t0);
 
 %initialize strucuure for saving data array
 area = squeeze(size(w(:,:,1,1)));
-Nx=area(1)-1; Ny=area(2)-1;
+Nx=area(1); Ny=area(2);
 Nz = length(w(1,1,:,1)); %one less for Nz because exclude surface
 params = elev_parameters;
 %exclude first point in x/y to match with u/v analysis
@@ -37,10 +38,10 @@ rho0 = 1035; %kg/m^3 - NEMO reference density
 tide_count=0;
 for i=1:Nx
     for j=1:Ny
-        wsub = squeeze(w(i+1,j+1,:,t0:end));
+        wsub = squeeze(w(i,j,:,t0:end));
         winterp = interp1(depthw, wsub, deptht,'pchip','extrap');
-        rhosub = calculate_density(squeeze(t(i+1,j+1,:,t0:end)), squeeze(s(i+1,j+1,:,t0:end)));
-        sshsub =squeeze(ssh(i+1,j+1,t0:end));
+        rhosub = calculate_density(squeeze(t(i,j,:,t0:end)), squeeze(s(i,j,:,t0:end)));
+        sshsub =squeeze(ssh(i,j,t0:end));
         e3w = squeeze(e3w_full(icount,jcount,:));
         e3t = squeeze(e3t_full(icount,jcount,:));
         tmask = squeeze(tmask_full(icount,jcount,:));
@@ -51,7 +52,7 @@ for i=1:Nx
         pbc_t = -rho0*vertical_integral(winterp.*n2interp,e3t);
         if ~all(tmask==0)
            % do t_tide analysis
-           lat=lats(i+1,j+1);
+           lat=lats(i,j);
            % ssh
            [tidestruc,~] = t_tide(sshsub,'start time',start,'latitude',lat,'output','none');
            if tide_count==0
