@@ -96,6 +96,10 @@ Descriptions below the links are from the first cell of the notebooks
     6. Esquimalt - http://climate.weather.gc.ca/climateData/hourlydata_e.html?timeframe=1&Prov=&StationID=52&hlyRange=1994-02-01|2014-10-01&Year=2014&Month=10&Day=1  
     5. NOAA Buoy - http://www.ndbc.noaa.gov/station_page.php?station=46041  
 
+* ##[NEMO depths vs bathymetry file.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/NEMO depths vs bathymetry file.ipynb)  
+    
+    This notebook compares the NEMO bottom w-depth to the depth specified in the bathymetry file. We speculate that NEMO somehow shallows out the bathymetry.  
+
 * ##[Playing with coastline data.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Playing with coastline data.ipynb)  
     
     Figuring out how to fill the land colour with Rich's coastline data.  
