@@ -1,5 +1,5 @@
 function datastruc = initialize_struc(tidestruc,size,lats,lons)
-datastruc = struct('lats',lats(2:end,2:end), 'lons', lons(2:end,2:end));
+datastruc = struct('lats',lats, 'lons', lons);
 params = elev_parameters;
 const = tidestruc.name;
 for n =1:length(const)
