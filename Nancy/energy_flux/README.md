@@ -6,6 +6,10 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[Develop energy flux calculations.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/energy_flux/Develop energy flux calculations.ipynb)  
+    
+    This is a notebook for developing energy flux calculations.  
+
 
 ##License
 
