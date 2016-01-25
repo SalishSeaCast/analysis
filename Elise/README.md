@@ -265,6 +265,8 @@ Descriptions below the links are from the first cell of the notebooks
     SOGComp is SOG run for comparison with SS2DSOG5x5  
     - compare starting values to check initialization of IC's  
 
+* ##[exploreDFO_OPDB.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/exploreDFO_OPDB.ipynb)  
+    
 * ##[plot-run_full_01.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run_full_01.ipynb)  
     
     plots of SOG model run  
