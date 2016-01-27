@@ -17,6 +17,7 @@ jcount=jstart;
 % load dept, scale factors and tmask
 [dept_full, e3t_full, tmask_full] = load_depth_t(depthfile);
 [depw_full, e3w_full, tmask_full] = load_depth_w(depthfile);
+clear dept_full depw_full;
 
 %prepare time
 mtimes = time_to_mtime(time, ref_time, time_units); 
@@ -25,9 +26,8 @@ start = mtimes(t0);
 %initialize strucuure for saving data array
 area = squeeze(size(w(:,:,1,1)));
 Nx=area(1); Ny=area(2);
-Nz = length(w(1,1,:,1)); %one less for Nz because exclude surface
+Nz = length(w(1,1,:,1));
 params = elev_parameters;
-%exclude first point in x/y to match with u/v analysis
 
 %mask value - no need to tidal analysis because land
 mask_value=0; 
