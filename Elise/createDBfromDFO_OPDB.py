@@ -274,11 +274,12 @@ def main():
                             #SEND TO DATABASE
                             session.execute(ObsTBL.__table__.insert().values(**varVals))
                         else:
-                            splitline=re.split('\s*\:\s*',line.strip())
+                            varVals={}
+                            splitline=re.split('\s*\ \s*',line.strip())
                             if len(splitline)==max(varNames.keys()):
                                 for ii in range(1,1+max(varNames.keys())):
                                     if varNames[ii] in varlistu:
-                                        varVals[varNames[ii]]=splitline[ii].strip()
+                                        varVals[varNames[ii]]=splitline[ii-1].strip()
                                     if varNames[ii]+'_units' in varlistu:
                                         varVals[varNames[ii]+'_units']=varUnits[ii]
                                 varVals['StationTBLID']=stationNo
@@ -286,7 +287,7 @@ def main():
                                 #SEND TO DATABASE
                                 session.execute(ObsTBL.__table__.insert().values(**varVals))
                             else:
-                                ferr.write('ERROR: filename:'+sourceFile+' line:'+line+'\n')
+                                ferr.write('ERROR: filename:'+sourceFile+' line:'+line)
                     if re.match('![- ]*$',line):
                         tem=re.search('(?<=\!)[- ]*$',line)
                         splitline=re.split(r'\s',tem.group(0))
