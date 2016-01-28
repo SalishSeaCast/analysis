@@ -1,5 +1,5 @@
 import sqlalchemy
-from sqlalchemy import create_engine, Column, String, Integer, Numeric, MetaData, Table, type_coerce, ForeignKey, case
+from sqlalchemy import create_engine, Column, String, Integer, Float, MetaData, Table, type_coerce, ForeignKey, case
 from sqlalchemy.orm import mapper, create_session, relationship, aliased, Session
 from sqlalchemy.ext.declarative import declarative_base
 import csv
@@ -64,15 +64,15 @@ def main():
             __table__=Table('CalcsTBL', Base.metadata,
                         Column('ObsID', Integer, primary_key=True),
                         Column('StationID', Integer, ForeignKey('StationTBL.ID')),
-                        Column('Oxygen_umolL', Numeric),
-                        Column('Oxygen_Dissolved_umolL', Numeric),
-                        Column('Oxygen_Dissolved_SBE_umolL', Numeric),
-                        Column('Salinity_Bottle_SA', Numeric),
-                        Column('Salinity_SA', Numeric),
-                        Column('Salinity_T0_C0_SA', Numeric),
-                        Column('Salinity_T1_C1_SA', Numeric),
-                        Column('Salinity__Unknown_SA', Numeric),
-                        Column('Salinity__Pre1978_SA', Numeric))
+                        Column('Oxygen_umolL', Float),
+                        Column('Oxygen_Dissolved_umolL', Float),
+                        Column('Oxygen_Dissolved_SBE_umolL', Float),
+                        Column('Salinity_Bottle_SA', Float),
+                        Column('Salinity_SA', Float),
+                        Column('Salinity_T0_C0_SA', Float),
+                        Column('Salinity_T1_C1_SA', Float),
+                        Column('Salinity__Unknown_SA', Float),
+                        Column('Salinity__Pre1978_SA', Float))
     Base.metadata.create_all(engine)
 
     # Insert data in JDFLocsTBL based on SQL query

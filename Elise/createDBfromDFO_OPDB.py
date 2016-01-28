@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, Column, String, Integer, Numeric, MetaData, Table, type_coerce, ForeignKey
+from sqlalchemy import create_engine, Column, String, Integer, Float, Numeric, MetaData, Table, type_coerce, ForeignKey
 from sqlalchemy.orm import mapper, create_session, relationship
 from sqlalchemy.ext.declarative import declarative_base
 import sqlalchemy.types as types
@@ -50,7 +50,7 @@ def main():
     # create classes for custom data types
     class forceNumeric(types.TypeDecorator):
 
-        impl = types.Numeric
+        impl = types.Float
         def process_bind_param(self, value, dialect):
             try:
                 int(float(value))
