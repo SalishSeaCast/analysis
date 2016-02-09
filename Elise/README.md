@@ -41,6 +41,8 @@ Descriptions below the links are from the first cell of the notebooks
       
     Plan: use 3D boundary files, average across the mouth of Juan de Fuca and set uniformly across domain.   
 
+* ##[riversfiles.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/riversfiles.ipynb)  
+    
 * ##[plot-SS36runs-run_SalishSea2D_00.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-SS36runs-run_SalishSea2D_00.ipynb)  
     
     plots of SOG model run  
@@ -274,6 +276,8 @@ Descriptions below the links are from the first cell of the notebooks
     - 1 day  
     - river on  
 
+* ##[exploreECRivers.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/exploreECRivers.ipynb)  
+    
 * ##[ExploringNowcast_GreenOutputs_EOversion-Copy1.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/ExploringNowcast_GreenOutputs_EOversion-Copy1.ipynb)  
     
     This notebook will be used to look at plots from the nowcast_green runs  
@@ -367,6 +371,13 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[TS_SS2DSOG5x5_SG-S3-2004-10-19-2d.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/TS_SS2DSOG5x5_SG-S3-2004-10-19-2d.ipynb)  
     
+* ##[plot-run_SOG_01_River.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-run_SOG_01_River.ipynb)  
+    
+    plots of SOG model run  
+    - 1100 x 10 x 101 domain  
+    - 1 day  
+    - Neumann boundary conditions; know that function is called, but is it working?  
+
 * ##[plot-runPISCESnopartial.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot-runPISCESnopartial.ipynb)  
     
     plots of SOG model run  
@@ -433,6 +444,8 @@ Descriptions below the links are from the first cell of the notebooks
 * ##[createIC_NutsPhy_SS2DSOG1100x10_S3-2004-10-19-WithMRubraMicrozooRemin-2d.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createIC_NutsPhy_SS2DSOG1100x10_S3-2004-10-19-WithMRubraMicrozooRemin-2d.ipynb)  
     
 * ##[createtryUnmaskBathy.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/createtryUnmaskBathy.ipynb)  
+    
+* ##[exploreBioChem.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/exploreBioChem.ipynb)  
     
 * ##[plot_SOGComp_SS2DSOG_p4zprod-withPhys.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Elise/plot_SOGComp_SS2DSOG_p4zprod-withPhys.ipynb)  
     
