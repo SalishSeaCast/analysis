@@ -54,7 +54,7 @@ def main():
         def process_bind_param(self, value, dialect):
             try:
                 int(float(value))
-                if int(float(value))==-99:
+                if (int(float(value))==-99 or int(10*float(value))==-99):
                     value=None
             except:
                 value = None
