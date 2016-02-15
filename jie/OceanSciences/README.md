@@ -10,6 +10,10 @@ Descriptions below the links are from the first cell of the notebooks
     
 * ##[DrifterParticleImage.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/OceanSciences/DrifterParticleImage.ipynb)  
     
+* ##[SaliCom_08oct14.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/OceanSciences/SaliCom_08oct14.ipynb)  
+    
+    **Imports from figures.py**  
+
 
 ##License
 
