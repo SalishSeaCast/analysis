@@ -10,6 +10,13 @@ Descriptions below the links are from the first cell of the notebooks
     
     Experiemtne with HYCOM netcdf opening  
 
+* ##[Januaray ssh - nowcast and nowcast-green.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/Januaray ssh - nowcast and nowcast-green.ipynb)  
+    
+    I donwloaded recent water level observations from this website.  
+    http://www.pac.dfo-mpo.gc.ca/science/charts-cartes/obs-app/observed-eng.aspx?StationID=07795  
+      
+    For comparison with nowcast or nowcast-green.  
+
 * ##[HYCOM-NOAA comparison.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/HYCOM-NOAA comparison.ipynb)  
     
     Notebook to compare HYCOM and NOAA  
@@ -27,6 +34,8 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[SSH from JP.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/SSH from JP.ipynb)  
     
+    Compare SSH and residuals from East Coast model to observations  
+
 * ##[Understanding NOAA tides and residuals.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/Understanding NOAA tides and residuals.ipynb)  
     
     Thie notebook examines the NOAA tidal predictions at Neah Bay.  
@@ -68,7 +77,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 ##License
 
-These notebooks and files are copyright 2013-2015
+These notebooks and files are copyright 2013-2016
 by the Salish Sea MEOPAR Project Contributors
 and The University of British Columbia.
 
