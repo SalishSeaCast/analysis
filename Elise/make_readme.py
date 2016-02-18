@@ -36,36 +36,43 @@ Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
 """
-notebooks = (fn for fn in os.listdir('./') if fn.endswith('ipynb'))
-for fn in notebooks:
-    readme += '* ##[{fn}]({url}/{fn})  \n    \n'.format(fn=fn, url=url)
-    with open(fn, 'rt') as notebook:
-        contents = json.load(notebook)
-    try:
-        first_cell = contents['worksheets'][0]['cells'][0]
-    except KeyError:
+
+notebooks = (os.path.join(root,file) for root, dirs, files in \
+             os.walk('./') for file in files if file.endswith('ipynb'))
+for root, dirs, files in os.walk('./',topdown=True):
+    dirs[:]=[d for d in dirs if d not in set(['.ipynb_checkpoints'])]
+    files[:]=[f for f in files if f.endswith('ipynb')]
+    for f in files:
+        fn=os.path.join(root,f)
+        readme += '* ##[{fn}]({url}/{fn})  \n    \n'.format(fn=fn, url=url)
+        with open(fn, 'rt') as notebook:
+            contents = json.load(notebook)
         try:
-            first_cell = contents['cells'][0]
-        except:
-            print("filename: ", fn)
-            print("Unexpected error:", sys.exc_info()[0])
-            raise
-    first_cell_type = first_cell['cell_type']
-    if first_cell_type in 'markdown raw'.split():
-        desc_lines = first_cell['source']
-        for line in desc_lines:
-            suffix = ''
-            if title_pattern.match(line):
-                line = title_pattern.sub('**', line)
-                suffix = '**'
-            if line.endswith('\n'):
-                readme += (
-                    '    {line}{suffix}  \n'
-                    .format(line=line[:-1], suffix=suffix))
-            else:
-                readme += (
-                    '    {line}{suffix}  '.format(line=line, suffix=suffix))
-        readme += '\n' * 2
+            first_cell = contents['worksheets'][0]['cells'][0]
+        except KeyError:
+            print(fn)
+            try:
+                first_cell = contents['cells'][0]
+            except:
+                print("filename: ", fn)
+                print("Unexpected error:", sys.exc_info()[0])
+                raise
+        first_cell_type = first_cell['cell_type']
+        if first_cell_type in 'markdown raw'.split():
+            desc_lines = first_cell['source']
+            for line in desc_lines:
+                suffix = ''
+                if title_pattern.match(line):
+                    line = title_pattern.sub('**', line)
+                    suffix = '**'
+                if line.endswith('\n'):
+                    readme += (
+                        '    {line}{suffix}  \n'
+                        .format(line=line[:-1], suffix=suffix))
+                else:
+                    readme += (
+                        '    {line}{suffix}  '.format(line=line, suffix=suffix))
+            readme += '\n' * 2
 license = """
 ##License
 
