@@ -28,6 +28,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     * This notebook was made to explore the surface currents of model response spatially and temporally by releasing particles within t=+-30min, l+-1km.  
 
+* ##[VvelocityofDrifter.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/VvelocityofDrifter.ipynb)  
+    
+    * To calculate v velocity of the drifter, in order to compare the values with modelled results.  
+
 * ##[CODARCurrents_more.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/drifter/CODARCurrents_more.ipynb)  
     
       * This notebook was made to look at a big picture of surface currents in the plume area with CODAR data, aiming to get some insights of the currents besides line or point comparison.  
@@ -55,7 +59,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 ##License
 
-These notebooks and files are copyright 2013-2015
+These notebooks and files are copyright 2013-2016
 by the Salish Sea MEOPAR Project Contributors
 and The University of British Columbia.
 
