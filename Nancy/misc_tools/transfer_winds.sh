@@ -15,5 +15,7 @@ while [ "$d" != "$end_date" ]; do
    fname=`date --date="$d" '+ops_y%Ym%md%d.nc'`
    echo $fname
    scp $SOURCE$fname orcinus:$DEST.
+   ssh orcinus "chgrp wg-moad $DEST$fname"
+   ssh orcinus "chmod 664 $DEST$fname"
    d=$(date -I -d "$d + 1 day")
 done
