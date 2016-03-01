@@ -16,7 +16,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[OnlyRiverMeanCurrent.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/surface_current/OnlyRiverMeanCurrent.ipynb)  
     
-    * In addition to compare mean current of model results with codar by the same method, how about the idealized caseof mean current? That is, to run only with rivers, no tides, no weather. Two speculations of the potential results:  
+    * In addition to comparing mean current of model results with codar by the same method, how about the idealized caseof mean current? That is, to run only with rivers, no tides, no weather. Two speculations of the potential results:  
       
     * 1 Only river mean flow is closer to codar, that indicates winds effects much of the mean currents in the previous way.  
     * 2 None of them is closer to codar, something else is still going on...  
@@ -32,6 +32,12 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ##[Restart vs ColdStart.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/surface_current/Restart vs ColdStart.ipynb)  
     
+    * Spin-up determination  
+
+* ##[TidesWindsFOct2014.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/surface_current/TidesWindsFOct2014.ipynb)  
+    
+    * To investigate the forcings on stratification and total currents.   
+
 * ##[HigherVisMeanCurrent.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/surface_current/HigherVisMeanCurrent.ipynb)  
     
     * To compare effect of viscosity in the mean current.  
