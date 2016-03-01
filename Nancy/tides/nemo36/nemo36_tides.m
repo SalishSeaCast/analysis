@@ -11,7 +11,7 @@ netcdf.close(ncid);
 %time
 ref_time=[1900,1,1];
 mtimes = time_to_mtime(time_counter, ref_time, 's'); 
-t0=1;
+t0=241;
 start=mtimes(t0);
 interval=0.5;
 
@@ -26,10 +26,10 @@ infamp=[.31;.27];
 infphase=[-3;-.5];
 
 %tide fit - without inferece
-outfile = 'nemo36_GmOTS13';
+outfile = 'nemo36_GmOTS13_35days';
 tide_struc=t_tide(ssh(t0:end),'start time',start,'latitude',lat,'interval',interval,'output',outfile);
 %tide fit - with inference
-outfile = 'nemo36_GmOTS13_inference';
+outfile = 'nemo36_GmOTS13_35days_inference';
 tide_struc_inf=t_tide(ssh(t0:end),'start time',start,'latitude',lat,'interval',interval,'output',outfile, 'inference',infername, inferfrom, infamp,infphase);
 
 
