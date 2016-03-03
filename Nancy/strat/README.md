@@ -106,6 +106,16 @@ Descriptions below the links are from the first cell of the notebooks
       
     Almost no differences between the base case and dwr_bbl_adv2.  
 
+* ##[Mechanisms for mixing.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/Mechanisms for mixing.ipynb)  
+    
+    What are the mechanisms that cause mixing the the sill region? Other literature suggests  
+    * Hydraulic jumps (Griffins and Leblond and their Froude number discussion)  
+    * Internal tides (one of Rich's papers saw internal tides in Haro Strait. I don't remember if he said it causes mixing but there is potential).  
+    * Separation induced mixing (a Rich and Farmer paper)  
+    * Eddies in Boundary Pass (one of Ann Gargett's papers)  
+      
+    Can we find evidence of these features in the model?  
+
 * ##[Stratification and tides.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/Stratification and tides.ipynb)  
     
     Check on a 40 day run with no stratification. This means no OBC temp/salinity, no weather and no rivers. Temp/salinity set to ocean values through whole domain.  
