@@ -109,6 +109,10 @@ Descriptions below the links are from the first cell of the notebooks
       
     Observed data in this region is from 1976 to 2014.  
 
+* ##[ONC Patrols.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/ONC Patrols.ipynb)  
+    
+    Look at ONC patrol data  
+
 * ##[Nowcast, Spinup, Observations Comparison - Haro.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Nowcast, Spinup, Observations Comparison - Haro.ipynb)  
     
     Comparisons between nowcast, spinup, and observed salinity in the Haro Strait  
@@ -122,7 +126,7 @@ Descriptions below the links are from the first cell of the notebooks
 
 ##License
 
-These notebooks and files are copyright 2013-2015
+These notebooks and files are copyright 2013-2016
 by the Salish Sea MEOPAR Project Contributors
 and The University of British Columbia.
 
