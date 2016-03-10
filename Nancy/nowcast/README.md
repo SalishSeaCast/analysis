@@ -10,6 +10,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     Experiemtne with HYCOM netcdf opening  
 
+* ##[Oscillations in nowcast-green 15 min ssh.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/Oscillations in nowcast-green 15 min ssh.ipynb)  
+    
+    Looking at high-frequency oscillation in nowcast green ssh at Point Atkinson 15 minute files.  
+
 * ##[Januaray ssh - nowcast and nowcast-green.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/Januaray ssh - nowcast and nowcast-green.ipynb)  
     
     I donwloaded recent water level observations from this website.  
