@@ -2,6 +2,8 @@ function area_surface_tides(filename, outfile,t0, ref_time, time_units)
 
 %%% Script to do a tidal analysis with t_tide
 %%% A region at the surface
+%%% filename is the name of the netcdf file with u/v/grid/time data
+%%% outfile is the name of the file where the results are to be saved
 %%% t0 is initial time index
 %%% ref_time is the reference time (datevec)
 %%% time_uinits is a string 's' or 'h' indicating if the time in the files
