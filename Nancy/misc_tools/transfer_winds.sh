@@ -5,8 +5,8 @@ DEST=/home/sallen/MEOPAR/GEM2.5/ops/NEMO-atmos/
 SOURCE=/results/forcing/atmospheric/GEM2.5/operational/
 
 #start and end dates of the transfer period
-start=2015-09-01
-end=2015-10-02
+start=2015-07-01
+end=2015-08-18
 
 d=$(date -I -d "$start") || exit -1
 end_date=$(date -I -d "$end") || exit -1
