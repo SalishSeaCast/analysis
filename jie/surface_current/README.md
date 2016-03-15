@@ -6,6 +6,10 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[WindRose.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/surface_current/WindRose.ipynb)  
+    
+    * This notebook was made to look at the statistics of wind information by plotting wind rose diagram  
+
 * ##[MeanCurrent.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/surface_current/MeanCurrent.ipynb)  
     
     * This notebook was made to evaluate mean current (only forced by river flow) during low river flow period by comparing with codar data.  
