@@ -17,6 +17,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     Looking at JEMS data  
 
+* ##[Experiment with dividing ONC data into casts.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Experiment with dividing ONC data into casts.ipynb)  
+    
+    A notebook to fiddle around with ONC data. Trying to divide ONC data into casts.  
+
 * ##[WOD Data-Haro.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/WOD Data-Haro.ipynb)  
     
     Notebook to play with WOD data using the wodpy package  
