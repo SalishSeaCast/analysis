@@ -6,6 +6,14 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[Victoria energy flux.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/energy_flux/Victoria energy flux.ipynb)  
+    
+    This is a notebook for developing energy flux calculations.  
+
+* ##[BP energy flux.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/energy_flux/BP energy flux.ipynb)  
+    
+    This is a notebook for developing energy flux calculations.  
+
 * ##[Develop energy flux calculations.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/energy_flux/Develop energy flux calculations.ipynb)  
     
     This is a notebook for developing energy flux calculations.  
