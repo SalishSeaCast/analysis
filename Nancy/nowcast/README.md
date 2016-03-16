@@ -52,6 +52,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     There is something funny about my tides compared to NOAA tides. What is it?  
 
+* ##[Currents for comparison with Ocean Viewer.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/Currents for comparison with Ocean Viewer.ipynb)  
+    
+    Compare March 14, 2016 currents with OceanViewer  
+
 * ##[VENUS.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/VENUS.ipynb)  
     
     Playing with pulling VENUS data.  
