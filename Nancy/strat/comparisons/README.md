@@ -65,6 +65,10 @@ Descriptions below the links are from the first cell of the notebooks
       
     Data is from NOAA and IOS 2003-2014.(Can do a bigger date range)  
 
+* ##[Seasonal Comparison - ONC Patrols and Model.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Seasonal Comparison - ONC Patrols and Model.ipynb)  
+    
+    Attempting a seasonal comparison at different depths between model and ONC data.  
+
 * ##[Nowcast, Spinup, Observations Comparison - JDF.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/strat/comparisons/Nowcast, Spinup, Observations Comparison - JDF.ipynb)  
     
     Comparisons between nowcast, spinup, and observed salinity in the Strait of Juan de Fuca  
