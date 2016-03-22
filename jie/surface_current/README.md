@@ -38,6 +38,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     * Spin-up determination  
 
+* ##[Rmix.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/surface_current/Rmix.ipynb)  
+    
+    * This notebook is to investigate why mixing region sho up in the near field and north of the river mouth at low tides rather than high tides.  
+
 * ##[TidesWindsFOct2014.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/surface_current/TidesWindsFOct2014.ipynb)  
     
     * To investigate the forcings on stratification and total currents.   
