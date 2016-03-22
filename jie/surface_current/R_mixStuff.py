@@ -30,6 +30,20 @@ sites = {
     'estuary':{'j':36,'i':102},
     }
 
+## load t_tide
+tfile = '/ocean/jieliu/research/meopar/tools/SalishSeaNowcast/\
+tidal_predictions/Point Atkinson_t_tide_compare8_31-Dec-2013_02-Dec-2015.csv'
+ttide, msl = stormtools.load_tidal_predictions(tfile)
+
+## select the time slot to make comparison
+strings = {'specific time': {'t_ind_high': -4,'t_ind_low':-12,'middle of flood':-8},
+              'ave':{'t_ind_high':-1,'t_ind_low':-1}}
+
+grid6 = nc.Dataset('/ocean/jieliu/research/meopar/river-treatment/bathy_meter_SalishSea6.nc')
+X = grid6.variables['nav_lon'][:, :]
+Y = grid6.variables['nav_lat'][:, :]
+bathy = grid6.variables['Bathymetry'][:, :]
+
 ## define R_mix
 def R_mix(S,t,np_mask,dep_ind,string='specific time'):
     """This function was made to calculate the R_mix ratio,
@@ -169,7 +183,7 @@ def plot_spatial_Rmix(grid_T,start_day,end_day,dep_ind,np_mask,string = 'specifi
             cbar=fig.colorbar(mesh,ax = ax,orientation ='horizontal')
             cbar.set_label('Rmix')
     elif string =='ave':
-        strs = ['high','low']
+        strs = ['low','high']
         t_highs, t_lows = find_high_low_tide(start_day,end_day) ## range of days
         S_ave = average_salinity(S,t_highs,t_lows) ## averaged salinity 
         tides = ['Low tide of','High tide of']
