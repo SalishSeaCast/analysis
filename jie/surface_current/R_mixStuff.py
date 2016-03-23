@@ -235,5 +235,5 @@ def plot_spatial_circulation(grid_T,grid_U,grid_V,dep_ind,string,str2,smin = 0,s
         viz_tools.plot_coastline(ax, grid6, coords = 'map', isobath = 5,color = 'DarkViolet')
         ax.set_xlim([-123.75,-122.8])
         ax.set_ylim([48.85,49.4])
-        ax.set_title(string+ str2)
+        ax.set_title(t+ str2)
     return fig
