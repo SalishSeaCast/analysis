@@ -101,7 +101,7 @@ def find_high_low_tide(start_day, end_day):
         l_t = t_ind+np.argmin([ttide.pred_all[t:t+24]])
         t_highs.append(h_t); t_lows.append(l_t)
         t_ind = t_ind +24
-    return t_highs, t_lows
+    return ts,t_highs, t_lows
 
 ## to plot the salinity contour along transect 
 def plot_salinity_estuary(grid_T,start_day, end_day,dep_ind,np_mask,grid_T2 = None,title = ' no wind',\
@@ -137,7 +137,7 @@ def plot_salinity_estuary(grid_T,start_day, end_day,dep_ind,np_mask,grid_T2 = No
             ax.set_xlim([lon[36,4],lon[36,123]])
             ax.set_ylim([dep[dep_ind],0])
     elif string =='ave':
-        t_highs, t_lows = find_high_low_tide(start_day,end_day) ## range of days
+        ts, t_highs, t_lows = find_high_low_tide(start_day,end_day) ## range of days
         S_ave = average_salinity(S,t_highs,t_lows) ## averaged salinity 
         f, ((ax1, ax2), (ax3, ax4))= plt.subplots(2, 2, sharex='col',sharey='row',figsize = (14,8))
         f.subplots_adjust(hspace=0)
