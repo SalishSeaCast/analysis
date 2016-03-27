@@ -46,6 +46,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     * To investigate the forcings on stratification and total currents.   
 
+* ##[RmixStatistics.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/surface_current/RmixStatistics.ipynb)  
+    
+    * This notebook was made to do some statistics of to which degree each forcing mechanism contribute to the vertical mixing in different plume region.  
+
 * ##[HigherVisMeanCurrent.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/surface_current/HigherVisMeanCurrent.ipynb)  
     
     * To compare effect of viscosity in the mean current.  
