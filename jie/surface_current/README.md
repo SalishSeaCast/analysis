@@ -10,6 +10,10 @@ Descriptions below the links are from the first cell of the notebooks
     
     * This notebook was made to look at the statistics of wind information by plotting wind rose diagram  
 
+* ##[TransportEachRun.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/surface_current/TransportEachRun.ipynb)  
+    
+    * This notebook was made to look at the alongshore, cross-starit transport of fresh water, total water amount of each run.  
+
 * ##[MeanCurrent.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/jie/surface_current/MeanCurrent.ipynb)  
     
     * This notebook was made to evaluate mean current (only forced by river flow) during low river flow period by comparing with codar data.  
