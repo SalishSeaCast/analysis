@@ -1,0 +1,15 @@
+# File map for 31-Mar-2016 creation of analysis-elise repo
+# from the Elise/ directory of the analysis repos.
+# Done because the analysis repo had become annoyingly large
+# and was approaching Bitbucket's 2Gb hard size limit.
+#
+# The following command was used to create the analysis-elise repo:
+#    cd MEOPAR/analysis
+#    hg convert --filemap analysis-elise_filemap.txt MEOPAR/analysis MEOPAR/analysis-elise
+
+include README.rst
+include LICENSE
+include analysis-elise_filemap.txt
+include Elise
+
+rename Elise notebooks
