@@ -1,0 +1,15 @@
+# File map for 31-Mar-2016 creation of analysis-jie repo
+# from the Jie/ directory of the analysis repos.
+# Done because the analysis repo had become annoyingly large
+# and was approaching Bitbucket's 2Gb hard size limit.
+#
+# The following command was used to create the analysis-jie repo:
+#    cd MEOPAR/analysis
+#    hg convert --filemap analysis-jie_filemap.txt MEOPAR/analysis MEOPAR/analysis-jie
+
+include README.rst
+include LICENSE
+include analysis-jie_filemap.txt
+include Jie
+
+rename Jie notebooks
