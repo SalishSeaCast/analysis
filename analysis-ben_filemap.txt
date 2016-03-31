@@ -1,0 +1,15 @@
+# File map for 31-Mar-2016 creation of analysis-ben repo
+# from the Ben/ directory of the analysis repos.
+# Done because the analysis repo had become annoyingly large
+# and was approaching Bitbucket's 2Gb hard size limit.
+#
+# The following command was used to create the analysis-ben repo:
+#    cd MEOPAR/analysis
+#    hg convert --filemap analysis-ben_filemap.txt MEOPAR/analysis MEOPAR/analysis-ben
+
+include README.rst
+include LICENSE
+include analysis-ben_filemap.txt
+include Ben
+
+rename Ben notebooks
