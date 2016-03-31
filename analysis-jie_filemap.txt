@@ -1,5 +1,5 @@
 # File map for 31-Mar-2016 creation of analysis-jie repo
-# from the Jie/ directory of the analysis repos.
+# from the jie/ directory of the analysis repos.
 # Done because the analysis repo had become annoyingly large
 # and was approaching Bitbucket's 2Gb hard size limit.
 #
@@ -10,6 +10,4 @@
 include README.rst
 include LICENSE
 include analysis-jie_filemap.txt
-include Jie
-
-rename Jie notebooks
+include jie
