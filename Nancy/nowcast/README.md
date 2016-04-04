@@ -6,6 +6,10 @@ The links below are to static renderings of the notebooks via
 Descriptions below the links are from the first cell of the notebooks
 (if that cell contains Markdown or raw text).
 
+* ##[Nowcast vs Nowcast-green Thalwegs.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/Nowcast vs Nowcast-green Thalwegs.ipynb)  
+    
+    Notebook to compare nowcast vs nowcast green along thalweg  
+
 * ##[HYCOM - netcdf.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/nowcast/HYCOM - netcdf.ipynb)  
     
     Experiemtne with HYCOM netcdf opening  
