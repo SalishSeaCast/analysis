@@ -51,6 +51,10 @@ Descriptions below the links are from the first cell of the notebooks
     6. Esquimalt - http://climate.weather.gc.ca/climateData/hourlydata_e.html?timeframe=1&Prov=&StationID=52&hlyRange=1994-02-01|2014-10-01&Year=2014&Month=10&Day=1  
     5. NOAA Buoy - http://www.ndbc.noaa.gov/station_page.php?station=46041  
 
+* ##[Plot for Eath Matters.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Plot for Eath Matters.ipynb)  
+    
+    Plot of surface salinity with quivers for Eart Matters.  
+
 * ##[Developing and testing depth average.ipynb](http://nbviewer.ipython.org/urls/bitbucket.org/salishsea/analysis/raw/tip/Nancy/Developing and testing depth average.ipynb)  
     
     This notebooks is used to develope and test a function that will calulate the depth average of a model variable.  
