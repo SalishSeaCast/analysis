@@ -1,6 +1,6 @@
 function area_w_N2_analysis(filename, outfile, depthfile, t0, ref_time, time_units)
 
-%%% Script to do a BAROCLINIC tidal analysis with t_tide
+%%% Script to do a tidal anlayslis of ssh, baroclinic pressure and w.
 %%% Full region
 %%% depthfile is the mesh_mask file
 %%% t0 is initial time index
