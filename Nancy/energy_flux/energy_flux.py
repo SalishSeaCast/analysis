@@ -89,8 +89,8 @@ def baroclinic_pressure_try2(pstruc, const):
 
 def flux_vectors(major, minor, phase, incl, p_amp, p_phase):
     """ Calculate flux vectors in north-south coordinates"""
-    Fmaj = 0.5*major*p_amp*np.cos(np.deg2rad(phase) - np.deg2rad(p_phase))
-    Fmin = 0.5*minor*p_amp*np.sin(np.deg2rad(phase) - np.deg2rad(p_phase))
+    Fmaj = 0.5*major*p_amp*np.cos(np.deg2rad(p_phase) - np.deg2rad(phase))
+    Fmin = 0.5*minor*p_amp*np.sin(np.deg2rad(p_phase) - np.deg2rad(phase))
     # Rotate to north/south
     Fx = Fmaj*np.cos(np.deg2rad(incl)) - Fmin*np.sin(np.deg2rad(incl))
     Fy = Fmaj*np.sin(np.deg2rad(incl)) + Fmin*np.cos(np.deg2rad(incl))
