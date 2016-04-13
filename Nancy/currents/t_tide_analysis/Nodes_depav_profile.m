@@ -1,23 +1,25 @@
 %%% Script to do a tidal analysis with t_tide
 %%% Full depth profile and depth averaged values at VENUS Central or East
 
-filename = '/ocean/nsoontie/MEOPAR/TidalEllipseData/ModelTimeSeries/East_currents_20141126_20150426.nc';
+filename = '/ocean/nsoontie/MEOPAR/TidalEllipseData/ModelTimeSeries/East_currents_20151001_20160330.nc';
 %depth index for tidal analysis
 depav = 0; %depth average
 dlevel = 1; % surface
 trun = 1; %truncate water column
-d1 = 20; d2 = 160; %depth range
-output_file = '/ocean/nsoontie/MEOPAR/TidalEllipseData/Nodes/East_20141126_20150426_masked';
-
+d1 = 20; d2 = 160; %depth range - east
+%d1 = 35; d2 = 290; %depth range - central
+output_file = '/ocean/nsoontie/MEOPAR/TidalEllipseData/Nodes/East_20151001_20160330_masked';
+depthfile = '/data/nsoontie/MEOPAR/NEMO-forcing/grid/mesh_mask_SalishSea2.nc';
+time_units='h';
 
 % load data
 [u, v, depth, time, lons, lats] = load_netcdf(filename);
 lat=lats(end,end);
 params = ellipse_parameters;
 % i and j of node coordinate - must be set for the mesh mask
-[i, j] = find_starting_index(lons , lats);
+[i, j] = find_starting_index(lons(1,1) , lats(1,1));
 % load dept, scale factors and tmask
-[dept, e3t, tmask] = load_depth_t();
+[dept, e3t, tmask] = load_depth_t(depthfile);
 %isolate to i,j coords
 dept = squeeze(dept(i,j,:));
 e3t=squeeze(e3t(i,j,:));
@@ -25,7 +27,7 @@ tmask = squeeze(tmask(i,j,:));
 
 %prepare time
 ref_time = [2014, 09, 10];
-mtimes = time_to_mtime(time, ref_time); 
+mtimes = time_to_mtime(time, ref_time,time_units); 
 start = mtimes(1);
 
 % prepare velocities for tidal analysis
