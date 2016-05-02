@@ -9,7 +9,7 @@
 
 include README.rst
 include LICENSE
-include analysis-prints_filemap.txt
+include analysis-sprints_filemap.txt
 include alex
 include Alyssia
 include MyTrc
