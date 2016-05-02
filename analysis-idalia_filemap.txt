@@ -1,0 +1,15 @@
+# File map for 2-May-2016 creation of analysis-idalia repo
+# from the Idalia/ directory of the analysis repos.
+# Done because the analysis repo had become annoyingly large
+# and was approaching Bitbucket's 2Gb hard size limit.
+#
+# The following command was used to create the analysis-idalia repo:
+#    cd MEOPAR/analysis
+#    hg convert --filemap analysis-idalia_filemap.txt . ../analysis-idalia
+
+include README.rst
+include LICENSE
+include analysis-idalia_filemap.txt
+include Idalia
+
+rename Idalia notebooks
