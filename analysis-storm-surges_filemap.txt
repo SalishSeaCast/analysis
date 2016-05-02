@@ -1,5 +1,5 @@
 # File map for 2-May-2016 creation of analysis-storm-surges repo
-# from the storm-surges/ directory of the analysis repos.
+# from the storm_surges/ directory of the analysis repos.
 # Done because the analysis repo had become annoyingly large
 # and was approaching Bitbucket's 2Gb hard size limit.
 #
@@ -10,6 +10,6 @@
 include README.rst
 include LICENSE
 include analysis-storm-surges_filemap.txt
-include storm-surges
+include storm_surges
 
-rename storm-surges notebooks
+rename storm_surges notebooks
