@@ -1,0 +1,22 @@
+# File map for 2-May-2016 creation of analysis-susan repo
+# from the Front_Strength/, Stability_analysis/, Standing_Wave_Theory/
+# directories of the analysis repos.
+# Done because the analysis repo had become annoyingly large
+# and was approaching Bitbucket's 2Gb hard size limit.
+#
+# The following command was used to create the analysis-susan repo:
+#    cd MEOPAR/analysis
+#    hg convert --filemap analysis-susan_filemap.txt . ../analysis-susan
+
+include README.rst
+include LICENSE
+include analysis-susan_filemap.txt
+include Susan
+include Front_Strength
+include Stability_analysis
+include Standing_Wave_Theory
+
+rename Susan notebooks
+rename Front_Strength notebooks/Front_Strength
+rename Stability_analysis notebooks/Stability_analysis
+rename Standing_Wave_Theory notebooks/Standing_Wave_Theory
