@@ -1,0 +1,19 @@
+# File map for 2-May-2016 creation of analysis-prints repo
+# from the alex/, Alyssia/, MyTrc/ directories of the analysis repos.
+# Done because the analysis repo had become annoyingly large
+# and was approaching Bitbucket's 2Gb hard size limit.
+#
+# The following command was used to create the analysis-prints repo:
+#    cd MEOPAR/analysis
+#    hg convert --filemap analysis-prints_filemap.txt . ../analysis-prints
+
+include README.rst
+include LICENSE
+include analysis-prints_filemap.txt
+include alex
+include Alyssia
+include MyTrc
+
+rename alex notebooks/alex
+rename Alyssia notebooks/Alyssia
+rename MyTrc notebooks/MyTrc
