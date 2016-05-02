@@ -1,0 +1,16 @@
+# File map for 2-May-2016 creation of analysis-shared repo
+# from the compare_stratification/, compare_tides/, merge_compare/
+# directories of the analysis repos.
+# Done because the analysis repo had become annoyingly large
+# and was approaching Bitbucket's 2Gb hard size limit.
+#
+# The following command was used to create the analysis-shared repo:
+#    cd MEOPAR/analysis
+#    hg convert --filemap analysis-shared_filemap.txt . ../analysis-shared
+
+include README.rst
+include LICENSE
+include analysis-shared_filemap.txt
+include compare_stratification
+include compare_tides
+include merge_compare
