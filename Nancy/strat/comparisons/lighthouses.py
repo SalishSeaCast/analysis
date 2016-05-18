@@ -3,7 +3,7 @@
 # Nancy Soontiens, 2015
 
 import pandas as pd
-from salishsea_tools.nowcast import analyze
+from nowcast import analyze
 from salishsea_tools import tidetools, viz_tools
 import matplotlib.pyplot as plt
 import numpy as np
@@ -19,8 +19,8 @@ LIGHTHOUSES = {'Race Rocks':
                'Departure Bay':
                'http://www.pac.dfo-mpo.gc.ca/science/oceans/data-donnees/lighthouses-phares/data/departurday.txt'}
 
-MODEL_PATHS = {'nowcast': '/data/dlatorne/MEOPAR/SalishSea/nowcast/',
-               'spinup': '/ocean//dlatorne/MEOPAR/SalishSea/results/spin-up/'
+MODEL_PATHS = {'nowcast': '/results/SalishSea/nowcast/',
+               'spinup': '/results/SalishSea/spin-up/'
                }
 
 
@@ -68,7 +68,7 @@ def daytime_hightide(ssh, times):
     # Loop through each day
     to = times[0]
     tf = times[-1]
-    days = [to + datetime.timedelta(days=n) for n in np.arange((tf-to).days)]
+    days = [to + datetime.timedelta(days=int(n)) for n in np.arange((tf-to).days)]
     max_inds = []
     for day in days:
         # Define datetime to be between 0530 and 1830
