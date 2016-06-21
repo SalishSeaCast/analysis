@@ -1,0 +1,15 @@
+# File map for 21-Jun-2016 creation of analysis-nancy repo
+# from the Nancy/ directory of the analysis repos.
+# Done because the analysis repo had become annoyingly large
+# and was approaching Bitbucket's 2Gb hard size limit.
+#
+# The following command was used to create the analysis-nancy repo:
+#    cd MEOPAR/analysis
+#    hg convert --filemap analysis-nancy_filemap.txt . ../analysis-nancy
+
+include README.rst
+include LICENSE
+include analysis-nancy_filemap.txt
+include Nancy
+
+rename Nancy notebooks
